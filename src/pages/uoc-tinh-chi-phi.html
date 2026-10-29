@@ -1,0 +1,134 @@
+---
+{"title": "Ước tính chi phí", "description": "Ước tính chi phí chuyển trọ, dọn phòng, bàn giao phòng trong 1 phút. Biết khoảng giá trước khi gửi nhu cầu, BOXANH xác nhận giá chính thức sau khi đủ thông tin.", "active": "uoc-tinh", "tab": "dich-vu", "scripts": ["estimate"]}
+---
+<section class="hero">
+  <div class="container hero-in" style="padding-block:28px 40px">
+    <div class="hero-text">
+      <h1 class="display" style="font-size:clamp(38px,5vw,64px)">Ước tính chi phí</h1>
+      <p class="lead">Biết khoảng giá trước khi gửi nhu cầu.</p>
+      <ol class="row wrap mt-20" id="est-steps" aria-label="Tiến trình">
+        <li class="row" style="gap:8px"><span class="num-dot" data-st="1">1</span><b class="small">Dịch vụ</b></li>
+        <li aria-hidden="true">{{icon:arrow-right ic-sm}}</li>
+        <li class="row" style="gap:8px"><span class="num-dot light" data-st="2">2</span><b class="small">Thông tin</b></li>
+        <li aria-hidden="true">{{icon:arrow-right ic-sm}}</li>
+        <li class="row" style="gap:8px"><span class="num-dot light" data-st="3">3</span><b class="small">Ước tính</b></li>
+        <li aria-hidden="true">{{icon:arrow-right ic-sm}}</li>
+        <li class="row" style="gap:8px"><span class="num-dot light" data-st="4">4</span><b class="small">Gửi yêu cầu</b></li>
+      </ol>
+    </div>
+    <div class="hero-art" style="--ratio:3.2"><img src="assets/img/hero-uoc-tinh.webp" alt="Nhân viên BOXANH ôm hộp tái sử dụng trước xe tải" fetchpriority="high"></div>
+  </div>
+</section>
+
+<form class="container split section-sm" id="est-form" novalidate style="padding-top:0">
+  <div class="card card-pad stack" style="--gap:28px">
+    <section aria-labelledby="s1">
+      <div class="row between wrap"><h2 class="h3 row" id="s1"><span class="num-dot light">1</span> Chọn dịch vụ</h2><button class="btn btn-ghost btn-sm" type="button" id="sample">{{icon:sparkles}} Dùng dữ liệu mẫu</button></div>
+      <p class="small muted mt-4">Chọn một hoặc nhiều dịch vụ bạn cần để ước tính chi phí phù hợp.</p>
+      <div class="grid g-3 mt-12" data-need-one="Vui lòng chọn ít nhất một dịch vụ.">
+        <label class="pick"><input type="checkbox" name="svc" value="chuyen-tro"><span class="pick-mark">{{icon:check}}</span><div class="pick-img"><img src="assets/img/sel-chuyen-tro.webp" alt="" loading="lazy"></div><div class="pick-body"><b>Chuyển trọ</b><span>Vận chuyển đồ đạc, bốc xếp tại nơi đi và nơi đến.</span></div></label>
+        <label class="pick"><input type="checkbox" name="svc" value="don-phong"><span class="pick-mark">{{icon:check}}</span><div class="pick-img"><img src="assets/img/sel-don-phong.webp" alt="" loading="lazy"></div><div class="pick-body"><b>Dọn phòng</b><span>Vệ sinh, dọn dẹp phòng trọ sạch sẽ, gọn gàng.</span></div></label>
+        <label class="pick"><input type="checkbox" name="svc" value="ban-giao"><span class="pick-mark">{{icon:check}}</span><div class="pick-img"><img src="assets/img/sel-ban-giao.webp" alt="" loading="lazy"></div><div class="pick-body"><b>Bàn giao phòng</b><span>Hỗ trợ dọn dẹp và hoàn thiện để bàn giao phòng.</span></div></label>
+      </div>
+    </section>
+
+    <section aria-labelledby="s2">
+      <h2 class="h3 row" id="s2"><span class="num-dot light">2</span> Thông tin chi tiết</h2>
+      <p class="small muted mt-4">Cung cấp thông tin để ước tính chi phí chính xác hơn.</p>
+      <div class="grid cols-2-1 mt-12" style="align-items:start">
+        <div class="stack" style="--gap:14px">
+          <div class="panel">
+            <div class="field"><label class="label" for="e-from">{{icon:map-pin ic-sm}} <span id="from-label">Nơi đi</span> <span class="req">*</span></label><input class="input" id="e-from" name="from" placeholder="Số nhà, ngõ, phường, quận" required data-msg="Vui lòng nhập địa chỉ."></div>
+            <div class="form-grid mt-12">
+              <div class="field"><label class="label" for="e-from-floor">Tầng</label><select class="select" id="e-from-floor" name="fromFloor"><option value="1">Tầng trệt</option><option value="2">Tầng 2</option><option value="3">Tầng 3</option><option value="4" selected>Tầng 4</option><option value="5">Tầng 5</option><option value="6">Tầng 6+</option></select></div>
+              <div class="field"><label class="label" for="e-from-lift">Thang máy</label><select class="select" id="e-from-lift" name="fromLift"><option value="0" selected>Không có</option><option value="1">Có</option></select></div>
+            </div>
+          </div>
+          <div class="center" data-dest><button class="btn btn-soft btn-sm" type="button" id="swap" aria-label="Đổi nơi đi và nơi đến">{{icon:arrow-up-down}} Đổi chiều</button></div>
+          <div class="panel" data-dest>
+            <div class="field"><label class="label" for="e-to">{{icon:map-pin ic-sm}} Nơi đến <span class="req">*</span></label><input class="input" id="e-to" name="to" placeholder="Số nhà, ngõ, phường, quận" required data-msg="Vui lòng nhập địa chỉ nơi đến."></div>
+            <div class="form-grid mt-12">
+              <div class="field"><label class="label" for="e-to-floor">Tầng</label><select class="select" id="e-to-floor" name="toFloor"><option value="1">Tầng trệt</option><option value="2" selected>Tầng 2</option><option value="3">Tầng 3</option><option value="4">Tầng 4</option><option value="5">Tầng 5</option><option value="6">Tầng 6+</option></select></div>
+              <div class="field"><label class="label" for="e-to-lift">Thang máy</label><select class="select" id="e-to-lift" name="toLift"><option value="0">Không có</option><option value="1" selected>Có</option></select></div>
+            </div>
+          </div>
+        </div>
+        <div class="card card-sm tint-green" data-dest>
+          <p class="row small strong">{{icon:route}} Khoảng cách dự kiến</p>
+          <p class="price mt-4"><span id="km-out">5,0</span> km</p>
+          <svg viewBox="0 0 200 110" class="mt-8" style="width:100%;border-radius:12px;background:#eef6f1" aria-hidden="true">
+            <path d="M0 30h200M0 70h200M40 0v110M120 0v110M170 0v110" stroke="#dbe9e1" stroke-width="6"/>
+            <path d="M28 88 C60 60 70 80 95 58 S150 40 172 22" fill="none" stroke="#1a8360" stroke-width="4" stroke-linecap="round" stroke-dasharray="1 0"/>
+            <circle cx="28" cy="88" r="7" fill="#146b4e"/><circle cx="28" cy="88" r="3" fill="#fff"/>
+            <path d="M172 10c-6 0-10 4-10 9 0 7 10 15 10 15s10-8 10-15c0-5-4-9-10-9z" fill="#e65151"/><circle cx="172" cy="19" r="3.5" fill="#fff"/>
+          </svg>
+          <div class="field mt-12"><label class="label small" for="e-km">Điều chỉnh khoảng cách</label><div class="with-suffix"><input class="input input-sm" id="e-km" name="km" type="number" min="1" max="60" step="0.5" value="5" inputmode="decimal"><span class="suffix">km</span></div></div>
+          <p class="xs muted mt-8">Tự ước tính theo địa chỉ (dữ liệu minh họa). Nhân viên xác nhận lại lộ trình thực tế.</p>
+        </div>
+      </div>
+    </section>
+
+    <section aria-labelledby="s3">
+      <h2 class="h3 row" id="s3"><span class="num-dot light">3</span> Khối lượng đồ đạc</h2>
+      <p class="small muted mt-4">Ước tính số lượng để tính chi phí phù hợp.</p>
+      <div class="grid g-3 mt-12 gap-sm">
+        <div class="card card-sm"><div class="row">{{icon:box ic-lg}}<b class="small">Hộp tái sử dụng</b></div><div class="qty mt-12" data-stepper><button type="button" aria-label="Giảm số hộp">{{icon:minus}}</button><input name="boxes" type="number" value="12" min="0" max="60" aria-label="Số hộp"><button type="button" aria-label="Tăng số hộp">{{icon:plus}}</button></div><p class="xs muted mt-8">Ước tính số hộp cần dùng</p></div>
+        <div class="card card-sm"><div class="row">{{icon:sofa ic-lg}}<b class="small">Đồ cồng kềnh</b></div><div class="qty mt-12" data-stepper><button type="button" aria-label="Giảm số đồ cồng kềnh">{{icon:minus}}</button><input name="bulky" type="number" value="3" min="0" max="20" aria-label="Số đồ cồng kềnh"><button type="button" aria-label="Tăng số đồ cồng kềnh">{{icon:plus}}</button></div><p class="xs muted mt-8">Tủ, giường, bàn ghế, tủ lạnh…</p></div>
+        <div class="card card-sm"><div class="row">{{icon:users ic-lg}}<b class="small">Người hỗ trợ</b></div><div class="qty mt-12" data-stepper><button type="button" aria-label="Giảm số người">{{icon:minus}}</button><input name="people" type="number" value="2" min="1" max="8" aria-label="Số người hỗ trợ"><button type="button" aria-label="Tăng số người">{{icon:plus}}</button></div><p class="xs muted mt-8">Số người hỗ trợ bốc xếp</p></div>
+      </div>
+    </section>
+
+    <section aria-labelledby="s4">
+      <h2 class="h3 row" id="s4"><span class="num-dot light">4</span> Thời gian &amp; dịch vụ thêm</h2>
+      <p class="small muted mt-4">Chọn thời gian dự kiến và các hỗ trợ nếu cần.</p>
+      <div class="form-grid mt-12">
+        <div class="field"><label class="label" for="e-date">{{icon:calendar ic-sm}} Ngày dự kiến <span class="req">*</span></label><input class="input" id="e-date" name="date" type="date" data-future required data-msg="Vui lòng chọn ngày dự kiến."></div>
+        <div class="field"><label class="label" for="e-time">{{icon:clock ic-sm}} Khung giờ</label><select class="select" id="e-time" name="time"><option value="08:00 – 12:00">Sáng (8:00 – 12:00)</option><option value="13:00 – 17:00">Chiều (13:00 – 17:00)</option><option value="18:00 – 21:00">Tối (18:00 – 21:00) · ngoài giờ</option></select></div>
+        <label class="opt" style="align-items:flex-start"><input type="checkbox" name="pack"><span class="grow"><b class="row">{{icon:box ic-sm}} Hỗ trợ đóng gói</b><span class="xs muted">Nhân viên hỗ trợ đóng gói đồ đạc vào hộp tái sử dụng.</span></span><span class="opt-mark" style="border-radius:6px">{{icon:check}}</span></label>
+        <label class="opt" style="align-items:flex-start"><input type="checkbox" name="assembly"><span class="grow"><b class="row">{{icon:wrench ic-sm}} Tháo lắp cơ bản</b><span class="xs muted">Tháo lắp giường, tủ, bàn đơn giản (không gồm điện nước).</span></span><span class="opt-mark" style="border-radius:6px">{{icon:check}}</span></label>
+        <div class="field full">
+          <span class="label">{{icon:images ic-sm}} Thêm ảnh đồ đạc <span class="opt-l">(không bắt buộc)</span></span>
+          <div data-upload data-max="10"><label class="drop"><span class="drop-ic">{{icon:image-plus}}</span><span class="grow"><b>Tải ảnh lên để ước tính chính xác hơn</b>Hỗ trợ JPG, PNG, tối đa 10 ảnh</span>{{icon:plus}}<input class="sr-only" type="file" accept="image/*" multiple></label></div>
+          <div class="previews" data-previews></div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <aside class="stack sticky-side" style="--gap:16px">
+    <div class="card card-pad tint-green" aria-live="polite">
+      <div class="row between"><h2 class="h3">Khoảng giá dự kiến</h2><span class="badge b-yellow">{{icon:info}} Dữ liệu minh họa</span></div>
+      <p class="small muted mt-4">Dựa trên thông tin bạn cung cấp</p>
+      <p class="price mt-8" id="est-total">—</p>
+      <div class="card card-sm mt-16">
+        <b class="small">Ước tính chi tiết</b>
+        <dl class="kv-rows mt-8" id="est-lines"><div><dt class="muted">Chọn dịch vụ để xem chi tiết</dt></div></dl>
+        <p class="xs muted mt-8">Giá có thể thay đổi tùy theo thực tế khảo sát, khối lượng đồ đạc, điều kiện tòa nhà và các dịch vụ bổ sung.</p>
+      </div>
+      <div class="note mt-16"><span class="note-ic" style="background:var(--o500);color:#fff">{{icon:alert-circle}}</span><div><b>Đây là giá ước tính.</b> BOXANH xác nhận giá chính thức sau khi đủ thông tin.</div></div>
+    </div>
+
+    <div class="card card-pad" id="contact-card">
+      <h2 class="h4">Thông tin liên hệ <span class="small muted" style="font-weight:400">· để gửi yêu cầu tư vấn</span></h2>
+      <div class="form-grid mt-12">
+        <div class="field"><label class="label" for="e-name">{{icon:user ic-sm}} Họ tên <span class="req">*</span></label><input class="input" id="e-name" name="name" autocomplete="name" placeholder="Nguyễn Văn A" required></div>
+        <div class="field"><label class="label" for="e-phone">{{icon:phone ic-sm}} Số điện thoại <span class="req">*</span></label><input class="input" id="e-phone" name="phone" inputmode="tel" autocomplete="tel" placeholder="0987 654 321" required data-phone></div>
+        <div class="field full"><label class="check"><input type="checkbox" name="agree" required data-msg="Vui lòng đồng ý với điều khoản dịch vụ."><span>Tôi đã đọc và đồng ý với <a href="dieu-khoan.html" target="_blank" rel="noopener">Điều khoản dịch vụ</a> của BOXANH.</span></label></div>
+      </div>
+      <button class="btn btn-primary btn-lg btn-block mt-16" type="submit">{{icon:send}} Gửi yêu cầu tư vấn {{icon:arrow-right}}</button>
+    </div>
+
+    <div class="card card-pad tint-green" id="done-card" hidden>
+      <div class="row row-top">
+        <img src="assets/img/success-mascot.webp" alt="" style="width:92px;border-radius:14px">
+        <div>
+          <span class="badge b-green">{{icon:check}} Yêu cầu đã được gửi</span>
+          <p class="small mt-8">Mã yêu cầu: <b class="num" id="done-code">—</b></p>
+          <p class="small mt-4">Trạng thái: <span class="badge b-yellow">Chờ xác nhận thông tin</span></p>
+        </div>
+      </div>
+      <p class="small muted mt-12">Chúng tôi sẽ liên hệ với bạn sớm để xác nhận thông tin và báo giá chính thức.</p>
+      <div class="row wrap mt-16"><a class="btn btn-primary" id="done-track" href="don-hang.html">Theo dõi yêu cầu {{icon:arrow-right}}</a><button class="btn btn-light" type="button" id="done-new">Tạo yêu cầu mới</button></div>
+    </div>
+  </aside>
+</form>

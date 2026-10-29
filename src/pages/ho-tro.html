@@ -1,0 +1,101 @@
+---
+{"title": "Hỗ trợ khách hàng", "description": "Trung tâm trợ giúp BOXANH: câu hỏi thường gặp về đặt dịch vụ, báo giá, hộp & seal, thu hồi hộp. Gửi yêu cầu hỗ trợ hoặc báo sự cố cho CSKH.", "active": "ho-tro", "tab": "tai-khoan", "scripts": ["support"]}
+---
+<section class="hero">
+  <div class="container hero-in hi-wide">
+    <div class="hero-text">
+      <span class="eyebrow">{{icon:headset ic-sm}} Trung tâm trợ giúp</span>
+      <h1 class="display mt-12" style="font-size:clamp(36px,5vw,62px)">Chúng tôi luôn<br><span class="sw">đồng hành cùng bạn.</span></h1>
+      <p class="lead">Tìm câu trả lời nhanh hoặc gửi yêu cầu cho đội ngũ chăm sóc khách hàng BOXANH.</p>
+      <form class="tb-search mt-24" role="search" id="faq-search" style="max-width:560px">
+        {{icon:search}}<label class="sr-only" for="faq-q">Tìm câu hỏi</label>
+        <input id="faq-q" type="search" placeholder="Bạn cần hỗ trợ gì? Ví dụ: thu hồi hộp, seal, báo giá…" style="height:54px;border-radius:16px">
+      </form>
+      <div class="row wrap mt-16">
+        <a class="badge b-white b-lg" href="#gui-yeu-cau">{{icon:send}} Gửi yêu cầu hỗ trợ</a>
+        <span class="badge b-white b-lg">{{icon:phone}} 1900 2228 · 8:00 – 20:00</span>
+        <span class="badge b-white b-lg">{{icon:mail}} hotro@boxanh.vn</span>
+      </div>
+    </div>
+    <div class="hero-art" style="--ratio:1.04;max-width:420px"><img src="assets/img/hero-support.webp" alt="Nhân viên CSKH BOXANH làm việc với laptop" fetchpriority="high"></div>
+  </div>
+</section>
+
+<section class="section-sm" id="faq">
+  <div class="container">
+    <div class="section-hd"><div><h2 class="h2 sw">Câu hỏi thường gặp</h2><p>Chọn chủ đề hoặc gõ từ khóa để lọc nhanh.</p></div></div>
+    <div class="seg" data-seg id="faq-cats" role="group" aria-label="Chủ đề câu hỏi" style="flex-wrap:wrap">
+      <button type="button" class="is-active" aria-pressed="true" data-value="all">Tất cả</button>
+      <button type="button" aria-pressed="false" data-value="dat">Đặt dịch vụ</button>
+      <button type="button" aria-pressed="false" data-value="gia">Báo giá &amp; thanh toán</button>
+      <button type="button" aria-pressed="false" data-value="hop">Hộp &amp; seal</button>
+      <button type="button" aria-pressed="false" data-value="thu-hoi">Thu hồi hộp</button>
+      <button type="button" aria-pressed="false" data-value="tk">Tài khoản</button>
+    </div>
+    <div class="mt-16" id="faq-list">
+      <details class="acc" data-cat="dat"><summary>Tôi cần đặt lịch trước bao lâu?<span class="acc-ic">{{icon:plus}}</span></summary><div class="acc-body"><p>Nên đặt trước ít nhất 2 ngày để BOXANH khảo sát và giao hộp kịp thời. Đơn gấp trong 24 giờ vẫn được hỗ trợ nếu còn đội trống, có thể kèm phụ phí.</p></div></details>
+      <details class="acc" data-cat="dat"><summary>BOXANH đang phục vụ ở khu vực nào?<span class="acc-ic">{{icon:plus}}</span></summary><div class="acc-body"><p>Hiện BOXANH phục vụ nội thành Hà Nội và TP. Hồ Chí Minh, một số khu vực lân cận theo lịch hẹn. Đà Nẵng đang được thử nghiệm.</p></div></details>
+      <details class="acc" data-cat="dat"><summary>Tôi có thể kết hợp chuyển trọ, dọn phòng và bàn giao trong một đơn không?<span class="acc-ic">{{icon:plus}}</span></summary><div class="acc-body"><p>Có. Ở trang <a class="link" href="uoc-tinh-chi-phi.html">Ước tính chi phí</a>, bạn chọn nhiều dịch vụ cùng lúc. Một đơn hàng, một đầu mối và một báo giá tổng.</p></div></details>
+      <details class="acc" data-cat="gia"><summary>Khi nào nhận được báo giá chính thức?<span class="acc-ic">{{icon:plus}}</span></summary><div class="acc-body"><p>Trong vòng 2 giờ làm việc sau khi gửi nhu cầu, nhân viên sẽ liên hệ khảo sát (qua ảnh, video call hoặc tại chỗ) và gửi báo giá chính thức vào mục Đơn hàng của bạn.</p></div></details>
+      <details class="acc" data-cat="gia"><summary>Chi phí chuyển trọ được tính như thế nào?<span class="acc-ic">{{icon:plus}}</span></summary><div class="acc-body"><p>Gồm giá chuyến, phụ phí tầng, phí chờ, thêm người, ngoài giờ và phát sinh khác (nếu có). Mọi chi phí phát sinh đều cần bạn đồng ý trước khi thực hiện.</p></div></details>
+      <details class="acc" data-cat="gia"><summary>Tôi thanh toán bằng cách nào?<span class="acc-ic">{{icon:plus}}</span></summary><div class="acc-body"><p>Bạn thanh toán sau khi dịch vụ hoàn tất bằng tiền mặt hoặc chuyển khoản theo thông tin trên biên bản. BOXANH không thu tiền trước và không yêu cầu đặt cọc hộp.</p></div></details>
+      <details class="acc" data-cat="hop"><summary>Hộp BOXANH có thu phí không?<span class="acc-ic">{{icon:plus}}</span></summary><div class="acc-body"><p>Phí sử dụng hộp (10.000 – 15.000 đ/hộp) đã gồm trong báo giá, bao gồm vệ sinh và thu hồi. Hộp thuộc sở hữu của BOXANH.</p></div></details>
+      <details class="acc" data-cat="hop"><summary>Nếu seal có dấu hiệu bất thường thì sao?<span class="acc-ic">{{icon:plus}}</span></summary><div class="acc-body"><p>Hãy không ký nhận và báo ngay cho nhân viên. BOXANH chụp ảnh hiện trạng, đối chiếu dữ liệu quét QR, ảnh seal lúc nhận và phản hồi bạn trong 24 giờ.</p></div></details>
+      <details class="acc" data-cat="hop"><summary>Tôi có thể để đồ ngoài hộp không?<span class="acc-ic">{{icon:plus}}</span></summary><div class="acc-body"><p>Được, với đồ cồng kềnh hoặc dễ vỡ. Hãy báo nhân viên để ghi nhận và chụp ảnh tình trạng đồ ngoài hộp lúc nhận, giúp đối chiếu khi giao.</p></div></details>
+      <details class="acc" data-cat="thu-hoi"><summary>Hộp được thu hồi như thế nào?<span class="acc-ic">{{icon:plus}}</span></summary><div class="acc-body"><p>Vào mục <a class="link" href="hop-cua-toi.html">Hộp của tôi</a>, chọn hộp và khung giờ thu hồi. Nhân viên đến đúng giờ, quét QR từng hộp và xác nhận số lượng. Miễn phí trong 7 ngày kể từ ngày nhận hộp.</p></div></details>
+      <details class="acc" data-cat="thu-hoi"><summary>Tôi lỡ làm hỏng hoặc mất hộp thì sao?<span class="acc-ic">{{icon:plus}}</span></summary><div class="acc-body"><p>Hao mòn thông thường không tính phí. Hộp vỡ nặng hoặc thất lạc được tính 150.000 đ/hộp sau khi đối chiếu dữ liệu quét QR.</p></div></details>
+      <details class="acc" data-cat="tk"><summary>Tôi đăng nhập bằng gì?<span class="acc-ic">{{icon:plus}}</span></summary><div class="acc-body"><p>Chỉ cần số điện thoại và mã OTP 6 số – không cần mật khẩu. <a class="link" href="dang-nhap.html">Đăng nhập tại đây</a>.</p></div></details>
+      <details class="acc" data-cat="tk"><summary>BOXANH sử dụng dữ liệu của tôi như thế nào?<span class="acc-ic">{{icon:plus}}</span></summary><div class="acc-body"><p>Chỉ để thực hiện dịch vụ, liên hệ và cải thiện chất lượng. Xem chi tiết tại <a class="link" href="chinh-sach-bao-mat.html">Chính sách bảo mật</a>.</p></div></details>
+      <div class="card empty" id="faq-empty" hidden>{{icon:search}}<p>Không tìm thấy câu hỏi phù hợp. Hãy <a class="link" href="#gui-yeu-cau">gửi yêu cầu hỗ trợ</a> để CSKH trả lời bạn.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section-sm" id="gui-yeu-cau">
+  <div class="container split">
+    <form class="card card-pad" id="support-form" novalidate>
+      <div class="row between wrap"><h2 class="h2">Gửi yêu cầu hỗ trợ</h2><span class="small muted">Mã đơn hàng: <b id="sf-order-label">—</b></span></div>
+      <p class="muted mt-4">Chúng tôi luôn đồng hành cùng bạn sau dịch vụ. Phản hồi trong 24 giờ.</p>
+      <div class="form-grid mt-20">
+        <div class="field"><label class="label" for="sf-issue">Vấn đề <span class="req">*</span></label><select class="select" id="sf-issue" name="issue" required data-msg="Vui lòng chọn vấn đề."><option value="">Chọn vấn đề</option><option>Không tìm thấy đồ</option><option>Seal bất thường</option><option>Đồ bị hư hỏng</option><option>Hộp bị hư hỏng</option><option>Trễ giờ hẹn</option><option>Thắc mắc báo giá</option><option>Khác</option></select></div>
+        <div class="field"><label class="label" for="sf-order">Đơn hàng liên quan</label><select class="select" id="sf-order" name="order"><option value="">Không có / chưa đặt</option></select></div>
+        <div class="field"><label class="label" for="sf-box">Hộp liên quan <span class="opt-l">(không bắt buộc)</span></label><select class="select" id="sf-box" name="box"><option value="">Không chọn</option></select></div>
+        <div class="field" id="sf-where-wrap" hidden><span class="label">Vị trí đồ bị thất lạc <span class="req">*</span></span>
+          <div class="row wrap" style="gap:16px;min-height:46px">
+            <label class="radio"><input type="radio" name="where" value="Đồ trong hộp"> Đồ trong hộp</label>
+            <label class="radio"><input type="radio" name="where" value="Đồ ngoài hộp" checked> Đồ ngoài hộp</label>
+            <label class="radio"><input type="radio" name="where" value="Chưa xác định"> Chưa xác định</label>
+          </div>
+        </div>
+        <div class="field full"><label class="label" for="sf-desc">Mô tả chi tiết <span class="req">*</span></label><textarea class="textarea" id="sf-desc" name="desc" maxlength="500" minlength="10" required placeholder="Ví dụ: Túi tote màu be, bên trong có sổ tay và tai nghe màu trắng." data-msg="Vui lòng mô tả vấn đề (ít nhất 10 ký tự)."></textarea><span class="counter" data-counter-for="sf-desc">0/500</span></div>
+        <div class="field"><span class="label">Lần cuối nhìn thấy</span><div class="input-row"><input class="input" type="date" name="seenDate" aria-label="Ngày lần cuối nhìn thấy"><input class="input" type="time" name="seenTime" aria-label="Giờ lần cuối nhìn thấy"></div></div>
+        <div class="field"><span class="label">Thời điểm phát hiện</span><div class="input-row"><input class="input" type="date" name="foundDate" aria-label="Ngày phát hiện"><input class="input" type="time" name="foundTime" aria-label="Giờ phát hiện"></div></div>
+        <div class="field full">
+          <div class="row between"><span class="label">Thêm ảnh liên quan <span class="opt-l">(không bắt buộc)</span></span><span class="small muted" data-upload-count>0/5 ảnh</span></div>
+          <div class="previews" data-previews><div data-upload-anchor></div></div>
+          <div data-upload data-max="5" id="sf-photos"><label class="drop">{{icon:image-plus}}<span class="grow"><b>Thêm ảnh</b>Ảnh giúp CSKH đối chiếu nhanh hơn · tối đa 5 ảnh</span><input class="sr-only" type="file" accept="image/*" multiple></label></div>
+        </div>
+        <div class="field when-out"><label class="label" for="sf-name">Họ tên <span class="req">*</span></label><input class="input" id="sf-name" name="name" autocomplete="name" required></div>
+        <div class="field when-out"><label class="label" for="sf-phone">Số điện thoại <span class="req">*</span></label><input class="input" id="sf-phone" name="phone" inputmode="tel" autocomplete="tel" required data-phone></div>
+      </div>
+      <button class="btn btn-primary btn-lg btn-block mt-20" type="submit">{{icon:send}} Gửi CSKH</button>
+    </form>
+
+    <aside class="stack" style="--gap:16px">
+      <section class="card card-pad">
+        <h2 class="h3">Yêu cầu gần đây</h2>
+        <div class="stack mt-12" style="--gap:10px" id="ticket-list"></div>
+      </section>
+      <section class="card card-pad tint-green">
+        <h2 class="h3">Kênh liên hệ khác</h2>
+        <dl class="kv-rows mt-8">
+          <div><dt>{{icon:phone}} Hotline</dt><dd>1900 2228</dd></div>
+          <div><dt>{{icon:mail}} Email</dt><dd>hotro@boxanh.vn</dd></div>
+          <div><dt>{{icon:clock}} Giờ làm việc</dt><dd>8:00 – 20:00 hằng ngày</dd></div>
+          <div><dt>{{icon:map-pin}} Văn phòng</dt><dd>Quận Cầu Giấy, Hà Nội</dd></div>
+        </dl>
+      </section>
+      <img src="assets/img/cskh-mascot.webp" alt="Nhân viên CSKH đeo tai nghe" style="border-radius:20px;max-height:300px;width:100%;object-fit:cover;object-position:top">
+    </aside>
+  </div>
+</section>

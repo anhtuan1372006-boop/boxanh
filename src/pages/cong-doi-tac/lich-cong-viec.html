@@ -1,0 +1,14 @@
+---
+{"title": "Lịch công việc", "heading": "Lịch công việc", "layout": "partner", "active": "lich", "scripts": ["partner"]}
+---
+<div class="page-title">
+  <div><h1 class="h2 sw">Lịch công việc</h1><p>Lịch theo tuần của đội. Bấm vào một việc để xem chi tiết.</p></div>
+  <div class="row">
+    <button class="icon-btn" type="button" data-week="-1" aria-label="Tuần trước">{{icon:chevron-left}}</button>
+    <b class="num" id="week-label">11/01 – 17/01/2027</b>
+    <button class="icon-btn" type="button" data-week="1" aria-label="Tuần sau">{{icon:chevron-right}}</button>
+    <div class="seg" role="group" aria-label="Chế độ xem"><a href="index.html">Ngày</a><button type="button" class="is-active" aria-pressed="true">Tuần</button></div>
+  </div>
+</div>
+<div class="legend"><span><i style="background:var(--g500)"></i>Đã nhận</span><span><i style="background:var(--y500)"></i>Chờ xác nhận</span><span><i style="background:var(--p600)"></i>Đang thực hiện</span><span><i style="background:#c7d4cd"></i>Đã hoàn tất</span></div>
+<div class="table-wrap"><div class="week" id="week-grid"></div></div>

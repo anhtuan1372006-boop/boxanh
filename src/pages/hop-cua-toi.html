@@ -1,0 +1,45 @@
+---
+{"title": "Hộp của tôi", "layout": "account", "auth": true, "side": "hop", "tab": "hop", "scripts": ["account"]}
+---
+<section class="acc-hero" style="min-height:170px">
+  <div><h1 class="h1" style="font-size:clamp(28px,3.6vw,44px)">Hộp của tôi</h1><p>Quản lý các hộp bạn đang sử dụng và đặt lịch thu hồi.</p></div>
+  <div class="acc-hero-img"><img src="assets/img/hero-my-box.webp" alt="Nhân viên BOXANH đặt hộp lên bàn"></div>
+</section>
+
+<div id="pickup-banner"></div>
+
+<a class="card card-sm row between" href="don-hang-chi-tiet.html?ma=BX2027-0015" style="padding:16px 20px">
+  <span class="row"><span class="kpi-ic" style="width:46px;height:46px">{{icon:clipboard-list}}</span><span><b class="h4">Đơn hàng BX2027-0015</b><br><span class="small muted" id="box-order-sub">10 hộp · Đang sử dụng</span></span></span>
+  {{icon:chevron-right}}
+</a>
+
+<div class="split">
+  <section class="card card-pad" aria-labelledby="box-title">
+    <div class="card-hd">
+      <h2 class="card-title" id="box-title"><span>Danh sách hộp (<span id="box-total">10</span>)</span></h2>
+      <label class="check"><input class="cbx" type="checkbox" id="box-all" checked><span><b>Đã chọn <span id="box-selected">10</span> hộp</b></span></label>
+    </div>
+    <div id="box-list"></div>
+    <button class="box-row w-full" type="button" id="box-more" aria-expanded="false" style="margin-top:10px;cursor:pointer;text-align:left"></button>
+  </section>
+
+  <form class="card card-pad" id="dat-lich" novalidate aria-labelledby="pick-title">
+    <div class="card-hd"><h2 class="card-title" id="pick-title">{{icon:calendar-check}} Đặt lịch thu hồi hộp</h2><span class="tag-demo">{{icon:info}} Lịch hẹn cần BOXANH xác nhận</span></div>
+    <div class="stack" style="--gap:16px">
+      <div class="card card-sm calendar" id="cal"></div>
+      <div>
+        <p class="label">Chọn khung giờ</p>
+        <div class="grid g-2 gap-sm mt-8" id="slots" role="radiogroup" aria-label="Khung giờ thu hồi">
+          <label class="slot"><input type="radio" name="slot" value="08:00 – 10:00" checked> 08:00 – 10:00</label>
+          <label class="slot"><input type="radio" name="slot" value="10:00 – 12:00"> 10:00 – 12:00</label>
+          <label class="slot"><input type="radio" name="slot" value="14:00 – 16:00"> 14:00 – 16:00</label>
+          <label class="slot"><input type="radio" name="slot" value="16:00 – 18:00"> 16:00 – 18:00</label>
+        </div>
+        <div class="field mt-16"><label class="label" for="pk-addr">Địa điểm thu hồi</label><div class="with-ic ic-green">{{icon:map-pin}}<select class="select" id="pk-addr" name="addr"></select></div><a class="hint link" href="ho-so.html#dia-chi">+ Thêm địa chỉ mới</a></div>
+        <div class="field mt-12"><label class="label" for="pk-note">Ghi chú <span class="opt-l">(không bắt buộc)</span></label><input class="input" id="pk-note" name="note" maxlength="120" placeholder="Ví dụ: Gọi trước 30 phút…"></div>
+      </div>
+    </div>
+    <p class="hint mt-12" id="pick-hint"></p>
+    <button class="btn btn-primary btn-lg btn-block mt-16" type="submit">{{icon:calendar-check}} <span id="pick-submit">Gửi lịch thu hồi</span></button>
+  </form>
+</div>

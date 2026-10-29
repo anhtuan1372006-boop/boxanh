@@ -1,0 +1,12 @@
+---
+{"title": "Thông báo", "layout": "account", "auth": true, "side": "thong-bao", "tab": "tai-khoan", "scripts": ["account"]}
+---
+<div class="page-title">
+  <div><h1 class="h2 sw">Thông báo</h1><p>Cập nhật về đơn hàng, báo giá, hộp và lịch hẹn của bạn.</p></div>
+  <button class="btn btn-light" type="button" id="mark-all">{{icon:check}} Đánh dấu tất cả đã đọc</button>
+</div>
+<div class="seg" data-seg id="notif-filter" role="group" aria-label="Lọc thông báo">
+  <button type="button" class="is-active" aria-pressed="true" data-value="all">Tất cả</button>
+  <button type="button" aria-pressed="false" data-value="unread">Chưa đọc</button>
+</div>
+<div class="stack" style="--gap:12px" id="notif-list"></div>

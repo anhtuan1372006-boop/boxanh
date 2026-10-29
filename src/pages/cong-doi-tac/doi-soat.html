@@ -1,0 +1,20 @@
+---
+{"title": "Đối soát", "heading": "Đối soát", "layout": "partner", "active": "doi-soat", "scripts": ["partner"]}
+---
+<div class="page-title">
+  <div><h1 class="h2 sw">Đối soát</h1><p>Đối chiếu đơn đã hoàn thành và số tiền thực nhận theo kỳ.</p></div>
+  <div class="row wrap">
+    <label class="sr-only" for="period">Kỳ đối soát</label>
+    <select class="select" id="period" style="width:auto"><option value="2027-01">Kỳ 01 – 15/01/2027</option><option value="2026-12">Kỳ 16 – 31/12/2026</option></select>
+    <button class="btn btn-light" type="button" id="export-csv">{{icon:download}} Tải CSV</button>
+  </div>
+</div>
+<div class="grid g-4" id="rec-kpis"></div>
+<section class="card card-pad">
+  <div class="card-hd"><h2 class="card-title">{{icon:receipt}} Chi tiết đơn trong kỳ</h2><span class="badge" id="rec-state"></span></div>
+  <div class="table-wrap"><table class="table"><thead><tr><th>Mã đơn</th><th>Ngày</th><th>Dịch vụ</th><th class="num">Giá thống nhất</th><th class="num">Phát sinh đã duyệt</th><th class="num">Thực nhận</th></tr></thead><tbody id="rec-rows"></tbody></table></div>
+  <div class="row between wrap mt-16">
+    <p class="hint">{{icon:info ic-sm}} Thực nhận = giá thống nhất + phát sinh đã duyệt. BOXANH thanh toán trong 3 ngày làm việc sau khi xác nhận.</p>
+    <button class="btn btn-primary" type="button" id="rec-confirm">{{icon:check-circle}} Xác nhận đối soát</button>
+  </div>
+</section>

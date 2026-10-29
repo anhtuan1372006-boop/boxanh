@@ -1,0 +1,50 @@
+---
+{"title": "Thông tin cá nhân", "layout": "account", "auth": true, "side": "ho-so", "tab": "tai-khoan", "scripts": ["account"]}
+---
+<div class="page-title"><div><h1 class="h2 sw">Tài khoản</h1><p>Quản lý thông tin cá nhân, địa chỉ và cài đặt thông báo.</p></div></div>
+
+<form class="card card-pad" id="profile-form" novalidate>
+  <div class="card-hd"><h2 class="card-title">{{icon:user}} Thông tin cá nhân</h2></div>
+  <div class="row mb-16"><img class="avatar avatar-xl" src="assets/img/avatar-tuan-anh.webp" alt=""><div><b data-user-name>Khách hàng</b><p class="small muted">Thành viên BOXANH · Dữ liệu lưu trên trình duyệt này</p></div></div>
+  <div class="form-grid">
+    <div class="field"><label class="label" for="p-name">Họ và tên <span class="req">*</span></label><input class="input" id="p-name" name="name" autocomplete="name" required minlength="2"></div>
+    <div class="field"><label class="label" for="p-phone">Số điện thoại</label><div class="row"><input class="input" id="p-phone" name="phone" readonly><button class="btn btn-light" type="button" id="change-phone">Đổi số</button></div></div>
+    <div class="field"><label class="label" for="p-email">Email <span class="opt-l">(không bắt buộc)</span></label><input class="input" id="p-email" name="email" type="email" autocomplete="email" placeholder="ban@email.com"></div>
+    <div class="field"><label class="label" for="p-dob">Ngày sinh <span class="opt-l">(không bắt buộc)</span></label><input class="input" id="p-dob" name="dob" type="date"></div>
+  </div>
+  <button class="btn btn-primary mt-20" type="submit">{{icon:check}} Lưu thay đổi</button>
+</form>
+
+<section class="card card-pad" id="dia-chi">
+  <div class="card-hd"><h2 class="card-title">{{icon:map-pin}} Địa chỉ đã lưu</h2><button class="btn btn-soft btn-sm" type="button" id="add-addr">{{icon:plus}} Thêm địa chỉ</button></div>
+  <div class="grid g-2" id="addr-list"></div>
+</section>
+
+<section class="card card-pad">
+  <h2 class="card-title">{{icon:bell}} Cài đặt thông báo</h2>
+  <div class="stack mt-16" style="--gap:12px" id="prefs">
+    <label class="row between"><span><b>Tin nhắn SMS</b><br><span class="small muted">Lịch hẹn, mã OTP, thay đổi quan trọng</span></span><input class="switch" type="checkbox" name="sms" checked></label>
+    <label class="row between"><span><b>Email</b><br><span class="small muted">Báo giá, biên bản, hóa đơn</span></span><input class="switch" type="checkbox" name="email" checked></label>
+    <label class="row between"><span><b>Ưu đãi &amp; mẹo chuyển trọ</b><br><span class="small muted">Tối đa 2 tin mỗi tháng</span></span><input class="switch" type="checkbox" name="promo"></label>
+  </div>
+</section>
+
+<section class="card card-pad tint-red">
+  <h2 class="card-title">{{icon:settings}} Dữ liệu &amp; phiên đăng nhập</h2>
+  <p class="card-sub">Bản demo lưu đơn hàng, lịch hẹn và yêu cầu ngay trên trình duyệt của bạn.</p>
+  <div class="row wrap mt-16"><button class="btn btn-light" type="button" data-logout>{{icon:logout}} Đăng xuất</button><button class="btn btn-danger" type="button" data-reset-demo>{{icon:refresh}} Khôi phục dữ liệu demo</button></div>
+</section>
+
+<div class="modal" id="addr-modal" role="dialog" aria-modal="true" aria-labelledby="addr-title" aria-hidden="true">
+  <form class="modal-box" id="addr-form" novalidate>
+    <button class="icon-btn modal-close" type="button" aria-label="Đóng">{{icon:x}}</button>
+    <div class="modal-ic green">{{icon:map-pin}}</div>
+    <h2 id="addr-title">Thêm địa chỉ</h2>
+    <input type="hidden" name="id">
+    <div class="field mt-16"><label class="label" for="a-label">Tên gợi nhớ <span class="req">*</span></label><input class="input" id="a-label" name="label" placeholder="Ví dụ: Nhà mới, Công ty" required maxlength="30"></div>
+    <div class="field mt-12"><label class="label" for="a-line">Số nhà, đường, phường <span class="req">*</span></label><input class="input" id="a-line" name="line" placeholder="Ví dụ: Ngõ 68 Cầu Giấy, Phường Quan Hoa" required></div>
+    <div class="field mt-12"><label class="label" for="a-city">Quận / Huyện, Tỉnh / Thành <span class="req">*</span></label><input class="input" id="a-city" name="city" placeholder="Ví dụ: Quận Cầu Giấy, Hà Nội" required></div>
+    <label class="check mt-12"><input type="checkbox" name="isDefault"><span>Đặt làm địa chỉ mặc định</span></label>
+    <div class="modal-actions"><button class="btn btn-light" type="button" data-modal-close>Hủy</button><button class="btn btn-primary" type="submit">Lưu địa chỉ</button></div>
+  </form>
+</div>

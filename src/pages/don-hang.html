@@ -1,0 +1,16 @@
+---
+{"title": "Đơn hàng của tôi", "layout": "account", "auth": true, "side": "don-hang", "tab": "don-hang", "scripts": ["account"]}
+---
+<div class="page-title">
+  <div><h1 class="h2 sw">Đơn hàng của tôi</h1><p>Theo dõi tiến độ, xác nhận báo giá và xem lại các đơn đã hoàn tất.</p></div>
+  <a class="btn btn-primary" href="uoc-tinh-chi-phi.html">{{icon:plus}} Tạo yêu cầu mới</a>
+</div>
+<div class="row between wrap">
+  <div class="seg" data-seg id="order-filter" role="group" aria-label="Lọc đơn hàng">
+    <button type="button" class="is-active" aria-pressed="true" data-value="all">Tất cả</button>
+    <button type="button" aria-pressed="false" data-value="active">Đang thực hiện</button>
+    <button type="button" aria-pressed="false" data-value="done">Hoàn tất</button>
+  </div>
+  <span class="small muted" id="order-count"></span>
+</div>
+<div class="stack" style="--gap:16px" id="order-list"></div>

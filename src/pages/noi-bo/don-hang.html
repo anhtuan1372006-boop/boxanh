@@ -1,0 +1,20 @@
+---
+{"title": "Đơn hàng – nội bộ", "layout": "admin", "active": "don-hang", "scripts": ["admin"]}
+---
+<div class="page-title">
+  <div><h1 class="h2 sw">Đơn hàng</h1><p>Tất cả đơn từ website và CSKH. Yêu cầu mới gửi từ trang khách hàng hiển thị ở đầu danh sách.</p></div>
+  <button class="btn btn-light" type="button" id="orders-csv">{{icon:download}} Xuất CSV</button>
+</div>
+<div class="card card-pad">
+  <div class="toolbar">
+    <div class="tb-search">{{icon:search}}<label class="sr-only" for="o-q">Tìm đơn</label><input id="o-q" type="search" placeholder="Tìm theo mã đơn, khách hàng, khu vực…"></div>
+    <label class="sr-only" for="o-svc">Dịch vụ</label>
+    <select class="select" id="o-svc"><option value="">Tất cả dịch vụ</option><option value="chuyen-tro">Chuyển trọ</option><option value="don-phong">Dọn phòng</option><option value="ban-giao">Bàn giao phòng</option></select>
+    <label class="sr-only" for="o-st">Trạng thái</label>
+    <select class="select" id="o-st"><option value="">Tất cả trạng thái</option><option>Chờ báo giá</option><option>Chờ điều phối</option><option>Đã phân công</option><option>Đang thực hiện</option><option>Hoàn tất</option><option>Có sự cố</option></select>
+  </div>
+  <div class="table-wrap mt-16">
+    <table class="table table-clickable"><thead><tr><th>Mã đơn</th><th>Dịch vụ</th><th>Khách hàng</th><th>Thời gian</th><th>Khu vực</th><th class="num">Giá trị</th><th>Trạng thái</th></tr></thead><tbody id="o-rows"></tbody></table>
+  </div>
+  <p class="small muted mt-12" id="o-count"></p>
+</div>

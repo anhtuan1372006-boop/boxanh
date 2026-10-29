@@ -1,0 +1,34 @@
+---
+{"title": "Báo cáo vận hành", "layout": "admin", "active": "bao-cao", "scripts": ["admin"]}
+---
+<div class="page-title">
+  <div><h1 class="h2 sw">Báo cáo</h1><p>Tháng 01/2027 (tính đến 12/01) · Dữ liệu minh họa</p></div>
+  <div class="row wrap">
+    <div class="seg" data-seg id="rp-range" role="group" aria-label="Khoảng thời gian"><button type="button" aria-pressed="false" data-value="7">7 ngày</button><button type="button" class="is-active" aria-pressed="true" data-value="30">30 ngày</button><button type="button" aria-pressed="false" data-value="90">Quý</button></div>
+    <button class="btn btn-light" type="button" id="rp-csv">{{icon:download}} Xuất CSV</button>
+  </div>
+</div>
+<div class="grid g-4" id="rp-kpis"></div>
+<div class="split">
+  <section class="card card-pad">
+    <div class="card-hd"><h2 class="card-title">{{icon:trending-up}} Doanh thu theo tuần</h2><span class="small muted">triệu đồng</span></div>
+    <div class="mini-bars" id="rp-revenue" style="height:200px" aria-label="Biểu đồ doanh thu theo tuần"></div>
+  </section>
+  <section class="card card-pad">
+    <div class="card-hd"><h2 class="card-title">{{icon:layers}} Cơ cấu dịch vụ</h2></div>
+    <div class="row" style="gap:20px;flex-wrap:wrap">
+      <svg viewBox="0 0 42 42" width="150" height="150" role="img" aria-label="Biểu đồ tròn cơ cấu dịch vụ" id="rp-donut"></svg>
+      <div class="stack" style="--gap:10px" id="rp-legend"></div>
+    </div>
+  </section>
+</div>
+<div class="split">
+  <section class="card card-pad">
+    <div class="card-hd"><h2 class="card-title">{{icon:users}} Chất lượng đối tác</h2><a class="link small" href="doi-tac.html">Đánh giá đối tác {{icon:arrow-right}}</a></div>
+    <div class="table-wrap"><table class="table"><thead><tr><th>Đối tác</th><th>Nhóm</th><th class="num">Đơn</th><th class="num">Đúng giờ</th><th class="num">Chênh giá</th><th>Điểm</th></tr></thead><tbody id="rp-partners"></tbody></table></div>
+  </section>
+  <section class="card card-pad">
+    <div class="card-hd"><h2 class="card-title">{{icon:recycle}} Vòng quay hộp</h2><a class="link small" href="kho-hop.html">Kho hộp {{icon:arrow-right}}</a></div>
+    <dl class="kv-rows" id="rp-boxes"></dl>
+  </section>
+</div>

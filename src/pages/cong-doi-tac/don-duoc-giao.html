@@ -1,0 +1,19 @@
+---
+{"title": "Đơn được giao", "heading": "Đơn được giao", "layout": "partner", "active": "don", "scripts": ["partner"]}
+---
+<div class="page-title">
+  <div><h1 class="h2 sw">Đơn được giao</h1><p>Các đơn BOXANH đã phân công cho đội của bạn.</p></div>
+  <div class="seg" data-seg id="jobs-filter" role="group" aria-label="Lọc đơn">
+    <button type="button" class="is-active" aria-pressed="true" data-value="all">Tất cả</button>
+    <button type="button" aria-pressed="false" data-value="wait">Chờ xác nhận</button>
+    <button type="button" aria-pressed="false" data-value="doing">Đang làm</button>
+    <button type="button" aria-pressed="false" data-value="done">Đã hoàn tất</button>
+  </div>
+</div>
+<div class="table-wrap">
+  <table class="table">
+    <thead><tr><th>Mã đơn</th><th>Dịch vụ</th><th>Thời gian</th><th>Địa chỉ</th><th>Nguồn lực</th><th>Trạng thái</th><th class="right">Thao tác</th></tr></thead>
+    <tbody id="assigned"></tbody>
+  </table>
+</div>
+<div class="note gray">{{icon:info}}<div>Đơn ở trạng thái <b>Chờ xác nhận</b> cần được nhận trong 2 giờ. Sau thời gian này BOXANH có thể chuyển cho đội khác.</div></div>

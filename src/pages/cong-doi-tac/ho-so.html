@@ -1,0 +1,51 @@
+---
+{"title": "Hồ sơ đối tác", "heading": "Hồ sơ đối tác", "layout": "partner", "active": "ho-so", "scripts": ["partner"]}
+---
+<section class="card card-pad row wrap" style="gap:20px">
+  <img class="avatar" src="{{root}}assets/img/avatar-minh.webp" alt="" style="width:96px;height:96px">
+  <div class="grow">
+    <div class="row wrap"><h1 class="h2">Nguyễn Văn Minh</h1><span class="badge b-green">{{icon:check}} Đối tác đã được duyệt</span></div>
+    <p class="muted">Đội BOXANH Express · Mã đối tác DT-0827 · Duyệt ngày 20/11/2026</p>
+    <div class="row wrap mt-8"><span class="stars">{{icon:star}}{{icon:star}}{{icon:star}}{{icon:star}}{{icon:star}}</span><b>4,6 / 5</b><span class="small muted">· 38 đơn đã hoàn thành</span></div>
+  </div>
+  <button class="btn btn-light" type="button" id="edit-profile">{{icon:pencil}} Cập nhật hồ sơ</button>
+</section>
+
+<div class="split">
+  <div class="stack" style="--gap:20px">
+    <section class="card card-pad">
+      <h2 class="card-title">{{icon:id-card}} Thông tin năng lực</h2>
+      <dl class="kv-rows mt-12">
+        <div><dt>{{icon:users}} Nhóm dịch vụ</dt><dd>Vận chuyển &amp; bốc xếp</dd></div>
+        <div><dt>{{icon:map-pin}} Khu vực phục vụ</dt><dd>Nội thành Hà Nội</dd></div>
+        <div><dt>{{icon:user-check}} Nhân sự</dt><dd>6 người · 3 đội</dd></div>
+        <div><dt>{{icon:truck}} Phương tiện</dt><dd>2 xe tải 1.5 tấn, 1 xe ba gác</dd></div>
+        <div><dt>{{icon:clock}} Thời gian hoạt động</dt><dd>Thứ 2 – Chủ nhật, 7:00 – 20:00</dd></div>
+        <div><dt>{{icon:phone}} Liên hệ</dt><dd>0912 •••• 27</dd></div>
+      </dl>
+    </section>
+    <section class="card card-pad">
+      <h2 class="card-title">{{icon:users}} Thành viên đội</h2>
+      <div class="table-wrap mt-12"><table class="table"><thead><tr><th>Đội</th><th>Thành viên</th><th>Vai trò</th><th>Đơn tháng này</th></tr></thead><tbody>
+        <tr><td><b>Đội Minh – Hằng</b></td><td>Nguyễn Văn Minh, Lê Thu Hằng</td><td>Vận chuyển, bốc xếp</td><td class="num">14</td></tr>
+        <tr><td><b>Đội Kiên – Phương</b></td><td>Trần Trung Kiên, Đỗ Mai Phương</td><td>Dọn phòng</td><td class="num">9</td></tr>
+        <tr><td><b>Đội Long – Mai</b></td><td>Phạm Hải Long, Vũ Thanh Mai</td><td>Bàn giao, FIX</td><td class="num">6</td></tr>
+      </tbody></table></div>
+    </section>
+  </div>
+  <div class="stack" style="--gap:20px">
+    <section class="card card-pad">
+      <h2 class="card-title">{{icon:star}} Đánh giá chất lượng</h2>
+      <p class="card-sub">Trung bình từ phiếu chấm nội bộ và phản hồi khách hàng</p>
+      <div class="mt-12" id="pt-scores"></div>
+    </section>
+    <section class="card card-pad">
+      <h2 class="card-title">{{icon:file-text}} Tài liệu đã nộp</h2>
+      <div class="stack mt-12" style="--gap:10px">
+        <div class="file-chip"><span class="fc-ic">{{icon:file-text}}</span><span class="grow"><b>bang-gia-dich-vu.pdf</b><small>Bảng giá · Đã duyệt 20/11/2026</small></span><span class="badge b-green">Hợp lệ</span></div>
+        <div class="file-chip"><span class="fc-ic">{{icon:file-check}}</span><span class="grow"><b>dieu-kien-dich-vu.pdf</b><small>Điều kiện dịch vụ · Đã duyệt 20/11/2026</small></span><span class="badge b-green">Hợp lệ</span></div>
+        <div class="file-chip"><span class="fc-ic">{{icon:id-card}}</span><span class="grow"><b>giay-to-xe.jpg</b><small>Đăng ký xe 29H-123.45 · Hết hạn 03/2027</small></span><span class="badge b-yellow">Sắp hết hạn</span></div>
+      </div>
+    </section>
+  </div>
+</div>

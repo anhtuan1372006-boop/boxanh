@@ -1,0 +1,41 @@
+---
+{"title": "Tổng quan vận hành", "layout": "admin", "active": "tong-quan", "scripts": ["admin"]}
+---
+<section class="banner">
+  <div class="banner-text">
+    <h1>Tổng quan<br><span class="sw">vận hành</span></h1>
+    <p>Thứ Ba, 12/01/2027 · Ca sáng</p>
+    <div class="banner-tags"><span class="badge b-yellow">{{icon:lock}} Nội bộ</span><span class="badge b-white">{{icon:info}} Dữ liệu minh họa</span></div>
+  </div>
+  <div class="banner-art"><img src="{{root}}assets/img/hero-uoc-tinh.webp" alt="Nhân viên BOXANH chuẩn bị hộp và xe tải"></div>
+</section>
+
+<div class="grid g-4" id="ov-kpis"></div>
+
+<div class="split">
+  <div class="stack" style="--gap:20px">
+    <section class="card card-pad">
+      <div class="card-hd"><h2 class="card-title">{{icon:bar-chart}} Đơn hàng 7 ngày gần nhất</h2><a class="link small" href="bao-cao.html">Xem báo cáo {{icon:arrow-right}}</a></div>
+      <div class="mini-bars" id="ov-bars" aria-label="Biểu đồ số đơn theo ngày"></div>
+    </section>
+    <section class="card card-pad">
+      <div class="card-hd"><h2 class="card-title">{{icon:clipboard-list}} Đơn mới nhất</h2><a class="link small" href="don-hang.html">Tất cả đơn {{icon:arrow-right}}</a></div>
+      <div class="table-wrap"><table class="table"><thead><tr><th>Mã đơn</th><th>Dịch vụ</th><th>Khách hàng</th><th>Thời gian</th><th>Trạng thái</th></tr></thead><tbody id="ov-orders"></tbody></table></div>
+    </section>
+  </div>
+  <div class="stack" style="--gap:20px">
+    <section class="card card-pad">
+      <h2 class="card-title">{{icon:list-checks}} Việc cần xử lý</h2>
+      <div class="stack mt-12" style="--gap:10px" id="ov-todo"></div>
+    </section>
+    <section class="card card-pad">
+      <h2 class="card-title">{{icon:history}} Hoạt động gần đây</h2>
+      <div class="vtl mt-16">
+        <div><time>10:24</time><b>Đã duyệt báo giá</b><p>Đơn BX2027-0013 · Dọn phòng</p></div>
+        <div><time>10:12</time><b>Đã giữ 10 hộp</b><p>Cho đơn BX2027-0015 · Kho Cầu Giấy</p></div>
+        <div class="warn"><time>09:45</time><b>Cập nhật lịch làm việc</b><p>Nhóm Bốc Xanh · Thêm ca chiều 12/01</p></div>
+        <div class="red"><time>08:15</time><b>Sự cố seal bất thường</b><p>BX-000131 · Đơn BX2027-0011</p></div>
+      </div>
+    </section>
+  </div>
+</div>

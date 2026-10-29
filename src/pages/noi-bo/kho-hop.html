@@ -1,0 +1,45 @@
+---
+{"title": "Quản lý hộp & vòng đời", "layout": "admin", "active": "kho-hop", "scripts": ["admin"]}
+---
+<section class="banner" style="min-height:200px">
+  <div class="banner-text">
+    <h1>Quản lý hộp<br><span class="sw">&amp; vòng đời</span></h1>
+    <p>Theo dõi hành trình mỗi chiếc hộp. Đảm bảo sạch sẽ, an toàn, sẵn sàng cho những chuyến trọ tiếp theo.</p>
+    <div class="banner-tags"><span class="badge b-green-solid">{{icon:lock}} Nội bộ</span><span class="badge b-white">{{icon:info}} Dữ liệu minh họa</span></div>
+  </div>
+  <div class="banner-art"><img src="{{root}}assets/img/hero-kho.webp" alt="Kho hộp tái sử dụng BOXANH"></div>
+</section>
+
+<section class="card card-pad">
+  <div class="stack" style="--gap:18px">
+    <div>
+      <h2 class="h4">Vòng đời hộp</h2>
+      <div class="lc-flow mt-12" id="lc-flow"></div>
+      <p class="small muted mt-12 row" style="gap:6px">{{icon:refresh ic-sm}} Chỉ xuất hộp sau khi kiểm tra và vệ sinh đạt yêu cầu.</p>
+    </div>
+    <div>
+      <h2 class="h4">Tình huống đặc biệt</h2>
+      <div class="row wrap mt-12" id="lc-special"></div>
+    </div>
+  </div>
+</section>
+
+<div class="split split-kho">
+  <section class="card card-pad">
+    <div class="card-hd">
+      <h2 class="card-title">Danh sách hộp</h2>
+      <div class="row wrap"><button class="btn btn-primary btn-sm" type="button" id="bx-scan">{{icon:scan-qr}} Quét QR</button><button class="btn btn-light btn-sm" type="button" id="bx-in">{{icon:package-in}} Nhập hộp</button><button class="btn btn-light btn-sm" type="button" id="bx-out">{{icon:package-out}} Xuất hộp</button><button class="btn btn-light btn-sm" type="button" id="bx-pick">{{icon:calendar}} Lịch thu hồi</button></div>
+    </div>
+    <div class="toolbar">
+      <div class="tb-search">{{icon:search}}<label class="sr-only" for="bx-q">Tìm hộp</label><input id="bx-q" type="search" placeholder="Tìm mã hộp, mã đơn…"></div>
+      <label class="sr-only" for="bx-st">Trạng thái</label><select class="select" id="bx-st"><option value="">Tất cả trạng thái</option></select>
+      <label class="sr-only" for="bx-where">Kho</label><select class="select" id="bx-where"><option value="">Tất cả vị trí</option><option>Kho A</option><option>Kho B</option><option>Khu vệ sinh</option><option>Khu bảo trì</option><option value="__out">Đang ở khách</option></select>
+    </div>
+    <div class="table-wrap mt-12">
+      <table class="table table-clickable"><thead><tr><th style="width:40px"><input class="cbx" type="checkbox" id="bx-all" aria-label="Chọn tất cả"></th><th>Mã hộp · Đơn</th><th>Trạng thái</th><th>Vị trí / Lần quét cuối</th></tr></thead><tbody id="bx-rows"></tbody></table>
+    </div>
+    <p class="small muted mt-12" id="bx-count"></p>
+  </section>
+
+  <aside class="card card-pad sticky-side" id="bx-detail" aria-live="polite"></aside>
+</div>
