@@ -1,0 +1,663 @@
+{
+ "name": "chuyen-tro",
+ "W": 1024,
+ "H": 1536,
+ "bake": true,
+ "clean": true,
+ "bg": "#f4fdfa",
+ "items": [
+  {
+   "k": "a",
+   "box": [
+    30,
+    10,
+    188,
+    50
+   ],
+   "href": "index.html",
+   "label": "BOXANH – Trang chủ"
+  },
+  {
+   "k": "dd",
+   "box": [
+    212,
+    13,
+    284,
+    46
+   ],
+   "w": 140,
+   "menu": [
+    [
+     "chuyen-tro.html",
+     "Chuyển trọ"
+    ],
+    [
+     "don-phong.html",
+     "Dọn phòng"
+    ],
+    [
+     "ban-giao-phong.html",
+     "Bàn giao phòng"
+    ],
+    [
+     "uoc-tinh-chi-phi.html",
+     "Ước tính chi phí"
+    ]
+   ]
+  },
+  {
+   "k": "a",
+   "box": [
+    300,
+    12,
+    378,
+    46
+   ],
+   "href": "chuyen-tro.html",
+   "label": "Chuyển trọ"
+  },
+  {
+   "k": "a",
+   "box": [
+    394,
+    12,
+    468,
+    46
+   ],
+   "href": "don-phong.html",
+   "label": "Dọn phòng"
+  },
+  {
+   "k": "a",
+   "box": [
+    484,
+    12,
+    582,
+    46
+   ],
+   "href": "ban-giao-phong.html",
+   "label": "Bàn giao phòng"
+  },
+  {
+   "k": "a",
+   "box": [
+    600,
+    12,
+    661,
+    46
+   ],
+   "href": "uoc-tinh-chi-phi.html",
+   "label": "Bảng giá"
+  },
+  {
+   "k": "a",
+   "box": [
+    678,
+    12,
+    728,
+    46
+   ],
+   "href": "ho-tro.html",
+   "label": "Hỗ trợ"
+  },
+  {
+   "k": "a",
+   "box": [
+    800,
+    14,
+    836,
+    46
+   ],
+   "href": "ho-tro.html#faq",
+   "label": "Tìm kiếm"
+  },
+  {
+   "k": "a",
+   "box": [
+    846,
+    13,
+    966,
+    48
+   ],
+   "href": "uoc-tinh-chi-phi.html",
+   "pill": 1,
+   "label": "Gửi nhu cầu"
+  },
+  {
+   "k": "a",
+   "box": [
+    975,
+    12,
+    1010,
+    48
+   ],
+   "href": "dang-nhap.html",
+   "pill": 1,
+   "label": "Tài khoản"
+  },
+  {
+   "k": "a",
+   "box": [
+    47,
+    306,
+    255,
+    348
+   ],
+   "href": "uoc-tinh-chi-phi.html",
+   "pill": 1,
+   "label": "Ước tính chi phí"
+  },
+  {
+   "k": "a",
+   "box": [
+    267,
+    306,
+    443,
+    348
+   ],
+   "href": "#thong-tin",
+   "pill": 1,
+   "label": "Gửi nhu cầu"
+  },
+  {
+   "k": "anchor",
+   "id": "thong-tin",
+   "y": 612
+  },
+  {
+   "k": "form",
+   "id": "move-form",
+   "label": "Thông tin chuyển trọ",
+   "attrs": {
+    "data-done": "Đã ghi nhận nhu cầu chuyển trọ|BOXANH sẽ liên hệ trong 2 giờ làm việc để xác nhận khả năng thực hiện và gửi báo giá chính thức."
+   }
+  },
+  {
+   "k": "tog",
+   "box": [
+    50,
+    700,
+    68,
+    719
+   ],
+   "hit": [
+    45,
+    697,
+    168,
+    850
+   ],
+   "onAt": [
+    50,
+    700
+   ],
+   "offAt": [
+    190,
+    700
+   ],
+   "on": true,
+   "label": "Hỗ trợ đóng gói",
+   "name": "task"
+  },
+  {
+   "k": "tog",
+   "box": [
+    190,
+    700,
+    208,
+    719
+   ],
+   "hit": [
+    185,
+    697,
+    307,
+    850
+   ],
+   "onAt": [
+    50,
+    700
+   ],
+   "offAt": [
+    190,
+    700
+   ],
+   "label": "Tháo lắp cơ bản",
+   "name": "task"
+  },
+  {
+   "k": "tog",
+   "box": [
+    330,
+    700,
+    348,
+    719
+   ],
+   "hit": [
+    325,
+    697,
+    447,
+    850
+   ],
+   "onAt": [
+    50,
+    700
+   ],
+   "offAt": [
+    190,
+    700
+   ],
+   "label": "Thêm người bốc xếp",
+   "name": "task"
+  },
+  {
+   "k": "tog",
+   "box": [
+    468,
+    700,
+    486,
+    719
+   ],
+   "hit": [
+    463,
+    697,
+    591,
+    850
+   ],
+   "onAt": [
+    50,
+    700
+   ],
+   "offAt": [
+    190,
+    700
+   ],
+   "on": true,
+   "label": "Sử dụng hộp BOXANH",
+   "name": "task"
+  },
+  {
+   "k": "in",
+   "r": [
+    663,
+    684,
+    746,
+    699
+   ],
+   "box": [
+    661,
+    682,
+    808,
+    701
+   ],
+   "s": "Nhập địa chỉ nơi đi",
+   "name": "from",
+   "id": "m-from",
+   "form": "move-form",
+   "req": true,
+   "label": "Điểm đón",
+   "m": {
+    "x": 665,
+    "w": 79.0,
+    "base": 694.0,
+    "xh": 5.0,
+    "c": "#798294"
+   }
+  },
+  {
+   "k": "in",
+   "r": [
+    853,
+    684,
+    951,
+    700
+   ],
+   "box": [
+    851,
+    682,
+    1000,
+    701
+   ],
+   "s": "Nhập địa chỉ nơi đến",
+   "name": "to",
+   "id": "m-to",
+   "form": "move-form",
+   "req": true,
+   "label": "Điểm đến",
+   "m": {
+    "x": 855,
+    "w": 93.0,
+    "base": 696.0,
+    "xh": 6.0,
+    "c": "#818799"
+   }
+  },
+  {
+   "k": "sel",
+   "r": [
+    673,
+    732,
+    722,
+    747
+   ],
+   "box": [
+    669,
+    729,
+    795,
+    750
+   ],
+   "s": "Chọn tầng",
+   "name": "floor",
+   "id": "m-floor",
+   "form": "move-form",
+   "label": "Tầng",
+   "options": [
+    "Tầng trệt",
+    "Tầng 2",
+    "Tầng 3",
+    "Tầng 4",
+    "Tầng 5",
+    "Tầng 6 trở lên"
+   ],
+   "m": {
+    "x": 675,
+    "w": 45.0,
+    "base": 743.0,
+    "xh": 5.0,
+    "c": "#878c9f"
+   }
+  },
+  {
+   "k": "sel",
+   "r": [
+    862,
+    734,
+    880,
+    747
+   ],
+   "box": [
+    857,
+    729,
+    981,
+    750
+   ],
+   "s": "Có",
+   "name": "lift",
+   "id": "m-lift",
+   "form": "move-form",
+   "label": "Thang máy",
+   "options": [
+    "Có",
+    "Không có"
+   ],
+   "m": {
+    "x": 864,
+    "w": 13.0,
+    "base": 743.0,
+    "xh": 7.0,
+    "c": "#474e65"
+   }
+  },
+  {
+   "k": "in",
+   "r": [
+    676,
+    786,
+    732,
+    800
+   ],
+   "box": [
+    669,
+    780,
+    795,
+    803
+   ],
+   "s": "12/01/2027",
+   "type": "date",
+   "name": "date",
+   "id": "m-date",
+   "form": "move-form",
+   "label": "Ngày chuyển",
+   "m": {
+    "x": 678,
+    "w": 52.0,
+    "base": 797.0,
+    "xh": 8.0,
+    "c": "#2d3b51"
+   }
+  },
+  {
+   "k": "sel",
+   "r": [
+    862,
+    785,
+    929,
+    800
+   ],
+   "box": [
+    857,
+    780,
+    981,
+    803
+   ],
+   "s": "Chọn số lượng",
+   "name": "size",
+   "id": "m-size",
+   "form": "move-form",
+   "label": "Số lượng đồ (ước tính)",
+   "options": [
+    "Ít đồ (dưới 10 hộp)",
+    "Vừa (10 – 20 hộp)",
+    "Nhiều (trên 20 hộp)"
+   ],
+   "m": {
+    "x": 865,
+    "w": 61.0,
+    "base": 796.0,
+    "xh": 5.0,
+    "c": "#898ea0"
+   }
+  },
+  {
+   "k": "file",
+   "box": [
+    628,
+    817,
+    990,
+    872
+   ],
+   "label": "Thêm ảnh đồ đạc (tùy chọn)",
+   "done": "Đã thêm {n} ảnh đồ đạc. BOXANH sẽ dùng ảnh để ước tính chính xác hơn."
+  },
+  {
+   "k": "a",
+   "box": [
+    24,
+    1438,
+    158,
+    1466
+   ],
+   "href": "index.html",
+   "label": "BOXANH – Trang chủ"
+  },
+  {
+   "k": "a",
+   "box": [
+    318,
+    1454,
+    368,
+    1471
+   ],
+   "href": "chuyen-tro.html",
+   "label": "Chuyển trọ"
+  },
+  {
+   "k": "a",
+   "box": [
+    318,
+    1470,
+    368,
+    1486
+   ],
+   "href": "don-phong.html",
+   "label": "Dọn phòng"
+  },
+  {
+   "k": "a",
+   "box": [
+    318,
+    1485,
+    387,
+    1501
+   ],
+   "href": "ban-giao-phong.html",
+   "label": "Bàn giao phòng"
+  },
+  {
+   "k": "a",
+   "box": [
+    454,
+    1453,
+    553,
+    1470
+   ],
+   "href": "ho-tro.html",
+   "label": "Hướng dẫn đặt dịch vụ"
+  },
+  {
+   "k": "a",
+   "box": [
+    454,
+    1470,
+    541,
+    1486
+   ],
+   "href": "ho-tro.html#faq",
+   "label": "Câu hỏi thường gặp"
+  },
+  {
+   "k": "a",
+   "box": [
+    454,
+    1485,
+    489,
+    1500
+   ],
+   "href": "ho-tro.html#gui-yeu-cau",
+   "label": "Liên hệ"
+  },
+  {
+   "k": "a",
+   "box": [
+    602,
+    1455,
+    646,
+    1470
+   ],
+   "href": "gioi-thieu.html",
+   "label": "Giới thiệu"
+  },
+  {
+   "k": "a",
+   "box": [
+    602,
+    1469,
+    641,
+    1484
+   ],
+   "href": "gioi-thieu.html",
+   "label": "Cam kết"
+  },
+  {
+   "k": "a",
+   "box": [
+    602,
+    1484,
+    656,
+    1501
+   ],
+   "act": "info:BOXANH sẽ sớm đăng tin tuyển dụng. Theo dõi fanpage để cập nhật nhé!",
+   "label": "Tuyển dụng"
+  },
+  {
+   "k": "a",
+   "box": [
+    737,
+    1458,
+    763,
+    1484
+   ],
+   "soon": "Fanpage Facebook",
+   "pill": 1,
+   "label": "Facebook"
+  },
+  {
+   "k": "a",
+   "box": [
+    767,
+    1458,
+    793,
+    1484
+   ],
+   "soon": "Kênh TikTok",
+   "pill": 1,
+   "label": "TikTok"
+  },
+  {
+   "k": "a",
+   "box": [
+    797,
+    1458,
+    823,
+    1484
+   ],
+   "soon": "Kênh YouTube",
+   "pill": 1,
+   "label": "YouTube"
+  },
+  {
+   "k": "a",
+   "box": [
+    827,
+    1458,
+    853,
+    1484
+   ],
+   "soon": "Trang Instagram",
+   "pill": 1,
+   "label": "Instagram"
+  },
+  {
+   "k": "a",
+   "box": [
+    873,
+    1448,
+    1001,
+    1483
+   ],
+   "href": "uoc-tinh-chi-phi.html",
+   "pill": 1,
+   "label": "Gửi nhu cầu"
+  },
+  {
+   "k": "a",
+   "box": [
+    825,
+    1510,
+    906,
+    1527
+   ],
+   "href": "dieu-khoan.html",
+   "label": "Điều khoản sử dụng"
+  },
+  {
+   "k": "a",
+   "box": [
+    917,
+    1510,
+    998,
+    1527
+   ],
+   "href": "chinh-sach-bao-mat.html",
+   "label": "Chính sách bảo mật"
+  }
+ ]
+}

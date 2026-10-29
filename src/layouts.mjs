@@ -1,5 +1,6 @@
 // Page shells. Every page body is wrapped by one of these layouts at build time.
 // Placeholders {{root}} and {{icon:name}} are resolved by build.mjs afterwards.
+import { renderCanvas, canvasMeta } from './canvas.mjs';
 
 const esc = (s = '') => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 
@@ -29,7 +30,10 @@ function head(m) {
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&amp;family=Patrick+Hand&amp;display=swap">
-<link rel="stylesheet" href="{{root}}assets/css/style.css">
+<link rel="stylesheet" href="{{root}}assets/css/style.css">${m.layout === 'canvas' ? `
+<link rel="stylesheet" href="{{root}}assets/css/canvas.css">
+<link rel="preload" as="image" href="{{root}}assets/canvas/${m.canvas[0]}.webp" media="(min-width: 900px)">${m.canvas[1] ? `
+<link rel="preload" as="image" href="{{root}}assets/canvas/${m.canvas[1]}.webp" media="(max-width: 899px)">` : ''}` : ''}
 <script>try{if(localStorage.getItem('bx_user'))document.documentElement.setAttribute('data-auth','in')}catch(e){}${m.auth ? `
 if(!document.documentElement.hasAttribute('data-auth'))location.replace('{{root}}dang-nhap.html?next='+encodeURIComponent(location.pathname.split('/').pop()+location.search+location.hash));` : ''}</script>
 </head>`;
@@ -37,7 +41,8 @@ if(!document.documentElement.hasAttribute('data-auth'))location.replace('{{root}
 
 function scripts(m) {
   const page = (m.scripts || []).map(s => `<script src="{{root}}assets/js/pages/${s}.js"></script>`).join('\n');
-  return `<div class="toasts" id="toasts" role="status" aria-live="polite"></div>
+  return `<div class="toasts" id="toasts" role="status" aria-live="polite"></div>${m.layout === 'canvas' ? `
+<script src="{{root}}assets/js/canvas.js"></script>` : ''}
 <script src="{{root}}assets/js/icons.js"></script>
 <script src="{{root}}assets/js/data.js"></script>
 <script src="{{root}}assets/js/app.js"></script>
@@ -293,6 +298,7 @@ ${body}
 }
 
 export function layout(m, body) {
+  if (m.layout === 'canvas' && !m.bg) m.bg = canvasMeta(m.canvas[0]).bg;
   const bodyClass = [`l-${m.layout || 'site'}`, m.bodyClass].filter(Boolean).join(' ');
   const auth = m.auth ? ' data-require-auth' : '';
   let inner;
@@ -300,6 +306,15 @@ export function layout(m, body) {
     case 'bare':
       inner = body;
       break;
+    case 'canvas': {
+      const [d, mob] = m.canvas;
+      inner = `<main id="main" class="cv-wrap${mob ? ' has-m' : ''}${m.narrow ? ' narrow' : ''}">
+${renderCanvas(d, 'cv-d', '{{root}}')}
+${mob ? renderCanvas(mob, 'cv-m', '{{root}}') : ''}
+</main>
+${body}`;
+      break;
+    }
     case 'account':
       inner = `${siteHeader(m)}
 <div class="container acc-shell">
@@ -324,7 +339,7 @@ ${siteFooter()}
 ${bottomNav(m.tab || '')}`;
   }
   return `${head(m)}
-<body class="${bodyClass}"${auth}>
+<body class="${bodyClass}"${auth}${m.bg || m.max ? ` style="${m.bg ? `--cv-bg:${m.bg};` : ''}${m.max ? `--cv-max:${m.max}px` : ''}"` : ''}>
 ${inner}
 ${scripts(m)}
 </body>

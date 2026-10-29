@@ -1,0 +1,400 @@
+{
+ "name": "tai-khoan",
+ "W": 1091,
+ "H": 1024,
+ "bake": true,
+ "clean": false,
+ "bg": "#e1fefd",
+ "items": [
+  {
+   "k": "a",
+   "box": [
+    35,
+    31,
+    210,
+    73
+   ],
+   "href": "index.html",
+   "label": "BOXANH – Trang chủ"
+  },
+  {
+   "k": "dd",
+   "box": [
+    247,
+    40,
+    317,
+    68
+   ],
+   "w": 140,
+   "menu": [
+    [
+     "chuyen-tro.html",
+     "Chuyển trọ"
+    ],
+    [
+     "don-phong.html",
+     "Dọn phòng"
+    ],
+    [
+     "ban-giao-phong.html",
+     "Bàn giao phòng"
+    ],
+    [
+     "uoc-tinh-chi-phi.html",
+     "Ước tính chi phí"
+    ]
+   ]
+  },
+  {
+   "k": "dd",
+   "box": [
+    344,
+    40,
+    410,
+    68
+   ],
+   "w": 150,
+   "label": "Hỗ trợ",
+   "menu": [
+    [
+     "ho-tro.html",
+     "Trung tâm trợ giúp"
+    ],
+    [
+     "ho-tro.html#faq",
+     "Câu hỏi thường gặp"
+    ],
+    [
+     "ho-tro.html#gui-yeu-cau",
+     "Gửi yêu cầu hỗ trợ"
+    ]
+   ]
+  },
+  {
+   "k": "a",
+   "box": [
+    682,
+    29,
+    841,
+    73
+   ],
+   "href": "uoc-tinh-chi-phi.html",
+   "pill": 1,
+   "label": "Đặt dịch vụ"
+  },
+  {
+   "k": "a",
+   "box": [
+    861,
+    36,
+    889,
+    68
+   ],
+   "href": "thong-bao.html",
+   "label": "Thông báo"
+  },
+  {
+   "k": "dd",
+   "box": [
+    919,
+    31,
+    1055,
+    73
+   ],
+   "w": 140,
+   "pl": 1362,
+   "label": "Tài khoản Tuấn Anh",
+   "menu": [
+    [
+     "tai-khoan.html",
+     "Tổng quan"
+    ],
+    [
+     "don-hang.html",
+     "Đơn hàng"
+    ],
+    [
+     "hop-cua-toi.html",
+     "Hộp của tôi"
+    ],
+    [
+     "ho-so.html",
+     "Thông tin cá nhân"
+    ],
+    [
+     "#dang-xuat",
+     "Đăng xuất"
+    ]
+   ]
+  },
+  {
+   "k": "a",
+   "box": [
+    17,
+    104,
+    164,
+    154
+   ],
+   "href": "tai-khoan.html",
+   "rad": 8,
+   "label": "Tổng quan"
+  },
+  {
+   "k": "a",
+   "box": [
+    17,
+    165,
+    164,
+    205
+   ],
+   "href": "don-hang.html",
+   "rad": 8,
+   "label": "Đơn hàng"
+  },
+  {
+   "k": "a",
+   "box": [
+    17,
+    219,
+    164,
+    259
+   ],
+   "href": "hop-cua-toi.html",
+   "rad": 8,
+   "label": "Hộp của tôi"
+  },
+  {
+   "k": "a",
+   "box": [
+    17,
+    274,
+    164,
+    314
+   ],
+   "href": "ho-so.html#dia-chi",
+   "rad": 8,
+   "label": "Địa chỉ"
+  },
+  {
+   "k": "a",
+   "box": [
+    17,
+    331,
+    164,
+    372
+   ],
+   "href": "thong-bao.html",
+   "rad": 8,
+   "label": "Thông báo"
+  },
+  {
+   "k": "a",
+   "box": [
+    17,
+    388,
+    164,
+    424
+   ],
+   "href": "ho-tro.html",
+   "rad": 8,
+   "label": "Hỗ trợ"
+  },
+  {
+   "k": "a",
+   "box": [
+    17,
+    445,
+    164,
+    482
+   ],
+   "href": "ho-so.html",
+   "rad": 8,
+   "label": "Tài khoản"
+  },
+  {
+   "k": "a",
+   "box": [
+    188,
+    281,
+    462,
+    362
+   ],
+   "href": "don-hang.html",
+   "card": 10,
+   "label": "Đơn đang thực hiện: 1"
+  },
+  {
+   "k": "a",
+   "box": [
+    469,
+    281,
+    742,
+    362
+   ],
+   "href": "hop-cua-toi.html",
+   "card": 10,
+   "label": "Hộp đang sử dụng: 10"
+  },
+  {
+   "k": "a",
+   "box": [
+    754,
+    281,
+    1054,
+    362
+   ],
+   "href": "lich-thu-hoi.html",
+   "card": 10,
+   "label": "Lịch thu hồi: 1"
+  },
+  {
+   "k": "a",
+   "box": [
+    590,
+    386,
+    717,
+    406
+   ],
+   "href": "don-hang.html",
+   "label": "Xem tất cả đơn hàng"
+  },
+  {
+   "k": "a",
+   "box": [
+    969,
+    386,
+    1048,
+    406
+   ],
+   "href": "thong-bao.html",
+   "label": "Xem tất cả thông báo"
+  },
+  {
+   "k": "a",
+   "box": [
+    204,
+    419,
+    623,
+    546
+   ],
+   "href": "don-hang-chi-tiet.html?ma=BX2027-0015",
+   "rad": 8,
+   "label": "Đơn BX2027-0015 – Chuyển trọ + Dọn phòng"
+  },
+  {
+   "k": "a",
+   "box": [
+    204,
+    645,
+    459,
+    681
+   ],
+   "href": "don-hang-chi-tiet.html?ma=BX2027-0015",
+   "rad": 8,
+   "label": "Xem chi tiết"
+  },
+  {
+   "k": "a",
+   "box": [
+    465,
+    645,
+    721,
+    681
+   ],
+   "href": "ho-tro.html#gui-yeu-cau",
+   "rad": 8,
+   "label": "Liên hệ BOXANH"
+  },
+  {
+   "k": "a",
+   "box": [
+    520,
+    731,
+    632,
+    771
+   ],
+   "href": "hop-cua-toi.html#dat-lich",
+   "pill": 1,
+   "label": "Đặt lịch thu hồi"
+  },
+  {
+   "k": "a",
+   "box": [
+    653,
+    814,
+    727,
+    832
+   ],
+   "href": "don-hang.html",
+   "label": "Xem tất cả lịch sử đơn hàng"
+  },
+  {
+   "k": "a",
+   "box": [
+    638,
+    876,
+    717,
+    894
+   ],
+   "href": "don-hang-chi-tiet.html?ma=BX2027-0015",
+   "label": "Xem chi tiết BX2027-0015"
+  },
+  {
+   "k": "a",
+   "box": [
+    638,
+    913,
+    717,
+    931
+   ],
+   "href": "don-hang-chi-tiet.html?ma=BX2026-0284",
+   "label": "Xem chi tiết BX2026-0284"
+  },
+  {
+   "k": "a",
+   "box": [
+    638,
+    951,
+    717,
+    969
+   ],
+   "href": "don-hang-chi-tiet.html?ma=BX2026-0177",
+   "label": "Xem chi tiết BX2026-0177"
+  },
+  {
+   "k": "a",
+   "box": [
+    758,
+    419,
+    1050,
+    515
+   ],
+   "href": "don-hang-chi-tiet.html?ma=BX2027-0015",
+   "card": 10,
+   "label": "Báo giá đã được cập nhật"
+  },
+  {
+   "k": "a",
+   "box": [
+    758,
+    527,
+    1050,
+    638
+   ],
+   "href": "don-hang-chi-tiet.html?ma=BX2027-0015",
+   "card": 10,
+   "label": "Chuẩn bị đồ trước giờ chuyển"
+  },
+  {
+   "k": "a",
+   "box": [
+    973,
+    676,
+    1048,
+    693
+   ],
+   "href": "ho-so.html",
+   "label": "Chỉnh sửa thông tin cá nhân"
+  }
+ ]
+}

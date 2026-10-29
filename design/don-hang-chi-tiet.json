@@ -1,0 +1,30 @@
+{
+ "name": "don-hang-chi-tiet", "src": "design/mockups/08-Theo-doi-don-va-xac-nhan-bao-gia.png",
+ "items": [
+  {"k":"a","box":[45,8,185,48],"href":"index.html","label":"BOXANH – Trang chủ"},
+  {"k":"dd","box":[278,18,358,46],"w":140,"menu":[["chuyen-tro.html","Chuyển trọ"],["don-phong.html","Dọn phòng"],["ban-giao-phong.html","Bàn giao phòng"],["uoc-tinh-chi-phi.html","Ước tính chi phí"]]},
+  {"k":"a","box":[396,16,480,46],"href":"chuyen-tro.html","label":"Chuyển trọ"},
+  {"k":"a","box":[512,16,598,46],"href":"don-phong.html","label":"Dọn phòng"},
+  {"k":"a","box":[632,16,748,46],"href":"ban-giao-phong.html","label":"Bàn giao phòng"},
+  {"k":"a","box":[782,16,866,46],"href":"ho-tro.html","label":"Hướng dẫn"},
+  {"k":"a","box":[897,16,940,46],"act":"info:Blog BOXANH sẽ sớm ra mắt với nhiều mẹo chuyển trọ hữu ích!","label":"Blog"},
+  {"k":"a","box":[1288,16,1316,48],"href":"thong-bao.html","label":"Thông báo"},
+  {"k":"dd","box":[1330,14,1505,50],"w":150,"pl":1355,"label":"Tài khoản Nguyễn Thảo","menu":[["tai-khoan.html","Tổng quan"],["don-hang.html","Đơn hàng"],["hop-cua-toi.html","Hộp của tôi"],["ho-so.html","Thông tin cá nhân"],["#dang-xuat","Đăng xuất"]]},
+  {"k":"a","box":[48,94,284,116],"href":"don-hang.html","label":"Quay lại danh sách đơn hàng"},
+  {"k":"a","box":[40,226,205,274],"href":"#","act":"info:Bạn đang xem Tổng quan đơn hàng.","rad":10,"label":"Tổng quan"},
+  {"k":"a","box":[225,230,332,272],"act":"info:Chi tiết báo giá nằm ở cột “Báo giá cần bạn xác nhận” bên phải.","rad":8,"label":"Báo giá"},
+  {"k":"a","box":[372,230,528,272],"href":"hop-cua-toi.html","rad":8,"label":"Hộp & giao nhận"},
+  {"k":"a","box":[568,230,678,272],"act":"info:Ảnh khảo sát sẽ được cập nhật sau khi nhân viên đến khảo sát.","rad":8,"label":"Hình ảnh"},
+  {"k":"a","box":[718,230,814,272],"href":"ho-tro.html#gui-yeu-cau","rad":8,"label":"Hỗ trợ"},
+
+  {"k":"a","box":[1020,673,1487,717],"act":"quote-confirm","rad":10,"label":"Xác nhận báo giá","attrs":{"id":"q-confirm"}},
+  {"k":"a","box":[1020,726,1487,770],"act":"quote-adjust","rad":10,"label":"Yêu cầu điều chỉnh","attrs":{"id":"q-adjust"}},
+  {"k":"a","box":[1030,788,1205,817],"href":"dieu-khoan.html#thanh-toan","rad":6,"label":"Điều kiện áp dụng"},
+  {"k":"a","box":[1030,841,1205,871],"act":"info:12/01/2027 09:20 – BOXANH gửi báo giá 800.000 đ sau khảo sát thực tế. Ước tính ban đầu: 650.000 – 950.000 đ.","rad":6,"label":"Lịch sử điều chỉnh"},
+  {"k":"a","box":[835,796,972,818],"href":"hop-cua-toi.html","label":"Xem tất cả 10 hộp"},
+  {"k":"a","box":[1478,795,1508,823],"act":"quote-later","pill":1,"label":"Đóng"},
+  {"k":"a","box":[1243,924,1372,962],"act":"quote-later","rad":10,"label":"Quay lại"},
+  {"k":"a","box":[1375,924,1502,962],"act":"quote-ok","rad":10,"label":"Đồng ý xác nhận báo giá 800.000 đ","attrs":{"id":"q-ok"}},
+  {"k":"a","box":[1016,966,1227,996],"href":"ho-tro.html#gui-yeu-cau","rad":8,"label":"Nhắn BOXANH"}
+ ]
+}

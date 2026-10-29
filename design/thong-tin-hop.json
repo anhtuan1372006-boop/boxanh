@@ -1,0 +1,252 @@
+{
+ "name": "thong-tin-hop",
+ "src": "design/mockups/09-QR-hop-va-lich-thu-hoi.png",
+ "crop": [
+  0,
+  0,
+  519,
+  1024
+ ],
+ "items": [
+  {
+   "k": "a",
+   "box": [
+    33,
+    25,
+    162,
+    60
+   ],
+   "href": "index.html",
+   "label": "BOXANH – Trang chủ"
+  },
+  {
+   "k": "a",
+   "box": [
+    180,
+    30,
+    239,
+    56
+   ],
+   "href": "chuyen-tro.html",
+   "label": "Chuyển trọ"
+  },
+  {
+   "k": "a",
+   "box": [
+    252,
+    30,
+    310,
+    56
+   ],
+   "href": "don-phong.html",
+   "label": "Dọn phòng"
+  },
+  {
+   "k": "a",
+   "box": [
+    321,
+    30,
+    402,
+    56
+   ],
+   "href": "ban-giao-phong.html",
+   "label": "Bàn giao phòng"
+  },
+  {
+   "k": "a",
+   "box": [
+    418,
+    28,
+    442,
+    58
+   ],
+   "href": "thong-bao.html",
+   "label": "Thông báo"
+  },
+  {
+   "k": "dd",
+   "box": [
+    450,
+    26,
+    506,
+    62
+   ],
+   "w": 140,
+   "pl": 366,
+   "label": "Tài khoản",
+   "menu": [
+    [
+     "tai-khoan.html",
+     "Tổng quan"
+    ],
+    [
+     "don-hang.html",
+     "Đơn hàng"
+    ],
+    [
+     "hop-cua-toi.html",
+     "Hộp của tôi"
+    ],
+    [
+     "ho-so.html",
+     "Thông tin cá nhân"
+    ],
+    [
+     "#dang-xuat",
+     "Đăng xuất"
+    ]
+   ]
+  },
+  {
+   "k": "a",
+   "box": [
+    33,
+    83,
+    140,
+    101
+   ],
+   "href": "hop-cua-toi.html",
+   "label": "Hộp của tôi"
+  },
+  {
+   "k": "in",
+   "r": [
+    48,
+    496,
+    410,
+    525
+   ],
+   "box": [
+    46,
+    492,
+    470,
+    529
+   ],
+   "s": "BOXANH – BX-000128 (1)",
+   "wt": 800,
+   "name": "title",
+   "id": "bi-title",
+   "cls": "val",
+   "attrs": {
+    "readonly": "",
+    "tabindex": "-1"
+   },
+   "label": "Mã hộp"
+  },
+  {
+   "k": "a",
+   "box": [
+    256,
+    581,
+    370,
+    608
+   ],
+   "href": "don-hang-chi-tiet.html?ma=BX2027-0015",
+   "rad": 6,
+   "label": "Thuộc đơn hàng BX2027-0015",
+   "attrs": {
+    "id": "bi-order"
+   }
+  },
+  {
+   "k": "in",
+   "r": [
+    258,
+    726,
+    345,
+    745
+   ],
+   "box": [
+    256,
+    722,
+    420,
+    749
+   ],
+   "s": "SL-004281",
+   "wt": 700,
+   "name": "seal",
+   "id": "bi-seal",
+   "cls": "val",
+   "attrs": {
+    "readonly": "",
+    "tabindex": "-1"
+   },
+   "label": "Số seal"
+  },
+  {
+   "k": "a",
+   "box": [
+    46,
+    840,
+    262,
+    890
+   ],
+   "act": "box-history",
+   "rad": 10,
+   "label": "Xem lịch sử hộp"
+  },
+  {
+   "k": "a",
+   "box": [
+    273,
+    840,
+    483,
+    890
+   ],
+   "href": "ho-tro.html?hop=BX-000128#gui-yeu-cau",
+   "rad": 10,
+   "label": "Báo sự cố",
+   "attrs": {
+    "id": "bi-report"
+   }
+  },
+  {
+   "k": "a",
+   "box": [
+    48,
+    950,
+    114,
+    1004
+   ],
+   "href": "index.html",
+   "rad": 8,
+   "label": "Trang chủ"
+  },
+  {
+   "k": "a",
+   "box": [
+    156,
+    950,
+    223,
+    1004
+   ],
+   "href": "don-hang.html",
+   "rad": 8,
+   "label": "Đơn hàng"
+  },
+  {
+   "k": "a",
+   "box": [
+    263,
+    950,
+    375,
+    1004
+   ],
+   "href": "hop-cua-toi.html",
+   "rad": 8,
+   "label": "Hộp của tôi"
+  },
+  {
+   "k": "a",
+   "box": [
+    410,
+    950,
+    481,
+    1004
+   ],
+   "href": "tai-khoan.html",
+   "rad": 8,
+   "label": "Tài khoản"
+  }
+ ]
+}

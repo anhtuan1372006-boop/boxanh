@@ -1,0 +1,137 @@
+/* =========================================================
+   Canvas pages – the page is the design itself: a clean background plate with real text,
+   links and form fields laid on top at the design's exact positions. Positions are design
+   px; --u converts them to container units so the page scales like the mockup.
+   ========================================================= */
+body.l-canvas { margin: 0; background: var(--cv-bg, #f7f9f4); }
+.cv-wrap { max-width: var(--cv-max, 1600px); margin: 0 auto; }
+.cv { position: relative; width: 100%; aspect-ratio: var(--ar); container-type: inline-size; overflow: hidden; }
+.cv > * { --u: calc(100cqw / var(--W)); position: absolute; margin: 0; }
+.cv-bg { inset: 0; width: 100%; height: 100%; display: block; user-select: none; -webkit-user-drag: none; }
+
+/* text lines */
+.cv-t {
+  left: calc(var(--ox) * var(--u)); top: calc(var(--oy) * var(--u));
+  font-size: calc(var(--fs) * var(--u)); letter-spacing: calc(var(--ls, 0) * var(--u));
+  font-family: "Be Vietnam Pro", system-ui, sans-serif; font-weight: var(--wt, 400); color: var(--c);
+  line-height: 1; white-space: nowrap; padding: 0; text-rendering: geometricPrecision;
+  transform: scaleX(var(--sx, 1)); transform-origin: 0 0;
+  -webkit-font-smoothing: antialiased; pointer-events: none;
+}
+html:not(.cv-ready) .cv-t, html:not(.cv-ready) .cv-in { color: transparent !important; }
+html:not(.cv-ready) .cv-in::placeholder { color: transparent; }
+a.cv-t, label.cv-t { pointer-events: auto; text-decoration: none; cursor: pointer; }
+a.cv-t:hover { text-decoration: underline; text-underline-offset: .18em; text-decoration-thickness: .07em; }
+
+/* hotspots over the design's own buttons / cards */
+.cv-a {
+  left: calc(var(--l) * var(--u)); top: calc(var(--t) * var(--u));
+  width: calc(var(--bw) * var(--u)); height: calc(var(--bh) * var(--u));
+  border-radius: calc(var(--r, 6) * var(--u)); background: transparent; border: 0; padding: 0; cursor: pointer;
+  transition: background-color .18s, box-shadow .2s;
+}
+.cv-a.pill { border-radius: 999px; }
+.cv-a.pill:hover { background: rgba(255, 255, 255, .16); box-shadow: 0 6px 16px -8px rgba(0, 40, 25, .45); }
+.cv-a.card:hover { box-shadow: 0 14px 30px -14px rgba(0, 40, 25, .5), 0 0 0 2px rgba(255, 255, 255, .55) inset; }
+.cv-a:focus-visible, .cv-in:focus-visible, a.cv-t:focus-visible { outline: 3px solid rgba(34, 160, 111, .7); outline-offset: 2px; }
+
+/* form fields drawn by the design: the input is transparent and inherits the measured text */
+.cv-in {
+  left: calc(var(--l) * var(--u)); top: calc(var(--t) * var(--u));
+  width: calc(var(--bw) * var(--u)); height: calc(var(--bh) * var(--u));
+  box-sizing: border-box; border: 0; background: transparent; outline: none; border-radius: calc(4 * var(--u));
+  padding: calc(var(--pt, 0) * var(--u)) 0 calc(var(--pb, 0) * var(--u)) calc(var(--pl, 0) * var(--u));
+  font-family: "Be Vietnam Pro", system-ui, sans-serif; font-weight: var(--wt, 400);
+  font-size: calc(var(--fs) * var(--u)); letter-spacing: calc(var(--ls, 0) * var(--u)); line-height: 1;
+  color: #10251c; caret-color: #146b4e;
+}
+.cv-in::placeholder { color: var(--c); opacity: 1; }
+.cv-in:focus { background: rgba(34, 160, 111, .06); }
+.cv-in[type=date] { padding-top: 0; padding-bottom: 0; }
+
+/* answers / menus that open on click */
+.cv-pop {
+  left: calc(var(--l) * var(--u)); top: calc(var(--t) * var(--u)); width: calc(var(--bw) * var(--u));
+  z-index: 5; background: #fff; color: #33463d; border-radius: calc(8 * var(--u));
+  box-shadow: 0 18px 40px -16px rgba(6, 42, 31, .45); border: 1px solid #dfe9e3;
+  padding: calc(9 * var(--u)) calc(11 * var(--u)); font: 400 calc(var(--pf, 7.4) * var(--u)) / 1.5 "Be Vietnam Pro", system-ui, sans-serif;
+  opacity: 0; visibility: hidden; transform: translateY(calc(-3 * var(--u))); transition: opacity .18s, transform .18s, visibility .18s;
+}
+.cv-pop.is-open { opacity: 1; visibility: visible; transform: none; }
+.cv-pop a { display: block; padding: calc(5 * var(--u)) calc(7 * var(--u)); border-radius: calc(5 * var(--u)); color: #10251c; font-weight: 500; text-decoration: none; }
+.cv-pop a:hover { background: #f0f9f4; color: #146b4e; }
+.cv-anchor { left: 0; top: calc(var(--t) * var(--u)); width: 1px; height: 1px; }
+
+/* desktop / mobile designs */
+.cv-m { display: none; }
+@media (max-width: 899px) {
+  .cv-wrap.has-m .cv-d { display: none; }
+  .cv-wrap.has-m .cv-m { display: block; }
+  .cv-wrap.has-m { max-width: none; }
+}
+
+/* baked plates: the design image is the page, so the text layer is invisible but selectable */
+.cv.baked .cv-t { color: transparent !important; }
+.cv.baked .cv-t::selection { background: rgba(34, 160, 111, .28); color: transparent; }
+html:not(.cv-ready) .cv.baked .cv-in { color: transparent; }
+/* while a field holds text (or a date picker is open) show the plate without its placeholder */
+.cv.baked .cv-in.has-v, .cv.baked .cv-in[data-date]:focus, .cv.baked .cv-in[type=date] {
+  background-image: var(--clean);
+  background-size: calc(var(--W) * var(--u)) auto;
+  background-position: calc(var(--l) * -1 * var(--u)) calc(var(--t) * -1 * var(--u));
+  background-repeat: no-repeat;
+}
+.cv.baked .cv-in:focus { box-shadow: 0 0 0 calc(1.2 * var(--u)) rgba(34, 160, 111, .55); }
+.cv-in.multi { resize: none; line-height: 1.45; white-space: pre-wrap; overflow: hidden; }
+.cv-in::-webkit-calendar-picker-indicator { opacity: .6; }
+/* page background behind phone-size panels */
+body.l-canvas { background: var(--cv-bg, #f7f9f4); }
+.cv-wrap.narrow { max-width: var(--cv-max, 540px); }
+/* design toggles */
+.cv-tog { left: calc(var(--l) * var(--u)); top: calc(var(--t) * var(--u)); width: calc(var(--bw) * var(--u)); height: calc(var(--bh) * var(--u)); padding: 0; border: 0; background: transparent; cursor: pointer; }
+.cv-tog > span { position: absolute; left: calc(var(--l) * var(--u)); top: calc(var(--t) * var(--u)); width: calc(var(--bw) * var(--u)); height: calc(var(--bh) * var(--u)); border-radius: calc(var(--r) * var(--u));
+  background-image: var(--plate); background-size: calc(var(--W) * var(--u)) auto; background-repeat: no-repeat;
+  background-position: calc(var(--offx) * -1 * var(--u)) calc(var(--offy) * -1 * var(--u)); }
+.cv-tog[aria-checked="true"] > span { background-position: calc(var(--onx) * -1 * var(--u)) calc(var(--ony) * -1 * var(--u)); }
+.cv-tog:focus-visible { outline: 3px solid rgba(34, 160, 111, .7); outline-offset: 1px; border-radius: 4px; }
+.cv-sel { appearance: none; -webkit-appearance: none; cursor: pointer; padding-right: 0; color: transparent; }
+.cv-sel.has-v { color: #10251c; }
+.cv-sel option { color: #10251c; background: #fff; font-size: 15px; }
+.cv-file { cursor: pointer; }
+.cv-file input { position: absolute; inset: 0; opacity: 0; cursor: pointer; width: 100%; height: 100%; }
+.cv-in[type=date]::-webkit-calendar-picker-indicator { opacity: 0; cursor: pointer; }
+/* option cards: the design draws the default card's border; mirror the choice after a click */
+.cv-tog.ring { border-radius: calc(var(--hr) * var(--u)); transition: box-shadow .15s; }
+.cv-tog.ring[aria-checked="true"]:not([data-default]) { box-shadow: 0 0 0 calc(1.3 * var(--u)) #1f8f66, 0 4px 14px -8px rgba(16, 100, 70, .5); }
+.cv-tog.ring[data-default][aria-checked="false"] { box-shadow: inset 0 0 0 calc(1.6 * var(--u)) #fff, inset 0 0 0 calc(2.2 * var(--u)) #e3ebe7; }
+/* switches drawn by the design (on); off state overlay */
+.cv-sw { left: calc(var(--l) * var(--u)); top: calc(var(--t) * var(--u)); width: calc(var(--bw) * var(--u)); height: calc(var(--bh) * var(--u)); padding: 0; border: 0; border-radius: 999px; background: transparent; cursor: pointer; }
+.cv-sw > i { position: absolute; inset: 0; border-radius: 999px; background: #cfd9d4; opacity: 0; transition: opacity .18s; }
+.cv-sw > i::after { content: ""; position: absolute; top: 9%; bottom: 9%; left: 5%; aspect-ratio: 1; border-radius: 50%; background: #fff; box-shadow: 0 1px 3px rgba(0, 0, 0, .25); }
+.cv-sw[aria-checked="false"] > i { opacity: 1; }
+.cv-sw:focus-visible { outline: 3px solid rgba(34, 160, 111, .7); outline-offset: 2px; }
+/* steppers: the value box covers the design's number with a matching white field */
+.cv-step { display: contents; }
+.cv-num { text-align: center; padding: 0; background: #fff; color: #1a2b23; font-size: calc(var(--fs) * var(--u)); border-radius: 0; }
+.cv-num:not(.changed) { background: transparent; color: transparent; caret-color: #146b4e; }
+.cv-num:focus { background: #fff; color: #1a2b23; }
+.cv-chk { left: calc(var(--l) * var(--u)); top: calc(var(--t) * var(--u)); width: calc(var(--bw) * var(--u)); height: calc(var(--bh) * var(--u)); padding: 0; border: 0; background: transparent; cursor: pointer; border-radius: calc(var(--r) * var(--u)); }
+.cv-chk > i { position: absolute; inset: 0; border-radius: inherit; background: #fff; box-shadow: inset 0 0 0 calc(1.4 * var(--u)) #b9cbc1; opacity: 0; transition: opacity .15s; }
+.cv-chk[aria-checked="false"] > i { opacity: 1; }
+.cv-chk:focus-visible { outline: 3px solid rgba(34, 160, 111, .7); outline-offset: 2px; }
+.cv-in.otp { text-align: center; padding-left: 0; font-weight: 700; color: #10251c; }
+.cv-in.otp:focus { background: rgba(34, 160, 111, .08); }
+
+/* selectable options (time slots, calendar days) */
+.cv-opt { left: calc(var(--l) * var(--u)); top: calc(var(--t) * var(--u)); width: calc(var(--bw) * var(--u)); height: calc(var(--bh) * var(--u)); padding: 0; border: 0; background: transparent; cursor: pointer; border-radius: calc(var(--r) * var(--u)); }
+.cv-opt > i { position: absolute; inset: 0; display: none; align-items: center; justify-content: center; border-radius: inherit; font: normal var(--wt) calc(var(--fs) * var(--u)) / 1 "Be Vietnam Pro", system-ui, sans-serif; }
+.cv-opt:not(.def)[aria-checked="true"] > i { display: flex; background: #036552; color: #fff; box-shadow: 0 calc(3 * var(--u)) calc(8 * var(--u)) calc(-4 * var(--u)) rgba(0, 70, 50, .6); }
+.cv-opt.def[aria-checked="false"] > i { display: flex; background: #fff; color: #1f2a36; box-shadow: inset 0 0 0 calc(1 * var(--u)) #e6e8ee; }
+.cv-opt.day.def[aria-checked="false"] > i { box-shadow: none; background: #fdfdfd; color: #10251c; }
+.cv-opt.dot > i { justify-content: flex-start; padding-left: calc(53 * var(--u)); }
+.cv-opt.dot > i::before { content: ""; position: absolute; left: calc(11 * var(--u)); top: 50%; width: calc(14 * var(--u)); height: calc(14 * var(--u)); margin-top: calc(-7 * var(--u)); border-radius: 50%; box-sizing: border-box; border: calc(1.6 * var(--u)) solid #8b93a6; background: #fff; }
+.cv-opt.dot:not(.def)[aria-checked="true"] > i::before { border: calc(3.4 * var(--u)) solid #fff; background: #036552; }
+.cv-opt[aria-disabled="true"] { cursor: not-allowed; }
+.cv-opt:focus-visible { outline: 3px solid rgba(34, 160, 111, .7); outline-offset: 2px; }
+/* read-only values that change with the visitor's data */
+.cv-in.val { pointer-events: none; color: #10251c; }

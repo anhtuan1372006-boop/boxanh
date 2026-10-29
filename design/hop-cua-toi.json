@@ -1,0 +1,1007 @@
+{
+ "name": "hop-cua-toi",
+ "src": "design/mockups/09-QR-hop-va-lich-thu-hoi.png",
+ "crop": [
+  519,
+  0,
+  1018,
+  1024
+ ],
+ "items": [
+  {
+   "k": "a",
+   "box": [
+    542,
+    25,
+    671,
+    60
+   ],
+   "href": "index.html",
+   "label": "BOXANH – Trang chủ"
+  },
+  {
+   "k": "a",
+   "box": [
+    690,
+    30,
+    750,
+    56
+   ],
+   "href": "chuyen-tro.html",
+   "label": "Chuyển trọ"
+  },
+  {
+   "k": "a",
+   "box": [
+    763,
+    30,
+    823,
+    56
+   ],
+   "href": "don-phong.html",
+   "label": "Dọn phòng"
+  },
+  {
+   "k": "a",
+   "box": [
+    836,
+    30,
+    919,
+    56
+   ],
+   "href": "ban-giao-phong.html",
+   "label": "Bàn giao phòng"
+  },
+  {
+   "k": "a",
+   "box": [
+    930,
+    28,
+    953,
+    58
+   ],
+   "href": "thong-bao.html",
+   "label": "Thông báo"
+  },
+  {
+   "k": "dd",
+   "box": [
+    960,
+    26,
+    1012,
+    62
+   ],
+   "w": 140,
+   "pl": 872,
+   "label": "Tài khoản",
+   "menu": [
+    [
+     "tai-khoan.html",
+     "Tổng quan"
+    ],
+    [
+     "don-hang.html",
+     "Đơn hàng"
+    ],
+    [
+     "hop-cua-toi.html",
+     "Hộp của tôi"
+    ],
+    [
+     "ho-so.html",
+     "Thông tin cá nhân"
+    ],
+    [
+     "#dang-xuat",
+     "Đăng xuất"
+    ]
+   ]
+  },
+  {
+   "k": "a",
+   "box": [
+    544,
+    208,
+    992,
+    268
+   ],
+   "href": "don-hang-chi-tiet.html?ma=BX2027-0015",
+   "card": 10,
+   "label": "Đơn hàng BX2027-0015"
+  },
+  {
+   "k": "chk",
+   "box": [
+    871,
+    285,
+    892,
+    305
+   ],
+   "name": "all",
+   "label": "Chọn tất cả 10 hộp",
+   "rad": 3,
+   "attrs": {}
+  },
+  {
+   "k": "in",
+   "r": [
+    898,
+    287,
+    992,
+    305
+   ],
+   "box": [
+    896,
+    284,
+    996,
+    307
+   ],
+   "s": "Đã chọn 10 hộp",
+   "wt": 500,
+   "name": "selected",
+   "id": "bx-selected",
+   "cls": "val",
+   "attrs": {
+    "readonly": "",
+    "tabindex": "-1"
+   },
+   "label": "Số hộp đã chọn"
+  },
+  {
+   "k": "chk",
+   "box": [
+    559,
+    327,
+    580,
+    348
+   ],
+   "name": "row0",
+   "label": "Chọn BX-000128",
+   "rad": 3
+  },
+  {
+   "k": "a",
+   "box": [
+    594,
+    317,
+    811,
+    358
+   ],
+   "href": "thong-tin-hop.html?ma=BX-000128",
+   "rad": 6,
+   "label": "Thông tin hộp BX-000128"
+  },
+  {
+   "k": "a",
+   "box": [
+    958,
+    325,
+    982,
+    350
+   ],
+   "href": "thong-tin-hop.html?ma=BX-000128",
+   "rad": 6,
+   "label": "Tùy chọn hộp BX-000128"
+  },
+  {
+   "k": "chk",
+   "box": [
+    559,
+    387,
+    580,
+    408
+   ],
+   "name": "row1",
+   "label": "Chọn BX-000129",
+   "rad": 3
+  },
+  {
+   "k": "a",
+   "box": [
+    594,
+    377,
+    811,
+    418
+   ],
+   "href": "thong-tin-hop.html?ma=BX-000129",
+   "rad": 6,
+   "label": "Thông tin hộp BX-000129"
+  },
+  {
+   "k": "a",
+   "box": [
+    958,
+    385,
+    982,
+    410
+   ],
+   "href": "thong-tin-hop.html?ma=BX-000129",
+   "rad": 6,
+   "label": "Tùy chọn hộp BX-000129"
+  },
+  {
+   "k": "chk",
+   "box": [
+    559,
+    446,
+    580,
+    467
+   ],
+   "name": "row2",
+   "label": "Chọn BX-000130",
+   "rad": 3
+  },
+  {
+   "k": "a",
+   "box": [
+    594,
+    436,
+    811,
+    477
+   ],
+   "href": "thong-tin-hop.html?ma=BX-000130",
+   "rad": 6,
+   "label": "Thông tin hộp BX-000130"
+  },
+  {
+   "k": "a",
+   "box": [
+    958,
+    444,
+    982,
+    469
+   ],
+   "href": "thong-tin-hop.html?ma=BX-000130",
+   "rad": 6,
+   "label": "Tùy chọn hộp BX-000130"
+  },
+  {
+   "k": "chk",
+   "box": [
+    559,
+    507,
+    580,
+    528
+   ],
+   "name": "row3",
+   "label": "Chọn 7 hộp còn lại",
+   "rad": 3
+  },
+  {
+   "k": "a",
+   "box": [
+    594,
+    497,
+    811,
+    537
+   ],
+   "act": "info:7 hộp còn lại: BX-000131 → BX-000137 (Seal SL-004284 → SL-004290), đều đang sử dụng.",
+   "rad": 6,
+   "label": "7 hộp còn lại"
+  },
+  {
+   "k": "a",
+   "box": [
+    958,
+    505,
+    984,
+    531
+   ],
+   "act": "info:7 hộp còn lại: BX-000131 → BX-000137 (Seal SL-004284 → SL-004290), đều đang sử dụng.",
+   "rad": 6,
+   "label": "Xem 7 hộp còn lại"
+  },
+  {
+   "k": "anchor",
+   "id": "dat-lich",
+   "y": 570
+  },
+  {
+   "k": "a",
+   "box": [
+    563,
+    619,
+    590,
+    649
+   ],
+   "act": "info:Lịch thu hồi hiện mở trong tháng 1/2027.",
+   "pill": 1,
+   "label": "Tháng trước"
+  },
+  {
+   "k": "a",
+   "box": [
+    756,
+    619,
+    782,
+    649
+   ],
+   "act": "info:Lịch thu hồi hiện mở trong tháng 1/2027.",
+   "pill": 1,
+   "label": "Tháng sau"
+  },
+  {
+   "k": "opt",
+   "cls": "day",
+   "box": [
+    690,
+    678,
+    724,
+    712
+   ],
+   "group": "day",
+   "label": "1",
+   "value": "2027-01-01",
+   "aria": "Ngày 1/01/2027",
+   "rad": 999,
+   "fs": 12.5,
+   "wt": 700,
+   "disabled": true
+  },
+  {
+   "k": "opt",
+   "cls": "day",
+   "box": [
+    722,
+    678,
+    756,
+    712
+   ],
+   "group": "day",
+   "label": "2",
+   "value": "2027-01-02",
+   "aria": "Ngày 2/01/2027",
+   "rad": 999,
+   "fs": 12.5,
+   "wt": 700,
+   "disabled": true
+  },
+  {
+   "k": "opt",
+   "cls": "day",
+   "box": [
+    756,
+    678,
+    790,
+    712
+   ],
+   "group": "day",
+   "label": "3",
+   "value": "2027-01-03",
+   "aria": "Ngày 3/01/2027",
+   "rad": 999,
+   "fs": 12.5,
+   "wt": 700,
+   "disabled": true
+  },
+  {
+   "k": "opt",
+   "cls": "day",
+   "box": [
+    557,
+    708,
+    591,
+    742
+   ],
+   "group": "day",
+   "label": "4",
+   "value": "2027-01-04",
+   "aria": "Ngày 4/01/2027",
+   "rad": 999,
+   "fs": 12.5,
+   "wt": 700,
+   "disabled": true
+  },
+  {
+   "k": "opt",
+   "cls": "day",
+   "box": [
+    589,
+    708,
+    623,
+    742
+   ],
+   "group": "day",
+   "label": "5",
+   "value": "2027-01-05",
+   "aria": "Ngày 5/01/2027",
+   "rad": 999,
+   "fs": 12.5,
+   "wt": 700,
+   "disabled": true
+  },
+  {
+   "k": "opt",
+   "cls": "day",
+   "box": [
+    620,
+    708,
+    654,
+    742
+   ],
+   "group": "day",
+   "label": "6",
+   "value": "2027-01-06",
+   "aria": "Ngày 6/01/2027",
+   "rad": 999,
+   "fs": 12.5,
+   "wt": 700,
+   "disabled": true
+  },
+  {
+   "k": "opt",
+   "cls": "day",
+   "box": [
+    655,
+    708,
+    689,
+    742
+   ],
+   "group": "day",
+   "label": "7",
+   "value": "2027-01-07",
+   "aria": "Ngày 7/01/2027",
+   "rad": 999,
+   "fs": 12.5,
+   "wt": 700,
+   "disabled": true
+  },
+  {
+   "k": "opt",
+   "cls": "day",
+   "box": [
+    690,
+    708,
+    724,
+    742
+   ],
+   "group": "day",
+   "label": "8",
+   "value": "2027-01-08",
+   "aria": "Ngày 8/01/2027",
+   "rad": 999,
+   "fs": 12.5,
+   "wt": 700,
+   "disabled": true
+  },
+  {
+   "k": "opt",
+   "cls": "day",
+   "box": [
+    722,
+    708,
+    756,
+    742
+   ],
+   "group": "day",
+   "label": "9",
+   "value": "2027-01-09",
+   "aria": "Ngày 9/01/2027",
+   "rad": 999,
+   "fs": 12.5,
+   "wt": 700,
+   "disabled": true
+  },
+  {
+   "k": "opt",
+   "cls": "day",
+   "box": [
+    756,
+    708,
+    790,
+    742
+   ],
+   "group": "day",
+   "label": "10",
+   "value": "2027-01-10",
+   "aria": "Ngày 10/01/2027",
+   "rad": 999,
+   "fs": 12.5,
+   "wt": 700,
+   "disabled": true
+  },
+  {
+   "k": "opt",
+   "cls": "day",
+   "box": [
+    557,
+    737,
+    591,
+    771
+   ],
+   "group": "day",
+   "label": "11",
+   "value": "2027-01-11",
+   "aria": "Ngày 11/01/2027",
+   "rad": 999,
+   "fs": 12.5,
+   "wt": 700,
+   "disabled": true
+  },
+  {
+   "k": "opt",
+   "cls": "day",
+   "box": [
+    589,
+    737,
+    623,
+    771
+   ],
+   "group": "day",
+   "label": "12",
+   "value": "2027-01-12",
+   "aria": "Ngày 12/01/2027",
+   "rad": 999,
+   "fs": 12.5,
+   "wt": 700
+  },
+  {
+   "k": "opt",
+   "cls": "day",
+   "box": [
+    620,
+    737,
+    654,
+    771
+   ],
+   "group": "day",
+   "label": "13",
+   "value": "2027-01-13",
+   "aria": "Ngày 13/01/2027",
+   "rad": 999,
+   "fs": 12.5,
+   "wt": 700
+  },
+  {
+   "k": "opt",
+   "cls": "day",
+   "box": [
+    655,
+    737,
+    689,
+    771
+   ],
+   "group": "day",
+   "label": "14",
+   "value": "2027-01-14",
+   "aria": "Ngày 14/01/2027",
+   "rad": 999,
+   "fs": 12.5,
+   "wt": 700
+  },
+  {
+   "k": "opt",
+   "cls": "day",
+   "box": [
+    687,
+    734,
+    727,
+    774
+   ],
+   "group": "day",
+   "label": "15",
+   "value": "2027-01-15",
+   "aria": "Ngày 15/01/2027",
+   "rad": 999,
+   "fs": 12.5,
+   "wt": 700,
+   "on": true
+  },
+  {
+   "k": "opt",
+   "cls": "day",
+   "box": [
+    722,
+    737,
+    756,
+    771
+   ],
+   "group": "day",
+   "label": "16",
+   "value": "2027-01-16",
+   "aria": "Ngày 16/01/2027",
+   "rad": 999,
+   "fs": 12.5,
+   "wt": 700
+  },
+  {
+   "k": "opt",
+   "cls": "day",
+   "box": [
+    756,
+    737,
+    790,
+    771
+   ],
+   "group": "day",
+   "label": "17",
+   "value": "2027-01-17",
+   "aria": "Ngày 17/01/2027",
+   "rad": 999,
+   "fs": 12.5,
+   "wt": 700
+  },
+  {
+   "k": "opt",
+   "cls": "day",
+   "box": [
+    557,
+    769,
+    591,
+    803
+   ],
+   "group": "day",
+   "label": "18",
+   "value": "2027-01-18",
+   "aria": "Ngày 18/01/2027",
+   "rad": 999,
+   "fs": 12.5,
+   "wt": 700
+  },
+  {
+   "k": "opt",
+   "cls": "day",
+   "box": [
+    589,
+    769,
+    623,
+    803
+   ],
+   "group": "day",
+   "label": "19",
+   "value": "2027-01-19",
+   "aria": "Ngày 19/01/2027",
+   "rad": 999,
+   "fs": 12.5,
+   "wt": 700
+  },
+  {
+   "k": "opt",
+   "cls": "day",
+   "box": [
+    620,
+    769,
+    654,
+    803
+   ],
+   "group": "day",
+   "label": "20",
+   "value": "2027-01-20",
+   "aria": "Ngày 20/01/2027",
+   "rad": 999,
+   "fs": 12.5,
+   "wt": 700
+  },
+  {
+   "k": "opt",
+   "cls": "day",
+   "box": [
+    655,
+    769,
+    689,
+    803
+   ],
+   "group": "day",
+   "label": "21",
+   "value": "2027-01-21",
+   "aria": "Ngày 21/01/2027",
+   "rad": 999,
+   "fs": 12.5,
+   "wt": 700
+  },
+  {
+   "k": "opt",
+   "cls": "day",
+   "box": [
+    690,
+    769,
+    724,
+    803
+   ],
+   "group": "day",
+   "label": "22",
+   "value": "2027-01-22",
+   "aria": "Ngày 22/01/2027",
+   "rad": 999,
+   "fs": 12.5,
+   "wt": 700
+  },
+  {
+   "k": "opt",
+   "cls": "day",
+   "box": [
+    722,
+    769,
+    756,
+    803
+   ],
+   "group": "day",
+   "label": "23",
+   "value": "2027-01-23",
+   "aria": "Ngày 23/01/2027",
+   "rad": 999,
+   "fs": 12.5,
+   "wt": 700
+  },
+  {
+   "k": "opt",
+   "cls": "day",
+   "box": [
+    756,
+    769,
+    790,
+    803
+   ],
+   "group": "day",
+   "label": "24",
+   "value": "2027-01-24",
+   "aria": "Ngày 24/01/2027",
+   "rad": 999,
+   "fs": 12.5,
+   "wt": 700
+  },
+  {
+   "k": "opt",
+   "cls": "day",
+   "box": [
+    557,
+    800,
+    591,
+    834
+   ],
+   "group": "day",
+   "label": "25",
+   "value": "2027-01-25",
+   "aria": "Ngày 25/01/2027",
+   "rad": 999,
+   "fs": 12.5,
+   "wt": 700
+  },
+  {
+   "k": "opt",
+   "cls": "day",
+   "box": [
+    589,
+    800,
+    623,
+    834
+   ],
+   "group": "day",
+   "label": "26",
+   "value": "2027-01-26",
+   "aria": "Ngày 26/01/2027",
+   "rad": 999,
+   "fs": 12.5,
+   "wt": 700
+  },
+  {
+   "k": "opt",
+   "cls": "day",
+   "box": [
+    620,
+    800,
+    654,
+    834
+   ],
+   "group": "day",
+   "label": "27",
+   "value": "2027-01-27",
+   "aria": "Ngày 27/01/2027",
+   "rad": 999,
+   "fs": 12.5,
+   "wt": 700
+  },
+  {
+   "k": "opt",
+   "cls": "day",
+   "box": [
+    655,
+    800,
+    689,
+    834
+   ],
+   "group": "day",
+   "label": "28",
+   "value": "2027-01-28",
+   "aria": "Ngày 28/01/2027",
+   "rad": 999,
+   "fs": 12.5,
+   "wt": 700
+  },
+  {
+   "k": "opt",
+   "cls": "day",
+   "box": [
+    690,
+    800,
+    724,
+    834
+   ],
+   "group": "day",
+   "label": "29",
+   "value": "2027-01-29",
+   "aria": "Ngày 29/01/2027",
+   "rad": 999,
+   "fs": 12.5,
+   "wt": 700
+  },
+  {
+   "k": "opt",
+   "cls": "day",
+   "box": [
+    722,
+    800,
+    756,
+    834
+   ],
+   "group": "day",
+   "label": "30",
+   "value": "2027-01-30",
+   "aria": "Ngày 30/01/2027",
+   "rad": 999,
+   "fs": 12.5,
+   "wt": 700
+  },
+  {
+   "k": "opt",
+   "cls": "day",
+   "box": [
+    756,
+    800,
+    790,
+    834
+   ],
+   "group": "day",
+   "label": "31",
+   "value": "2027-01-31",
+   "aria": "Ngày 31/01/2027",
+   "rad": 999,
+   "fs": 12.5,
+   "wt": 700
+  },
+  {
+   "k": "opt",
+   "dot": true,
+   "box": [
+    817,
+    643,
+    979,
+    675
+   ],
+   "group": "slot",
+   "label": "08:00 – 10:00",
+   "rad": 9,
+   "fs": 12.5,
+   "wt": 500,
+   "on": true
+  },
+  {
+   "k": "opt",
+   "dot": true,
+   "box": [
+    817,
+    680,
+    979,
+    710
+   ],
+   "group": "slot",
+   "label": "10:00 – 12:00",
+   "rad": 9,
+   "fs": 12.5,
+   "wt": 500
+  },
+  {
+   "k": "opt",
+   "dot": true,
+   "box": [
+    817,
+    715,
+    979,
+    746
+   ],
+   "group": "slot",
+   "label": "14:00 – 16:00",
+   "rad": 9,
+   "fs": 12.5,
+   "wt": 500
+  },
+  {
+   "k": "a",
+   "box": [
+    811,
+    782,
+    986,
+    825
+   ],
+   "href": "ho-so.html#dia-chi",
+   "rad": 8,
+   "label": "Địa điểm thu hồi: 123 Nguyễn Văn Cừ, P. An Lạc, Q. Bình Thạnh, TP. Hồ Chí Minh"
+  },
+  {
+   "k": "form",
+   "id": "pickup-form",
+   "label": "Đặt lịch thu hồi hộp"
+  },
+  {
+   "k": "in",
+   "r": [
+    842,
+    862,
+    958,
+    877
+   ],
+   "box": [
+    838,
+    856,
+    984,
+    882
+   ],
+   "s": "Ví dụ: Gọi trước 30 phút...",
+   "name": "note",
+   "id": "pk-note",
+   "form": "pickup-form",
+   "max": 120,
+   "label": "Ghi chú"
+  },
+  {
+   "k": "btn",
+   "box": [
+    548,
+    896,
+    988,
+    938
+   ],
+   "form": "pickup-form",
+   "label": "Gửi lịch thu hồi",
+   "rad": 10
+  },
+  {
+   "k": "a",
+   "box": [
+    553,
+    950,
+    609,
+    1004
+   ],
+   "href": "index.html",
+   "rad": 8,
+   "label": "Trang chủ"
+  },
+  {
+   "k": "a",
+   "box": [
+    668,
+    950,
+    727,
+    1004
+   ],
+   "href": "don-hang.html",
+   "rad": 8,
+   "label": "Đơn hàng"
+  },
+  {
+   "k": "a",
+   "box": [
+    769,
+    950,
+    877,
+    1004
+   ],
+   "href": "hop-cua-toi.html",
+   "rad": 8,
+   "label": "Hộp của tôi"
+  },
+  {
+   "k": "a",
+   "box": [
+    920,
+    950,
+    977,
+    1004
+   ],
+   "href": "tai-khoan.html",
+   "rad": 8,
+   "label": "Tài khoản"
+  }
+ ]
+}

@@ -1,0 +1,310 @@
+{
+ "name": "lich-thu-hoi",
+ "W": 518,
+ "H": 1024,
+ "bake": true,
+ "clean": true,
+ "bg": "#d8f8fe",
+ "items": [
+  {
+   "k": "a",
+   "box": [
+    23,
+    25,
+    152,
+    60
+   ],
+   "href": "index.html",
+   "label": "BOXANH – Trang chủ"
+  },
+  {
+   "k": "a",
+   "box": [
+    175,
+    30,
+    231,
+    56
+   ],
+   "href": "chuyen-tro.html",
+   "label": "Chuyển trọ"
+  },
+  {
+   "k": "a",
+   "box": [
+    248,
+    30,
+    304,
+    56
+   ],
+   "href": "don-phong.html",
+   "label": "Dọn phòng"
+  },
+  {
+   "k": "a",
+   "box": [
+    319,
+    30,
+    402,
+    56
+   ],
+   "href": "ban-giao-phong.html",
+   "label": "Bàn giao phòng"
+  },
+  {
+   "k": "a",
+   "box": [
+    414,
+    28,
+    437,
+    58
+   ],
+   "href": "thong-bao.html",
+   "label": "Thông báo"
+  },
+  {
+   "k": "dd",
+   "box": [
+    444,
+    26,
+    498,
+    62
+   ],
+   "w": 140,
+   "pl": 1376,
+   "label": "Tài khoản",
+   "menu": [
+    [
+     "tai-khoan.html",
+     "Tổng quan"
+    ],
+    [
+     "don-hang.html",
+     "Đơn hàng"
+    ],
+    [
+     "hop-cua-toi.html",
+     "Hộp của tôi"
+    ],
+    [
+     "ho-so.html",
+     "Thông tin cá nhân"
+    ],
+    [
+     "#dang-xuat",
+     "Đăng xuất"
+    ]
+   ]
+  },
+  {
+   "k": "a",
+   "box": [
+    22,
+    83,
+    144,
+    101
+   ],
+   "href": "hop-cua-toi.html",
+   "label": "Hộp của tôi"
+  },
+  {
+   "k": "in",
+   "r": [
+    71,
+    325,
+    238,
+    341
+   ],
+   "box": [
+    69,
+    321,
+    282,
+    345
+   ],
+   "s": "15/01/2027 • 08:00 – 10:00",
+   "wt": 700,
+   "name": "when",
+   "id": "pk-when",
+   "cls": "val",
+   "attrs": {
+    "readonly": "",
+    "tabindex": "-1"
+   },
+   "label": "Thời gian thu hồi",
+   "m": {
+    "x": 71,
+    "w": 165.0,
+    "base": 338.0,
+    "xh": 11.0,
+    "c": "#060814"
+   }
+  },
+  {
+   "k": "in",
+   "r": [
+    71,
+    378,
+    112,
+    393
+   ],
+   "box": [
+    69,
+    375,
+    182,
+    396
+   ],
+   "s": "10 hộp",
+   "wt": 700,
+   "name": "count",
+   "id": "pk-count",
+   "cls": "val",
+   "attrs": {
+    "readonly": "",
+    "tabindex": "-1"
+   },
+   "label": "Số lượng hộp",
+   "m": {
+    "x": 71,
+    "w": 40.0,
+    "base": 390.0,
+    "xh": 10.0,
+    "c": "#060813"
+   }
+  },
+  {
+   "k": "in",
+   "r": [
+    71,
+    429,
+    234,
+    446
+   ],
+   "box": [
+    69,
+    426,
+    282,
+    448
+   ],
+   "s": "123 Nguyễn Văn Cừ, P. An Lạc,",
+   "wt": 500,
+   "name": "addr1",
+   "id": "pk-addr1",
+   "cls": "val",
+   "attrs": {
+    "readonly": "",
+    "tabindex": "-1"
+   },
+   "label": "Địa điểm",
+   "m": {
+    "x": 71,
+    "w": 161.0,
+    "base": 444.0,
+    "xh": 7.0,
+    "c": "#162238"
+   }
+  },
+  {
+   "k": "in",
+   "r": [
+    71,
+    450,
+    238,
+    467
+   ],
+   "box": [
+    69,
+    448,
+    282,
+    470
+   ],
+   "s": "Q. Bình Thạnh, TP. Hồ Chí Minh",
+   "wt": 500,
+   "name": "addr2",
+   "id": "pk-addr2",
+   "cls": "val",
+   "attrs": {
+    "readonly": "",
+    "tabindex": "-1"
+   },
+   "label": "Địa điểm (tiếp)",
+   "m": {
+    "x": 71,
+    "w": 165.0,
+    "base": 463.0,
+    "xh": 9.0,
+    "c": "#16263e"
+   }
+  },
+  {
+   "k": "a",
+   "box": [
+    21,
+    683,
+    231,
+    729
+   ],
+   "href": "hop-cua-toi.html#dat-lich",
+   "rad": 10,
+   "label": "Đổi lịch"
+  },
+  {
+   "k": "a",
+   "box": [
+    244,
+    683,
+    487,
+    729
+   ],
+   "href": "ho-tro.html#gui-yeu-cau",
+   "rad": 10,
+   "label": "Liên hệ hỗ trợ"
+  },
+  {
+   "k": "a",
+   "box": [
+    35,
+    950,
+    98,
+    1004
+   ],
+   "href": "index.html",
+   "rad": 8,
+   "label": "Trang chủ"
+  },
+  {
+   "k": "a",
+   "box": [
+    148,
+    950,
+    206,
+    1004
+   ],
+   "href": "don-hang.html",
+   "rad": 8,
+   "label": "Đơn hàng"
+  },
+  {
+   "k": "a",
+   "box": [
+    250,
+    950,
+    358,
+    1004
+   ],
+   "href": "hop-cua-toi.html",
+   "rad": 8,
+   "label": "Hộp của tôi"
+  },
+  {
+   "k": "a",
+   "box": [
+    406,
+    950,
+    469,
+    1004
+   ],
+   "href": "tai-khoan.html",
+   "rad": 8,
+   "label": "Tài khoản"
+  }
+ ]
+}

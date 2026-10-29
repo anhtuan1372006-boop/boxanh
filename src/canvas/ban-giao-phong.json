@@ -1,0 +1,572 @@
+{
+ "name": "ban-giao-phong",
+ "W": 1024,
+ "H": 1536,
+ "bake": true,
+ "clean": true,
+ "bg": "#cae0cd",
+ "items": [
+  {
+   "k": "a",
+   "box": [
+    41,
+    9,
+    186,
+    51
+   ],
+   "href": "index.html",
+   "label": "BOXANH – Trang chủ"
+  },
+  {
+   "k": "dd",
+   "box": [
+    223,
+    14,
+    283,
+    46
+   ],
+   "w": 140,
+   "menu": [
+    [
+     "chuyen-tro.html",
+     "Chuyển trọ"
+    ],
+    [
+     "don-phong.html",
+     "Dọn phòng"
+    ],
+    [
+     "ban-giao-phong.html",
+     "Bàn giao phòng"
+    ],
+    [
+     "uoc-tinh-chi-phi.html",
+     "Ước tính chi phí"
+    ]
+   ]
+  },
+  {
+   "k": "a",
+   "box": [
+    304,
+    14,
+    366,
+    46
+   ],
+   "href": "chuyen-tro.html",
+   "label": "Chuyển trọ"
+  },
+  {
+   "k": "a",
+   "box": [
+    390,
+    14,
+    452,
+    46
+   ],
+   "href": "don-phong.html",
+   "label": "Dọn phòng"
+  },
+  {
+   "k": "a",
+   "box": [
+    474,
+    14,
+    560,
+    48
+   ],
+   "href": "ban-giao-phong.html",
+   "label": "Bàn giao phòng"
+  },
+  {
+   "k": "a",
+   "box": [
+    690,
+    14,
+    730,
+    46
+   ],
+   "href": "ho-tro.html",
+   "label": "Hỗ trợ"
+  },
+  {
+   "k": "a",
+   "box": [
+    750,
+    14,
+    777,
+    46
+   ],
+   "href": "thong-bao.html",
+   "label": "Thông báo"
+  },
+  {
+   "k": "a",
+   "box": [
+    796,
+    13,
+    931,
+    46
+   ],
+   "href": "uoc-tinh-chi-phi.html",
+   "pill": 1,
+   "label": "Nhận báo giá"
+  },
+  {
+   "k": "a",
+   "box": [
+    948,
+    12,
+    983,
+    47
+   ],
+   "href": "tai-khoan.html",
+   "pill": 1,
+   "label": "Tài khoản"
+  },
+  {
+   "k": "a",
+   "box": [
+    41,
+    66,
+    108,
+    82
+   ],
+   "href": "index.html",
+   "label": "Trang chủ"
+  },
+  {
+   "k": "a",
+   "box": [
+    43,
+    265,
+    305,
+    306
+   ],
+   "href": "#lich",
+   "pill": 1,
+   "label": "Tạo yêu cầu bàn giao"
+  },
+  {
+   "k": "a",
+   "box": [
+    495,
+    650,
+    599,
+    669
+   ],
+   "href": "assets/files/BOXANH-checklist-ban-giao-phong.csv",
+   "attrs": {
+    "download": ""
+   },
+   "label": "Tải mẫu checklist"
+  },
+  {
+   "k": "anchor",
+   "id": "lich",
+   "y": 635
+  },
+  {
+   "k": "form",
+   "id": "handover-form",
+   "label": "Lịch bàn giao",
+   "attrs": {
+    "data-done": "Đã gửi yêu cầu bàn giao|BOXANH sẽ xác nhận thông tin và gửi báo giá chính thức sau khi khảo sát (nếu cần)."
+   }
+  },
+  {
+   "k": "in",
+   "r": [
+    677,
+    721,
+    941,
+    739
+   ],
+   "box": [
+    644,
+    713,
+    981,
+    746
+   ],
+   "s": "Số 42, Đường Hoa Phượng, Quận Bình Thạnh, TP. HCM",
+   "name": "addr",
+   "id": "h-addr",
+   "form": "handover-form",
+   "label": "Địa chỉ phòng trọ",
+   "m": {
+    "x": 679,
+    "w": 259.0,
+    "base": 734.0,
+    "xh": 7.0,
+    "c": "#596283"
+   }
+  },
+  {
+   "k": "in",
+   "r": [
+    678,
+    783,
+    742,
+    800
+   ],
+   "box": [
+    644,
+    777,
+    813,
+    808
+   ],
+   "s": "12/01/2027",
+   "type": "date",
+   "name": "date",
+   "id": "h-date",
+   "form": "handover-form",
+   "label": "Ngày bàn giao",
+   "m": {
+    "x": 682,
+    "w": 58.0,
+    "base": 797.0,
+    "xh": 9.0,
+    "c": "#2f343b"
+   }
+  },
+  {
+   "k": "sel",
+   "r": [
+    860,
+    783,
+    930,
+    800
+   ],
+   "box": [
+    825,
+    777,
+    981,
+    808
+   ],
+   "s": "09:00 - 11:00",
+   "name": "time",
+   "id": "h-time",
+   "form": "handover-form",
+   "label": "Khung giờ",
+   "options": [
+    "09:00 - 11:00",
+    "13:30 - 15:30",
+    "16:00 - 18:00"
+   ],
+   "m": {
+    "x": 863,
+    "w": 64.0,
+    "base": 797.0,
+    "xh": 9.0,
+    "c": "#2c3035"
+   }
+  },
+  {
+   "k": "file",
+   "box": [
+    910,
+    841,
+    981,
+    911
+   ],
+   "label": "Thêm ảnh hiện trạng",
+   "done": "Đã thêm {n} ảnh hiện trạng."
+  },
+  {
+   "k": "in",
+   "multi": true,
+   "r": [
+    652,
+    949,
+    891,
+    965
+   ],
+   "box": [
+    644,
+    941,
+    981,
+    1000
+   ],
+   "s": "Phòng đã dọn cơ bản, cần hỗ trợ sửa bản lề tủ bếp.",
+   "name": "note",
+   "id": "h-note",
+   "form": "handover-form",
+   "max": 500,
+   "label": "Ghi chú của bạn",
+   "m": {
+    "x": 655,
+    "w": 233.0,
+    "base": 961.0,
+    "xh": 6.0,
+    "c": "#5b6382"
+   }
+  },
+  {
+   "k": "btn",
+   "box": [
+    645,
+    1019,
+    979,
+    1055
+   ],
+   "form": "handover-form",
+   "label": "Gửi yêu cầu",
+   "rad": 10
+  },
+  {
+   "k": "a",
+   "box": [
+    413,
+    1088,
+    502,
+    1120
+   ],
+   "act": "info:Báo giá hạng mục FIX “Sửa bản lề tủ”: 150.000 – 300.000 đ (dữ liệu minh họa). Giá cuối cùng xác nhận sau khi kiểm tra thực tế.",
+   "rad": 6,
+   "label": "Xem báo giá"
+  },
+  {
+   "k": "a",
+   "box": [
+    509,
+    1088,
+    609,
+    1120
+   ],
+   "act": "toast:Đã duyệt hạng mục FIX. Kỹ thuật viên sẽ chuẩn bị vật tư phù hợp.",
+   "rad": 6,
+   "label": "Duyệt hạng mục"
+  },
+  {
+   "k": "a",
+   "box": [
+    290,
+    1213,
+    370,
+    1230
+   ],
+   "act": "info:Biên bản mẫu có 12 ảnh bàn giao (bản demo).",
+   "label": "Xem tất cả (12)"
+  },
+  {
+   "k": "a",
+   "box": [
+    825,
+    1160,
+    979,
+    1193
+   ],
+   "act": "info:Biên bản bàn giao BX2027-0015 đang hiển thị bên dưới (bản demo).",
+   "rad": 10,
+   "label": "Xem biên bản"
+  },
+  {
+   "k": "a",
+   "box": [
+    45,
+    1433,
+    183,
+    1467
+   ],
+   "href": "index.html",
+   "label": "BOXANH – Trang chủ"
+  },
+  {
+   "k": "a",
+   "box": [
+    308,
+    1454,
+    359,
+    1468
+   ],
+   "href": "chuyen-tro.html",
+   "label": "Chuyển trọ"
+  },
+  {
+   "k": "a",
+   "box": [
+    308,
+    1472,
+    359,
+    1486
+   ],
+   "href": "don-phong.html",
+   "label": "Dọn phòng"
+  },
+  {
+   "k": "a",
+   "box": [
+    308,
+    1490,
+    377,
+    1504
+   ],
+   "href": "ban-giao-phong.html",
+   "label": "Bàn giao phòng"
+  },
+  {
+   "k": "a",
+   "box": [
+    427,
+    1454,
+    504,
+    1468
+   ],
+   "href": "ho-tro.html#faq",
+   "label": "Câu hỏi thường gặp"
+  },
+  {
+   "k": "a",
+   "box": [
+    427,
+    1472,
+    465,
+    1486
+   ],
+   "href": "ho-tro.html#gui-yeu-cau",
+   "label": "Liên hệ"
+  },
+  {
+   "k": "a",
+   "box": [
+    427,
+    1490,
+    512,
+    1504
+   ],
+   "href": "ho-tro.html",
+   "label": "Hướng dẫn sử dụng"
+  },
+  {
+   "k": "a",
+   "box": [
+    553,
+    1454,
+    597,
+    1468
+   ],
+   "href": "gioi-thieu.html",
+   "label": "Giới thiệu"
+  },
+  {
+   "k": "a",
+   "box": [
+    553,
+    1472,
+    622,
+    1486
+   ],
+   "href": "dieu-khoan.html",
+   "label": "Cam kết dịch vụ"
+  },
+  {
+   "k": "a",
+   "box": [
+    553,
+    1490,
+    637,
+    1504
+   ],
+   "href": "chinh-sach-bao-mat.html",
+   "label": "Chính sách bảo mật"
+  },
+  {
+   "k": "form",
+   "id": "news-form",
+   "label": "Nhận tin từ BOXANH",
+   "attrs": {
+    "data-done": "Đăng ký nhận tin thành công|Cảm ơn bạn đã quan tâm BOXANH. Chúng tôi sẽ gửi mẹo chuyển trọ và ưu đãi qua email."
+   }
+  },
+  {
+   "k": "in",
+   "r": [
+    731,
+    1461,
+    813,
+    1476
+   ],
+   "box": [
+    699,
+    1453,
+    932,
+    1482
+   ],
+   "s": "Nhập email của bạn",
+   "type": "email",
+   "name": "email",
+   "id": "news-email",
+   "form": "news-form",
+   "req": true,
+   "ac": "email",
+   "label": "Email của bạn",
+   "m": {
+    "x": 733,
+    "w": 79.0,
+    "base": 1472.0,
+    "xh": 5.0,
+    "c": "#808e98"
+   }
+  },
+  {
+   "k": "btn",
+   "box": [
+    932,
+    1453,
+    978,
+    1482
+   ],
+   "form": "news-form",
+   "label": "Đăng ký nhận tin",
+   "rad": 6
+  },
+  {
+   "k": "a",
+   "box": [
+    869,
+    1492,
+    893,
+    1517
+   ],
+   "soon": "Fanpage Facebook",
+   "pill": 1,
+   "label": "Facebook"
+  },
+  {
+   "k": "a",
+   "box": [
+    899,
+    1492,
+    923,
+    1517
+   ],
+   "soon": "Kênh TikTok",
+   "pill": 1,
+   "label": "TikTok"
+  },
+  {
+   "k": "a",
+   "box": [
+    928,
+    1492,
+    954,
+    1517
+   ],
+   "soon": "Kênh YouTube",
+   "pill": 1,
+   "label": "YouTube"
+  },
+  {
+   "k": "a",
+   "box": [
+    958,
+    1492,
+    982,
+    1517
+   ],
+   "soon": "Trang Instagram",
+   "pill": 1,
+   "label": "Instagram"
+  }
+ ]
+}

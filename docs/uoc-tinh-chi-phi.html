@@ -4,275 +4,68 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Ước tính chi phí | BOXANH</title>
-<meta name="description" content="Ước tính chi phí chuyển trọ, dọn phòng, bàn giao phòng trong 1 phút. Biết khoảng giá trước khi gửi nhu cầu, BOXANH xác nhận giá chính thức sau khi đủ thông tin.">
+<meta name="description" content="Ước tính chi phí chuyển trọ, dọn phòng, bàn giao phòng – biết khoảng giá trước khi gửi nhu cầu. BOXANH xác nhận giá chính thức sau khi đủ thông tin.">
 <meta name="theme-color" content="#0e4a37">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Ước tính chi phí | BOXANH">
-<meta property="og:description" content="Ước tính chi phí chuyển trọ, dọn phòng, bàn giao phòng trong 1 phút. Biết khoảng giá trước khi gửi nhu cầu, BOXANH xác nhận giá chính thức sau khi đủ thông tin.">
+<meta property="og:description" content="Ước tính chi phí chuyển trọ, dọn phòng, bàn giao phòng – biết khoảng giá trước khi gửi nhu cầu. BOXANH xác nhận giá chính thức sau khi đủ thông tin.">
 <meta property="og:image" content="assets/img/hero-home.webp">
 <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&amp;family=Patrick+Hand&amp;display=swap">
-<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/css/style.css?v=0d05d273">
+<link rel="stylesheet" href="assets/css/canvas.css?v=b87b78e3">
+<link rel="preload" as="image" href="assets/canvas/uoc-tinh.webp?v=66c5ee31" media="(min-width: 900px)">
 <script>try{if(localStorage.getItem('bx_user'))document.documentElement.setAttribute('data-auth','in')}catch(e){}</script>
 </head>
-<body class="l-site">
-<a class="skip" href="#main">Bỏ qua điều hướng</a>
-<header class="site-hd">
-  <div class="container hd-in">
-    <a class="logo " href="index.html" aria-label="BOXANH – về trang chủ"><svg class="logo-mark" viewBox="0 0 32 32" aria-hidden="true"><path d="M16 2.6 4.4 9.3v13.4L16 29.4l11.6-6.7V9.3z" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linejoin="round"/><path d="M16 10.3 10.4 13.5v6.4L16 23.1l5.6-3.2v-6.4z" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linejoin="round"/><path d="m10.4 13.5 5.6 3.2 5.6-3.2M16 16.7v6.4" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linejoin="round"/></svg><span>BOXANH</span></a>
-    <nav class="hd-nav" aria-label="Điều hướng chính">
-      <div class="dd" data-dd>
-        <button class="hd-link" type="button" aria-expanded="false" aria-haspopup="true">Dịch vụ <svg class="ic dd-chev" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg></button>
-        <div class="dd-menu"><a class="dd-item" href="chuyen-tro.html"><span class="dd-ic"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2"/><path d="M15 18H9"/><path d="M19 18h2a1 1 0 0 0 1-1v-3.65a1 1 0 0 0-.22-.62l-3.48-4.35A1 1 0 0 0 17.52 8H14"/><circle cx="17" cy="18" r="2"/><circle cx="7" cy="18" r="2"/></svg></span><span><b>Chuyển trọ</b><small>Đóng gói · Vận chuyển · Bốc xếp</small></span></a><a class="dd-item" href="don-phong.html"><span class="dd-ic"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 3l1.9 5.1L19 10l-5.1 1.9L12 17l-1.9-5.1L5 10l5.1-1.9z"/><path d="M19 15l.8 1.7L21.5 17.5l-1.7.8L19 20l-.8-1.7-1.7-.8 1.7-.8z"/><path d="M5 3l.6 1.4L7 5l-1.4.6L5 7l-.6-1.4L3 5l1.4-.6z"/></svg></span><span><b>Dọn phòng</b><small>Vệ sinh phòng cũ và phòng mới</small></span></a><a class="dd-item" href="ban-giao-phong.html"><span class="dd-ic"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="7.5" cy="15.5" r="5.5"/><path d="m21 2-9.6 9.6M15.5 7.5l3 3L22 7l-3-3"/></svg></span><span><b>Bàn giao phòng</b><small>Kiểm tra · Sửa chữa · Biên bản</small></span></a><a class="dd-item is-active" href="uoc-tinh-chi-phi.html"><span class="dd-ic"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 2v20l2-1 2 1 2-1 2 1 2-1 2 1 2-1 2 1V2l-2 1-2-1-2 1-2-1-2 1-2-1-2 1Z"/><path d="M16 8h-6a2 2 0 1 0 0 4h4a2 2 0 1 1 0 4H8M12 17.5v-11"/></svg></span><span><b>Ước tính chi phí</b><small>Biết khoảng giá trong 1 phút</small></span></a></div>
-      </div>
-      <a class="hd-link" href="index.html#quy-trinh">Quy trình</a>
-      <a class="hd-link" href="index.html#hop-tai-su-dung">Hộp tái sử dụng</a>
-      <a class="hd-link is-active" href="uoc-tinh-chi-phi.html" aria-current="page">Bảng giá</a>
-      <a class="hd-link" href="doi-tac.html">Đối tác</a>
-      <a class="hd-link" href="ho-tro.html">Hỗ trợ</a>
-    </nav>
-    <div class="hd-actions">
-      <a class="hd-login when-out" href="dang-nhap.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg><span>Đăng nhập</span></a>
-      <a class="hd-icon when-in" href="thong-bao.html" aria-label="Thông báo"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"/></svg><span class="hd-dot" data-unread hidden></span></a>
-      <div class="dd when-in" data-dd>
-        <button class="hd-user" type="button" aria-expanded="false" aria-haspopup="true">
-          <img class="avatar avatar-sm" src="assets/img/avatar-tuan-anh.webp" width="40" height="40" alt="">
-          <span data-user-short>Tài khoản</span><svg class="ic dd-chev" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg>
-        </button>
-        <div class="dd-menu dd-right">
-          <div class="dd-head"><b data-user-name>Khách hàng</b><small data-user-phone></small></div>
-          <a class="dd-item" href="tai-khoan.html"><span class="dd-ic"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3 10.5 12 3l9 7.5V20a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"/></svg></span><span><b>Tổng quan tài khoản</b></span></a>
-          <a class="dd-item" href="don-hang.html"><span class="dd-ic"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="8" y="2" width="8" height="4" rx="1"/><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><path d="M12 11h4M12 16h4M8 11h.01M8 16h.01"/></svg></span><span><b>Đơn hàng của tôi</b></span></a>
-          <a class="dd-item" href="hop-cua-toi.html"><span class="dd-ic"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"/><path d="m3.3 7 8.7 5 8.7-5"/><path d="M12 22V12"/></svg></span><span><b>Hộp của tôi</b></span></a>
-          <a class="dd-item" href="ho-so.html"><span class="dd-ic"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></span><span><b>Thông tin cá nhân</b></span></a>
-          <button class="dd-item" type="button" data-logout><span class="dd-ic"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><path d="m16 17 5-5-5-5M21 12H9"/></svg></span><span><b>Đăng xuất</b></span></button>
-        </div>
-      </div>
-      <a class="btn btn-yellow btn-sm hd-cta" href="uoc-tinh-chi-phi.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M10 9H8M16 13H8M16 17H8"/></svg><span>Nhận báo giá</span><svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
-      <button class="hd-burger" type="button" data-drawer="site-drawer" aria-controls="site-drawer" aria-expanded="false" aria-label="Mở menu"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button>
-    </div>
-  </div>
-</header>
-<div class="drawer" id="site-drawer" aria-hidden="true">
-  <div class="drawer-panel" role="dialog" aria-modal="true" aria-label="Menu">
-    <div class="drawer-hd"><a class="logo " href="index.html" aria-label="BOXANH – về trang chủ"><svg class="logo-mark" viewBox="0 0 32 32" aria-hidden="true"><path d="M16 2.6 4.4 9.3v13.4L16 29.4l11.6-6.7V9.3z" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linejoin="round"/><path d="M16 10.3 10.4 13.5v6.4L16 23.1l5.6-3.2v-6.4z" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linejoin="round"/><path d="m10.4 13.5 5.6 3.2 5.6-3.2M16 16.7v6.4" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linejoin="round"/></svg><span>BOXANH</span></a><button class="icon-btn" type="button" data-drawer-close aria-label="Đóng menu"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M18 6 6 18M6 6l12 12"/></svg></button></div>
-    <div class="drawer-user when-in"><img class="avatar" src="assets/img/avatar-tuan-anh.webp" width="40" height="40" alt=""><div><b data-user-name>Khách hàng</b><small data-user-phone></small></div></div>
-    <p class="drawer-label">Dịch vụ</p>
-    <a class="drawer-link" href="chuyen-tro.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2"/><path d="M15 18H9"/><path d="M19 18h2a1 1 0 0 0 1-1v-3.65a1 1 0 0 0-.22-.62l-3.48-4.35A1 1 0 0 0 17.52 8H14"/><circle cx="17" cy="18" r="2"/><circle cx="7" cy="18" r="2"/></svg><span><b>Chuyển trọ</b><small>Đóng gói · Vận chuyển · Bốc xếp</small></span></a><a class="drawer-link" href="don-phong.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 3l1.9 5.1L19 10l-5.1 1.9L12 17l-1.9-5.1L5 10l5.1-1.9z"/><path d="M19 15l.8 1.7L21.5 17.5l-1.7.8L19 20l-.8-1.7-1.7-.8 1.7-.8z"/><path d="M5 3l.6 1.4L7 5l-1.4.6L5 7l-.6-1.4L3 5l1.4-.6z"/></svg><span><b>Dọn phòng</b><small>Vệ sinh phòng cũ và phòng mới</small></span></a><a class="drawer-link" href="ban-giao-phong.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="7.5" cy="15.5" r="5.5"/><path d="m21 2-9.6 9.6M15.5 7.5l3 3L22 7l-3-3"/></svg><span><b>Bàn giao phòng</b><small>Kiểm tra · Sửa chữa · Biên bản</small></span></a><a class="drawer-link is-active" href="uoc-tinh-chi-phi.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 2v20l2-1 2 1 2-1 2 1 2-1 2 1 2-1 2 1V2l-2 1-2-1-2 1-2-1-2 1-2-1-2 1Z"/><path d="M16 8h-6a2 2 0 1 0 0 4h4a2 2 0 1 1 0 4H8M12 17.5v-11"/></svg><span><b>Ước tính chi phí</b><small>Biết khoảng giá trong 1 phút</small></span></a>
-    <p class="drawer-label">Khám phá</p>
-    <a class="drawer-link" href="index.html#quy-trinh"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="6" cy="19" r="3"/><path d="M9 19h8.5a3.5 3.5 0 0 0 0-7h-11a3.5 3.5 0 0 1 0-7H15"/><circle cx="18" cy="5" r="3"/></svg><span><b>Quy trình</b></span></a>
-    <a class="drawer-link" href="index.html#hop-tai-su-dung"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M7 19H4.8a1.83 1.83 0 0 1-1.57-.88 1.79 1.79 0 0 1 0-1.78L7.2 9.5"/><path d="M11 19h8.2a1.83 1.83 0 0 0 1.56-.89 1.78 1.78 0 0 0 0-1.78l-1.23-2.12"/><path d="m14 16-3 3 3 3"/><path d="M8.3 13.6 7.2 9.5l-4.1 1.1"/><path d="m9.34 5.81 1.1-1.89A1.83 1.83 0 0 1 11.99 3a1.78 1.78 0 0 1 1.54.89l3.94 6.84"/><path d="m13.38 9.63 4.1 1.1 1.1-4.1"/></svg><span><b>Hộp tái sử dụng</b></span></a>
-    <a class="drawer-link" href="doi-tac.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg><span><b>Trở thành đối tác</b></span></a>
-    <a class="drawer-link" href="ho-tro.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3 14h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-7a9 9 0 0 1 18 0v7a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3"/></svg><span><b>Hỗ trợ &amp; câu hỏi</b></span></a>
-    <a class="drawer-link" href="gioi-thieu.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></svg><span><b>Về BOXANH</b></span></a>
-    <div class="drawer-ft">
-      <a class="btn btn-primary btn-block" href="uoc-tinh-chi-phi.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M10 9H8M16 13H8M16 17H8"/></svg> Nhận báo giá</a>
-      <a class="btn btn-outline btn-block when-out" href="dang-nhap.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg> Đăng nhập / Đăng ký</a>
-      <a class="btn btn-outline btn-block when-in" href="tai-khoan.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg> Tài khoản của tôi</a>
-      <button class="btn btn-ghost btn-block when-in" type="button" data-logout><svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><path d="m16 17 5-5-5-5M21 12H9"/></svg> Đăng xuất</button>
-    </div>
-  </div>
+<body class="l-canvas" style="--cv-bg:#e6f9fd;">
+<main id="main" class="cv-wrap">
+<div class="cv cv-d baked" data-cv="uoc-tinh" style="--W:1536;--ar:1536/1024;--clean:url(assets/canvas/uoc-tinh-clean.webp);--plate:url(assets/canvas/uoc-tinh.webp)">
+<img class="cv-bg" src="assets/canvas/uoc-tinh.webp?v=66c5ee31" alt="" width="3072" height="2048" decoding="async">
+<a class="cv-a" href="index.html" aria-label="BOXANH – Trang chủ" style="--l:41;--t:6;--bw:180;--bh:44"></a>
+<button class="cv-a cv-dd" type="button" aria-expanded="false" aria-haspopup="true" aria-label="Dịch vụ" style="--l:268;--t:14;--bw:82;--bh:28"></button><div class="cv-pop" style="--l:268;--t:46;--bw:140;--pf:7.4"><a href="chuyen-tro.html">Chuyển trọ</a><a href="don-phong.html">Dọn phòng</a><a href="ban-giao-phong.html">Bàn giao phòng</a><a href="uoc-tinh-chi-phi.html">Ước tính chi phí</a></div>
+<a class="cv-a" href="uoc-tinh-chi-phi.html" aria-label="Bảng giá" style="--l:376;--t:14;--bw:70;--bh:28"></a>
+<a class="cv-a" href="ho-tro.html" aria-label="Hướng dẫn" style="--l:472;--t:14;--bw:84;--bh:28"></a>
+<a class="cv-a" href="ho-tro.html#faq" aria-label="Câu hỏi thường gặp" style="--l:584;--t:14;--bw:138;--bh:28"></a>
+<a class="cv-a" href="gioi-thieu.html" aria-label="Về BOXANH" style="--l:746;--t:14;--bw:90;--bh:28"></a>
+<button class="cv-a pill" type="button" data-act="info:BOXANH hiện phục vụ Hà Nội và TP. Hồ Chí Minh. Chọn khu vực khi gửi yêu cầu nhé!" aria-label="Khu vực: Hà Nội" style="--l:1150;--t:14;--bw:102;--bh:28"></button>
+<a class="cv-a" href="thong-bao.html" aria-label="Thông báo" style="--l:1298;--t:12;--bw:28;--bh:32"></a>
+<a class="cv-a pill" href="tai-khoan.html" aria-label="Tài khoản Nguyễn Minh Anh" style="--l:1332;--t:10;--bw:160;--bh:36"></a>
+<form id="est-form" class="cv-anchor" novalidate aria-label="Ước tính chi phí" data-done="Yêu cầu đã được gửi|Mã yêu cầu: BX2027-0015. Trạng thái: Chờ xác nhận thông tin. Chúng tôi sẽ liên hệ với bạn sớm để xác nhận thông tin và báo giá chính thức."></form>
+<button class="cv-tog ring" type="button" role="radio" aria-checked="true" data-default aria-label="Chuyển trọ" data-group="svc" data-name="svc" data-value="Chuyển trọ" style="--l:35;--t:325;--bw:317;--bh:202;--hr:10"><span style="--l:283;--t:11;--bw:25;--bh:25;--onx:318;--ony:336;--offx:638;--offy:336;--r:13"></span></button>
+<button class="cv-tog ring" type="button" role="radio" aria-checked="false" aria-label="Dọn phòng" data-group="svc" data-name="svc" data-value="Dọn phòng" style="--l:362;--t:325;--bw:310;--bh:202;--hr:10"><span style="--l:276;--t:11;--bw:25;--bh:25;--onx:318;--ony:336;--offx:638;--offy:336;--r:13"></span></button>
+<button class="cv-tog ring" type="button" role="radio" aria-checked="false" aria-label="Bàn giao phòng" data-group="svc" data-name="svc" data-value="Bàn giao phòng" style="--l:683;--t:325;--bw:310;--bh:202;--hr:10"><span style="--l:276;--t:11;--bw:25;--bh:25;--onx:318;--ony:336;--offx:638;--offy:336;--r:13"></span></button>
+<input type="text" class="cv-in" id="e-from" name="from" form="est-form" aria-label="Nơi đi" autocomplete="off" data-s="Số 12, ngõ 68 Phú Diễn" data-wt="400" data-x="90" data-b="638" data-w="124" data-xh="10" data-bx="86" data-by="618" data-bh="28" style="--l:86;--t:618;--bw:264;--bh:28;--wt:400;--c:#1a293b;--fs:18.69;--pl:4;--pt:5.05" placeholder="">
+<input type="text" class="cv-in" id="e-to" name="to" form="est-form" aria-label="Nơi đến" autocomplete="off" data-s="Số 210, đường Cầu Giấy" data-wt="400" data-x="474" data-b="638" data-w="134" data-xh="10" data-bx="470" data-by="618" data-bh="28" style="--l:470;--t:618;--bw:265;--bh:28;--wt:400;--c:#162438;--fs:18.69;--pl:4;--pt:5.05" placeholder="">
+<button class="cv-a pill" type="button" data-act="info:Đã đổi chiều nơi đi và nơi đến (bản demo)." aria-label="Đổi chiều" style="--l:384;--t:616;--bw:44;--bh:38"></button>
+<select class="cv-in cv-sel" id="e-ff" name="fromFloor" form="est-form" aria-label="Tầng nơi đi" data-s="Tầng 4" data-wt="400" data-x="87" data-b="722" data-w="37" data-xh="10" data-bx="52" data-by="697" data-bh="36" style="--l:52;--t:697;--bw:151;--bh:36;--wt:400;--c:#1e2e44;--fs:18.69;--pl:35;--pt:10.05"><option value="" selected disabled hidden></option><option value="Tầng trệt">Tầng trệt</option><option value="Tầng 2">Tầng 2</option><option value="Tầng 3">Tầng 3</option><option value="Tầng 4">Tầng 4</option><option value="Tầng 5">Tầng 5</option><option value="Tầng 6+">Tầng 6+</option></select>
+<select class="cv-in cv-sel" id="e-fl" name="fromLift" form="est-form" aria-label="Thang máy nơi đi" data-s="Không có" data-wt="400" data-x="267" data-b="722" data-w="50" data-xh="7" data-bx="227" data-by="697" data-bh="36" style="--l:227;--t:697;--bw:150;--bh:36;--wt:400;--c:#17273d;--fs:13.08;--pl:40;--pt:14.53"><option value="" selected disabled hidden></option><option value="Không có">Không có</option><option value="Có">Có</option></select>
+<select class="cv-in cv-sel" id="e-tf" name="toFloor" form="est-form" aria-label="Tầng nơi đến" data-s="Tầng 2" data-wt="400" data-x="472" data-b="722" data-w="36" data-xh="9" data-bx="437" data-by="697" data-bh="36" style="--l:437;--t:697;--bw:150;--bh:36;--wt:400;--c:#182234;--fs:16.82;--pl:35;--pt:11.54"><option value="" selected disabled hidden></option><option value="Tầng trệt">Tầng trệt</option><option value="Tầng 2">Tầng 2</option><option value="Tầng 3">Tầng 3</option><option value="Tầng 4">Tầng 4</option><option value="Tầng 5">Tầng 5</option><option value="Tầng 6+">Tầng 6+</option></select>
+<select class="cv-in cv-sel" id="e-tl" name="toLift" form="est-form" aria-label="Thang máy nơi đến" data-s="Có" data-wt="400" data-x="652" data-b="723" data-w="14" data-xh="10" data-bx="611" data-by="697" data-bh="36" style="--l:611;--t:697;--bw:162;--bh:36;--wt:400;--c:#2a3352;--fs:18.69;--pl:41;--pt:11.05"><option value="" selected disabled hidden></option><option value="Có">Có</option><option value="Không có">Không có</option></select>
+<div class="cv-step" data-min="0" data-max="60" data-name="boxes"><button class="cv-a" type="button" data-d="-1" aria-label="Giảm Số hộp tái sử dụng" style="--l:216;--t:806;--bw:32;--bh:32;--r:5"></button><input class="cv-in cv-num" type="text" inputmode="numeric" id="e-boxes" name="boxes" form="est-form" value="12" data-v0="12" aria-label="Số hộp tái sử dụng" style="--l:252;--t:808;--bw:60;--bh:28;--fs:12;--wt:500"><button class="cv-a" type="button" data-d="1" aria-label="Tăng Số hộp tái sử dụng" style="--l:316;--t:806;--bw:34;--bh:32;--r:5"></button></div>
+<div class="cv-step" data-min="0" data-max="20" data-name="bulky"><button class="cv-a" type="button" data-d="-1" aria-label="Giảm Số đồ cồng kềnh" style="--l:526;--t:806;--bw:32;--bh:32;--r:5"></button><input class="cv-in cv-num" type="text" inputmode="numeric" id="e-bulky" name="bulky" form="est-form" value="3" data-v0="3" aria-label="Số đồ cồng kềnh" style="--l:562;--t:808;--bw:60;--bh:28;--fs:12;--wt:500"><button class="cv-a" type="button" data-d="1" aria-label="Tăng Số đồ cồng kềnh" style="--l:626;--t:806;--bw:34;--bh:32;--r:5"></button></div>
+<div class="cv-step" data-min="1" data-max="8" data-name="people"><button class="cv-a" type="button" data-d="-1" aria-label="Giảm Số người hỗ trợ" style="--l:850;--t:806;--bw:32;--bh:32;--r:5"></button><input class="cv-in cv-num" type="text" inputmode="numeric" id="e-people" name="people" form="est-form" value="2" data-v0="2" aria-label="Số người hỗ trợ" style="--l:886;--t:808;--bw:52;--bh:28;--fs:12;--wt:500"><button class="cv-a" type="button" data-d="1" aria-label="Tăng Số người hỗ trợ" style="--l:942;--t:806;--bw:34;--bh:32;--r:5"></button></div>
+<input type="text" data-date class="cv-in" id="e-date" name="date" form="est-form" aria-label="Ngày dự kiến" autocomplete="off" data-s="12/01/2027" data-wt="400" data-x="57" data-b="960" data-w="63" data-xh="10" data-bx="45" data-by="937" data-bh="31" style="--l:45;--t:937;--bw:120;--bh:31;--wt:400;--c:#39445d;--fs:18.69;--pl:12;--pt:8.05" placeholder="">
+<select class="cv-in cv-sel" id="e-time" name="time" form="est-form" aria-label="Khung giờ" data-s="Sáng (8:00 - 12:00)" data-wt="400" data-x="230" data-b="960" data-w="107" data-xh="9" data-bx="216" data-by="937" data-bh="31" style="--l:216;--t:937;--bw:172;--bh:31;--wt:400;--c:#3b455c;--fs:16.82;--pl:14;--pt:9.54"><option value="" selected disabled hidden></option><option value="Sáng (8:00 - 12:00)">Sáng (8:00 - 12:00)</option><option value="Chiều (13:00 - 17:00)">Chiều (13:00 - 17:00)</option><option value="Tối (18:00 - 21:00)">Tối (18:00 - 21:00)</option></select>
+<label class="cv-a cv-file" style="--l:598;--t:925;--bw:44;--bh:33;--r:6" aria-label="Thêm ảnh đồ đạc"><input type="file" accept="image/*" multiple data-done="Đã thêm {n} ảnh đồ đạc."></label>
+<button class="cv-sw" type="button" role="switch" aria-checked="true" aria-label="Hỗ trợ đóng gói" data-name="pack" style="--l:791;--t:911;--bw:35;--bh:25"><i></i></button>
+<button class="cv-sw" type="button" role="switch" aria-checked="true" aria-label="Tháo lắp cơ bản" data-name="assembly" style="--l:953;--t:910;--bw:36;--bh:26"><i></i></button>
+<input type="text" class="cv-in" id="e-name" name="name" form="est-form" aria-label="Họ tên" autocomplete="name" data-s="Nguyễn Minh Anh" data-wt="400" data-x="1084" data-b="786" data-w="89" data-xh="7" data-bx="1072" data-by="765" data-bh="30" style="--l:1072;--t:765;--bw:197;--bh:30;--wt:400;--c:#222e43;--fs:13.08;--pl:12;--pt:10.53" placeholder="">
+<input type="text" class="cv-in" id="e-phone" name="phone" form="est-form" aria-label="Số điện thoại" autocomplete="tel" inputmode="tel" data-s="0987 654 321" data-wt="400" data-x="1326" data-b="786" data-w="75" data-xh="10" data-bx="1315" data-by="765" data-bh="30" style="--l:1315;--t:765;--bw:184;--bh:30;--wt:400;--c:#16253a;--fs:18.69;--pl:11;--pt:6.05" placeholder="">
+<button class="cv-tog" type="button" role="checkbox" aria-checked="true" data-default aria-label="Đồng ý Điều khoản dịch vụ" data-name="" data-value="Đồng ý Điều khoản dịch vụ" style="--l:1046;--t:800;--bw:20;--bh:20;--hr:7"><span style="--l:0;--t:0;--bw:20;--bh:20;--onx:1046;--ony:800;--offx:1044;--offy:722;--r:3"></span></button>
+<a class="cv-a" href="dieu-khoan.html" aria-label="Điều khoản dịch vụ" style="--l:1171;--t:803;--bw:94;--bh:14"></a>
+<button class="cv-a pill" type="submit" form="est-form" aria-label="Gửi yêu cầu tư vấn" style="--l:1036;--t:836;--bw:464;--bh:37;--r:10"></button>
+<a class="cv-a pill" href="don-hang-chi-tiet.html?ma=BX2027-0015" aria-label="Theo dõi yêu cầu" style="--l:1402;--t:950;--bw:92;--bh:34"></a>
 </div>
-<main id="main">
-<section class="hero">
-  <div class="container hero-in" style="padding-block:28px 40px">
-    <div class="hero-text">
-      <h1 class="display" style="font-size:clamp(38px,5vw,64px)">Ước tính chi phí</h1>
-      <p class="lead">Biết khoảng giá trước khi gửi nhu cầu.</p>
-      <ol class="row wrap mt-20" id="est-steps" aria-label="Tiến trình">
-        <li class="row" style="gap:8px"><span class="num-dot" data-st="1">1</span><b class="small">Dịch vụ</b></li>
-        <li aria-hidden="true"><svg class="ic ic-sm" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14M12 5l7 7-7 7"/></svg></li>
-        <li class="row" style="gap:8px"><span class="num-dot light" data-st="2">2</span><b class="small">Thông tin</b></li>
-        <li aria-hidden="true"><svg class="ic ic-sm" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14M12 5l7 7-7 7"/></svg></li>
-        <li class="row" style="gap:8px"><span class="num-dot light" data-st="3">3</span><b class="small">Ước tính</b></li>
-        <li aria-hidden="true"><svg class="ic ic-sm" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14M12 5l7 7-7 7"/></svg></li>
-        <li class="row" style="gap:8px"><span class="num-dot light" data-st="4">4</span><b class="small">Gửi yêu cầu</b></li>
-      </ol>
-    </div>
-    <div class="hero-art" style="--ratio:3.2"><img src="assets/img/hero-uoc-tinh.webp" width="926" height="222" alt="Nhân viên BOXANH ôm hộp tái sử dụng trước xe tải" fetchpriority="high"></div>
-  </div>
-</section>
-
-<form class="container split section-sm" id="est-form" novalidate style="padding-top:0">
-  <div class="card card-pad stack" style="--gap:28px">
-    <section aria-labelledby="s1">
-      <div class="row between wrap"><h2 class="h3 row" id="s1"><span class="num-dot light">1</span> Chọn dịch vụ</h2><button class="btn btn-ghost btn-sm" type="button" id="sample"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 3l1.9 5.1L19 10l-5.1 1.9L12 17l-1.9-5.1L5 10l5.1-1.9z"/><path d="M19 15l.8 1.7L21.5 17.5l-1.7.8L19 20l-.8-1.7-1.7-.8 1.7-.8z"/><path d="M5 3l.6 1.4L7 5l-1.4.6L5 7l-.6-1.4L3 5l1.4-.6z"/></svg> Dùng dữ liệu mẫu</button></div>
-      <p class="small muted mt-4">Chọn một hoặc nhiều dịch vụ bạn cần để ước tính chi phí phù hợp.</p>
-      <div class="grid g-3 mt-12" data-need-one="Vui lòng chọn ít nhất một dịch vụ.">
-        <label class="pick"><input type="checkbox" name="svc" value="chuyen-tro"><span class="pick-mark"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20 6 9 17l-5-5"/></svg></span><div class="pick-img"><img src="assets/img/sel-chuyen-tro.webp" width="297" height="107" alt="" loading="lazy"></div><div class="pick-body"><b>Chuyển trọ</b><span>Vận chuyển đồ đạc, bốc xếp tại nơi đi và nơi đến.</span></div></label>
-        <label class="pick"><input type="checkbox" name="svc" value="don-phong"><span class="pick-mark"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20 6 9 17l-5-5"/></svg></span><div class="pick-img"><img src="assets/img/sel-don-phong.webp" width="291" height="107" alt="" loading="lazy"></div><div class="pick-body"><b>Dọn phòng</b><span>Vệ sinh, dọn dẹp phòng trọ sạch sẽ, gọn gàng.</span></div></label>
-        <label class="pick"><input type="checkbox" name="svc" value="ban-giao"><span class="pick-mark"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20 6 9 17l-5-5"/></svg></span><div class="pick-img"><img src="assets/img/sel-ban-giao.webp" width="290" height="107" alt="" loading="lazy"></div><div class="pick-body"><b>Bàn giao phòng</b><span>Hỗ trợ dọn dẹp và hoàn thiện để bàn giao phòng.</span></div></label>
-      </div>
-    </section>
-
-    <section aria-labelledby="s2">
-      <h2 class="h3 row" id="s2"><span class="num-dot light">2</span> Thông tin chi tiết</h2>
-      <p class="small muted mt-4">Cung cấp thông tin để ước tính chi phí chính xác hơn.</p>
-      <div class="grid cols-2-1 mt-12" style="align-items:start">
-        <div class="stack" style="--gap:14px">
-          <div class="panel">
-            <div class="field"><label class="label" for="e-from"><svg class="ic ic-sm" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg> <span id="from-label">Nơi đi</span> <span class="req">*</span></label><input class="input" id="e-from" name="from" placeholder="Số nhà, ngõ, phường, quận" required data-msg="Vui lòng nhập địa chỉ."></div>
-            <div class="form-grid mt-12">
-              <div class="field"><label class="label" for="e-from-floor">Tầng</label><select class="select" id="e-from-floor" name="fromFloor"><option value="1">Tầng trệt</option><option value="2">Tầng 2</option><option value="3">Tầng 3</option><option value="4" selected>Tầng 4</option><option value="5">Tầng 5</option><option value="6">Tầng 6+</option></select></div>
-              <div class="field"><label class="label" for="e-from-lift">Thang máy</label><select class="select" id="e-from-lift" name="fromLift"><option value="0" selected>Không có</option><option value="1">Có</option></select></div>
-            </div>
-          </div>
-          <div class="center" data-dest><button class="btn btn-soft btn-sm" type="button" id="swap" aria-label="Đổi nơi đi và nơi đến"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m21 16-4 4-4-4M17 20V4M3 8l4-4 4 4M7 4v16"/></svg> Đổi chiều</button></div>
-          <div class="panel" data-dest>
-            <div class="field"><label class="label" for="e-to"><svg class="ic ic-sm" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg> Nơi đến <span class="req">*</span></label><input class="input" id="e-to" name="to" placeholder="Số nhà, ngõ, phường, quận" required data-msg="Vui lòng nhập địa chỉ nơi đến."></div>
-            <div class="form-grid mt-12">
-              <div class="field"><label class="label" for="e-to-floor">Tầng</label><select class="select" id="e-to-floor" name="toFloor"><option value="1">Tầng trệt</option><option value="2" selected>Tầng 2</option><option value="3">Tầng 3</option><option value="4">Tầng 4</option><option value="5">Tầng 5</option><option value="6">Tầng 6+</option></select></div>
-              <div class="field"><label class="label" for="e-to-lift">Thang máy</label><select class="select" id="e-to-lift" name="toLift"><option value="0">Không có</option><option value="1" selected>Có</option></select></div>
-            </div>
-          </div>
-        </div>
-        <div class="card card-sm tint-green" data-dest>
-          <p class="row small strong"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="6" cy="19" r="3"/><path d="M9 19h8.5a3.5 3.5 0 0 0 0-7h-11a3.5 3.5 0 0 1 0-7H15"/><circle cx="18" cy="5" r="3"/></svg> Khoảng cách dự kiến</p>
-          <p class="price mt-4"><span id="km-out">5,0</span> km</p>
-          <svg viewBox="0 0 200 110" class="mt-8" style="width:100%;border-radius:12px;background:#eef6f1" aria-hidden="true">
-            <path d="M0 30h200M0 70h200M40 0v110M120 0v110M170 0v110" stroke="#dbe9e1" stroke-width="6"/>
-            <path d="M28 88 C60 60 70 80 95 58 S150 40 172 22" fill="none" stroke="#1a8360" stroke-width="4" stroke-linecap="round" stroke-dasharray="1 0"/>
-            <circle cx="28" cy="88" r="7" fill="#146b4e"/><circle cx="28" cy="88" r="3" fill="#fff"/>
-            <path d="M172 10c-6 0-10 4-10 9 0 7 10 15 10 15s10-8 10-15c0-5-4-9-10-9z" fill="#e65151"/><circle cx="172" cy="19" r="3.5" fill="#fff"/>
-          </svg>
-          <div class="field mt-12"><label class="label small" for="e-km">Điều chỉnh khoảng cách</label><div class="with-suffix"><input class="input input-sm" id="e-km" name="km" type="number" min="1" max="60" step="0.5" value="5" inputmode="decimal"><span class="suffix">km</span></div></div>
-          <p class="xs muted mt-8">Tự ước tính theo địa chỉ (dữ liệu minh họa). Nhân viên xác nhận lại lộ trình thực tế.</p>
-        </div>
-      </div>
-    </section>
-
-    <section aria-labelledby="s3">
-      <h2 class="h3 row" id="s3"><span class="num-dot light">3</span> Khối lượng đồ đạc</h2>
-      <p class="small muted mt-4">Ước tính số lượng để tính chi phí phù hợp.</p>
-      <div class="grid g-3 mt-12 gap-sm">
-        <div class="card card-sm"><div class="row"><svg class="ic ic-lg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"/><path d="m3.3 7 8.7 5 8.7-5"/><path d="M12 22V12"/></svg><b class="small">Hộp tái sử dụng</b></div><div class="qty mt-12" data-stepper><button type="button" aria-label="Giảm số hộp"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14"/></svg></button><input name="boxes" type="number" value="12" min="0" max="60" aria-label="Số hộp"><button type="button" aria-label="Tăng số hộp"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 5v14M5 12h14"/></svg></button></div><p class="xs muted mt-8">Ước tính số hộp cần dùng</p></div>
-        <div class="card card-sm"><div class="row"><svg class="ic ic-lg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20 9V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v3"/><path d="M2 16a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-5a2 2 0 0 0-4 0v1.5a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5V11a2 2 0 0 0-4 0z"/><path d="M4 18v2M20 18v2"/></svg><b class="small">Đồ cồng kềnh</b></div><div class="qty mt-12" data-stepper><button type="button" aria-label="Giảm số đồ cồng kềnh"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14"/></svg></button><input name="bulky" type="number" value="3" min="0" max="20" aria-label="Số đồ cồng kềnh"><button type="button" aria-label="Tăng số đồ cồng kềnh"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 5v14M5 12h14"/></svg></button></div><p class="xs muted mt-8">Tủ, giường, bàn ghế, tủ lạnh…</p></div>
-        <div class="card card-sm"><div class="row"><svg class="ic ic-lg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg><b class="small">Người hỗ trợ</b></div><div class="qty mt-12" data-stepper><button type="button" aria-label="Giảm số người"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14"/></svg></button><input name="people" type="number" value="2" min="1" max="8" aria-label="Số người hỗ trợ"><button type="button" aria-label="Tăng số người"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 5v14M5 12h14"/></svg></button></div><p class="xs muted mt-8">Số người hỗ trợ bốc xếp</p></div>
-      </div>
-    </section>
-
-    <section aria-labelledby="s4">
-      <h2 class="h3 row" id="s4"><span class="num-dot light">4</span> Thời gian &amp; dịch vụ thêm</h2>
-      <p class="small muted mt-4">Chọn thời gian dự kiến và các hỗ trợ nếu cần.</p>
-      <div class="form-grid mt-12">
-        <div class="field"><label class="label" for="e-date"><svg class="ic ic-sm" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg> Ngày dự kiến <span class="req">*</span></label><input class="input" id="e-date" name="date" type="date" data-future required data-msg="Vui lòng chọn ngày dự kiến."></div>
-        <div class="field"><label class="label" for="e-time"><svg class="ic ic-sm" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg> Khung giờ</label><select class="select" id="e-time" name="time"><option value="08:00 – 12:00">Sáng (8:00 – 12:00)</option><option value="13:00 – 17:00">Chiều (13:00 – 17:00)</option><option value="18:00 – 21:00">Tối (18:00 – 21:00) · ngoài giờ</option></select></div>
-        <label class="opt" style="align-items:flex-start"><input type="checkbox" name="pack"><span class="grow"><b class="row"><svg class="ic ic-sm" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"/><path d="m3.3 7 8.7 5 8.7-5"/><path d="M12 22V12"/></svg> Hỗ trợ đóng gói</b><span class="xs muted">Nhân viên hỗ trợ đóng gói đồ đạc vào hộp tái sử dụng.</span></span><span class="opt-mark" style="border-radius:6px"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20 6 9 17l-5-5"/></svg></span></label>
-        <label class="opt" style="align-items:flex-start"><input type="checkbox" name="assembly"><span class="grow"><b class="row"><svg class="ic ic-sm" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg> Tháo lắp cơ bản</b><span class="xs muted">Tháo lắp giường, tủ, bàn đơn giản (không gồm điện nước).</span></span><span class="opt-mark" style="border-radius:6px"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20 6 9 17l-5-5"/></svg></span></label>
-        <div class="field full">
-          <span class="label"><svg class="ic ic-sm" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M18 22H4a2 2 0 0 1-2-2V6"/><path d="m22 13-1.3-1.3a2.41 2.41 0 0 0-3.4 0L12 17"/><circle cx="12" cy="8" r="2"/><rect width="16" height="16" x="6" y="2" rx="2"/></svg> Thêm ảnh đồ đạc <span class="opt-l">(không bắt buộc)</span></span>
-          <div data-upload data-max="10"><label class="drop"><span class="drop-ic"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M16 5h6M19 2v6"/><path d="M21 11.5V19a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h7.5"/><path d="m21 15-3.09-3.09a2 2 0 0 0-2.82 0L6 21"/><circle cx="9" cy="9" r="2"/></svg></span><span class="grow"><b>Tải ảnh lên để ước tính chính xác hơn</b>Hỗ trợ JPG, PNG, tối đa 10 ảnh</span><svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 5v14M5 12h14"/></svg><input class="sr-only" type="file" accept="image/*" multiple></label></div>
-          <div class="previews" data-previews></div>
-        </div>
-      </div>
-    </section>
-  </div>
-
-  <aside class="stack sticky-side" style="--gap:16px">
-    <div class="card card-pad tint-green" aria-live="polite">
-      <div class="row between"><h2 class="h3">Khoảng giá dự kiến</h2><span class="badge b-yellow"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg> Dữ liệu minh họa</span></div>
-      <p class="small muted mt-4">Dựa trên thông tin bạn cung cấp</p>
-      <p class="price mt-8" id="est-total">—</p>
-      <div class="card card-sm mt-16">
-        <b class="small">Ước tính chi tiết</b>
-        <dl class="kv-rows mt-8" id="est-lines"><div><dt class="muted">Chọn dịch vụ để xem chi tiết</dt></div></dl>
-        <p class="xs muted mt-8">Giá có thể thay đổi tùy theo thực tế khảo sát, khối lượng đồ đạc, điều kiện tòa nhà và các dịch vụ bổ sung.</p>
-      </div>
-      <div class="note mt-16"><span class="note-ic" style="background:var(--o500);color:#fff"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="10"/><path d="M12 8v4M12 16h.01"/></svg></span><div><b>Đây là giá ước tính.</b> BOXANH xác nhận giá chính thức sau khi đủ thông tin.</div></div>
-    </div>
-
-    <div class="card card-pad" id="contact-card">
-      <h2 class="h4">Thông tin liên hệ <span class="small muted" style="font-weight:400">· để gửi yêu cầu tư vấn</span></h2>
-      <div class="form-grid mt-12">
-        <div class="field"><label class="label" for="e-name"><svg class="ic ic-sm" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg> Họ tên <span class="req">*</span></label><input class="input" id="e-name" name="name" autocomplete="name" placeholder="Nguyễn Văn A" required></div>
-        <div class="field"><label class="label" for="e-phone"><svg class="ic ic-sm" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg> Số điện thoại <span class="req">*</span></label><input class="input" id="e-phone" name="phone" inputmode="tel" autocomplete="tel" placeholder="0987 654 321" required data-phone></div>
-        <div class="field full"><label class="check"><input type="checkbox" name="agree" required data-msg="Vui lòng đồng ý với điều khoản dịch vụ."><span>Tôi đã đọc và đồng ý với <a href="dieu-khoan.html" target="_blank" rel="noopener">Điều khoản dịch vụ</a> của BOXANH.</span></label></div>
-      </div>
-      <button class="btn btn-primary btn-lg btn-block mt-16" type="submit"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M14.54 21.69a.5.5 0 0 0 .94-.03l6.5-19a.5.5 0 0 0-.64-.64l-19 6.5a.5.5 0 0 0-.02.94l7.93 3.18a2 2 0 0 1 1.11 1.11z"/><path d="m21.85 2.15-10.94 10.94"/></svg> Gửi yêu cầu tư vấn <svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14M12 5l7 7-7 7"/></svg></button>
-    </div>
-
-    <div class="card card-pad tint-green" id="done-card" hidden>
-      <div class="row row-top">
-        <img src="assets/img/success-mascot.webp" width="130" height="110" alt="" style="width:92px;border-radius:14px">
-        <div>
-          <span class="badge b-green"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20 6 9 17l-5-5"/></svg> Yêu cầu đã được gửi</span>
-          <p class="small mt-8">Mã yêu cầu: <b class="num" id="done-code">—</b></p>
-          <p class="small mt-4">Trạng thái: <span class="badge b-yellow">Chờ xác nhận thông tin</span></p>
-        </div>
-      </div>
-      <p class="small muted mt-12">Chúng tôi sẽ liên hệ với bạn sớm để xác nhận thông tin và báo giá chính thức.</p>
-      <div class="row wrap mt-16"><a class="btn btn-primary" id="done-track" href="don-hang.html">Theo dõi yêu cầu <svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a><button class="btn btn-light" type="button" id="done-new">Tạo yêu cầu mới</button></div>
-    </div>
-  </aside>
-</form>
 
 </main>
-<footer class="site-ft">
-  <div class="container ft-grid">
-    <div class="ft-brand">
-      <a class="logo logo-lg" href="index.html" aria-label="BOXANH – về trang chủ"><svg class="logo-mark" viewBox="0 0 32 32" aria-hidden="true"><path d="M16 2.6 4.4 9.3v13.4L16 29.4l11.6-6.7V9.3z" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linejoin="round"/><path d="M16 10.3 10.4 13.5v6.4L16 23.1l5.6-3.2v-6.4z" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linejoin="round"/><path d="m10.4 13.5 5.6 3.2 5.6-3.2M16 16.7v6.4" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linejoin="round"/></svg><span>BOXANH</span></a>
-      <p>Chuyển trọ nhẹ tênh.<br>Một đầu mối. Gọn việc chuyển trọ.</p>
-      <ul class="ft-contact">
-        <li><svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg> Hotline 1900 2228 <small>(8:00 – 20:00)</small></li>
-        <li><svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg> hotro@boxanh.vn</li>
-        <li><svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg> Hà Nội · TP. Hồ Chí Minh</li>
-      </ul>
-      <div class="ft-social">
-        <button type="button" data-soon="Fanpage Facebook" aria-label="Facebook"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></button>
-        <button type="button" data-soon="Kênh TikTok" aria-label="TikTok"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M15.5 3c.4 2.3 1.9 3.8 4.5 4v3.1c-1.7 0-3.2-.5-4.5-1.4v6.3a5.7 5.7 0 1 1-5.7-5.7h.4v3.2h-.4a2.5 2.5 0 1 0 2.5 2.5V3z"/></svg></button>
-        <button type="button" data-soon="Kênh YouTube" aria-label="YouTube"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"/><path d="m10 15 5-3-5-3z"/></svg></button>
-        <button type="button" data-soon="Trang Instagram" aria-label="Instagram"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect width="20" height="20" x="2" y="2" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><path d="M17.5 6.5h.01"/></svg></button>
-      </div>
-    </div>
-    <div class="ft-col">
-      <h3>Dịch vụ</h3>
-      <a href="chuyen-tro.html">Chuyển trọ</a>
-      <a href="don-phong.html">Dọn phòng</a>
-      <a href="ban-giao-phong.html">Bàn giao phòng</a>
-      <a href="uoc-tinh-chi-phi.html">Ước tính chi phí</a>
-    </div>
-    <div class="ft-col">
-      <h3>Hỗ trợ</h3>
-      <a href="ho-tro.html">Trung tâm trợ giúp</a>
-      <a href="ho-tro.html#faq">Câu hỏi thường gặp</a>
-      <a href="ho-tro.html#gui-yeu-cau">Gửi yêu cầu hỗ trợ</a>
-      <a href="don-hang.html">Theo dõi đơn hàng</a>
-    </div>
-    <div class="ft-col">
-      <h3>Về BOXANH</h3>
-      <a href="gioi-thieu.html">Giới thiệu</a>
-      <a href="index.html#hop-tai-su-dung">Hộp tái sử dụng</a>
-      <a href="doi-tac.html">Trở thành đối tác</a>
-      <a href="he-thong.html">Sơ đồ hệ thống</a>
-    </div>
-    <div class="ft-news">
-      <h3>Nhận tin hữu ích từ BOXANH</h3>
-      <p>Mẹo chuyển trọ, ưu đãi theo mùa và cập nhật dịch vụ mới.</p>
-      <form class="ft-form" data-newsletter novalidate>
-        <label class="sr-only" for="ft-email">Email của bạn</label>
-        <input id="ft-email" class="input" type="email" name="email" placeholder="Nhập email của bạn" autocomplete="email" required>
-        <button class="btn btn-yellow" type="submit" aria-label="Đăng ký nhận tin"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14M12 5l7 7-7 7"/></svg></button>
-      </form>
-    </div>
-  </div>
-  <div class="container ft-bottom">
-    <span>© <span data-year>2026</span> BOXANH. Tất cả quyền được bảo lưu.</span>
-    <nav aria-label="Liên kết pháp lý">
-      <a href="dieu-khoan.html">Điều khoản sử dụng</a>
-      <a href="chinh-sach-bao-mat.html">Chính sách bảo mật</a>
-      <a href="cong-doi-tac/index.html">Cổng đối tác</a>
-      <a href="noi-bo/index.html">Cổng nội bộ</a>
-    </nav>
-    <span class="ft-love">Cùng tạo nên những khởi đầu mới <svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg></span>
-  </div>
-</footer>
-<nav class="bottom-nav" aria-label="Điều hướng nhanh"><a href="index.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3 10.5 12 3l9 7.5V20a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"/></svg><span>Trang chủ</span></a><a href="index.html#dich-vu" class="is-active" aria-current="page"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect width="7" height="7" x="3" y="3" rx="1"/><rect width="7" height="7" x="14" y="3" rx="1"/><rect width="7" height="7" x="14" y="14" rx="1"/><rect width="7" height="7" x="3" y="14" rx="1"/></svg><span>Dịch vụ</span></a><a href="don-hang.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="8" y="2" width="8" height="4" rx="1"/><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><path d="M12 11h4M12 16h4M8 11h.01M8 16h.01"/></svg><span>Đơn hàng</span></a><a href="hop-cua-toi.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"/><path d="m3.3 7 8.7 5 8.7-5"/><path d="M12 22V12"/></svg><span>Hộp của tôi</span></a><a href="tai-khoan.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg><span>Tài khoản</span></a></nav>
+
 <div class="toasts" id="toasts" role="status" aria-live="polite"></div>
-<script src="assets/js/icons.js"></script>
-<script src="assets/js/data.js"></script>
-<script src="assets/js/app.js"></script>
-<script src="assets/js/pages/estimate.js"></script>
+<script src="assets/js/canvas.js?v=64ba70c8"></script>
+<script src="assets/js/icons.js?v=78636e2f"></script>
+<script src="assets/js/data.js?v=94b49f71"></script>
+<script src="assets/js/app.js?v=ada060d3"></script>
+
 </body>
 </html>

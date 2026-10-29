@@ -5,6 +5,7 @@
 // - fails on unknown icons, missing files and broken internal links / anchors
 import fs from 'node:fs';
 import path from 'node:path';
+import crypto from 'node:crypto';
 import { ICONS } from './src/icons.mjs';
 import { layout } from './src/layouts.mjs';
 
@@ -70,6 +71,14 @@ for (const file of pages) {
   const left = html.match(/\{\{[^}]*\}\}/);
   if (left) errors.push(`${rel}: unresolved placeholder ${left[0]}`);
 
+  // cache-busting: ?v=<content hash> on every local stylesheet, script and canvas plate
+  html = html.replace(/(href|src)="([^"]*assets\/(?:css|js|canvas)\/[^"?]+\.(?:css|js|webp))"/g, (all, attr, url) => {
+    const f = path.join(OUT, path.dirname(rel), url);
+    if (!fs.existsSync(f)) return all;
+    const v = crypto.createHash('md5').update(fs.readFileSync(f)).digest('hex').slice(0, 8);
+    return `${attr}="${url}?v=${v}"`;
+  });
+
   html = html.replace(/<img\b([^>]*?)\bsrc="([^"]+\.webp)"([^>]*)>/g, (tag, a, src, b) => {
     if (/\bwidth=/.test(a + b)) return tag;
     const f = path.join(OUT, path.dirname(rel), src);
@@ -94,7 +103,7 @@ for (const [rel, html] of built) {
     const p = pq.split('?')[0];
     const target = p ? posix(path.normalize(path.join(path.dirname(rel), p))) : rel;
     if (p && !fs.existsSync(path.join(OUT, target))) { errors.push(`${rel}: missing ${ref}`); continue; }
-    if (hash && target.endsWith('.html')) {
+    if (hash && target.endsWith('.html') && hash !== 'dang-xuat') { // #dang-xuat is a logout action, not an anchor
       const h = built.get(target);
       if (h && !idsOf(h).has(hash)) errors.push(`${rel}: missing anchor ${ref}`);
     }
