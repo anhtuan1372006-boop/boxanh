@@ -1,7 +1,7 @@
 # BOXANH – Chuyển trọ nhẹ tênh
 
 Website hoàn chỉnh cho hệ thống **BOXANH**: một đầu mối cho chuyển trọ, dọn phòng và bàn giao phòng, dùng hộp tái sử dụng có mã QR và seal riêng.
-Các màn hình được dựng **giống hệt 17 ảnh thiết kế**: chính ảnh thiết kế là nền trang, còn liên kết, ô nhập, nút, lựa chọn, công tắc… được đặt đúng toạ độ trên thiết kế và hoạt động thật. Tổng cộng 38 trang (máy tính và điện thoại).
+Thiết kế giao diện BOXANH gồm 38 trang dành cho máy tính và điện thoại, với các khu vực khách hàng, đối tác và vận hành nội bộ.
 
 **Xem trực tiếp:** https://anhtuan1372006-boop.github.io/boxanh/
 **Sơ đồ toàn bộ hệ thống:** https://anhtuan1372006-boop.github.io/boxanh/he-thong.html
@@ -34,6 +34,7 @@ src/
   layouts.mjs   header, footer, menu tài khoản, khung cổng đối tác / nội bộ
   icons.mjs     bộ icon SVG
   assets/       CSS, JavaScript, hình minh họa (WebP)
+  artwork.json  vị trí ảnh minh họa riêng trên các trang giao diện
 build.mjs       ghép trang, chèn icon, kiểm tra toàn bộ liên kết
 docs/           bản đã build – GitHub Pages phục vụ thư mục này
 ```
@@ -45,3 +46,5 @@ node build.mjs
 ```
 
 Lệnh build báo lỗi nếu có liên kết hỏng, ảnh thiếu, icon sai tên hoặc trùng `id`.
+
+Hình minh họa dùng ảnh WebP riêng có độ phân giải cao, tải dần theo vị trí hiển thị. Danh mục ảnh nằm ở `design/artwork-sources.json`. Mỗi lần thay nội dung ảnh, bản build tự cập nhật phiên bản đường dẫn để trình duyệt tải ảnh mới.

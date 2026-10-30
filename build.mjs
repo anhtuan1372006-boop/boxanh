@@ -71,8 +71,8 @@ for (const file of pages) {
   const left = html.match(/\{\{[^}]*\}\}/);
   if (left) errors.push(`${rel}: unresolved placeholder ${left[0]}`);
 
-  // cache-busting: ?v=<content hash> on every local stylesheet, script and canvas plate
-  html = html.replace(/(href|src)="([^"]*assets\/(?:css|js|canvas)\/[^"?]+\.(?:css|js|webp))"/g, (all, attr, url) => {
+  // Version local assets by content so browsers receive updated artwork immediately.
+  html = html.replace(/(href|src)="([^"]*assets\/(?:css|js|canvas|img)\/[^"?]+\.(?:css|js|webp|svg))"/g, (all, attr, url) => {
     const f = path.join(OUT, path.dirname(rel), url);
     if (!fs.existsSync(f)) return all;
     const v = crypto.createHash('md5').update(fs.readFileSync(f)).digest('hex').slice(0, 8);

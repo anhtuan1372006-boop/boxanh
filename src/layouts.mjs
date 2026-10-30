@@ -27,9 +27,7 @@ function head(m) {
 <meta property="og:description" content="${esc(desc)}">
 <meta property="og:image" content="{{root}}assets/img/hero-home.webp">
 <link rel="icon" href="{{root}}assets/img/favicon.svg" type="image/svg+xml">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&amp;family=Patrick+Hand&amp;display=swap">
+<link rel="stylesheet" href="{{root}}assets/css/fonts.css">
 <link rel="stylesheet" href="{{root}}assets/css/style.css">${m.layout === 'canvas' ? `
 <link rel="stylesheet" href="{{root}}assets/css/canvas.css">
 <link rel="preload" as="image" href="{{root}}assets/canvas/${m.canvas[0]}.webp" media="(min-width: 900px)">${m.canvas[1] ? `

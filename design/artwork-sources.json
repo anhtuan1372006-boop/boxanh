@@ -1,0 +1,710 @@
+[
+  {
+    "asset": "addr-from.webp",
+    "family": "hero-account",
+    "width": 512,
+    "height": 512
+  },
+  {
+    "asset": "addr-to.webp",
+    "family": "hero-account",
+    "width": 512,
+    "height": 501
+  },
+  {
+    "asset": "area-bep.webp",
+    "family": "area-bep",
+    "width": 848,
+    "height": 312
+  },
+  {
+    "asset": "area-cua.webp",
+    "family": "area-cua",
+    "width": 860,
+    "height": 312
+  },
+  {
+    "asset": "area-san.webp",
+    "family": "area-san",
+    "width": 864,
+    "height": 312
+  },
+  {
+    "asset": "area-ve-sinh.webp",
+    "family": "area-ve-sinh",
+    "width": 852,
+    "height": 312
+  },
+  {
+    "asset": "avatar-cskh.webp",
+    "family": "hero-support",
+    "width": 512,
+    "height": 512
+  },
+  {
+    "asset": "avatar-dieu-phoi.webp",
+    "family": "login-mascot",
+    "width": 512,
+    "height": 512
+  },
+  {
+    "asset": "avatar-manager.webp",
+    "family": "hero-dinh-gia",
+    "width": 512,
+    "height": 512
+  },
+  {
+    "asset": "avatar-minh.webp",
+    "family": "pickup-mascot",
+    "width": 512,
+    "height": 512
+  },
+  {
+    "asset": "avatar-tuan-anh.webp",
+    "family": "login-mascot",
+    "width": 512,
+    "height": 512
+  },
+  {
+    "asset": "box-banner.webp",
+    "family": "box-stack-wide",
+    "width": 512,
+    "height": 368
+  },
+  {
+    "asset": "box-big.webp",
+    "family": "box-big",
+    "width": 1860,
+    "height": 1100
+  },
+  {
+    "asset": "box-detail.webp",
+    "family": "box-big",
+    "width": 1080,
+    "height": 692
+  },
+  {
+    "asset": "box-stack-wide.webp",
+    "family": "box-stack-wide",
+    "width": 1608,
+    "height": 988
+  },
+  {
+    "asset": "box-stack.webp",
+    "family": "box-stack-wide",
+    "width": 1648,
+    "height": 788
+  },
+  {
+    "asset": "box-thumb.webp",
+    "family": "box-big",
+    "width": 512,
+    "height": 361
+  },
+  {
+    "asset": "boxes-group.webp",
+    "family": "box-stack-wide",
+    "width": 1840,
+    "height": 608
+  },
+  {
+    "asset": "check-1.webp",
+    "family": "room-after",
+    "width": 512,
+    "height": 397
+  },
+  {
+    "asset": "check-2.webp",
+    "family": "area-bep",
+    "width": 512,
+    "height": 397
+  },
+  {
+    "asset": "check-3.webp",
+    "family": "area-ve-sinh",
+    "width": 512,
+    "height": 397
+  },
+  {
+    "asset": "check-4.webp",
+    "family": "area-cua",
+    "width": 512,
+    "height": 378
+  },
+  {
+    "asset": "clean-after.webp",
+    "family": "box-big",
+    "width": 512,
+    "height": 260
+  },
+  {
+    "asset": "clean-before.webp",
+    "family": "clean-before",
+    "width": 512,
+    "height": 260
+  },
+  {
+    "asset": "cskh-mascot.webp",
+    "family": "cskh-mascot",
+    "width": 644,
+    "height": 1620
+  },
+  {
+    "asset": "cta-mascot.webp",
+    "family": "login-mascot",
+    "width": 780,
+    "height": 380
+  },
+  {
+    "asset": "dp-order.webp",
+    "family": "room-after",
+    "width": 600,
+    "height": 368
+  },
+  {
+    "asset": "dp-partner-1.webp",
+    "family": "login-mascot",
+    "width": 512,
+    "height": 307
+  },
+  {
+    "asset": "dp-partner-2.webp",
+    "family": "login-mascot",
+    "width": 512,
+    "height": 307
+  },
+  {
+    "asset": "dp-partner-3.webp",
+    "family": "feat-van-chuyen",
+    "width": 512,
+    "height": 307
+  },
+  {
+    "asset": "evidence-room.webp",
+    "family": "evidence-room",
+    "width": 712,
+    "height": 668
+  },
+  {
+    "asset": "evidence-seal.webp",
+    "family": "seal-photo",
+    "width": 592,
+    "height": 668
+  },
+  {
+    "asset": "faq-mascot.webp",
+    "family": "hero-dinh-gia",
+    "width": 660,
+    "height": 520
+  },
+  {
+    "asset": "feat-boc-xep.webp",
+    "family": "svc-chuyen-tro",
+    "width": 920,
+    "height": 400
+  },
+  {
+    "asset": "feat-giao-nhan.webp",
+    "family": "feat-giao-nhan",
+    "width": 920,
+    "height": 400
+  },
+  {
+    "asset": "feat-hop.webp",
+    "family": "box-stack-wide",
+    "width": 920,
+    "height": 400
+  },
+  {
+    "asset": "feat-van-chuyen.webp",
+    "family": "feat-van-chuyen",
+    "width": 920,
+    "height": 400
+  },
+  {
+    "asset": "fix-thumb.webp",
+    "family": "hand-fix",
+    "width": 512,
+    "height": 387
+  },
+  {
+    "asset": "hand-bien-ban.webp",
+    "family": "hand-bien-ban",
+    "width": 860,
+    "height": 392
+  },
+  {
+    "asset": "hand-fix.webp",
+    "family": "hand-fix",
+    "width": 836,
+    "height": 392
+  },
+  {
+    "asset": "hand-kiem-tra.webp",
+    "family": "hand-kiem-tra",
+    "width": 864,
+    "height": 392
+  },
+  {
+    "asset": "hand-ve-sinh.webp",
+    "family": "svc-don-phong",
+    "width": 856,
+    "height": 392
+  },
+  {
+    "asset": "hero-account.webp",
+    "family": "hero-account",
+    "width": 2088,
+    "height": 732
+  },
+  {
+    "asset": "hero-ban-giao.webp",
+    "family": "hero-ban-giao",
+    "width": 2196,
+    "height": 1208
+  },
+  {
+    "asset": "hero-chuyen-tro.webp",
+    "family": "hero-chuyen-tro",
+    "width": 2236,
+    "height": 1504
+  },
+  {
+    "asset": "hero-dieu-phoi.webp",
+    "family": "hero-dieu-phoi",
+    "width": 2560,
+    "height": 624
+  },
+  {
+    "asset": "hero-dinh-gia.webp",
+    "family": "hero-dinh-gia",
+    "width": 2560,
+    "height": 656
+  },
+  {
+    "asset": "hero-doi-tac.webp",
+    "family": "hero-account",
+    "width": 2296,
+    "height": 904
+  },
+  {
+    "asset": "hero-don-phong.webp",
+    "family": "hero-don-phong",
+    "width": 2060,
+    "height": 1320
+  },
+  {
+    "asset": "hero-home.webp",
+    "family": "hero-home",
+    "width": 1936,
+    "height": 1164
+  },
+  {
+    "asset": "hero-kho.webp",
+    "family": "hero-kho",
+    "width": 2560,
+    "height": 770
+  },
+  {
+    "asset": "hero-my-box.webp",
+    "family": "hero-my-box",
+    "width": 816,
+    "height": 540
+  },
+  {
+    "asset": "hero-order.webp",
+    "family": "hero-uoc-tinh",
+    "width": 2480,
+    "height": 680
+  },
+  {
+    "asset": "hero-partner.webp",
+    "family": "hero-partner",
+    "width": 2560,
+    "height": 606
+  },
+  {
+    "asset": "hero-phe-duyet.webp",
+    "family": "hero-phe-duyet",
+    "width": 2224,
+    "height": 896
+  },
+  {
+    "asset": "hero-support.webp",
+    "family": "hero-support",
+    "width": 816,
+    "height": 788
+  },
+  {
+    "asset": "hero-uoc-tinh.webp",
+    "family": "hero-uoc-tinh",
+    "width": 2560,
+    "height": 614
+  },
+  {
+    "asset": "job-ban-giao.webp",
+    "family": "hand-fix",
+    "width": 964,
+    "height": 600
+  },
+  {
+    "asset": "job-chuyen-tro.webp",
+    "family": "svc-chuyen-tro",
+    "width": 964,
+    "height": 620
+  },
+  {
+    "asset": "job-don-phong.webp",
+    "family": "svc-don-phong",
+    "width": 964,
+    "height": 552
+  },
+  {
+    "asset": "login-mascot.webp",
+    "family": "login-mascot",
+    "width": 1700,
+    "height": 1272
+  },
+  {
+    "asset": "lost-bag.webp",
+    "family": "lost-bag",
+    "width": 512,
+    "height": 474
+  },
+  {
+    "asset": "lost-notebook.webp",
+    "family": "lost-notebook",
+    "width": 512,
+    "height": 470
+  },
+  {
+    "asset": "note-board.webp",
+    "family": "box-stack-wide",
+    "width": 1232,
+    "height": 620
+  },
+  {
+    "asset": "open-box.webp",
+    "family": "open-box",
+    "width": 520,
+    "height": 520
+  },
+  {
+    "asset": "order-thumb.webp",
+    "family": "feat-giao-nhan",
+    "width": 792,
+    "height": 508
+  },
+  {
+    "asset": "partner-promo.webp",
+    "family": "partner-promo",
+    "width": 512,
+    "height": 692
+  },
+  {
+    "asset": "pickup-mascot.webp",
+    "family": "pickup-mascot",
+    "width": 1008,
+    "height": 868
+  },
+  {
+    "asset": "pr-partner-a.webp",
+    "family": "pickup-mascot",
+    "width": 512,
+    "height": 469
+  },
+  {
+    "asset": "pr-partner-b.webp",
+    "family": "pickup-mascot",
+    "width": 512,
+    "height": 671
+  },
+  {
+    "asset": "pr-partner-c.webp",
+    "family": "pickup-mascot",
+    "width": 512,
+    "height": 671
+  },
+  {
+    "asset": "pr-photo-1.webp",
+    "family": "room-after",
+    "width": 512,
+    "height": 573
+  },
+  {
+    "asset": "pr-photo-2.webp",
+    "family": "room-after",
+    "width": 512,
+    "height": 573
+  },
+  {
+    "asset": "pr-photo-3.webp",
+    "family": "hero-my-box",
+    "width": 512,
+    "height": 573
+  },
+  {
+    "asset": "pr-photo-4.webp",
+    "family": "hero-account",
+    "width": 512,
+    "height": 670
+  },
+  {
+    "asset": "price-box.webp",
+    "family": "box-big",
+    "width": 720,
+    "height": 440
+  },
+  {
+    "asset": "pt-sua-chua.webp",
+    "family": "hand-fix",
+    "width": 888,
+    "height": 480
+  },
+  {
+    "asset": "pt-van-chuyen.webp",
+    "family": "svc-chuyen-tro",
+    "width": 912,
+    "height": 480
+  },
+  {
+    "asset": "pt-ve-sinh.webp",
+    "family": "svc-don-phong",
+    "width": 912,
+    "height": 480
+  },
+  {
+    "asset": "qr-box-banner.webp",
+    "family": "box-big",
+    "width": 1160,
+    "height": 540
+  },
+  {
+    "asset": "qr-promo.webp",
+    "family": "box-big",
+    "width": 680,
+    "height": 716
+  },
+  {
+    "asset": "resource-illu.webp",
+    "family": "hero-uoc-tinh",
+    "width": 1088,
+    "height": 360
+  },
+  {
+    "asset": "review-1.webp",
+    "family": "hero-dinh-gia",
+    "width": 512,
+    "height": 431
+  },
+  {
+    "asset": "review-2.webp",
+    "family": "hero-support",
+    "width": 512,
+    "height": 483
+  },
+  {
+    "asset": "review-3.webp",
+    "family": "feat-giao-nhan",
+    "width": 512,
+    "height": 483
+  },
+  {
+    "asset": "review-4.webp",
+    "family": "hero-dinh-gia",
+    "width": 512,
+    "height": 506
+  },
+  {
+    "asset": "room-after.webp",
+    "family": "room-after",
+    "width": 1808,
+    "height": 500
+  },
+  {
+    "asset": "room-before.webp",
+    "family": "room-before",
+    "width": 1792,
+    "height": 500
+  },
+  {
+    "asset": "scan-qr.webp",
+    "family": "scan-qr",
+    "width": 1560,
+    "height": 1276
+  },
+  {
+    "asset": "seal-deliver.webp",
+    "family": "seal-photo",
+    "width": 736,
+    "height": 628
+  },
+  {
+    "asset": "seal-photo.webp",
+    "family": "seal-photo",
+    "width": 648,
+    "height": 472
+  },
+  {
+    "asset": "seal-recv.webp",
+    "family": "seal-photo",
+    "width": 736,
+    "height": 628
+  },
+  {
+    "asset": "seal-torn.webp",
+    "family": "seal-torn",
+    "width": 1552,
+    "height": 900
+  },
+  {
+    "asset": "sel-ban-giao.webp",
+    "family": "svc-ban-giao",
+    "width": 1160,
+    "height": 428
+  },
+  {
+    "asset": "sel-chuyen-tro.webp",
+    "family": "svc-chuyen-tro",
+    "width": 1188,
+    "height": 428
+  },
+  {
+    "asset": "sel-don-phong.webp",
+    "family": "svc-don-phong",
+    "width": 1164,
+    "height": 428
+  },
+  {
+    "asset": "side-deco-acc.webp",
+    "family": "box-stack-wide",
+    "width": 652,
+    "height": 2020
+  },
+  {
+    "asset": "side-deco-ad.webp",
+    "family": "hero-account",
+    "width": 732,
+    "height": 2056
+  },
+  {
+    "asset": "side-deco-kho.webp",
+    "family": "partner-promo",
+    "width": 864,
+    "height": 1400
+  },
+  {
+    "asset": "side-deco-pt.webp",
+    "family": "box-stack-wide",
+    "width": 980,
+    "height": 1696
+  },
+  {
+    "asset": "step-boc-xep.webp",
+    "family": "svc-chuyen-tro",
+    "width": 680,
+    "height": 328
+  },
+  {
+    "asset": "step-giao-nhan.webp",
+    "family": "feat-giao-nhan",
+    "width": 680,
+    "height": 328
+  },
+  {
+    "asset": "step-thu-hoi.webp",
+    "family": "box-stack-wide",
+    "width": 712,
+    "height": 328
+  },
+  {
+    "asset": "step-tiep-nhan.webp",
+    "family": "step-tiep-nhan",
+    "width": 680,
+    "height": 328
+  },
+  {
+    "asset": "step-van-chuyen.webp",
+    "family": "feat-van-chuyen",
+    "width": 668,
+    "height": 328
+  },
+  {
+    "asset": "success-mascot.webp",
+    "family": "login-mascot",
+    "width": 520,
+    "height": 440
+  },
+  {
+    "asset": "support-girl.webp",
+    "family": "hero-support",
+    "width": 512,
+    "height": 471
+  },
+  {
+    "asset": "svc-ban-giao.webp",
+    "family": "svc-ban-giao",
+    "width": 1608,
+    "height": 628
+  },
+  {
+    "asset": "svc-chuyen-tro.webp",
+    "family": "svc-chuyen-tro",
+    "width": 1792,
+    "height": 632
+  },
+  {
+    "asset": "svc-don-phong.webp",
+    "family": "svc-don-phong",
+    "width": 1728,
+    "height": 636
+  },
+  {
+    "asset": "task-boc-xep.webp",
+    "family": "svc-ban-giao",
+    "width": 512,
+    "height": 501
+  },
+  {
+    "asset": "task-dong-goi.webp",
+    "family": "task-dong-goi",
+    "width": 512,
+    "height": 501
+  },
+  {
+    "asset": "task-hop.webp",
+    "family": "box-stack-wide",
+    "width": 512,
+    "height": 454
+  },
+  {
+    "asset": "task-thao-lap.webp",
+    "family": "task-thao-lap",
+    "width": 512,
+    "height": 501
+  },
+  {
+    "asset": "team-banner.webp",
+    "family": "partner-promo",
+    "width": 2020,
+    "height": 648
+  },
+  {
+    "asset": "trust-photo.webp",
+    "family": "hand-bien-ban",
+    "width": 1016,
+    "height": 464
+  },
+  {
+    "asset": "trust-qr.webp",
+    "family": "scan-qr",
+    "width": 1012,
+    "height": 464
+  },
+  {
+    "asset": "trust-seal.webp",
+    "family": "seal-photo",
+    "width": 968,
+    "height": 464
+  }
+]

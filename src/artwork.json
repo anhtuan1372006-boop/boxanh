@@ -1,0 +1,1472 @@
+{
+  "ban-giao-phong": [
+    {
+      "src": "hero-ban-giao",
+      "box": [
+        475,
+        55,
+        1024,
+        357
+      ],
+      "blend": true,
+      "radius": 0
+    },
+    {
+      "src": "hand-kiem-tra",
+      "box": [
+        42,
+        470,
+        258,
+        568
+      ],
+      "radius": 5
+    },
+    {
+      "src": "hand-bien-ban",
+      "box": [
+        768,
+        470,
+        983,
+        568
+      ],
+      "radius": 5
+    },
+    {
+      "src": "hand-ve-sinh",
+      "box": [
+        286,
+        470,
+        500,
+        568
+      ],
+      "radius": 5
+    },
+    {
+      "src": "hand-fix",
+      "box": [
+        528,
+        470,
+        737,
+        568
+      ],
+      "radius": 5
+    },
+    {
+      "src": "fix-thumb",
+      "box": [
+        45,
+        1010,
+        160,
+        1097
+      ],
+      "radius": 5
+    },
+    {
+      "src": "room-after",
+      "box": [
+        45,
+        1235,
+        129,
+        1343
+      ]
+    },
+    {
+      "src": "area-ve-sinh",
+      "box": [
+        135,
+        1235,
+        218,
+        1343
+      ]
+    },
+    {
+      "src": "area-bep",
+      "box": [
+        223,
+        1235,
+        306,
+        1343
+      ]
+    },
+    {
+      "src": "area-bep",
+      "box": [
+        815,
+        841,
+        900,
+        911
+      ]
+    },
+    {
+      "src": "room-after",
+      "box": [
+        650,
+        841,
+        730,
+        911
+      ]
+    },
+    {
+      "src": "hand-kiem-tra",
+      "box": [
+        733,
+        841,
+        812,
+        911
+      ]
+    }
+  ],
+  "chuyen-tro": [
+    {
+      "src": "hero-chuyen-tro",
+      "box": [
+        465,
+        56,
+        1024,
+        432
+      ],
+      "blend": true,
+      "radius": 0
+    },
+    {
+      "src": "qr-box-banner",
+      "box": [
+        22,
+        1275,
+        312,
+        1410
+      ],
+      "radius": 5
+    },
+    {
+      "src": "feat-boc-xep",
+      "box": [
+        38,
+        440,
+        268,
+        540
+      ],
+      "radius": 5
+    },
+    {
+      "src": "feat-giao-nhan",
+      "box": [
+        758,
+        440,
+        988,
+        540
+      ],
+      "radius": 5
+    },
+    {
+      "src": "feat-hop",
+      "box": [
+        518,
+        440,
+        748,
+        540
+      ],
+      "radius": 5
+    },
+    {
+      "src": "feat-van-chuyen",
+      "box": [
+        278,
+        440,
+        508,
+        540
+      ],
+      "radius": 5
+    },
+    {
+      "src": "step-thu-hoi",
+      "box": [
+        808,
+        1146,
+        986,
+        1228
+      ],
+      "radius": 5
+    },
+    {
+      "src": "step-boc-xep",
+      "box": [
+        235,
+        1146,
+        405,
+        1228
+      ],
+      "radius": 5
+    },
+    {
+      "src": "step-giao-nhan",
+      "box": [
+        612,
+        1146,
+        782,
+        1228
+      ],
+      "radius": 5
+    },
+    {
+      "src": "step-tiep-nhan",
+      "box": [
+        40,
+        1146,
+        210,
+        1228
+      ],
+      "radius": 5
+    },
+    {
+      "src": "step-van-chuyen",
+      "box": [
+        430,
+        1146,
+        597,
+        1228
+      ],
+      "radius": 5
+    },
+    {
+      "src": "task-hop",
+      "box": [
+        489,
+        698,
+        595,
+        792
+      ],
+      "radius": 5
+    },
+    {
+      "src": "task-boc-xep",
+      "box": [
+        350,
+        698,
+        446,
+        792
+      ],
+      "radius": 5
+    },
+    {
+      "src": "task-dong-goi",
+      "box": [
+        70,
+        698,
+        166,
+        792
+      ],
+      "radius": 5
+    },
+    {
+      "src": "task-thao-lap",
+      "box": [
+        210,
+        698,
+        306,
+        792
+      ],
+      "radius": 5
+    }
+  ],
+  "dang-nhap": [
+    {
+      "src": "login-mascot",
+      "box": [
+        15,
+        252,
+        440,
+        570
+      ],
+      "radius": 5
+    }
+  ],
+  "dieu-phoi": [
+    {
+      "src": "hero-dieu-phoi",
+      "box": [
+        412,
+        0,
+        1150,
+        180
+      ],
+      "blend": true,
+      "radius": 0
+    },
+    {
+      "src": "side-deco-ad",
+      "box": [
+        0,
+        510,
+        183,
+        1024
+      ],
+      "radius": 0
+    },
+    {
+      "src": "dp-order",
+      "box": [
+        1077,
+        345,
+        1227,
+        437
+      ],
+      "radius": 5
+    },
+    {
+      "src": "dp-partner-1",
+      "box": [
+        1083,
+        672,
+        1183,
+        732
+      ],
+      "radius": 5
+    },
+    {
+      "src": "dp-partner-2",
+      "box": [
+        1083,
+        750,
+        1183,
+        810
+      ],
+      "radius": 5
+    },
+    {
+      "src": "dp-partner-3",
+      "box": [
+        1083,
+        825,
+        1183,
+        885
+      ],
+      "radius": 5
+    },
+    {
+      "src": "avatar-dieu-phoi",
+      "box": [
+        1370,
+        18,
+        1418,
+        66
+      ],
+      "round": true,
+      "radius": 5
+    }
+  ],
+  "dinh-gia": [
+    {
+      "src": "hero-dinh-gia",
+      "box": [
+        755,
+        0,
+        1536,
+        200
+      ],
+      "blend": true,
+      "radius": 0
+    },
+    {
+      "src": "pr-partner-b",
+      "box": [
+        1185,
+        470,
+        1256,
+        563
+      ],
+      "radius": 5
+    },
+    {
+      "src": "pr-partner-c",
+      "box": [
+        1185,
+        620,
+        1256,
+        713
+      ],
+      "radius": 5
+    },
+    {
+      "src": "pr-photo-1",
+      "box": [
+        240,
+        682,
+        316,
+        767
+      ],
+      "radius": 5
+    },
+    {
+      "src": "pr-photo-2",
+      "box": [
+        323,
+        682,
+        399,
+        767
+      ],
+      "radius": 5
+    },
+    {
+      "src": "pr-photo-3",
+      "box": [
+        405,
+        682,
+        481,
+        767
+      ],
+      "radius": 5
+    },
+    {
+      "src": "pr-photo-4",
+      "box": [
+        486,
+        682,
+        551,
+        767
+      ],
+      "radius": 5
+    },
+    {
+      "src": "pr-partner-a",
+      "box": [
+        1185,
+        277,
+        1256,
+        342
+      ],
+      "radius": 5
+    },
+    {
+      "src": "avatar-manager",
+      "box": [
+        18,
+        945,
+        58,
+        985
+      ],
+      "round": true,
+      "radius": 5
+    }
+  ],
+  "doi-tac": [
+    {
+      "src": "hero-doi-tac",
+      "box": [
+        450,
+        46,
+        1024,
+        272
+      ],
+      "blend": true,
+      "radius": 0
+    },
+    {
+      "src": "team-banner",
+      "box": [
+        0,
+        1318,
+        505,
+        1480
+      ],
+      "radius": 5
+    },
+    {
+      "src": "pt-van-chuyen",
+      "box": [
+        48,
+        278,
+        276,
+        398
+      ],
+      "radius": 5
+    },
+    {
+      "src": "pt-ve-sinh",
+      "box": [
+        288,
+        278,
+        516,
+        398
+      ],
+      "radius": 5
+    },
+    {
+      "src": "pt-sua-chua",
+      "box": [
+        528,
+        278,
+        750,
+        398
+      ],
+      "radius": 5
+    },
+    {
+      "src": "support-girl",
+      "box": [
+        660,
+        1225,
+        772,
+        1328
+      ],
+      "radius": 5
+    },
+    {
+      "src": "review-4",
+      "box": [
+        886,
+        812,
+        975,
+        900
+      ],
+      "radius": 5
+    },
+    {
+      "src": "review-2",
+      "box": [
+        886,
+        628,
+        975,
+        712
+      ],
+      "radius": 5
+    },
+    {
+      "src": "review-3",
+      "box": [
+        886,
+        722,
+        975,
+        806
+      ],
+      "radius": 5
+    },
+    {
+      "src": "review-1",
+      "box": [
+        886,
+        543,
+        975,
+        618
+      ],
+      "radius": 5
+    }
+  ],
+  "don-hang-chi-tiet": [
+    {
+      "src": "hero-order",
+      "box": [
+        660,
+        55,
+        1280,
+        225
+      ],
+      "blend": true,
+      "radius": 0
+    },
+    {
+      "src": "boxes-group",
+      "box": [
+        48,
+        850,
+        508,
+        1002
+      ],
+      "radius": 5
+    },
+    {
+      "src": "resource-illu",
+      "box": [
+        688,
+        640,
+        960,
+        730
+      ],
+      "radius": 5
+    },
+    {
+      "src": "addr-to",
+      "box": [
+        570,
+        493,
+        664,
+        585
+      ],
+      "radius": 5
+    },
+    {
+      "src": "addr-from",
+      "box": [
+        258,
+        493,
+        350,
+        585
+      ],
+      "radius": 5
+    }
+  ],
+  "don-phong": [
+    {
+      "src": "hero-don-phong",
+      "box": [
+        480,
+        52,
+        995,
+        382
+      ],
+      "blend": true,
+      "radius": 0
+    },
+    {
+      "src": "room-after",
+      "box": [
+        530,
+        1072,
+        982,
+        1197
+      ],
+      "radius": 5
+    },
+    {
+      "src": "room-before",
+      "box": [
+        42,
+        1072,
+        490,
+        1197
+      ],
+      "radius": 5
+    },
+    {
+      "src": "area-san",
+      "box": [
+        52,
+        430,
+        268,
+        508
+      ],
+      "radius": 5
+    },
+    {
+      "src": "area-cua",
+      "box": [
+        760,
+        430,
+        975,
+        508
+      ],
+      "radius": 5
+    },
+    {
+      "src": "area-ve-sinh",
+      "box": [
+        524,
+        430,
+        737,
+        508
+      ],
+      "radius": 5
+    },
+    {
+      "src": "area-bep",
+      "box": [
+        290,
+        430,
+        502,
+        508
+      ],
+      "radius": 5
+    },
+    {
+      "src": "check-4",
+      "box": [
+        620,
+        1276,
+        723,
+        1352
+      ],
+      "radius": 5
+    },
+    {
+      "src": "check-1",
+      "box": [
+        305,
+        1276,
+        403,
+        1352
+      ],
+      "radius": 5
+    },
+    {
+      "src": "check-2",
+      "box": [
+        410,
+        1276,
+        508,
+        1352
+      ],
+      "radius": 5
+    },
+    {
+      "src": "check-3",
+      "box": [
+        515,
+        1276,
+        613,
+        1352
+      ],
+      "radius": 5
+    },
+    {
+      "src": "room-after",
+      "box": [
+        416,
+        846,
+        460,
+        897
+      ]
+    },
+    {
+      "src": "area-bep",
+      "box": [
+        469,
+        846,
+        513,
+        897
+      ]
+    },
+    {
+      "src": "area-cua",
+      "box": [
+        521,
+        846,
+        565,
+        897
+      ]
+    }
+  ],
+  "dt-cong-viec": [
+    {
+      "src": "hero-partner",
+      "box": [
+        615,
+        60,
+        1536,
+        278
+      ],
+      "blend": true,
+      "radius": 0
+    },
+    {
+      "src": "side-deco-pt",
+      "box": [
+        0,
+        600,
+        245,
+        1024
+      ],
+      "radius": 0
+    },
+    {
+      "src": "job-chuyen-tro",
+      "box": [
+        625,
+        470,
+        866,
+        625
+      ],
+      "radius": 5
+    },
+    {
+      "src": "job-ban-giao",
+      "box": [
+        625,
+        805,
+        866,
+        955
+      ],
+      "radius": 5
+    },
+    {
+      "src": "job-don-phong",
+      "box": [
+        625,
+        647,
+        866,
+        785
+      ],
+      "radius": 5
+    },
+    {
+      "src": "avatar-minh",
+      "box": [
+        18,
+        92,
+        88,
+        162
+      ],
+      "round": true,
+      "radius": 5
+    }
+  ],
+  "giao-nhan-1": [
+    {
+      "src": "scan-qr",
+      "box": [
+        100,
+        216,
+        490,
+        535
+      ],
+      "radius": 5
+    },
+    {
+      "src": "box-big",
+      "box": [
+        300,
+        850,
+        487,
+        968
+      ]
+    },
+    {
+      "src": "seal-photo",
+      "box": [
+        116,
+        850,
+        278,
+        968
+      ],
+      "radius": 5
+    }
+  ],
+  "giao-nhan-2": [
+    {
+      "src": "seal-deliver",
+      "box": [
+        308,
+        318,
+        492,
+        475
+      ],
+      "radius": 5
+    },
+    {
+      "src": "seal-recv",
+      "box": [
+        100,
+        318,
+        284,
+        475
+      ],
+      "radius": 5
+    }
+  ],
+  "giao-nhan-3": [
+    {
+      "src": "seal-torn",
+      "box": [
+        100,
+        290,
+        488,
+        515
+      ],
+      "radius": 5
+    },
+    {
+      "src": "seal-torn",
+      "box": [
+        204,
+        764,
+        294,
+        858
+      ],
+      "close": true
+    },
+    {
+      "src": "seal-torn",
+      "box": [
+        302,
+        764,
+        392,
+        858
+      ],
+      "close": true
+    },
+    {
+      "src": "box-big",
+      "box": [
+        400,
+        764,
+        489,
+        858
+      ],
+      "close": true
+    }
+  ],
+  "ho-tro": [
+    {
+      "src": "hero-support",
+      "box": [
+        262,
+        75,
+        466,
+        272
+      ],
+      "blend": true,
+      "radius": 0
+    },
+    {
+      "src": "lost-notebook",
+      "box": [
+        171,
+        687,
+        294,
+        800
+      ],
+      "radius": 5
+    },
+    {
+      "src": "lost-bag",
+      "box": [
+        38,
+        687,
+        160,
+        800
+      ],
+      "radius": 5
+    }
+  ],
+  "home-d": [
+    {
+      "src": "hero-home",
+      "box": [
+        335,
+        42,
+        819,
+        333
+      ],
+      "blend": true,
+      "radius": 0
+    },
+    {
+      "src": "box-stack-wide",
+      "box": [
+        410,
+        805,
+        812,
+        1052
+      ],
+      "radius": 5
+    },
+    {
+      "src": "svc-chuyen-tro",
+      "box": [
+        25,
+        440,
+        283,
+        615
+      ]
+    },
+    {
+      "src": "hero-ban-giao",
+      "box": [
+        548,
+        440,
+        797,
+        615
+      ]
+    },
+    {
+      "src": "svc-don-phong",
+      "box": [
+        293,
+        440,
+        538,
+        615
+      ]
+    },
+    {
+      "src": "trust-photo",
+      "box": [
+        541,
+        1140,
+        795,
+        1256
+      ],
+      "radius": 5
+    },
+    {
+      "src": "trust-qr",
+      "box": [
+        25,
+        1140,
+        278,
+        1256
+      ],
+      "radius": 5
+    },
+    {
+      "src": "trust-seal",
+      "box": [
+        288,
+        1140,
+        530,
+        1256
+      ],
+      "radius": 5
+    },
+    {
+      "src": "pt-van-chuyen",
+      "box": [
+        25,
+        1425,
+        220,
+        1555
+      ]
+    },
+    {
+      "src": "pt-sua-chua",
+      "box": [
+        433,
+        1425,
+        627,
+        1555
+      ]
+    },
+    {
+      "src": "pt-ve-sinh",
+      "box": [
+        230,
+        1425,
+        423,
+        1555
+      ]
+    },
+    {
+      "src": "faq-mascot",
+      "box": [
+        25,
+        1560,
+        190,
+        1690
+      ],
+      "radius": 5
+    },
+    {
+      "src": "cta-mascot",
+      "box": [
+        40,
+        1695,
+        235,
+        1790
+      ],
+      "radius": 5
+    },
+    {
+      "src": "qr-promo",
+      "box": [
+        630,
+        1282,
+        813,
+        1368
+      ]
+    }
+  ],
+  "home-m": [
+    {
+      "src": "hero-home",
+      "box": [
+        350,
+        60,
+        724,
+        500
+      ],
+      "radius": 0,
+      "blend": true
+    },
+    {
+      "src": "box-stack",
+      "box": [
+        300,
+        1425,
+        712,
+        1622
+      ],
+      "radius": 5
+    },
+    {
+      "src": "svc-chuyen-tro",
+      "box": [
+        242,
+        713,
+        690,
+        871
+      ],
+      "radius": 5
+    },
+    {
+      "src": "svc-don-phong",
+      "box": [
+        258,
+        881,
+        690,
+        1040
+      ],
+      "radius": 5
+    },
+    {
+      "src": "svc-ban-giao",
+      "box": [
+        288,
+        1048,
+        690,
+        1205
+      ],
+      "radius": 5
+    },
+    {
+      "src": "qr-promo",
+      "box": [
+        250,
+        1716,
+        420,
+        1895
+      ],
+      "radius": 5
+    },
+    {
+      "src": "partner-promo",
+      "box": [
+        578,
+        1722,
+        706,
+        1895
+      ],
+      "radius": 5
+    }
+  ],
+  "hop-cua-toi": [
+    {
+      "src": "hero-my-box",
+      "box": [
+        289,
+        70,
+        493,
+        205
+      ],
+      "blend": true,
+      "radius": 0
+    },
+    {
+      "src": "box-thumb",
+      "box": [
+        78,
+        440,
+        129,
+        476
+      ],
+      "radius": 5
+    }
+  ],
+  "kho-hop": [
+    {
+      "src": "hero-kho",
+      "box": [
+        755,
+        60,
+        1536,
+        295
+      ],
+      "blend": true,
+      "radius": 0
+    },
+    {
+      "src": "side-deco-kho",
+      "box": [
+        0,
+        590,
+        216,
+        940
+      ],
+      "radius": 0
+    },
+    {
+      "src": "box-detail",
+      "box": [
+        930,
+        500,
+        1200,
+        673
+      ],
+      "radius": 5
+    },
+    {
+      "src": "clean-after",
+      "box": [
+        1112,
+        825,
+        1240,
+        890
+      ],
+      "radius": 5
+    },
+    {
+      "src": "clean-before",
+      "box": [
+        940,
+        825,
+        1068,
+        890
+      ],
+      "radius": 5
+    }
+  ],
+  "lich-thu-hoi": [
+    {
+      "src": "pickup-mascot",
+      "box": [
+        250,
+        280,
+        502,
+        497
+      ],
+      "radius": 5
+    },
+    {
+      "src": "open-box",
+      "box": [
+        267,
+        535,
+        397,
+        665
+      ],
+      "radius": 5
+    }
+  ],
+  "nb-doi-tac": [
+    {
+      "src": "hero-phe-duyet",
+      "box": [
+        980,
+        66,
+        1536,
+        290
+      ],
+      "blend": true,
+      "radius": 0
+    },
+    {
+      "src": "side-deco-ad",
+      "box": [
+        0,
+        510,
+        230,
+        1024
+      ],
+      "radius": 0
+    },
+    {
+      "src": "svc-chuyen-tro",
+      "box": [
+        790,
+        66,
+        980,
+        290
+      ],
+      "radius": 0
+    }
+  ],
+  "su-co": [
+    {
+      "src": "cskh-mascot",
+      "box": [
+        4,
+        600,
+        165,
+        1005
+      ],
+      "radius": 5
+    },
+    {
+      "src": "box-stack-wide",
+      "box": [
+        750,
+        60,
+        1058,
+        170
+      ],
+      "radius": 0
+    },
+    {
+      "src": "evidence-room",
+      "box": [
+        584,
+        483,
+        762,
+        650
+      ],
+      "radius": 5
+    },
+    {
+      "src": "evidence-seal",
+      "box": [
+        429,
+        483,
+        577,
+        650
+      ],
+      "radius": 5
+    },
+    {
+      "src": "avatar-cskh",
+      "box": [
+        819,
+        287,
+        869,
+        337
+      ],
+      "round": true,
+      "radius": 5
+    }
+  ],
+  "tai-khoan": [
+    {
+      "src": "hero-account",
+      "box": [
+        553,
+        85,
+        1075,
+        268
+      ],
+      "blend": true,
+      "radius": 0
+    },
+    {
+      "src": "side-deco-acc",
+      "box": [
+        7,
+        500,
+        170,
+        1005
+      ],
+      "radius": 0
+    },
+    {
+      "src": "note-board",
+      "box": [
+        750,
+        840,
+        1058,
+        995
+      ],
+      "radius": 5
+    },
+    {
+      "src": "order-thumb",
+      "box": [
+        205,
+        418,
+        403,
+        545
+      ],
+      "radius": 5
+    },
+    {
+      "src": "box-banner",
+      "box": [
+        605,
+        703,
+        733,
+        795
+      ],
+      "radius": 5
+    },
+    {
+      "src": "avatar-tuan-anh",
+      "box": [
+        923,
+        31,
+        963,
+        71
+      ],
+      "round": true,
+      "radius": 5
+    }
+  ],
+  "thong-tin-hop": [
+    {
+      "src": "box-big",
+      "box": [
+        35,
+        200,
+        500,
+        475
+      ],
+      "radius": 5
+    }
+  ],
+  "uoc-tinh": [
+    {
+      "src": "hero-uoc-tinh",
+      "box": [
+        610,
+        56,
+        1536,
+        278
+      ],
+      "blend": true,
+      "radius": 0
+    },
+    {
+      "src": "sel-chuyen-tro",
+      "box": [
+        46,
+        335,
+        343,
+        442
+      ],
+      "radius": 5
+    },
+    {
+      "src": "sel-don-phong",
+      "box": [
+        373,
+        335,
+        664,
+        442
+      ],
+      "radius": 5
+    },
+    {
+      "src": "sel-ban-giao",
+      "box": [
+        695,
+        335,
+        985,
+        442
+      ],
+      "radius": 5
+    },
+    {
+      "src": "price-box",
+      "box": [
+        1330,
+        330,
+        1510,
+        440
+      ],
+      "radius": 5
+    },
+    {
+      "src": "success-mascot",
+      "box": [
+        1040,
+        890,
+        1170,
+        1000
+      ],
+      "radius": 5
+    }
+  ]
+}

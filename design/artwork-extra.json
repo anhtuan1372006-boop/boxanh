@@ -1,0 +1,36 @@
+{
+  "home-d": [
+    {"src":"svc-chuyen-tro","box":[25,440,283,615]},
+    {"src":"svc-don-phong","box":[293,440,538,615]},
+    {"src":"hero-ban-giao","box":[548,440,797,615]},
+    {"src":"qr-promo","box":[630,1282,813,1368]},
+    {"src":"pt-van-chuyen","box":[25,1425,220,1555]},
+    {"src":"pt-ve-sinh","box":[230,1425,423,1555]},
+    {"src":"pt-sua-chua","box":[433,1425,627,1555]}
+  ],
+  "home-m": [{"src":"hero-home","box":[350,60,724,500],"radius":0,"blend":true}],
+  "don-phong": [
+    {"src":"room-after","box":[416,846,460,897]},
+    {"src":"area-bep","box":[469,846,513,897]},
+    {"src":"area-cua","box":[521,846,565,897]}
+  ],
+  "ban-giao-phong": [
+    {"src":"room-after","box":[650,841,730,911]},
+    {"src":"hand-kiem-tra","box":[733,841,812,911]},
+    {"src":"area-bep","box":[815,841,900,911]},
+    {"src":"room-after","box":[45,1235,129,1343]},
+    {"src":"area-ve-sinh","box":[135,1235,218,1343]},
+    {"src":"area-bep","box":[223,1235,306,1343]}
+  ],
+  "nb-doi-tac": [
+    {"src":"svc-chuyen-tro","box":[790,66,980,290],"radius":0},
+    {"src":"side-deco-ad","box":[0,510,230,1024],"radius":0}
+  ],
+  "su-co": [{"src":"box-stack-wide","box":[750,60,1058,170],"radius":0}],
+  "giao-nhan-1": [{"src":"box-big","box":[300,850,487,968]}],
+  "giao-nhan-3": [
+    {"src":"seal-torn","box":[204,764,294,858],"close":true},
+    {"src":"seal-torn","box":[302,764,392,858],"close":true},
+    {"src":"box-big","box":[400,764,489,858],"close":true}
+  ]
+}

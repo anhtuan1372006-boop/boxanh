@@ -1,6 +1,7 @@
 // Renders a canvas (src/canvas/<name>.json, written by tools/canvas.py) as HTML: the design
 // plate plus links, buttons, inputs and pop-ups placed at the design's exact coordinates.
 import fs from 'node:fs';
+const artwork = JSON.parse(fs.readFileSync(new URL('./artwork.json', import.meta.url), 'utf8'));
 
 const esc = s => String(s ?? '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 const n = v => +(+v).toFixed(2);
@@ -118,13 +119,21 @@ function item(el, plain) {
 
 export function renderCanvas(name, cls, root = '') {
   const d = JSON.parse(fs.readFileSync(`src/canvas/${name}.json`, 'utf8'));
+  const art = artwork[name] || [];
   const plain = !d.bake;
   // url()s inside custom properties resolve against the stylesheet, so canvas.js turns these
   // page-relative paths into absolute --plate / --clean values
   const clean = d.clean ? ` data-clean="${root}assets/canvas/${name}-clean.webp"` : '';
   return `<div class="cv ${cls}${d.bake ? ' baked' : ''}" data-cv="${name}"${clean} style="--W:${d.W};--ar:${d.W}/${d.H}">
 <img class="cv-bg" src="${root}assets/canvas/${name}.webp" alt="" width="${d.W * 2}" height="${d.H * 2}" decoding="async">
-${d.items.map(e => item(e, plain)).join('\n')}
+${art.map(a => `<img class="cv-art${a.round ? ' cv-art-round' : ''}${a.blend ? ' cv-art-blend' : ''}" src="${root}assets/img/${a.src}.webp" alt="" width="${a.box[2] - a.box[0]}" height="${a.box[3] - a.box[1]}" loading="${a.box[1] < 350 ? 'eager' : 'lazy'}" decoding="async" style="${box(a.box)};--r:${a.radius ?? 5}">${(a.close || a.src.startsWith('lost-')) ? `<span class="cv-art-close" aria-hidden="true" style="${box([a.box[2]-22,a.box[1]+3,a.box[2]-3,a.box[1]+22])}">×</span>` : ''}`).join('\n')}
+${d.items.map(e => {
+  const r = e.r;
+  const covered = e.k === 't' && r && art.some(a => r[0] >= a.box[0] && r[1] >= a.box[1] && r[2] <= a.box[2] && r[3] <= a.box[3]);
+  const b = e.box;
+  const keep = b && ((e.k === 'a' && e.pill) || e.k === 'btn') && art.some(a => b[0] < a.box[2] && b[2] > a.box[0] && b[1] < a.box[3] && b[3] > a.box[1]);
+  return item(covered || keep ? {...e, cls: `${e.cls || ''}${covered ? ' over-art' : ''}${keep ? ' cv-keep-ui' : ''}`.trim()} : e, plain);
+}).join('\n')}
 </div>`;
 }
 
