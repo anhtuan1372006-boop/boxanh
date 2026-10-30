@@ -1,3 +1,145 @@
 ---
-{"title": "Dịch vụ bàn giao phòng", "description": "Bàn giao rõ ràng. Khép lại gọn gàng. Kiểm tra, dọn dẹp, xử lý hạng mục FIX và biên bản đầy đủ, minh bạch.", "layout": "canvas", "canvas": ["ban-giao-phong"]}
+{"title": "Dịch vụ bàn giao phòng", "description": "Bàn giao phòng trọ rõ ràng: kiểm tra hiện trạng, dọn vệ sinh, xử lý hạng mục FIX và lập biên bản kèm hình ảnh cho cả hai bên.", "active": "ban-giao", "tab": "dich-vu", "scripts": ["service"]}
 ---
+<section class="hero">
+  <div class="container hero-in">
+    <div class="hero-text">
+      <nav class="crumbs" aria-label="Breadcrumb"><a href="index.html">{{icon:home ic-sm}} Trang chủ</a>{{icon:chevron-right}}<span>Bàn giao phòng</span></nav>
+      <h1 class="display" style="font-size:clamp(36px,5vw,64px)">Bàn giao rõ ràng.<br><span class="sw">Khép lại gọn gàng.</span></h1>
+      <p class="lead">Kiểm tra • Dọn dẹp • Xử lý hạng mục FIX<br>Biên bản đầy đủ, minh bạch.</p>
+      <div class="hero-cta"><a class="btn btn-primary btn-lg" href="#lich-ban-giao">Tạo yêu cầu bàn giao {{icon:arrow-right}}</a></div>
+      <div class="trust-row">
+        <div>{{icon:file-text}}<span>Quy trình rõ ràng</span></div>
+        <div>{{icon:shield-check}}<span>Hình ảnh minh bạch</span></div>
+        <div>{{icon:message-dots}}<span>Hỗ trợ tận tâm</span></div>
+      </div>
+    </div>
+    <div class="hero-art" style="--ratio:1.82">
+      <img src="assets/img/hero-ban-giao.webp" alt="Nhân viên BOXANH trao chìa khóa cho khách, kỹ thuật viên sửa tủ phía sau" fetchpriority="high">
+    </div>
+  </div>
+</section>
+
+<section class="section-sm">
+  <div class="container card card-pad">
+    <div class="row row-top"><span class="feat-ic" style="background:var(--g100)">{{icon:clipboard-check}}</span><div><h2 class="h2 sw">Chuẩn bị để bàn giao</h2><p class="muted mt-4">BOXANH đồng hành cùng bạn hoàn tất thủ tục bàn giao phòng với quy trình rõ ràng và chi tiết.</p></div></div>
+    <div class="grid g-4 mt-20">
+      <article class="tile"><div class="card-sm row"><span class="num-dot yellow">1</span><b class="h4">Kiểm tra hiện trạng</b></div><div class="tile-img"><img src="assets/img/hand-kiem-tra.webp" alt="" loading="lazy"></div><p class="card-sm small muted">Đối chiếu tình trạng phòng với hợp đồng và thỏa thuận.</p></article>
+      <article class="tile"><div class="card-sm row"><span class="num-dot yellow">2</span><b class="h4">Dọn vệ sinh</b></div><div class="tile-img"><img src="assets/img/hand-ve-sinh.webp" alt="" loading="lazy"></div><p class="card-sm small muted">Vệ sinh toàn bộ không gian, bàn giao sạch sẽ, gọn gàng.</p></article>
+      <article class="tile"><div class="card-sm row"><span class="num-dot yellow">3</span><b class="h4">Xử lý hạng mục FIX</b></div><div class="tile-img"><img src="assets/img/hand-fix.webp" alt="" loading="lazy"></div><p class="card-sm small muted">Sửa chữa các hạng mục hư hỏng nhỏ (nếu có).</p></article>
+      <article class="tile"><div class="card-sm row"><span class="num-dot yellow">4</span><b class="h4">Biên bản &amp; hình ảnh</b></div><div class="tile-img"><img src="assets/img/hand-bien-ban.webp" alt="" loading="lazy"></div><p class="card-sm small muted">Lập biên bản, chụp ảnh đầy đủ làm căn cứ bàn giao.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="section-sm">
+  <div class="container split">
+    <div class="stack" style="--gap:20px">
+      <div class="card card-pad">
+        <div class="card-hd">
+          <div><h2 class="card-title">{{icon:clipboard-list}} <span class="sw">Danh sách kiểm tra</span></h2><p class="card-sub">Kiểm tra chi tiết các hạng mục trong phòng trước khi bàn giao.</p></div>
+          <button class="link" type="button" id="dl-checklist">{{icon:download}} Tải mẫu checklist</button>
+        </div>
+        <div class="table-wrap">
+          <table class="table" id="checklist">
+            <thead><tr><th>Hạng mục</th><th>Nội dung kiểm tra</th><th>Trạng thái</th><th>Ghi chú</th></tr></thead>
+            <tbody>
+              <tr><td><span class="cell-ic">{{icon:paint-roller}}<b>Tường &amp; sơn</b></span></td><td class="muted">Tường, trần, sơn, ẩm mốc</td><td><span class="badge b-green">{{icon:check}} Đạt</span></td><td class="muted">Bình thường</td></tr>
+              <tr><td><span class="cell-ic">{{icon:zap}}<b>Điện &amp; đèn</b></span></td><td class="muted">Công tắc, ổ cắm, đèn, quạt</td><td><span class="badge b-yellow">{{icon:alert-circle}} Cần xử lý</span></td><td class="muted">Hỏng 1 bóng đèn</td></tr>
+              <tr><td><span class="cell-ic">{{icon:droplet}}<b>Nước &amp; thiết bị</b></span></td><td class="muted">Vòi nước, bồn rửa, bồn cầu</td><td><span class="badge b-green">{{icon:check}} Đạt</span></td><td class="muted">Hoạt động tốt</td></tr>
+              <tr class="is-warn"><td><span class="cell-ic">{{icon:armchair}}<b>Nội thất</b></span></td><td class="muted">Giường, tủ, bàn ghế, kệ</td><td><span class="badge b-yellow">{{icon:alert-circle}} Cần xử lý</span></td><td class="muted">Lỏng bản lề tủ bếp</td></tr>
+              <tr><td><span class="cell-ic">{{icon:bath}}<b>Vệ sinh</b></span></td><td class="muted">Sàn, nhà tắm, bếp, cửa sổ</td><td><span class="badge b-green">{{icon:check}} Đạt</span></td><td class="muted">Đã vệ sinh sạch</td></tr>
+              <tr><td><span class="cell-ic">{{icon:key}}<b>Chìa khóa</b></span></td><td class="muted">Hộp thư, chìa khóa, thẻ từ</td><td><span class="badge b-gray">{{icon:clock}} Chờ xác nhận</span></td><td class="muted">Khách bàn giao</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="card card-pad" id="fix-card">
+        <div class="card-hd"><h2 class="card-title">{{icon:wrench}} <span class="sw">Hạng mục FIX cần xử lý</span></h2><span class="badge b-yellow" id="fix-status">Chờ bạn đồng ý</span></div>
+        <div class="cols-2-1 grid" style="align-items:start">
+          <div class="row row-top">
+            <img class="thumb" style="width:110px;height:84px" src="assets/img/fix-thumb.webp" alt="Bản lề tủ bếp" loading="lazy">
+            <div><b class="h4">Sửa bản lề tủ</b><p class="small muted mt-4">Bản lề tủ bếp bị lỏng, khó đóng mở.</p><div class="row wrap mt-8 small muted"><span class="row" style="gap:6px">{{icon:clock ic-sm}} Thời gian dự kiến: 30 – 45 phút</span><span class="row" style="gap:6px">{{icon:shield-check ic-sm}} Bảo hành: 30 ngày</span></div></div>
+          </div>
+          <div class="panel tint-yellow" style="border:1px solid #f3e1a6"><p class="xs muted">Giá minh họa</p><p class="h3 num">150.000 – 300.000 đ</p><p class="xs muted mt-4">Dữ liệu minh họa, chưa phải giá chính thức. Giá cuối cùng sẽ được xác nhận sau khi kiểm tra thực tế.</p></div>
+        </div>
+        <div class="row between wrap mt-16">
+          <p class="hint">{{icon:info ic-sm}} Chỉ thực hiện sau khi xác nhận hạng mục và chi phí.</p>
+          <div class="row"><button class="btn btn-outline btn-sm" type="button" id="fix-quote">Xem báo giá</button><button class="btn btn-primary btn-sm" type="button" id="fix-approve">Duyệt hạng mục</button></div>
+        </div>
+      </div>
+    </div>
+
+    <form class="card card-pad" id="handover-form" novalidate>
+      <h2 class="card-title" id="lich-ban-giao">{{icon:calendar}} Lịch bàn giao</h2>
+      <p class="card-sub">Chọn thời gian phù hợp để BOXANH hỗ trợ bạn.</p>
+      <div class="form-grid mt-16">
+        <div class="field full"><label class="label" for="h-addr">Địa chỉ phòng trọ <span class="req">*</span></label><div class="with-ic ic-green">{{icon:map-pin}}<input class="input" id="h-addr" name="addr" placeholder="Ví dụ: Số 42, Đường Hoa Phượng, Quận Cầu Giấy" required data-msg="Vui lòng nhập địa chỉ phòng trọ."></div></div>
+        <div class="field"><label class="label" for="h-date">Ngày bàn giao <span class="req">*</span></label><input class="input" id="h-date" name="date" type="date" data-future required data-msg="Vui lòng chọn ngày bàn giao."></div>
+        <div class="field"><label class="label" for="h-time">Khung giờ</label><div class="with-ic">{{icon:clock}}<select class="select" id="h-time" name="time"><option>09:00 – 11:00</option><option>13:30 – 15:30</option><option>16:00 – 18:00</option></select></div></div>
+        <div class="field full">
+          <span class="label">Hình ảnh hiện trạng <span class="opt-l">(tối thiểu 3 ảnh)</span></span>
+          <div class="previews" data-previews>
+            <div class="preview"><img src="assets/img/check-1.webp" alt="Ảnh phòng mẫu 1"></div>
+            <div class="preview"><img src="assets/img/room-after.webp" alt="Ảnh phòng mẫu 2"></div>
+            <div class="preview"><img src="assets/img/check-2.webp" alt="Ảnh phòng mẫu 3"></div>
+            <div data-upload-anchor></div>
+          </div>
+          <div data-upload data-max="10" data-existing="3" id="h-photos"><label class="drop" style="padding:10px 12px"><span class="drop-ic" style="width:36px;height:36px">{{icon:image-plus}}</span><span class="grow"><b>Thêm ảnh</b><span data-upload-count>3/10 ảnh</span> · 3 ảnh mẫu đã được thêm sẵn</span><input class="sr-only" type="file" accept="image/*" multiple></label></div>
+        </div>
+        <div class="field full"><label class="label" for="h-note">Ghi chú của bạn</label><textarea class="textarea" id="h-note" name="note" maxlength="500" placeholder="Ví dụ: Phòng đã dọn cơ bản, cần hỗ trợ sửa bản lề tủ bếp."></textarea><span class="counter" data-counter-for="h-note">0/500</span></div>
+        <div class="field when-out"><label class="label" for="h-name">Họ tên <span class="req">*</span></label><input class="input" id="h-name" name="name" autocomplete="name" required></div>
+        <div class="field when-out"><label class="label" for="h-phone">Số điện thoại <span class="req">*</span></label><input class="input" id="h-phone" name="phone" inputmode="tel" autocomplete="tel" required data-phone></div>
+      </div>
+      <button class="btn btn-primary btn-lg btn-block mt-20" type="submit">{{icon:send}} Gửi yêu cầu</button>
+      <p class="hint mt-12">{{icon:info ic-sm}} Đây là yêu cầu đặt lịch. Báo giá chính thức sẽ được gửi sau khi BOXANH xác nhận thông tin và khảo sát (nếu cần).</p>
+    </form>
+  </div>
+</section>
+
+<section class="section-sm" id="bien-ban">
+  <div class="container card card-pad">
+    <div class="card-hd">
+      <div><h2 class="card-title">{{icon:file-text}} <span class="sw">Biên bản bàn giao phòng</span></h2><p class="card-sub">Lưu giữ đầy đủ hình ảnh và thông tin bàn giao cho cả hai bên. <span class="tag-demo">(Biên bản mẫu – dữ liệu minh họa)</span></p></div>
+      <button class="btn btn-primary" type="button" id="view-record">{{icon:file-text}} Xem biên bản</button>
+    </div>
+    <div class="grid g-4" style="align-items:start">
+      <div>
+        <div class="row between"><b class="small">Hình ảnh bàn giao</b><button class="link small" type="button" data-gallery>Xem tất cả (12) {{icon:chevron-right}}</button></div>
+        <div class="grid g-3 keep-2 gap-sm mt-8" style="grid-template-columns:repeat(3,minmax(0,1fr))">
+          <img class="thumb" style="width:100%;height:76px" src="assets/img/check-1.webp" alt="Ảnh bàn giao 1" loading="lazy">
+          <img class="thumb" style="width:100%;height:76px" src="assets/img/check-3.webp" alt="Ảnh bàn giao 2" loading="lazy">
+          <img class="thumb" style="width:100%;height:76px" src="assets/img/check-2.webp" alt="Ảnh bàn giao 3" loading="lazy">
+          <img class="thumb" style="width:100%;height:76px" src="assets/img/check-4.webp" alt="Ảnh bàn giao 4" loading="lazy">
+          <img class="thumb" style="width:100%;height:76px" src="assets/img/room-after.webp" alt="Ảnh bàn giao 5" loading="lazy">
+          <button class="preview" type="button" data-gallery style="width:100%;height:76px"><img src="assets/img/area-san.webp" alt=""><span class="more">+7</span></button>
+        </div>
+      </div>
+      <div>
+        <b class="small">Thông tin biên bản</b>
+        <dl class="kv mt-8 small"><dt>Mã đơn hàng</dt><dd>BX2026-0284</dd><dt>Ngày bàn giao</dt><dd>20/12/2026</dd><dt>Địa chỉ phòng</dt><dd>Số 15 ngõ 102 Trần Duy Hưng, Quận Cầu Giấy, Hà Nội</dd></dl>
+      </div>
+      <div>
+        <b class="small">Danh sách kiểm tra</b>
+        <ul class="checklist mt-8 small"><li>{{icon:check}} Hoàn thành kiểm tra hiện trạng</li><li>{{icon:check}} Đã vệ sinh phòng</li><li>{{icon:check}} Đã xử lý các hạng mục FIX</li><li>{{icon:check}} Đã bàn giao chìa khóa</li><li>{{icon:check}} Đã chụp ảnh hiện trạng</li></ul>
+      </div>
+      <div class="stack" style="--gap:10px">
+        <b class="small">Xác nhận các bên</b>
+        <div class="card card-sm"><b class="small">Khách hàng</b><p class="xs muted">Người bàn giao</p><svg class="sig-img" viewBox="0 0 200 60" aria-label="Chữ ký Nguyễn Tuấn Anh"><path d="M10 45c12-20 20-32 26-30 7 3-12 30-4 30 9 0 14-22 22-22 6 0-2 18 5 18 8 0 12-12 18-12 5 0 2 9 8 9 10 0 30-16 60-24 18-4 32-4 40-2" fill="none" stroke="#1d3f8a" stroke-width="2" stroke-linecap="round"/></svg><p class="xs right">Nguyễn Tuấn Anh · 20/12/2026</p></div>
+        <div class="card card-sm"><b class="small">Bên nhận phòng</b><p class="xs muted">Chủ trọ / Người đại diện</p><svg class="sig-img" viewBox="0 0 200 60" aria-label="Chữ ký Trần Minh Khoa"><path d="M20 40c4-18 14-28 18-24 5 5-10 26-2 28 9 2 10-20 19-20 8 0-3 22 6 22 10 0 16-26 26-26 7 0 0 18 8 18 14 0 40-12 80-20" fill="none" stroke="#1d3f8a" stroke-width="2" stroke-linecap="round"/></svg><p class="xs right">Trần Minh Khoa · 20/12/2026</p></div>
+      </div>
+    </div>
+    <div class="note gray mt-20">{{icon:info}}<div>Kết quả bàn giao theo hiện trạng và thỏa thuận của các bên. BOXANH hỗ trợ kiểm tra, vệ sinh, xử lý hạng mục FIX và lập biên bản. Việc hoàn trả cọc (nếu có) là thỏa thuận riêng giữa bạn và chủ trọ.</div></div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="cta-band">
+      <img class="cta-mascot" src="assets/img/cta-mascot.webp" alt="" loading="lazy">
+      <div><h2>Trả phòng không còn là nỗi lo</h2><p>Đặt lịch bàn giao – BOXANH kiểm tra, dọn dẹp, sửa chữa và lập biên bản giúp bạn.</p></div>
+      <a class="btn btn-yellow btn-lg" href="#lich-ban-giao">Tạo yêu cầu bàn giao {{icon:arrow-right}}</a>
+    </div>
+  </div>
+</section>

@@ -1,3 +1,83 @@
 ---
-{"title": "Định giá & dữ liệu vận hành", "layout": "canvas", "canvas": ["dinh-gia"], "scripts": ["portal-cv"]}
+{"title": "Định giá & dữ liệu vận hành", "layout": "admin", "active": "dinh-gia", "scripts": ["admin"]}
 ---
+<section class="banner" style="min-height:180px">
+  <div class="banner-text">
+    <h1>Định giá &amp; <span class="sw">dữ liệu vận hành</span></h1>
+    <p>Tối ưu nguồn lực. Báo giá chính xác hơn. Vận hành hiệu quả hơn.</p>
+    <div class="banner-tags"><span class="badge b-yellow">{{icon:lock}} Nội bộ · Chỉ người được phân quyền</span><span class="badge b-white">{{icon:bar-chart}} Dữ liệu minh họa</span></div>
+  </div>
+  <div class="banner-art"><img src="{{root}}assets/img/hero-dinh-gia.webp" alt="Nhân viên định giá làm việc với laptop bên cạnh hộp BOXANH"></div>
+</section>
+
+<div class="split-3" id="pricing">
+  <form class="card card-pad" id="pr-form" novalidate>
+    <div class="card-hd"><h2 class="card-title">{{icon:boxes}} Đầu vào đơn hàng</h2><span class="badge b-green b-lg num">BX2027-0015</span></div>
+    <div class="form-grid">
+      <div class="field"><label class="label small" for="pr-km">Tuyến đường</label><div class="with-suffix"><input class="input" id="pr-km" name="km" type="number" min="1" max="80" step="0.5" value="5"><span class="suffix">km</span></div></div>
+      <div class="field"><span class="label small">Số tầng (đi → đến)</span><div class="input-row"><select class="select" name="fromFloor" aria-label="Tầng nơi đi"><option>1</option><option selected>2</option><option>3</option><option>4</option><option>5</option></select><select class="select" name="toFloor" aria-label="Tầng nơi đến"><option>1</option><option>2</option><option selected>3</option><option>4</option><option>5</option></select></div></div>
+      <div class="field"><label class="label small" for="pr-lift">Có thang máy?</label><select class="select" id="pr-lift" name="lift"><option value="1">Có</option><option value="0">Không</option></select></div>
+      <div class="field"><label class="label small" for="pr-boxes">Số lượng hộp</label><div class="with-suffix"><input class="input" id="pr-boxes" name="boxes" type="number" min="0" max="80" value="10"><span class="suffix">hộp</span></div></div>
+      <div class="field"><label class="label small" for="pr-cars">Số xe</label><div class="with-suffix"><input class="input" id="pr-cars" name="cars" type="number" min="0" max="5" value="1"><span class="suffix">xe</span></div></div>
+      <div class="field"><label class="label small" for="pr-people">Số nhân công</label><div class="with-suffix"><input class="input" id="pr-people" name="people" type="number" min="1" max="10" value="2"><span class="suffix">người</span></div></div>
+      <div class="field"><label class="label small" for="pr-date">Ngày thực hiện</label><input class="input" id="pr-date" name="date" type="date" value="2027-01-12"></div>
+      <div class="field"><label class="label small" for="pr-slot">Khung giờ</label><select class="select" id="pr-slot" name="slot"><option value="0">08:00 – 12:00</option><option value="0">13:00 – 17:00</option><option value="1">18:00 – 21:00 (ngoài giờ)</option></select></div>
+    </div>
+    <p class="label small mt-16">Dịch vụ yêu cầu</p>
+    <div class="grid g-3 gap-sm mt-8">
+      <label class="card card-sm" style="cursor:pointer"><div class="row between">{{icon:truck green}}<input class="switch" type="checkbox" name="svcMove" checked aria-label="Chuyển trọ"></div><b class="small mt-8" style="display:block">Chuyển trọ</b><span class="xs muted">Vận chuyển đồ đạc</span></label>
+      <label class="card card-sm" style="cursor:pointer"><div class="row between">{{icon:broom green}}<input class="switch" type="checkbox" name="svcClean" aria-label="Dọn phòng"></div><b class="small mt-8" style="display:block">Dọn phòng</b><span class="xs muted">Vệ sinh phòng cũ</span></label>
+      <label class="card card-sm" style="cursor:pointer"><div class="row between">{{icon:clipboard-check green}}<input class="switch" type="checkbox" name="svcHand" aria-label="Bàn giao phòng"></div><b class="small mt-8" style="display:block">Bàn giao phòng</b><span class="xs muted">Hỗ trợ bàn giao</span></label>
+    </div>
+    <p class="label small mt-16">Ảnh hiện trạng &amp; phạm vi công việc</p>
+    <div class="previews mt-8" data-previews>
+      <div class="preview"><img src="{{root}}assets/img/pr-photo-1.webp" alt="Ảnh hiện trạng 1"></div>
+      <div class="preview"><img src="{{root}}assets/img/pr-photo-2.webp" alt="Ảnh hiện trạng 2"></div>
+      <div class="preview"><img src="{{root}}assets/img/pr-photo-3.webp" alt="Ảnh hiện trạng 3"></div>
+      <div class="preview"><img src="{{root}}assets/img/pr-photo-4.webp" alt="Ảnh hiện trạng 4"></div>
+      <div data-upload-anchor></div>
+    </div>
+    <div data-upload data-max="12" data-existing="4" class="mt-8"><label class="drop" style="padding:8px 12px">{{icon:camera}}<span class="grow"><b>Thêm ảnh</b><span data-upload-count>4/12 ảnh</span></span><input class="sr-only" type="file" accept="image/*" multiple></label></div>
+  </form>
+
+  <section class="card card-pad">
+    <div class="card-hd"><h2 class="card-title">{{icon:receipt}} Dự toán nguồn lực</h2><span class="badge b-gray">Dữ liệu minh họa</span></div>
+    <div class="table-wrap"><table class="table"><thead><tr><th>Hạng mục</th><th class="num">Đơn giá (đ)</th><th class="num">Thành tiền (đ)</th></tr></thead><tbody id="pr-lines"></tbody></table></div>
+    <div class="total-row"><span>Chi phí dự kiến</span><span class="v" id="pr-cost">650.000 đ</span></div>
+    <div class="card card-sm tint-yellow mt-12"><div class="row between"><b class="row">{{icon:tag}} Đề xuất báo giá</b><span class="xs muted">Dữ liệu minh họa</span></div><p class="price mt-4" id="pr-quote">800.000 đ</p></div>
+    <div class="card card-sm tint-red mt-12 row between"><b class="row">{{icon:bar-chart red}} Chênh lệch dự kiến</b><b class="h3 num" id="pr-margin">150.000 đ</b></div>
+    <p class="xs muted mt-4">Chưa trừ chi phí chung</p>
+    <div class="note gray mt-12">{{icon:lock}}<div class="small">Chi phí đối tác và quy tắc nội bộ không hiển thị cho khách hàng.</div></div>
+    <div class="grid g-2 mt-16"><button class="btn btn-outline" type="button" id="pr-save">{{icon:file-text}} Lưu bản tính</button><button class="btn btn-primary" type="button" id="pr-send">Tạo báo giá khách hàng {{icon:arrow-right}}</button></div>
+  </section>
+
+  <section class="card card-pad">
+    <div class="card-hd"><h2 class="card-title">{{icon:users}} So sánh phương án</h2><a class="link small" href="doi-tac.html">Bảng giá đã xác nhận {{icon:arrow-right}}</a></div>
+    <div class="opts-grid stack" style="--gap:12px" id="pr-options" role="radiogroup" aria-label="Phương án đối tác"></div>
+  </section>
+</div>
+
+<section class="card card-pad">
+  <div class="card-hd">
+    <div><h2 class="card-title">{{icon:bar-chart}} Học từ lịch sử vận hành</h2><p class="card-sub">Dữ liệu lịch sử giúp ước tính chính xác hơn, lựa chọn đối tác phù hợp và điều phối hiệu quả hơn.</p></div>
+    <div class="row wrap"><button class="btn btn-light btn-sm" type="button" id="perf">{{icon:bar-chart}} Xem hiệu suất đối tác</button><button class="btn btn-light btn-sm" type="button" id="rules">{{icon:settings}} Cập nhật quy tắc giá</button></div>
+  </div>
+  <div class="split">
+    <div class="table-wrap"><table class="table"><thead><tr><th>Đơn gần đây</th><th>Tuyến đường</th><th>Số tầng</th><th class="num">Số hộp</th><th>Dịch vụ</th><th class="num">Dự toán (đ)</th><th class="num">Thực tế (đ)</th><th class="num">Chênh lệch (đ)</th><th>Đối tác</th></tr></thead><tbody>
+      <tr><td class="num"><b>BX2027-0012</b></td><td>3 km</td><td>1 → 2</td><td class="num">8</td><td>Chuyển trọ + Dọn phòng</td><td class="num">620.000</td><td class="num">610.000</td><td class="num" style="color:var(--g600);font-weight:700">-10.000</td><td><span class="stars">{{icon:star}}</span> 4.8</td></tr>
+      <tr><td class="num"><b>BX2027-0013</b></td><td>6 km</td><td>4 → 4</td><td class="num">12</td><td>Chuyển trọ</td><td class="num">780.000</td><td class="num">790.000</td><td class="num" style="color:var(--r600);font-weight:700">+10.000</td><td><span class="stars">{{icon:star}}</span> 4.6</td></tr>
+      <tr><td class="num"><b>BX2027-0014</b></td><td>4 km</td><td>2 → 5</td><td class="num">15</td><td>Chuyển trọ + Bàn giao phòng</td><td class="num">950.000</td><td class="num">920.000</td><td class="num" style="color:var(--g600);font-weight:700">-30.000</td><td><span class="stars">{{icon:star}}</span> 4.9</td></tr>
+    </tbody></table></div>
+    <div class="card card-sm">
+      <div class="row between"><b class="small">Xu hướng chênh lệch dự toán vs. thực tế</b><span class="badge b-gray" id="rule-ver">Quy tắc v1.2</span></div>
+      <svg class="chart mt-8" viewBox="0 0 320 150" role="img" aria-label="Biểu đồ chênh lệch dự toán so với thực tế theo ngày">
+        <g stroke="#e3ebe6"><line x1="34" y1="20" x2="314" y2="20"/><line x1="34" y1="70" x2="314" y2="70"/><line x1="34" y1="120" x2="314" y2="120"/></g>
+        <text x="2" y="24">200k</text><text x="18" y="74">0</text><text x="0" y="124">-200k</text>
+        <g fill="#2fbf86"><rect x="44" y="58" width="14" height="12" rx="3"/><rect x="74" y="62" width="14" height="8" rx="3"/><rect x="104" y="70" width="14" height="14" rx="3"/><rect x="134" y="50" width="14" height="20" rx="3"/><rect x="164" y="70" width="14" height="10" rx="3"/><rect x="194" y="56" width="14" height="14" rx="3"/><rect x="224" y="70" width="14" height="6" rx="3"/><rect x="254" y="60" width="14" height="10" rx="3"/><rect x="284" y="66" width="14" height="4" rx="3"/></g>
+        <path d="M51 64 C 90 66, 110 76, 141 60 S 200 66, 231 72 S 280 64, 291 66" fill="none" stroke="#f2c230" stroke-width="2.5"/>
+        <text x="40" y="142">05/01</text><text x="120" y="142">07/01</text><text x="200" y="142">09/01</text><text x="270" y="142">11/01</text>
+      </svg>
+      <p class="xs muted mt-4" id="rule-meta">Người cập nhật: Nguyễn Minh Anh · 10/01/2027 14:30</p>
+    </div>
+  </div>
+</section>

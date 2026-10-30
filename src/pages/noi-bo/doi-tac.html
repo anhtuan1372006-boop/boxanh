@@ -1,3 +1,52 @@
 ---
-{"title": "Đánh giá & phê duyệt đối tác", "layout": "canvas", "canvas": ["nb-doi-tac"], "scripts": ["portal-cv"]}
+{"title": "Đánh giá & phê duyệt đối tác", "layout": "admin", "active": "doi-tac", "scripts": ["admin"]}
 ---
+<section class="banner" style="min-height:190px">
+  <div class="banner-text">
+    <h1>Đánh giá &amp; phê duyệt <span class="sw">đối tác</span></h1>
+    <p>So sánh năng lực, chi phí và chất lượng dịch vụ để lựa chọn đối tác phù hợp.</p>
+    <div class="banner-tags"><span class="badge b-yellow">{{icon:lock}} Nội bộ</span><span class="badge b-orange">Dữ liệu minh họa</span></div>
+  </div>
+  <div class="banner-art"><img src="{{root}}assets/img/hero-phe-duyet.webp" alt="Đội ngũ đối tác: vận chuyển, vệ sinh, sửa chữa"></div>
+</section>
+<div class="note">{{icon:info}}<div>So sánh 2 – 3 đối tác mỗi nhóm · <b>Chưa cam kết sản lượng hay thanh toán cố định.</b></div></div>
+
+<div class="tabs" data-tabs id="grp-tabs" aria-label="Nhóm dịch vụ">
+  <button class="tab is-active" type="button" data-tab="grp-van-chuyen">{{icon:truck}} Vận chuyển &amp; bốc xếp</button>
+  <button class="tab" type="button" data-tab="grp-ve-sinh">{{icon:broom}} Vệ sinh</button>
+  <button class="tab" type="button" data-tab="grp-sua-chua">{{icon:wrench}} Sửa chữa · FIX</button>
+</div>
+<div id="grp-van-chuyen" hidden></div><div id="grp-ve-sinh" hidden></div><div id="grp-sua-chua" hidden></div>
+
+<div class="split">
+  <div class="stack" style="--gap:20px">
+    <section class="card card-pad">
+      <div class="card-hd"><h2 class="card-title">Bảng so sánh cùng tiêu chí</h2><button class="btn btn-light btn-sm" type="button" id="questions">{{icon:file-text}} Bộ câu hỏi chung {{icon:arrow-right}}</button></div>
+      <p class="small muted mb-12">Bấm vào tên đối tác để chấm điểm.</p>
+      <div class="table-wrap"><table class="table cmp" id="cmp"></table></div>
+    </section>
+    <section class="card card-pad">
+      <div class="card-hd"><h2 class="card-title">Theo dõi đơn thử</h2><span class="small muted" id="trial-of"></span></div>
+      <div class="table-wrap"><table class="table"><thead><tr><th>Thử nghiệm</th><th>Ngày thực hiện</th><th class="num">Giá thực tế</th><th class="num">Giá đã thỏa thuận</th><th class="num">Chênh lệch</th><th>Hồ sơ minh chứng</th><th>Trạng thái</th></tr></thead><tbody id="trials"></tbody></table></div>
+    </section>
+  </div>
+
+  <aside class="stack" style="--gap:20px">
+    <section class="card card-pad">
+      <div class="card-hd"><div><h2 class="card-title">Phiếu chấm điểm nội bộ</h2><p class="card-sub">Dựa trên đơn thử, phản hồi thực tế và đánh giá đội vận hành.</p></div><span class="badge b-green b-lg" id="sc-who"></span></div>
+      <div id="sc-rows"></div>
+      <div class="total-row mt-12"><span>Điểm tổng <span class="small muted" style="font-weight:500">(dữ liệu minh họa)</span></span><span class="row"><span class="v" id="sc-total">4,5 / 5</span><span class="stars" id="sc-stars"></span></span></div>
+      <div class="field mt-16"><label class="label" for="sc-note">Nhận xét nội bộ</label><textarea class="textarea" id="sc-note" maxlength="500"></textarea><span class="counter" data-counter-for="sc-note">0/500</span></div>
+      <button class="btn btn-primary btn-lg btn-block mt-12" type="button" id="sc-save">{{icon:check}} Lưu đánh giá</button>
+    </section>
+    <section class="card card-pad">
+      <h2 class="card-title">Quy trình phê duyệt đối tác</h2>
+      <div class="steps-scroll mt-16"><div class="steps sm keep" style="--n:4" id="approve-steps"></div></div>
+      <div class="stack mt-16" style="--gap:10px">
+        <button class="btn btn-outline btn-block" type="button" id="approve-file">{{icon:file-text}} Xem hồ sơ phê duyệt</button>
+        <button class="btn btn-light btn-block" type="button" id="negotiate" disabled>{{icon:lock}} Đàm phán giá theo sản lượng</button>
+      </div>
+      <p class="xs muted mt-8 right" id="negotiate-hint">Chỉ khả dụng sau khi đủ điều kiện</p>
+    </section>
+  </aside>
+</div>

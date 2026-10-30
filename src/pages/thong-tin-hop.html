@@ -1,3 +1,39 @@
 ---
-{"title": "Thông tin hộp", "layout": "canvas", "canvas": ["thong-tin-hop"], "narrow": true, "auth": true, "scripts": ["boxes-cv"]}
+{"title": "Thông tin hộp", "layout": "account", "auth": true, "side": "hop", "tab": "hop", "scripts": ["account"]}
 ---
+<nav class="crumbs" aria-label="Breadcrumb"><a class="back" style="margin:0" href="hop-cua-toi.html">{{icon:arrow-left}} Hộp của tôi</a>{{icon:chevron-right}}<span>Thông tin hộp</span></nav>
+<div class="page-title"><div><h1 class="h2">Thông tin hộp</h1><p>Chi tiết hộp và trạng thái sử dụng</p></div><div class="row" id="box-nav"></div></div>
+
+<div class="split" id="box-detail">
+  <div class="card" style="overflow:hidden">
+    <div class="media" style="border-radius:0;aspect-ratio:1.7"><img src="assets/img/box-big.webp" alt="Hộp BOXANH màu xanh với nhãn mã hộp và seal vàng"></div>
+    <div class="card-pad">
+      <h2 class="h2 num" id="bi-title">BOXANH – BX-000128 (1)</h2>
+      <div class="row wrap mt-8"><span class="muted">Hộp tái sử dụng</span><span class="badge b-green"><span class="dot"></span> <span id="bi-status">Đang sử dụng</span></span></div>
+      <dl class="kv-rows card card-sm mt-16" id="bi-rows"></dl>
+      <div class="note info mt-16" style="justify-content:center">{{icon:recycle}}<div>Sau khi sử dụng, vui lòng giữ nguyên hộp để BOXANH thu hồi.</div></div>
+      <div class="grid g-2 mt-16">
+        <button class="btn btn-outline btn-lg" type="button" id="bi-history">{{icon:history}} Xem lịch sử hộp</button>
+        <a class="btn btn-peach btn-lg" id="bi-report" href="ho-tro.html#gui-yeu-cau">{{icon:alert-triangle}} Báo sự cố</a>
+      </div>
+      <p class="hint center mt-16">{{icon:lock ic-sm}} Thông tin đơn hàng chỉ hiển thị khi đăng nhập.</p>
+    </div>
+  </div>
+  <aside class="stack" style="--gap:16px">
+    <section class="card card-pad">
+      <h2 class="card-title">{{icon:qr-code}} Mã QR của hộp</h2>
+      <p class="card-sub">Nhân viên quét mã này khi giao, nhận và thu hồi.</p>
+      <div class="row mt-16" style="justify-content:center"><svg id="bi-qr" viewBox="0 0 29 29" width="170" height="170" style="image-rendering:pixelated;border-radius:12px;background:#fff;padding:8px;border:1px solid var(--line)" role="img" aria-label="Mã QR minh họa"></svg></div>
+      <p class="center small muted mt-8">Mã minh họa – dùng QR dán trên hộp khi giao nhận.</p>
+    </section>
+    <section class="card card-pad">
+      <h2 class="card-title">{{icon:info}} Hướng dẫn sử dụng hộp</h2>
+      <ul class="checklist mt-12">
+        <li>{{icon:check}} Tải trọng tối đa 25 kg/hộp, không để chất lỏng chưa đóng kín.</li>
+        <li>{{icon:check}} Không tự gỡ seal. Seal chỉ được cắt khi giao, có mặt bạn.</li>
+        <li>{{icon:check}} Có thể xếp chồng tối đa 4 hộp khi đã đóng nắp.</li>
+        <li>{{icon:check}} Lau khô hộp trước khi thu hồi (không bắt buộc).</li>
+      </ul>
+    </section>
+  </aside>
+</div>

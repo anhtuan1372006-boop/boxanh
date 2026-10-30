@@ -65,6 +65,9 @@ for (const file of pages) {
     raw = raw.slice(end + 5);
   }
   meta.path = rel;
+  if (meta.layout === 'canvas' || /assets\/canvas\//.test(raw)) {
+    errors.push(`${rel}: use native HTML content instead of a screenshot interface`);
+  }
   let html = layout(meta, raw)
     .replace(/\{\{root\}\}/g, root)
     .replace(/\{\{icon:([a-z0-9-]+)(?: ([^}]+))?\}\}/g, (_, n, cls) => svg(n, cls));
@@ -72,7 +75,7 @@ for (const file of pages) {
   if (left) errors.push(`${rel}: unresolved placeholder ${left[0]}`);
 
   // Version local assets by content so browsers receive updated artwork immediately.
-  html = html.replace(/(href|src)="([^"]*assets\/(?:css|js|canvas|img)\/[^"?]+\.(?:css|js|webp|svg))"/g, (all, attr, url) => {
+  html = html.replace(/(href|src|srcset)="([^"]*assets\/(?:css|js|img)\/[^"?]+\.(?:css|js|webp|svg))"/g, (all, attr, url) => {
     const f = path.join(OUT, path.dirname(rel), url);
     if (!fs.existsSync(f)) return all;
     const v = crypto.createHash('md5').update(fs.readFileSync(f)).digest('hex').slice(0, 8);
@@ -97,6 +100,9 @@ for (const file of pages) {
 const idsOf = html => new Set([...html.matchAll(/\sid="([^"]+)"/g)].map(m => m[1]));
 for (const [rel, html] of built) {
   const refs = [...html.matchAll(/\s(?:href|src)="([^"]+)"/g)].map(m => m[1]);
+  for (const m of html.matchAll(/\ssrcset="([^"]+)"/g)) {
+    refs.push(...m[1].split(',').map(v => v.trim().split(/\s+/)[0]));
+  }
   for (const ref of refs) {
     if (/^(https?:|mailto:|tel:|data:|javascript:)/.test(ref) || ref.includes("'")) continue; // external, or built inside an inline script
     const [pq, hash] = ref.split('#');

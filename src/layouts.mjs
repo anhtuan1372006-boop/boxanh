@@ -1,13 +1,12 @@
 // Page shells. Every page body is wrapped by one of these layouts at build time.
 // Placeholders {{root}} and {{icon:name}} are resolved by build.mjs afterwards.
-import { renderCanvas, canvasMeta } from './canvas.mjs';
 
 const esc = (s = '') => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 
-export const LOGO_MARK = `<svg class="logo-mark" viewBox="0 0 32 32" aria-hidden="true"><path d="M16 2.6 4.4 9.3v13.4L16 29.4l11.6-6.7V9.3z" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linejoin="round"/><path d="M16 10.3 10.4 13.5v6.4L16 23.1l5.6-3.2v-6.4z" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linejoin="round"/><path d="m10.4 13.5 5.6 3.2 5.6-3.2M16 16.7v6.4" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linejoin="round"/></svg>`;
+export const LOGO_MARK = `<svg class="logo-mark" viewBox="0 0 32 36" aria-hidden="true"><path d="M16 2 3 9.5v16L16 34l13-8.5v-16zM3 9.5 16 18l13-8.5M16 18v16" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/></svg>`;
 
 const logo = (href, extra = '') =>
-  `<a class="logo ${extra}" href="${href}" aria-label="BOXANH – về trang chủ">${LOGO_MARK}<span>BOXANH</span></a>`;
+  `<a class="logo ${extra}" href="${href}" aria-label="BOXANH – về trang chủ">${LOGO_MARK}<span>BOX<span class="logo-gold">ANH</span></span></a>`;
 
 function head(m) {
   const title = m.title ? `${m.title} | BOXANH` : 'BOXANH – Chuyển trọ nhẹ tênh';
@@ -28,10 +27,9 @@ function head(m) {
 <meta property="og:image" content="{{root}}assets/img/hero-home.webp">
 <link rel="icon" href="{{root}}assets/img/favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="{{root}}assets/css/fonts.css">
-<link rel="stylesheet" href="{{root}}assets/css/style.css">${m.layout === 'canvas' ? `
-<link rel="stylesheet" href="{{root}}assets/css/canvas.css">
-<link rel="preload" as="image" href="{{root}}assets/canvas/${m.canvas[0]}.webp" media="(min-width: 900px)">${m.canvas[1] ? `
-<link rel="preload" as="image" href="{{root}}assets/canvas/${m.canvas[1]}.webp" media="(max-width: 899px)">` : ''}` : ''}
+<link rel="stylesheet" href="{{root}}assets/css/style.css">
+<link rel="stylesheet" href="{{root}}assets/css/design-match.css">
+<link rel="stylesheet" href="{{root}}assets/css/clarity.css">
 <script>try{if(localStorage.getItem('bx_user'))document.documentElement.setAttribute('data-auth','in')}catch(e){}${m.auth ? `
 if(!document.documentElement.hasAttribute('data-auth'))location.replace('{{root}}dang-nhap.html?next='+encodeURIComponent(location.pathname.split('/').pop()+location.search+location.hash));` : ''}</script>
 </head>`;
@@ -39,8 +37,7 @@ if(!document.documentElement.hasAttribute('data-auth'))location.replace('{{root}
 
 function scripts(m) {
   const page = (m.scripts || []).map(s => `<script src="{{root}}assets/js/pages/${s}.js"></script>`).join('\n');
-  return `<div class="toasts" id="toasts" role="status" aria-live="polite"></div>${m.layout === 'canvas' ? `
-<script src="{{root}}assets/js/canvas.js"></script>` : ''}
+  return `<div class="toasts" id="toasts" role="status" aria-live="polite"></div>
 <script src="{{root}}assets/js/icons.js"></script>
 <script src="{{root}}assets/js/data.js"></script>
 <script src="{{root}}assets/js/app.js"></script>
@@ -71,17 +68,13 @@ function siteHeader(m) {
         <button class="hd-link${svcActive ? ' is-active' : ''}" type="button" aria-expanded="false" aria-haspopup="true">Dịch vụ {{icon:chevron-down dd-chev}}</button>
         <div class="dd-menu">${ddItems}</div>
       </div>
-      ${link('quy-trinh', 'index.html#quy-trinh', 'Quy trình')}
-      ${link('hop', 'index.html#hop-tai-su-dung', 'Hộp tái sử dụng')}
-      ${link('uoc-tinh', 'uoc-tinh-chi-phi.html', 'Bảng giá')}
-      ${link('doi-tac', 'doi-tac.html', 'Đối tác')}
-      ${link('ho-tro', 'ho-tro.html', 'Hỗ trợ')}
+      ${svcActive ? `${link('chuyen-tro', 'chuyen-tro.html', 'Chuyển trọ')}${link('don-phong', 'don-phong.html', 'Dọn phòng')}${link('ban-giao', 'ban-giao-phong.html', 'Bàn giao phòng')}${link('uoc-tinh', 'uoc-tinh-chi-phi.html', 'Bảng giá')}${link('ho-tro', 'ho-tro.html', 'Hỗ trợ')}` : `${link('quy-trinh', 'index.html#quy-trinh', 'Quy trình')}${link('hop', 'index.html#hop-tai-su-dung', 'Hộp tái sử dụng')}${link('doi-tac', 'doi-tac.html', 'Đối tác')}`}
     </nav>
     <div class="hd-actions">
       <a class="hd-login when-out" href="{{root}}dang-nhap.html">{{icon:user}}<span>Đăng nhập</span></a>
       <a class="hd-icon when-in" href="{{root}}thong-bao.html" aria-label="Thông báo">{{icon:bell}}<span class="hd-dot" data-unread hidden></span></a>
       <div class="dd when-in" data-dd>
-        <button class="hd-user" type="button" aria-expanded="false" aria-haspopup="true">
+        <button class="hd-user" type="button" aria-expanded="false" aria-haspopup="true" aria-label="Tài khoản của tôi">
           <img class="avatar avatar-sm" src="{{root}}assets/img/avatar-tuan-anh.webp" alt="">
           <span data-user-short>Tài khoản</span>{{icon:chevron-down dd-chev}}
         </button>
@@ -121,7 +114,8 @@ function siteHeader(m) {
 </div>`;
 }
 
-function siteFooter() {
+function siteFooter(m = {}) {
+  if (m.path === 'index.html') return homeFooter();
   return `<footer class="site-ft">
   <div class="container ft-grid">
     <div class="ft-brand">
@@ -183,12 +177,23 @@ function siteFooter() {
 </footer>`;
 }
 
+
+function homeFooter() {
+  return `<footer class="site-ft"><div class="container ft-grid">
+    <div class="ft-brand">${logo('{{root}}index.html')}<p>Chuyển trọ nhẹ tênh.<br>Một đầu mối. Gọn việc chuyển trọ.</p><div class="ft-social"><a href="{{root}}ho-tro.html" aria-label="Liên hệ BOXANH">{{icon:facebook}}</a><a href="{{root}}ho-tro.html" aria-label="Kênh hỗ trợ BOXANH">{{icon:instagram}}</a><a href="{{root}}ho-tro.html" aria-label="Tìm hiểu BOXANH">{{icon:tiktok}}</a><a href="{{root}}gioi-thieu.html" aria-label="Về BOXANH">{{icon:youtube}}</a></div></div>
+    <div class="ft-col"><h3>Dịch vụ</h3><a href="{{root}}chuyen-tro.html">Chuyển trọ</a><a href="{{root}}don-phong.html">Dọn phòng</a><a href="{{root}}ban-giao-phong.html">Bàn giao phòng</a></div>
+    <div class="ft-col"><h3>Hỗ trợ</h3><a href="{{root}}ho-tro.html">Hỗ trợ khách hàng</a><a href="{{root}}ho-tro.html#faq">Câu hỏi thường gặp</a><a href="{{root}}ho-tro.html#gui-yeu-cau">Liên hệ</a></div>
+    <div class="ft-col"><h3>Điều khoản</h3><a href="{{root}}dieu-khoan.html">Điều khoản sử dụng</a><a href="{{root}}dieu-khoan.html">Điều khoản dịch vụ</a></div>
+    <div class="ft-col"><h3>Chính sách bảo mật</h3><a href="{{root}}chinh-sach-bao-mat.html">Chính sách bảo mật</a><a href="{{root}}chinh-sach-bao-mat.html#cookie">Chính sách cookie</a></div>
+  </div><div class="container ft-bottom"><span>© <span data-year>2026</span> BOXANH. Tất cả quyền được bảo lưu.</span><nav aria-label="Cổng hệ thống"><a href="{{root}}cong-doi-tac/index.html">Cổng đối tác</a><a href="{{root}}noi-bo/index.html">Nội bộ</a></nav><span class="ft-love">Cùng tạo nên những khởi đầu mới {{icon:heart}}</span></div></footer>`;
+}
+
 function bottomNav(tab) {
   const items = [
     ['home', 'index.html', 'home', 'Trang chủ'],
-    ['dich-vu', 'index.html#dich-vu', 'grid', 'Dịch vụ'],
+    ...(tab === 'home' || tab === 'dich-vu' ? [['dich-vu', 'index.html#dich-vu', 'grid', 'Dịch vụ']] : []),
     ['don-hang', 'don-hang.html', 'clipboard-list', 'Đơn hàng'],
-    ['hop', 'hop-cua-toi.html', 'box', 'Hộp của tôi'],
+    ...(tab === 'home' || tab === 'dich-vu' ? [] : [['hop', 'hop-cua-toi.html', 'box', 'Hộp của tôi']]),
     ['tai-khoan', 'tai-khoan.html', 'user', 'Tài khoản'],
   ];
   return `<nav class="bottom-nav" aria-label="Điều hướng nhanh">${items.map(([k, href, ic, t]) =>
@@ -296,23 +301,14 @@ ${body}
 }
 
 export function layout(m, body) {
-  if (m.layout === 'canvas' && !m.bg) m.bg = canvasMeta(m.canvas[0]).bg;
-  const bodyClass = [`l-${m.layout || 'site'}`, m.bodyClass].filter(Boolean).join(' ');
+  const pageClass = `p-${m.path.replace(/\.html$/, '').replace(/\//g, '-')}`;
+  const bodyClass = [`l-${m.layout || 'site'}`, pageClass, m.bodyClass].filter(Boolean).join(' ');
   const auth = m.auth ? ' data-require-auth' : '';
   let inner;
   switch (m.layout) {
     case 'bare':
       inner = body;
       break;
-    case 'canvas': {
-      const [d, mob] = m.canvas;
-      inner = `<main id="main" class="cv-wrap${mob ? ' has-m' : ''}${m.narrow ? ' narrow' : ''}">
-${renderCanvas(d, 'cv-d', '{{root}}')}
-${mob ? renderCanvas(mob, 'cv-m', '{{root}}') : ''}
-</main>
-${body}`;
-      break;
-    }
     case 'account':
       inner = `${siteHeader(m)}
 <div class="container acc-shell">
@@ -321,7 +317,7 @@ ${body}`;
 ${body}
   </main>
 </div>
-${siteFooter()}
+${siteFooter(m)}
 ${bottomNav(m.tab)}`;
       break;
     case 'partner':
@@ -333,11 +329,11 @@ ${bottomNav(m.tab)}`;
 <main id="main">
 ${body}
 </main>
-${siteFooter()}
+${siteFooter(m)}
 ${bottomNav(m.tab || '')}`;
   }
   return `${head(m)}
-<body class="${bodyClass}"${auth}${m.bg || m.max ? ` style="${m.bg ? `--cv-bg:${m.bg};` : ''}${m.max ? `--cv-max:${m.max}px` : ''}"` : ''}>
+<body class="${bodyClass}"${auth}>
 ${inner}
 ${scripts(m)}
 </body>

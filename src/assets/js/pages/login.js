@@ -86,9 +86,10 @@ document.addEventListener('DOMContentLoaded', () => {
         const t = (e.clipboardData.getData('text') || '').replace(/\D/g, '').slice(0, 6);
         if (!t) return;
         e.preventDefault();
-        t.split('').forEach((c, j) => { if (boxes[j]) boxes[j].value = c; });
-        (boxes[t.length] || boxes[5]).focus();
-        if (t.length === 6) form.requestSubmit();
+        const start = t.length === 6 ? 0 : i;
+        t.split('').forEach((c, j) => { if (boxes[start + j]) boxes[start + j].value = c; });
+        (boxes[Math.min(start + t.length, 5)]).focus();
+        if (boxes.every(x => x.value)) form.requestSubmit();
       });
     });
 

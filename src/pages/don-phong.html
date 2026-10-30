@@ -1,3 +1,142 @@
 ---
-{"title": "Dịch vụ dọn phòng", "description": "Phòng sạch tinh tươm. Nhẹ việc cho bạn. Dọn phòng trọ theo hạng mục, ước tính chi phí trong 1 phút, nghiệm thu rõ từng hạng mục.", "layout": "canvas", "canvas": ["don-phong"]}
+{"title": "Dịch vụ dọn phòng", "description": "Dọn phòng trọ sạch tinh tươm: sàn, bếp, nhà vệ sinh, cửa và khu vực chung. Ước tính chi phí trong 1 phút, nghiệm thu rõ từng hạng mục.", "active": "don-phong", "tab": "dich-vu", "scripts": ["service"]}
 ---
+<section class="hero">
+  <div class="container hero-in">
+    <div class="hero-text">
+      <nav class="crumbs" aria-label="Breadcrumb"><a href="index.html">{{icon:home ic-sm}}</a>{{icon:chevron-right}}<span>Dịch vụ</span>{{icon:chevron-right}}<span>Dọn phòng</span></nav>
+      <span class="eyebrow">{{icon:sparkles ic-sm}} Dịch vụ dọn phòng</span>
+      <h1 class="display mt-12" style="font-size:clamp(34px,4.1vw,54px)">Phòng sạch tinh tươm.<br><span class="sw">Nhẹ việc cho bạn.</span></h1>
+      <p class="lead">Không gian sạch sẽ, gọn gàng giúp bạn an tâm học tập, làm việc và bắt đầu hành trình mới.</p>
+      <div class="grid g-3 mt-24 gap-sm">
+        <div class="feat-v" style="align-items:flex-start;text-align:left"><span class="feat-ic">{{icon:leaf}}</span><small class="muted">Đội ngũ chuyên nghiệp, đáng tin cậy</small></div>
+        <div class="feat-v" style="align-items:flex-start;text-align:left"><span class="feat-ic">{{icon:shield-check}}</span><small class="muted">Dụng cụ, hóa chất an toàn, thân thiện</small></div>
+        <div class="feat-v" style="align-items:flex-start;text-align:left"><span class="feat-ic">{{icon:clock}}</span><small class="muted">Linh hoạt lịch trình theo nhu cầu</small></div>
+      </div>
+      <div class="hero-cta"><a class="btn btn-yellow btn-lg" href="#uoc-tinh">Ước tính dọn phòng {{icon:arrow-right}}</a></div>
+    </div>
+    <div class="hero-art" style="--ratio:1.53">
+      <img src="assets/img/hero-don-phong.webp" alt="Nhân viên BOXANH lau sàn và lau cửa kính trong phòng trọ" fetchpriority="high">
+    </div>
+  </div>
+</section>
+
+<section class="section-sm">
+  <div class="container">
+    <h2 class="h2 sw mb-16">Chúng tôi dọn sạch mọi không gian trong phòng của bạn</h2>
+    <div class="grid g-4">
+      <article class="tile tint-yellow"><div class="tile-img"><img src="assets/img/area-san.webp" alt="Lau sàn" loading="lazy"></div><div class="card-sm"><b class="h4">Sàn &amp; bề mặt</b><ul class="checklist mt-8"><li>{{icon:check}} Lau sàn, hút bụi</li><li>{{icon:check}} Lau bàn ghế, kệ tủ</li><li>{{icon:check}} Vệ sinh các bề mặt tiếp xúc</li></ul></div></article>
+      <article class="tile tint-yellow"><div class="tile-img"><img src="assets/img/area-bep.webp" alt="Khu bếp" loading="lazy"></div><div class="card-sm"><b class="h4">Bếp</b><ul class="checklist mt-8"><li>{{icon:check}} Làm sạch bề mặt bếp</li><li>{{icon:check}} Vệ sinh bồn rửa, tủ bếp</li><li>{{icon:check}} Lau thiết bị bếp (bếp, tủ lạnh…)</li></ul></div></article>
+      <article class="tile tint-yellow"><div class="tile-img"><img src="assets/img/area-ve-sinh.webp" alt="Nhà vệ sinh" loading="lazy"></div><div class="card-sm"><b class="h4">Nhà vệ sinh</b><ul class="checklist mt-8"><li>{{icon:check}} Tẩy rửa bồn cầu, lavabo</li><li>{{icon:check}} Làm sạch gạch, vách kính</li><li>{{icon:check}} Khử mùi, vệ sinh phụ kiện</li></ul></div></article>
+      <article class="tile tint-yellow"><div class="tile-img"><img src="assets/img/area-cua.webp" alt="Cửa ra vào" loading="lazy"></div><div class="card-sm"><b class="h4">Cửa &amp; khu vực chung</b><ul class="checklist mt-8"><li>{{icon:check}} Lau cửa, tay nắm, công tắc</li><li>{{icon:check}} Vệ sinh cửa sổ, khung kính</li><li>{{icon:check}} Dọn ban công (nếu có)</li></ul></div></article>
+    </div>
+  </div>
+</section>
+
+<section class="section-sm" id="uoc-tinh">
+  <div class="container split">
+    <form class="card card-pad" id="clean-form" novalidate>
+      <h2 class="card-title">{{icon:receipt}} Ước tính chi phí dọn phòng</h2>
+      <p class="card-sub">Chỉ mất 1 phút để nhận ước tính chi phí. Giá chính thức sẽ được báo sau khi xác nhận thông tin chi tiết.</p>
+      <p class="label mt-20">Loại dịch vụ</p>
+      <div class="grid g-3 mt-8 gap-sm" role="radiogroup" aria-label="Loại dịch vụ">
+        <label class="opt"><input type="radio" name="type" value="dinh-ky" checked><span class="opt-mark">{{icon:check}}</span>{{icon:calendar-days opt-ic}}<b>Dọn định kỳ</b></label>
+        <label class="opt"><input type="radio" name="type" value="truoc-khi-vao"><span class="opt-mark">{{icon:check}}</span>{{icon:home opt-ic}}<b>Dọn trước khi chuyển vào</b></label>
+        <label class="opt"><input type="radio" name="type" value="sau-khi-di"><span class="opt-mark">{{icon:check}}</span>{{icon:truck opt-ic}}<b>Dọn sau khi chuyển đi</b></label>
+      </div>
+      <div class="form-grid cols-3 mt-16">
+        <div class="field"><label class="label" for="c-area">Diện tích phòng (m²)</label><div class="with-suffix"><input class="input" id="c-area" name="area" type="number" min="8" max="200" value="25" inputmode="numeric" required><span class="suffix">m²</span></div></div>
+        <div class="field"><label class="label" for="c-rooms">Số phòng</label><div class="with-suffix"><input class="input" id="c-rooms" name="rooms" type="number" min="1" max="6" value="1" inputmode="numeric" required><span class="suffix">phòng</span></div></div>
+        <div class="field"><label class="label" for="c-cond">Tình trạng hiện tại</label><div class="with-ic">{{icon:home}}<select class="select" id="c-cond" name="cond"><option value="1">Bình thường</option><option value="1.25">Khá bừa bộn</option><option value="1.5">Rất bừa bộn / lâu chưa dọn</option></select></div></div>
+      </div>
+      <div class="form-grid cols-1-2 mt-16">
+        <div class="field"><label class="label" for="c-date">Ngày mong muốn</label><input class="input" id="c-date" name="date" type="date" data-future></div>
+        <div class="field">
+          <span class="label">Tải ảnh phòng <span class="opt-l">(tùy chọn)</span></span>
+          <div class="row" style="align-items:stretch">
+            <div data-upload data-max="8" style="flex:1"><label class="drop" style="height:100%"><span class="drop-ic">{{icon:image}}</span><span>Kéo thả ảnh vào đây hoặc <u>chọn ảnh</u></span><input class="sr-only" type="file" accept="image/*" multiple></label></div>
+          </div>
+          <div class="previews" data-previews></div>
+        </div>
+      </div>
+      <button class="btn btn-primary btn-lg mt-20" type="submit">Ước tính dọn phòng {{icon:arrow-right}}</button>
+    </form>
+
+    <aside class="card card-pad tint-yellow" aria-live="polite">
+      <h2 class="card-title">{{icon:clipboard-list}} Nhu cầu của bạn</h2>
+      <div class="card mt-16 card-sm">
+        <dl class="kv-rows" id="clean-summary"></dl>
+        <hr class="divider">
+        <p class="small strong green">{{icon:receipt ic-sm}} Ước tính chi phí <span class="tag-demo">(dữ liệu minh họa)</span></p>
+        <p class="price mt-8" id="clean-price">450.000 – 750.000 đ</p>
+        <p class="hint mt-8">{{icon:info ic-sm}} Giá chính thức sẽ được báo sau khi khảo sát và xác nhận đầy đủ thông tin.</p>
+        <button class="btn btn-primary btn-block mt-16" type="button" id="clean-book">{{icon:calendar-check}} Đặt lịch dọn phòng</button>
+      </div>
+      <div class="note danger mt-16">{{icon:alert-triangle}}<div><b>Hạng mục đặc biệt được khảo sát và báo giá riêng</b><br>Các hạng mục như xử lý vết bẩn cứng đầu, nấm mốc nặng, dọn đồ cồng kềnh, vệ sinh ngoài ban công lớn… sẽ được khảo sát thực tế và báo giá riêng.</div></div>
+    </aside>
+  </div>
+</section>
+
+<section class="section-sm">
+  <div class="container card card-pad">
+    <div class="section-hd"><h2 class="h2 sw">Khác biệt rõ rệt sau khi dọn phòng</h2><p class="muted">Không chỉ sạch hơn, mà còn là một không gian dễ chịu để bắt đầu hành trình mới.</p></div>
+    <div class="grid g-2" style="position:relative">
+      <figure class="media" style="aspect-ratio:3.5"><img src="assets/img/room-before.webp" alt="Phòng bừa bộn trước khi dọn" loading="lazy"><figcaption class="media-label">Trước khi dọn</figcaption></figure>
+      <figure class="media" style="aspect-ratio:3.5"><img src="assets/img/room-after.webp" alt="Phòng gọn gàng sau khi dọn" loading="lazy"><figcaption class="media-label green">Sau khi dọn</figcaption></figure>
+    </div>
+    <div class="split mt-24">
+      <div>
+        <h3 class="h4 row">{{icon:clipboard-check}} Nghiệm thu rõ từng hạng mục</h3>
+        <p class="small muted mt-4">Sau khi hoàn tất, chúng tôi sẽ cùng bạn nghiệm thu dựa trên danh sách hạng mục và hình ảnh thực tế.</p>
+        <div class="grid g-2 mt-12">
+          <dl class="kv-rows card card-sm small">
+            <div><dt>{{icon:check-circle}} Sàn &amp; bề mặt</dt><dd class="green">Đã hoàn thành</dd></div>
+            <div><dt>{{icon:check-circle}} Bếp</dt><dd class="green">Đã hoàn thành</dd></div>
+            <div><dt>{{icon:check-circle}} Nhà vệ sinh</dt><dd class="green">Đã hoàn thành</dd></div>
+            <div><dt>{{icon:check-circle}} Cửa &amp; khu vực chung</dt><dd class="green">Đã hoàn thành</dd></div>
+          </dl>
+          <div>
+            <p class="small strong">Hình ảnh nghiệm thu</p>
+            <div class="grid g-4 keep-2 gap-sm mt-8">
+              <img class="thumb" style="width:100%;height:90px" src="assets/img/check-1.webp" alt="Tủ quần áo sau khi dọn" loading="lazy">
+              <img class="thumb" style="width:100%;height:90px" src="assets/img/check-2.webp" alt="Bếp sau khi dọn" loading="lazy">
+              <img class="thumb" style="width:100%;height:90px" src="assets/img/check-3.webp" alt="Nhà vệ sinh sau khi dọn" loading="lazy">
+              <img class="thumb" style="width:100%;height:90px" src="assets/img/check-4.webp" alt="Cửa ra vào sau khi dọn" loading="lazy">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card card-pad tint-green">
+        <div class="row row-top"><span class="feat-ic">{{icon:smile}}</span><div><b class="h4">Bạn hài lòng với kết quả?</b><p class="small muted mt-4">Bạn kiểm tra và xác nhận hoàn thành ngay trên tài khoản BOXANH. Chưa ưng ý ở hạng mục nào, chúng tôi làm lại miễn phí trong 24 giờ.</p></div></div>
+        <a class="btn btn-primary btn-block mt-16" href="#uoc-tinh">{{icon:calendar-check}} Đặt lịch dọn phòng</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="cta-band">
+      <img class="cta-mascot" src="assets/img/faq-mascot.webp" alt="" loading="lazy">
+      <div><h2>Sẵn sàng có một không gian sạch sẽ, dễ chịu?</h2><p>Đặt lịch ngay hôm nay để đội ngũ BOXANH hỗ trợ bạn!</p></div>
+      <a class="btn btn-yellow btn-lg" href="#uoc-tinh">Đặt lịch dọn phòng {{icon:arrow-right}}</a>
+    </div>
+  </div>
+</section>
+
+<div class="modal" id="book-modal" role="dialog" aria-modal="true" aria-labelledby="book-title" aria-hidden="true">
+  <form class="modal-box" id="book-form" novalidate>
+    <button class="icon-btn modal-close" type="button" aria-label="Đóng">{{icon:x}}</button>
+    <div class="modal-ic green">{{icon:calendar-check}}</div>
+    <h2 id="book-title">Đặt lịch dọn phòng</h2>
+    <p class="modal-text">Ước tính: <b id="book-price">—</b>. Nhân viên sẽ gọi xác nhận trước khi đến.</p>
+    <div class="form-grid mt-16">
+      <div class="field full"><label class="label" for="b-addr">Địa chỉ phòng <span class="req">*</span></label><div class="with-ic ic-green">{{icon:map-pin}}<input class="input" id="b-addr" name="addr" placeholder="Số nhà, ngõ, phường, quận" required></div></div>
+      <div class="field"><label class="label" for="b-date">Ngày <span class="req">*</span></label><input class="input" id="b-date" name="date" type="date" data-future required data-msg="Vui lòng chọn ngày dọn."></div>
+      <div class="field"><label class="label" for="b-time">Khung giờ</label><select class="select" id="b-time" name="time"><option>08:00 – 11:00</option><option>13:00 – 16:00</option><option>16:00 – 19:00</option></select></div>
+      <div class="field when-out"><label class="label" for="b-name">Họ tên <span class="req">*</span></label><input class="input" id="b-name" name="name" autocomplete="name" required></div>
+      <div class="field when-out"><label class="label" for="b-phone">Số điện thoại <span class="req">*</span></label><input class="input" id="b-phone" name="phone" inputmode="tel" autocomplete="tel" required data-phone></div>
+    </div>
+    <div class="modal-actions"><button class="btn btn-light" type="button" data-modal-close>Để sau</button><button class="btn btn-primary" type="submit">{{icon:send}} Xác nhận đặt lịch</button></div>
+  </form>
+</div>

@@ -2,6 +2,7 @@
 
 Website hoàn chỉnh cho hệ thống **BOXANH**: một đầu mối cho chuyển trọ, dọn phòng và bàn giao phòng, dùng hộp tái sử dụng có mã QR và seal riêng.
 Thiết kế giao diện BOXANH gồm 38 trang dành cho máy tính và điện thoại, với các khu vực khách hàng, đối tác và vận hành nội bộ.
+Chữ, nút, biểu mẫu và bảng dùng HTML/CSS; logo, icon và biểu đồ dùng SVG. Giao diện co giãn theo màn hình và giữ độ nét khi phóng lớn.
 
 **Xem trực tiếp:** https://anhtuan1372006-boop.github.io/boxanh/
 **Sơ đồ toàn bộ hệ thống:** https://anhtuan1372006-boop.github.io/boxanh/he-thong.html
@@ -27,24 +28,22 @@ Thiết kế giao diện BOXANH gồm 38 trang dành cho máy tính và điện 
 ```
 design/
   mockups/      17 ảnh thiết kế gốc
-  *.json        vị trí từng liên kết / ô nhập / nút trên mỗi ảnh
-tools/canvas.py tạo ảnh nền (và bản không chữ để hiện khi gõ) + đo chữ
+  *.json        dữ liệu tham khảo thiết kế và danh mục hình minh họa
 src/
   pages/        nội dung từng trang (HTML + front matter JSON)
   layouts.mjs   header, footer, menu tài khoản, khung cổng đối tác / nội bộ
   icons.mjs     bộ icon SVG
   assets/       CSS, JavaScript, hình minh họa (WebP)
-  artwork.json  vị trí ảnh minh họa riêng trên các trang giao diện
 build.mjs       ghép trang, chèn icon, kiểm tra toàn bộ liên kết
 docs/           bản đã build – GitHub Pages phục vụ thư mục này
 ```
 
-Sau khi sửa vị trí trong `design/*.json`, chạy `python tools/canvas.py design/<tên>.json` (cần Pillow + OpenCV). Build lại (cần Node.js 18+):
+Sau khi sửa HTML, CSS hoặc JavaScript trong `src/`, build lại (cần Node.js 18+):
 
 ```bash
 node build.mjs
 ```
 
-Lệnh build báo lỗi nếu có liên kết hỏng, ảnh thiếu, icon sai tên hoặc trùng `id`.
+Lệnh build báo lỗi nếu có liên kết hỏng, ảnh thiếu, icon sai tên, trùng `id` hoặc trang dùng ảnh chụp làm giao diện.
 
 Hình minh họa dùng ảnh WebP riêng có độ phân giải cao, tải dần theo vị trí hiển thị. Danh mục ảnh nằm ở `design/artwork-sources.json`. Mỗi lần thay nội dung ảnh, bản build tự cập nhật phiên bản đường dẫn để trình duyệt tải ảnh mới.

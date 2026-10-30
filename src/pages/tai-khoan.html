@@ -1,3 +1,37 @@
 ---
-{"title": "Tài khoản của tôi", "layout": "canvas", "canvas": ["tai-khoan"], "auth": true}
+{"title": "Tài khoản của tôi", "layout": "account", "auth": true, "side": "tong-quan", "tab": "tai-khoan", "scripts": ["account"]}
 ---
+<section class="acc-hero">
+  <div>
+    <h1 class="h1" style="font-size:clamp(28px,3.6vw,44px)">Chào bạn, <span data-user-short>bạn</span><span class="sw">!</span></h1>
+    <p>Cảm ơn bạn đã tin tưởng BOXANH.<br>Cùng nhau, việc chuyển trọ luôn nhẹ tênh.</p>
+  </div>
+  <div class="acc-hero-img"><img src="assets/img/hero-account.webp" alt="Khu nhà trọ xanh với nhân viên BOXANH đang chuyển đồ"></div>
+</section>
+
+<div class="grid g-3" id="acc-kpis"></div>
+
+<div class="split">
+  <div class="stack" style="--gap:22px">
+    <section class="card card-pad" aria-labelledby="active-title">
+      <div class="card-hd"><h2 class="card-title" id="active-title">Đơn hàng đang thực hiện</h2><a class="link small" href="don-hang.html">Xem tất cả đơn hàng {{icon:arrow-right}}</a></div>
+      <div id="active-order"></div>
+    </section>
+    <div id="pickup-promo"></div>
+    <section class="card card-pad" aria-labelledby="hist-title">
+      <div class="card-hd"><h2 class="card-title" id="hist-title">Lịch sử đơn hàng</h2><a class="link small" href="don-hang.html">Xem tất cả {{icon:arrow-right}}</a></div>
+      <div class="table-wrap"><table class="table"><thead><tr><th>Mã đơn hàng</th><th>Ngày đặt</th><th>Trạng thái</th><th class="right">Thao tác</th></tr></thead><tbody id="order-history"></tbody></table></div>
+    </section>
+  </div>
+  <div class="stack" style="--gap:22px">
+    <section class="card card-pad" aria-labelledby="noti-title">
+      <div class="card-hd"><h2 class="card-title" id="noti-title">Thông báo mới</h2><a class="link small" href="thong-bao.html">Xem tất cả {{icon:arrow-right}}</a></div>
+      <div class="stack" style="--gap:12px" id="latest-notifs"></div>
+    </section>
+    <section class="card card-pad" aria-labelledby="me-title">
+      <div class="card-hd"><h2 class="card-title" id="me-title">Thông tin cá nhân</h2><a class="link small" href="ho-so.html">Chỉnh sửa {{icon:arrow-right}}</a></div>
+      <dl class="kv-rows card card-sm" id="me-info"></dl>
+    </section>
+    <img src="assets/img/note-board.webp" alt="Bảng ghi chú: Không gian mới, khởi đầu mới cùng BOXANH" style="border-radius:20px;width:100%">
+  </div>
+</div>

@@ -1,3 +1,204 @@
 ---
-{"title": "", "description": "BOXANH – Chuyển trọ nhẹ tênh. Một đầu mối. Gọn việc chuyển trọ. Ước tính chi phí, dịch vụ chuyển trọ, dọn phòng, bàn giao phòng và hộp tái sử dụng.", "layout": "canvas", "canvas": ["home-d", "home-m"], "bg": "#f9faf6", "scripts": ["home"]}
+{"title": "", "description": "BOXANH – Chuyển trọ nhẹ tênh. Một đầu mối cho chuyển trọ, dọn phòng và bàn giao phòng. Hộp tái sử dụng có QR và seal riêng, báo giá minh bạch.", "active": "", "tab": "home", "scripts": ["home"]}
 ---
+<section class="hero">
+  <div class="container hero-in">
+    <div class="hero-text">
+      <h1 class="display">Chuyển trọ<br><span class="sw">nhẹ tênh.</span></h1>
+      <p class="lead">Một đầu mối. Gọn việc chuyển trọ.</p>
+      <div class="hero-cta">
+        <a class="btn btn-primary btn-lg" href="uoc-tinh-chi-phi.html">{{icon:file-text}} Ước tính chi phí {{icon:arrow-right}}</a>
+        <a class="btn btn-light btn-lg" href="#dich-vu">{{icon:grid}} Khám phá dịch vụ</a>
+      </div>
+      <div class="mini-flow" aria-label="3 bước bắt đầu">
+        <div><span class="mf-ic">{{icon:clipboard-pen ic-lg}}</span><b>Gửi nhu cầu</b><small>Điền thông tin</small></div>
+        {{icon:arrow-right mf-arrow}}
+        <div><span class="mf-ic">{{icon:file-text ic-lg}}</span><b>Nhận báo giá</b><small>Sau khảo sát</small></div>
+        {{icon:arrow-right mf-arrow}}
+        <div><span class="mf-ic">{{icon:calendar-check ic-lg}}</span><b>Chốt lịch</b><small>Xác nhận lịch</small></div>
+      </div>
+    </div>
+    <div class="hero-art bleed" style="--ratio:1.62">
+      <img src="assets/img/hero-home.webp" alt="Đội ngũ BOXANH chuyển đồ, dọn phòng tại một khu nhà trọ xanh mát" fetchpriority="high">
+    </div>
+  </div>
+</section>
+
+<div class="container quick">
+  <form class="quick-box" id="quick-form" novalidate aria-label="Nhận báo giá nhanh">
+    <div class="quick-field">{{icon:map-pin}}<div class="grow"><label for="q-from">Nơi đi</label><input id="q-from" name="from" placeholder="Nhập địa chỉ" autocomplete="street-address"></div></div>
+    <div class="quick-field">{{icon:map-pin}}<div class="grow"><label for="q-to">Nơi đến</label><input id="q-to" name="to" placeholder="Nhập địa chỉ"></div></div>
+    <div class="quick-field">{{icon:calendar}}<div class="grow"><label for="q-date">Ngày dự kiến</label><input id="q-date" name="date" type="date" data-future></div></div>
+    <div class="quick-go"><button class="btn btn-primary btn-lg" type="submit"><span class="desktop-label">Nhận báo giá</span><span class="mobile-only">Ước tính chi phí</span> {{icon:arrow-right}}</button><small><span class="desktop-label">Báo giá sau khảo sát</span><span class="mobile-only">Nhận báo giá ước tính trong 1 phút · Chưa phải giá cuối cùng</span></small></div>
+  </form>
+</div>
+
+<section class="section" id="dich-vu">
+  <div class="container">
+    <div class="section-hd"><div><h2 class="h2 sw"><span class="desktop-label">Ba dịch vụ, trọn nhu cầu</span><span class="mobile-only">Dịch vụ của BOXANH</span></h2><p>Chọn riêng từng dịch vụ hoặc kết hợp – một đơn hàng, một đầu mối.</p></div></div>
+    <div class="grid g-3">
+      <a class="svc" href="chuyen-tro.html">
+        <div class="svc-body"><h3>Chuyển trọ</h3><p>Vận chuyển · Bốc xếp<br>An toàn, gọn gàng</p></div>
+        <span class="round-arrow">{{icon:arrow-right}}</span>
+        <div class="svc-img"><img src="assets/img/svc-chuyen-tro.webp" alt="Nhân viên BOXANH khiêng sofa lên xe tải" loading="lazy"></div>
+      </a>
+      <a class="svc yellow" href="don-phong.html">
+        <div class="svc-body"><h3>Dọn phòng</h3><p>Vệ sinh dọn dẹp<br>Sạch sẽ, sẵn sàng</p></div>
+        <span class="round-arrow">{{icon:arrow-right}}</span>
+        <div class="svc-img"><img src="assets/img/svc-don-phong.webp" alt="Nhân viên lau sàn phòng trọ" loading="lazy"></div>
+      </a>
+      <a class="svc peach" href="ban-giao-phong.html">
+        <div class="svc-body"><h3>Bàn giao phòng</h3><p>Kiểm tra · Sửa chữa<br>Bàn giao trọn gói</p></div>
+        <span class="round-arrow">{{icon:arrow-right}}</span>
+        <div class="svc-img"><picture><source media="(min-width:768px)" srcset="assets/img/hero-ban-giao.webp"><img src="assets/img/svc-ban-giao.webp" alt="Nhân viên BOXANH hỗ trợ chuẩn bị và bàn giao phòng" loading="lazy"></picture></div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="quy-trinh" style="padding-top:0">
+  <div class="container">
+    <div class="card card-pad">
+      <div class="section-hd"><div><h2 class="h2 sw"><span class="desktop-label">Từ đặt lịch đến bàn giao</span><span class="mobile-only">5 bước nhẹ tênh</span></h2><p>5 bước rõ ràng, bạn luôn biết đơn hàng đang ở đâu.</p></div></div>
+      <div class="flow" style="--n:5">
+        <div class="flow-step"><span class="flow-ic"><span class="num-dot">1</span>{{icon:clipboard-pen}}</span><b>Gửi nhu cầu</b><small>Điền thông tin chuyển trọ</small></div>
+        <div class="flow-step"><span class="flow-ic"><span class="num-dot">2</span>{{icon:message-dots}}</span><b>Xác nhận báo giá</b><small>Tư vấn và khảo sát</small></div>
+        <div class="flow-step"><span class="flow-ic"><span class="num-dot">3</span>{{icon:calendar-check}}</span><b>Chốt lịch</b><small>Thống nhất thời gian</small></div>
+        <div class="flow-step"><span class="flow-ic"><span class="num-dot">4</span>{{icon:truck}}</span><b>Thực hiện</b><small>Vận chuyển · Vệ sinh · Sửa chữa</small></div>
+        <div class="flow-step"><span class="flow-ic"><span class="num-dot">5</span>{{icon:box}}</span><b>Thu hồi hộp</b><small>Thu gom hộp tái sử dụng</small></div>
+      </div>
+      <p class="center mt-24"><span class="badge b-gray b-lg">{{icon:info}} Giá chính thức được xác nhận sau khi đủ thông tin.</span></p>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="hop-tai-su-dung" style="padding-top:0">
+  <div class="container">
+    <div class="band">
+      <div class="band-text">
+        <span class="eyebrow">{{icon:recycle ic-sm}} BOXANH REUSE</span>
+        <h2 class="h1 sw mt-8">Một chiếc hộp. Nhiều hành trình.</h2>
+        <p class="lead mt-12">Hộp tái sử dụng chuyên dụng cho chuyển trọ. Bền bỉ, tiện lợi và thân thiện hơn với môi trường.</p>
+        <div class="grid g-4 keep-2 mt-24 gap-sm">
+          <div class="feat-v"><span class="feat-ic">{{icon:gem}}</span><b>Bền bỉ</b><small class="muted xs">Chắc chắn, dùng nhiều lần</small></div>
+          <div class="feat-v"><span class="feat-ic">{{icon:droplet}}</span><b>Dễ vệ sinh</b><small class="muted xs">Lau chùi nhanh sau mỗi chuyến</small></div>
+          <div class="feat-v"><span class="feat-ic">{{icon:refresh}}</span><b>Thu hồi thuận tiện</b><small class="muted xs">Hệ thống thu gom chủ động</small></div>
+          <div class="feat-v"><span class="feat-ic">{{icon:leaf}}</span><b>Tái chế cuối vòng đời</b><small class="muted xs">Được tái chế khi không còn dùng</small></div>
+        </div>
+        <a class="btn btn-yellow mt-24" href="gioi-thieu.html#vong-doi-hop">Khám phá BOXANH REUSE {{icon:arrow-right}}</a>
+      </div>
+      <div class="band-art">
+        <img src="assets/img/box-stack-wide.webp" alt="Những chiếc hộp BOXANH màu xanh có mã QR xếp chồng giữa cây xanh" loading="lazy">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section home-trust" style="padding-top:0">
+  <div class="container">
+    <div class="section-hd"><div><h2 class="h2 sw">An tâm ở từng lần bàn giao</h2><p>Mỗi chiếc hộp đều được định danh và đối chiếu khi giao – nhận.</p></div></div>
+    <div class="grid g-3">
+      <article class="tile">
+        <div class="tile-img"><img src="assets/img/trust-qr.webp" alt="Quét mã QR trên hộp BOXANH bằng điện thoại" loading="lazy"></div>
+        <div class="tile-body"><span class="tile-ic">{{icon:qr-code}}</span><div><b>QR riêng từng hộp</b><p>Dễ dàng theo dõi từng hộp trong suốt hành trình.</p></div></div>
+      </article>
+      <article class="tile">
+        <div class="tile-img"><img src="assets/img/trust-seal.webp" alt="Seal niêm phong có mã riêng trên hộp" loading="lazy"></div>
+        <div class="tile-body"><span class="tile-ic">{{icon:shield-check}}</span><div><b>Seal có mã riêng</b><p>Niêm phong chắc chắn. Minh bạch, an tâm hơn.</p></div></div>
+      </article>
+      <article class="tile">
+        <div class="tile-img"><img src="assets/img/trust-photo.webp" alt="Nhân viên chụp ảnh tình trạng đồ đạc" loading="lazy"></div>
+        <div class="tile-body"><span class="tile-ic">{{icon:camera}}</span><div><b>Ảnh giao nhận rõ ràng</b><p>Ghi nhận tình trạng đồ đạc trước và sau vận chuyển.</p></div></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section home-estimate" style="padding-top:0">
+  <div class="container">
+    <div class="est-band">
+      <div>
+        <h2 class="h2">Ước tính trước. <span class="sw nowrap">Xác nhận rõ.</span></h2>
+        <p class="muted mt-8">Khoảng giá tham khảo ngay · Báo giá chính thức sau khảo sát.</p>
+      </div>
+      <form id="est-mini" novalidate aria-label="Ước tính nhanh">
+        <label class="with-ic ic-green"><span class="sr-only">Nơi đi</span>{{icon:map-pin}}<input class="input" name="from" placeholder="Nơi đi"></label>
+        <label class="with-ic ic-green"><span class="sr-only">Nơi đến</span>{{icon:map-pin}}<input class="input" name="to" placeholder="Nơi đến"></label>
+        <label class="with-ic ic-green"><span class="sr-only">Ngày dự kiến</span>{{icon:calendar}}<input class="input" name="date" type="date" data-future></label>
+        <button class="btn btn-primary" type="submit">Ước tính ngay {{icon:arrow-right}}</button>
+      </form>
+      <img src="assets/img/price-box.webp" alt="" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<section class="section home-partners" style="padding-top:0">
+  <div class="container">
+    <div class="section-hd"><div><h2 class="h2 sw">Cùng BOXANH phục vụ tốt hơn</h2><p>Hợp tác để mang đến trải nghiệm chuyển trọ trọn vẹn.</p></div></div>
+    <div class="pt-grid">
+      <article class="pt-card"><div class="pt-hd">{{icon:users}}<div><b>Vận chuyển &amp; bốc xếp</b><small>Đội ngũ chuyên nghiệp, linh hoạt theo khu vực.</small></div></div><img src="assets/img/pt-van-chuyen.webp" alt="Đội bốc xếp khiêng sofa" loading="lazy"></article>
+      <article class="pt-card"><div class="pt-hd">{{icon:sparkles}}<div><b>Vệ sinh</b><small>Dọn phòng chuyên sâu. Sạch sẽ, sẵn sàng bàn giao.</small></div></div><img src="assets/img/pt-ve-sinh.webp" alt="Nhân viên vệ sinh lau sàn" loading="lazy"></article>
+      <article class="pt-card"><div class="pt-hd">{{icon:wrench}}<div><b>Sửa chữa · FIX</b><small>Xử lý các hạng mục nhỏ. Nhanh chóng, gọn gàng.</small></div></div><img src="assets/img/pt-sua-chua.webp" alt="Kỹ thuật viên sửa chữa trong phòng" loading="lazy"></article>
+      <div class="pt-join">
+        <h3>Trở thành đối tác cùng BOXANH</h3>
+        <ul class="checklist">
+          <li>{{icon:check}} Mở rộng tệp khách hàng</li>
+          <li>{{icon:check}} Hợp tác lâu dài, minh bạch</li>
+          <li>{{icon:check}} Cùng xây dựng cộng đồng thuê trọ tốt hơn</li>
+        </ul>
+        <a class="btn btn-yellow mt-16" href="doi-tac.html" style="margin-top:auto">Đăng ký đối tác {{icon:arrow-right}}</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section mobile-only"><div class="container mobile-promos">
+  <a class="mobile-promo" href="gioi-thieu.html#vong-doi-hop"><img src="assets/img/trust-qr.webp" alt="Hộp BOXANH với mã QR và seal riêng" loading="lazy"><h3>Quét QR.<br>Kiểm tra seal.<br>An tâm bàn giao.</h3><p>Mỗi hộp có mã QR và seal để theo dõi hành trình minh bạch, an toàn.</p><span class="btn btn-yellow">Tìm hiểu thêm {{icon:arrow-right}}</span></a>
+  <a class="mobile-promo" href="doi-tac.html"><img src="assets/img/partner-promo.webp" alt="Đội ngũ đối tác BOXANH" loading="lazy"><h3>Trở thành<br>đối tác BOXANH</h3><span class="btn btn-yellow">Tìm hiểu ngay {{icon:arrow-right}}</span></a>
+</div></section>
+
+<section class="section" style="padding-top:0">
+  <div class="container faq-wrap">
+    <div class="faq-side">
+      <h2 class="h2 sw">Bạn cần biết thêm?</h2>
+      <p class="muted mt-8">Những câu hỏi thường gặp về dịch vụ của BOXANH.</p>
+      <a class="link mt-16" href="ho-tro.html#faq">Xem tất cả câu hỏi {{icon:arrow-right}}</a>
+      <img src="assets/img/faq-mascot.webp" alt="Nhân viên BOXANH với dấu chấm hỏi" loading="lazy">
+    </div>
+    <div>
+      <details class="acc">
+        <summary>Khi nào nhận được báo giá chính thức?<span class="acc-ic">{{icon:plus}}</span></summary>
+        <div class="acc-body"><p>Ngay khi gửi nhu cầu, bạn thấy khoảng giá ước tính. Nhân viên BOXANH sẽ liên hệ trong vòng 2 giờ làm việc để khảo sát (qua ảnh, video call hoặc tại chỗ) và gửi báo giá chính thức. Bạn chỉ thanh toán theo báo giá đã xác nhận.</p></div>
+      </details>
+      <details class="acc">
+        <summary>Hộp được thu hồi như thế nào?<span class="acc-ic">{{icon:plus}}</span></summary>
+        <div class="acc-body"><p>Sau khi chuyển xong, bạn đặt lịch thu hồi ngay trong mục <a class="link" href="hop-cua-toi.html">Hộp của tôi</a>. Nhân viên đến đúng khung giờ, quét QR từng hộp và xác nhận số lượng. Thu hồi miễn phí trong 7 ngày kể từ ngày nhận hộp.</p></div>
+      </details>
+      <details class="acc">
+        <summary>Nếu seal có dấu hiệu bất thường thì sao?<span class="acc-ic">{{icon:plus}}</span></summary>
+        <div class="acc-body"><p>Khi giao, nhân viên và bạn cùng kiểm tra mã hộp, mã seal và tình trạng seal. Nếu seal rách, đứt hoặc khác lạ, hãy từ chối ký nhận và báo ngay – BOXANH ghi nhận bằng ảnh, đối chiếu dữ liệu và phản hồi trong 24 giờ.</p></div>
+      </details>
+      <details class="acc">
+        <summary>Chi phí chuyển trọ được tính như thế nào?<span class="acc-ic">{{icon:plus}}</span></summary>
+        <div class="acc-body"><p>Chi phí gồm các hạng mục tách rõ: giá chuyến, phụ phí tầng, phí chờ, thêm người, ngoài giờ và phát sinh khác (nếu có). Mọi chi phí phát sinh đều cần bạn đồng ý trước khi thực hiện.</p></div>
+      </details>
+      <details class="acc">
+        <summary>Hộp BOXANH có thu phí không?<span class="acc-ic">{{icon:plus}}</span></summary>
+        <div class="acc-body"><p>Phí sử dụng hộp đã gồm trong báo giá (từ 10.000 – 15.000 đ/hộp, đã bao gồm vệ sinh và thu hồi). Hộp thuộc sở hữu của BOXANH, bạn không cần đặt cọc.</p></div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section class="section home-cta" style="padding-top:0">
+  <div class="container">
+    <div class="cta-band">
+      <img class="cta-mascot" src="assets/img/cta-mascot.webp" alt="" loading="lazy">
+      <div>
+        <h2>Sẵn sàng cho lần chuyển trọ mới?</h2>
+        <p>Để BOXANH đồng hành, bạn chỉ cần gửi nhu cầu. Phần còn lại, chúng tôi lo.</p>
+      </div>
+      <a class="btn btn-yellow btn-lg" href="uoc-tinh-chi-phi.html">Gửi nhu cầu {{icon:arrow-right}}</a>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,152 @@
+/* Live typography and vector interface, independent of illustration resolution. */
+:root {
+  --ink:#102c30; --ink-2:#29464c; --muted:#4d626f; --muted-2:#617583;
+  --line:#d4e5df; --line-2:#e3eee9;
+}
+html { font-size:16px; -webkit-text-size-adjust:100%; text-size-adjust:100%; }
+body { font-size:15px; -webkit-font-smoothing:auto; }
+button,input,select,textarea { font:inherit; }
+h1,h2,h3,h4,.display,.h1,.h2,.h3,.h4,.card-title { letter-spacing:-.035em; }
+p,.small,.xs,.hint,.label,.badge,.table,.tab { text-rendering:optimizeLegibility; }
+.small { font-size:14px; }
+.xs,.hint,.card-sub,.tag-demo { font-size:13px; line-height:1.5; }
+.label { font-size:14px; line-height:1.4; }
+.input,.select,.textarea { font-size:15px; color:var(--ink); border-color:#c5d9d2; }
+.input,.select { min-height:42px; }
+.textarea { line-height:1.6; }
+.input::placeholder,.textarea::placeholder { color:#586e7a; opacity:1; }
+.btn { min-height:40px; line-height:1.25; }
+.btn-sm { font-size:13px; }
+.badge { line-height:1.35; }
+.table { font-size:13px; line-height:1.5; }
+.table th { font-size:13px; color:#29464c; }
+.table .sub { font-size:13px; }
+.table td { vertical-align:middle; }
+.card,.card-pad { background-color:#fff; }
+.muted { color:var(--muted); }
+.hd-link,.hd-login { font-size:14px; }
+.site-hd .hd-link { color:#f2fffa; }
+.ft-col a,.ft-brand p,.ft-news p,.ft-bottom,.ft-bottom nav { font-size:13px; }
+.media-label { background:#143c32; backdrop-filter:none; }
+.bottom-nav { backdrop-filter:none; background:#fff; }
+.topbar { backdrop-filter:none; -webkit-backdrop-filter:none; }
+.hero .lead,.p-chuyen-tro .hero .lead { white-space:normal; font-size:15px; }
+.l-site:not(.p-index) { font-size:15px; line-height:1.55; }
+.l-site:not(.p-index) .input,.l-site:not(.p-index) .select { height:42px; font-size:15px; }
+.l-site:not(.p-index) .card-sub { font-size:13px; }
+.p-chuyen-tro #service-form .card-title { font-size:20px; }
+.p-chuyen-tro #service-form .label { font-size:13px; }
+.p-chuyen-tro #service-form .tag-demo { white-space:normal; }
+.p-chuyen-tro .price-chips { grid-template-columns:repeat(3,minmax(0,1fr)); }
+.p-chuyen-tro .price-chip { min-height:90px; padding:12px; }
+.p-chuyen-tro .price-chip b { font-size:14px; }
+.p-chuyen-tro .price-chip .small { font-size:13px; }
+.p-chuyen-tro #qr-band .card-pad { padding:20px; }
+.p-chuyen-tro #qr-band h2 { font-size:23px !important; }
+.p-chuyen-tro #qr-band p,.p-chuyen-tro #qr-band .feat small { font-size:13px; }
+.p-chuyen-tro .g-5 .tile-body b { font-size:14px; }
+.p-index .quick-field input { font-size:15px; }
+.p-index .quick-field label { font-size:14px; }
+.p-index .mini-flow small,.p-index .flow-step small { font-size:13px; }
+.p-index .band .feat-v small,.p-index .tile-body p { font-size:13px; }
+.p-index .acc summary { font-size:14px; }
+.p-index .est-band .input { min-height:42px; font-size:15px; }
+.p-index .faq-side p { font-size:14px; }
+.p-index .pt-hd small,.p-index .pt-join .checklist { font-size:13px; }
+.app-content .card-sub,.app-content .small { font-size:14px; }
+.app-content .table,.app-content .table th,.app-content .field .label { font-size:13px; }
+.app-content .toolbar .select,.app-content .toolbar .tb-search input { font-size:14px; min-height:42px; }
+.app-content .btn-sm { min-height:38px; font-size:13px; }
+.p-noi-bo-kho-hop #bx-detail .kv,.p-noi-bo-kho-hop #bx-detail .check { font-size:13px; }
+.p-noi-bo-kho-hop #bx-detail>.btn-grid .btn { font-size:13px; white-space:normal; padding:8px; height:auto; }
+.p-noi-bo-su-co #inc-main .textarea { font-size:15px; }
+.p-noi-bo-su-co #inc-main .vtl p,.p-noi-bo-su-co #inc-main .vtl time { font-size:13px; }
+.p-noi-bo-su-co #inc-main>section.card>h3+.grid>.card:last-child dl { font-size:13px; }
+.p-noi-bo-dinh-gia #pr-options>label>p { font-size:13px; }
+.tabs { max-width:100%; overflow:auto; }
+.tab { flex-shrink:0; }
+.num { font-variant-numeric:tabular-nums; }
+.chart text { fill:#425d68; }
+small { font-size:13px; }
+.p-index .svc p { font-size:13px; }
+.week-hd small,.gantt small,.table small { font-size:13px; }
+img { image-rendering:auto; }
+@media (max-width:1100px) {
+  .p-chuyen-tro #service-form { grid-template-columns:1fr; }
+  .p-noi-bo-doi-tac .score-row.with-pick { grid-template-columns:22px 1fr auto; }
+  .p-noi-bo-doi-tac .score-row.with-pick .bar { grid-column:2; grid-row:2; }
+  .p-noi-bo-doi-tac .score-row.with-pick .score-pick { grid-column:3; grid-row:2; }
+}
+@media (max-width:767px) {
+  body,.l-site:not(.p-index) { font-size:15px; }
+  .input,.select,.textarea,.l-site:not(.p-index) .input,.l-site:not(.p-index) .select { font-size:16px; min-height:44px; }
+  .input-sm { font-size:16px; }
+  .btn { min-height:44px; }
+  .btn-sm,.badge,.hint,.xs,.small,.label { font-size:13px; }
+  .hero .display { line-height:1.06; }
+  .p-index .hero-in { min-height:420px; }
+  .p-index .hero-text .lead { font-size:14px; width:55%; }
+  .p-index .hero-cta .btn { font-size:13px; min-height:40px; }
+  .p-index .quick-box { padding:14px 12px; gap:12px; grid-template-columns:repeat(2,minmax(0,1fr)); }
+  .p-index .quick-field:nth-child(2) { border-right:0; }
+  .p-index .quick-field:nth-child(3) { grid-column:1/-1; border-right:0; border-top:1px solid var(--line); padding-top:10px; }
+  .p-index .quick-go { grid-column:1/-1; }
+  .p-index .quick-field label { font-size:13px; }
+  .p-index .quick-field input { font-size:16px; }
+  .p-index .svc { min-height:142px; }
+  .p-index .flow { grid-template-columns:repeat(2,minmax(0,1fr)); gap:14px; }
+  .p-index .flow-step::before { display:none; }
+  .p-index .flow-step:last-child { grid-column:1/-1; }
+  .p-index .flow-step { padding:8px; }
+  .p-index .flow-step b { font-size:14px; }
+  .p-index .flow-step small { font-size:13px; line-height:1.45; }
+  .p-index .band-text .lead { font-size:13px; width:52%; }
+  .p-index .band .feat-v { font-size:13px; }
+  .p-index .band .grid { height:auto; min-height:84px; grid-template-columns:repeat(2,minmax(0,1fr)); gap:8px; }
+  .p-index .band-text { padding-bottom:130px; }
+  .p-index .band-art { bottom:120px; }
+  .p-index .band .btn { font-size:13px; min-height:40px; }
+  .p-index .mobile-promos { grid-template-columns:1fr; }
+  .p-index .mobile-promo { min-height:210px; }
+  .p-index .mobile-promo p { font-size:14px; }
+  .p-index .mobile-promo .btn { font-size:13px; min-height:40px; }
+  .p-index .acc summary { font-size:14px; padding:14px 12px; min-height:48px; }
+  .p-index .ft-col a,.ft-col a,.ft-brand p,.ft-bottom { font-size:13px; }
+  .p-index .site-ft .ft-grid { grid-template-columns:1fr 1fr; gap:18px; }
+  .p-index .site-ft .ft-brand { grid-column:1/-1; }
+  .bottom-nav a { font-size:12px; min-height:50px; }
+  .p-chuyen-tro .price-chips { grid-template-columns:repeat(2,minmax(0,1fr)); }
+  .p-chuyen-tro #qr-band { grid-template-columns:1fr; }
+  .p-chuyen-tro #qr-band .g-3 { grid-template-columns:1fr; }
+  .p-chuyen-tro .hero-text { width:100%; }
+  .p-chuyen-tro .hero .lead { width:70%; font-size:14px; }
+  .p-chuyen-tro .hero-art { opacity:.65; }
+  .p-chuyen-tro .hero-text { position:relative; z-index:2; }
+  .p-chuyen-tro #service-form .card-hd { flex-wrap:wrap; }
+  .p-index .ft-bottom { justify-content:flex-start; }
+  #est-steps { flex-wrap:wrap; row-gap:10px; }
+  #est-steps .small { font-size:13px; }
+  #est-form section:first-child .g-3 { grid-template-columns:1fr; }
+  #est-form .pick { display:grid; grid-template-columns:100px minmax(0,1fr); align-items:center; gap:12px; }
+  #est-form .pick-body b { font-size:16px; }
+  #est-form .pick-body span { font-size:13px; }
+  #est-form [aria-labelledby=s3] .card { grid-template-columns:1fr; }
+  #est-form [aria-labelledby=s3] .card > .qty { justify-self:start; }
+  .acc-hero p { font-size:14px; }
+  .p-tai-khoan .kpi-label { font-size:13px; }
+  .p-tai-khoan #acc-kpis { grid-template-columns:1fr; }
+  .p-tai-khoan .kpi { padding:14px; }
+  .p-tai-khoan .kpi-ic { display:grid; }
+  .app-content .card-pad { padding:16px; }
+  .banner-text p { font-size:14px; }
+  .p-noi-bo-doi-tac #grp-tabs { flex-wrap:wrap; }
+  .p-noi-bo-doi-tac #grp-tabs .tab { font-size:13px; }
+  .p-cong-doi-tac-index #pt-kpis { grid-template-columns:1fr; }
+  .p-cong-doi-tac-index #pt-kpis .kpi-label { font-size:14px; }
+  .p-cong-doi-tac-index .job h3 { font-size:16px; }
+  .p-cong-doi-tac-index .job p { font-size:13px; }
+  .p-cong-doi-tac-index .job-time { flex-wrap:wrap; }
+  .p-noi-bo-dinh-gia #pr-form>.form-grid { grid-template-columns:1fr; }
+  .p-noi-bo-kho-hop #lc-in,.p-noi-bo-kho-hop #lc-special { flex-wrap:wrap; }
+  .p-noi-bo-kho-hop .lc-chip { flex:1 1 42%; }
+}

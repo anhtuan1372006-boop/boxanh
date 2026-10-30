@@ -303,7 +303,8 @@ document.addEventListener('DOMContentLoaded', () => {
     if (!st.photoSrc && st.photo) st.photoSrc = img('seal-photo');
     showPhoto();
     if (st.seal === 'bad') $$('input[name=seal]').forEach(r => { r.checked = r.value === 'bad'; });
-    goStep(st.step || 1);
+    const routeStep = location.pathname.endsWith('giao-nhan-2.html') ? 2 : location.pathname.endsWith('giao-nhan-3.html') ? 3 : +(param('buoc') || 0);
+    goStep([1,2,3].includes(routeStep) ? routeStep : (st.step || 1));
   }
 
   /* ---------- lịch tuần ---------- */

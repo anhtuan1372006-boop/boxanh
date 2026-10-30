@@ -1,3 +1,130 @@
 ---
-{"title": "Dịch vụ chuyển trọ", "description": "Chuyển trọ gọn gàng. Bắt đầu nhẹ tênh. Đội ngũ tận tâm, đồ đạc an toàn, hộp tái sử dụng có QR và seal, chi phí tách rõ từng hạng mục.", "layout": "canvas", "canvas": ["chuyen-tro"]}
+{"title": "Dịch vụ chuyển trọ", "description": "Chuyển trọ gọn gàng cùng BOXANH: bốc xếp, vận chuyển, hộp tái sử dụng có QR và seal, giao nhận có kiểm tra. Chi phí tách rõ từng hạng mục.", "active": "chuyen-tro", "tab": "dich-vu", "scripts": ["service"]}
 ---
+<section class="hero">
+  <div class="container hero-in">
+    <div class="hero-text">
+      <nav class="crumbs" aria-label="Breadcrumb"><a href="index.html">{{icon:home ic-sm}}</a>{{icon:chevron-right}}<span>Dịch vụ</span>{{icon:chevron-right}}<span>Chuyển trọ</span></nav>
+      <span class="eyebrow">Dịch vụ chuyển trọ từ BOXANH</span>
+      <h1 class="display mt-12" style="font-size:clamp(38px,5.4vw,66px)">Chuyển trọ<br><span class="sw">gọn gàng.</span><br><span class="hero-subline">Bắt đầu nhẹ tênh.</span></h1>
+      <p class="lead">Đội ngũ tận tâm · Đồ đạc an toàn · Phòng trọ sẵn sàng cho hành trình mới.</p>
+      <div class="hero-cta">
+        <a class="btn btn-primary btn-lg" href="uoc-tinh-chi-phi.html?dv=chuyen-tro">{{icon:receipt}} Ước tính chi phí {{icon:arrow-right}}</a>
+        <a class="btn btn-outline btn-lg" href="#gui-nhu-cau">{{icon:clipboard-pen}} Gửi nhu cầu</a>
+      </div>
+      <div class="trust-row">
+        <div>{{icon:shield-check}}<span>An toàn<br>đồ đạc</span></div>
+        <div>{{icon:leaf}}<span>Hộp tái sử dụng<br>thân thiện môi trường</span></div>
+        <div>{{icon:users}}<span>Đội ngũ trẻ trung<br>tận tâm</span></div>
+      </div>
+    </div>
+    <div class="hero-art" style="--ratio:1.49">
+      <img src="assets/img/hero-chuyen-tro.webp" alt="Hai nhân viên BOXANH khiêng sofa ra xe tải, bên cạnh là khách hàng ôm thùng đồ" fetchpriority="high">
+    </div>
+  </div>
+</section>
+
+<section class="section-sm">
+  <div class="container grid g-4">
+    <article class="tile"><div class="tile-img"><img src="assets/img/feat-boc-xep.webp" alt="Bốc xếp sofa" loading="lazy"></div><div class="tile-body"><span class="tile-ic">{{icon:users}}</span><div><b>Bốc xếp</b><p>Đội ngũ bốc xếp cẩn thận, đồ đạc được nâng niu.</p></div></div></article>
+    <article class="tile"><div class="tile-img"><img src="assets/img/feat-van-chuyen.webp" alt="Xe tải BOXANH" loading="lazy"></div><div class="tile-body"><span class="tile-ic">{{icon:truck}}</span><div><b>Vận chuyển</b><p>Xe phù hợp, di chuyển an toàn, đúng hẹn.</p></div></div></article>
+    <article class="tile"><div class="tile-img"><img src="assets/img/feat-hop.webp" alt="Hộp BOXANH xếp chồng" loading="lazy"></div><div class="tile-body"><span class="tile-ic">{{icon:box}}</span><div><b>Hộp tái sử dụng</b><p>Hộp BOXANH chắc chắn, bảo vệ đồ đạc tốt hơn.</p></div></div></article>
+    <article class="tile"><div class="tile-img"><img src="assets/img/feat-giao-nhan.webp" alt="Giao nhận đồ có kiểm tra" loading="lazy"></div><div class="tile-body"><span class="tile-ic">{{icon:clipboard-check}}</span><div><b>Giao nhận có kiểm tra</b><p>Kiểm tra kỹ khi nhận và bàn giao, yên tâm trọn vẹn.</p></div></div></article>
+  </div>
+</section>
+
+<section class="section-sm" id="gui-nhu-cau">
+  <form class="container split" id="service-form" data-service="chuyen-tro" novalidate>
+    <div class="card card-pad">
+      <h2 class="h2">Chọn phần việc bạn cần</h2>
+      <p class="muted mt-4">Tùy chọn linh hoạt theo nhu cầu chuyển trọ của bạn.</p>
+      <div class="grid g-4 keep-2 mt-20 gap-sm">
+        <label class="pick is-square"><input type="checkbox" name="task" value="Hỗ trợ đóng gói" checked><span class="pick-mark">{{icon:check}}</span><div class="pick-img" style="aspect-ratio:1.25"><img src="assets/img/task-dong-goi.webp" alt="" loading="lazy"></div><div class="pick-body"><b style="font-size:15px">Hỗ trợ đóng gói</b><span>Đóng gói cẩn thận, đúng loại đồ đạc.</span></div></label>
+        <label class="pick is-square"><input type="checkbox" name="task" value="Tháo lắp cơ bản"><span class="pick-mark">{{icon:check}}</span><div class="pick-img" style="aspect-ratio:1.25"><img src="assets/img/task-thao-lap.webp" alt="" loading="lazy"></div><div class="pick-body"><b style="font-size:15px">Tháo lắp cơ bản</b><span>Tháo lắp giường, tủ, bàn ghế cơ bản.</span></div></label>
+        <label class="pick is-square"><input type="checkbox" name="task" value="Thêm người bốc xếp"><span class="pick-mark">{{icon:check}}</span><div class="pick-img" style="aspect-ratio:1.25"><img src="assets/img/task-boc-xep.webp" alt="" loading="lazy"></div><div class="pick-body"><b style="font-size:15px">Thêm người bốc xếp</b><span>Bổ sung nhân sự khi có nhiều đồ đạc.</span></div></label>
+        <label class="pick is-square"><input type="checkbox" name="task" value="Sử dụng hộp BOXANH" checked><span class="pick-mark">{{icon:check}}</span><div class="pick-img" style="aspect-ratio:1.25"><img src="assets/img/task-hop.webp" alt="" loading="lazy"></div><div class="pick-body"><b style="font-size:15px">Sử dụng hộp BOXANH</b><span>Hộp nhựa tái sử dụng chắc chắn, sạch sẽ.</span></div></label>
+      </div>
+      <div class="note info mt-20">{{icon:sparkles}}<div><b>Muốn dọn luôn phòng cũ?</b> Thêm dịch vụ <a class="link" href="don-phong.html">Dọn phòng</a> hoặc <a class="link" href="ban-giao-phong.html">Bàn giao phòng</a> – cùng một đơn hàng, một đầu mối.</div></div>
+    </div>
+
+    <div class="card card-pad">
+      <div class="card-hd"><h2 class="card-title">{{icon:clipboard-list}} Thông tin chuyển trọ</h2><span class="tag-demo">Mã đơn được cấp sau khi gửi</span></div>
+      <div class="form-grid">
+        <div class="field"><label class="label" for="f-from">Điểm đón <span class="req">*</span></label><div class="with-ic ic-green">{{icon:map-pin}}<input class="input" id="f-from" name="from" placeholder="Nhập địa chỉ nơi đi" required data-msg="Vui lòng nhập địa chỉ nơi đi."></div></div>
+        <div class="field"><label class="label" for="f-to">Điểm đến <span class="req">*</span></label><div class="with-ic ic-green">{{icon:map-pin}}<input class="input" id="f-to" name="to" placeholder="Nhập địa chỉ nơi đến" required data-msg="Vui lòng nhập địa chỉ nơi đến."></div></div>
+        <div class="field"><label class="label" for="f-floor">Tầng</label><div class="with-ic">{{icon:building}}<select class="select" id="f-floor" name="floor"><option value="">Chọn tầng</option><option>Tầng trệt</option><option>Tầng 2</option><option>Tầng 3</option><option>Tầng 4</option><option>Tầng 5</option><option>Tầng 6 trở lên</option></select></div></div>
+        <div class="field"><label class="label" for="f-lift">Thang máy</label><div class="with-ic">{{icon:elevator}}<select class="select" id="f-lift" name="lift"><option>Có</option><option>Không có</option></select></div></div>
+        <div class="field"><label class="label" for="f-date">Ngày chuyển <span class="req">*</span></label><input class="input" id="f-date" name="date" type="date" data-future required data-msg="Vui lòng chọn ngày chuyển."></div>
+        <div class="field"><label class="label" for="f-size">Số lượng đồ (ước tính)</label><div class="with-ic">{{icon:box}}<select class="select" id="f-size" name="size"><option value="">Chọn số lượng</option><option>Ít đồ (1 phòng, dưới 10 hộp)</option><option>Vừa (1 phòng, 10 – 20 hộp)</option><option>Nhiều (2 phòng, trên 20 hộp)</option></select></div></div>
+        <div class="field full">
+          <span class="label">Thêm ảnh đồ đạc <span class="opt-l">(tùy chọn)</span></span>
+          <div data-upload data-max="6"><label class="drop"><span class="drop-ic">{{icon:image-plus}}</span><span class="grow"><b>Thêm ảnh đồ đạc</b>Giúp chúng tôi ước tính chính xác hơn · JPG, PNG, tối đa 6 ảnh</span>{{icon:plus}}<input class="sr-only" type="file" accept="image/*" multiple></label></div>
+          <div class="previews" data-previews></div>
+        </div>
+        <div class="field"><label class="label" for="f-name">Họ tên <span class="req">*</span></label><input class="input" id="f-name" name="name" placeholder="Nguyễn Văn A" autocomplete="name" required></div>
+        <div class="field"><label class="label" for="f-phone">Số điện thoại <span class="req">*</span></label><input class="input" id="f-phone" name="phone" placeholder="0987 654 321" inputmode="tel" autocomplete="tel" required data-phone></div>
+      </div>
+      <div class="note mt-16">{{icon:info}}<div><b>BOXANH</b> xác nhận khả năng thực hiện và báo giá sau khi đủ thông tin.</div></div>
+      <button class="btn btn-primary btn-lg btn-block mt-16" type="submit">{{icon:send}} Gửi nhu cầu chuyển trọ</button>
+    </div>
+  </form>
+</section>
+
+<section class="section-sm">
+  <div class="container card card-pad">
+    <h2 class="h2 sw">Chi phí được tách rõ</h2>
+    <p class="muted mt-4">Bạn sẽ nhận báo giá chi tiết dựa trên thông tin thực tế. Dưới đây là các hạng mục chi phí chính <span class="tag-demo">(dữ liệu minh họa)</span>.</p>
+    <div class="grid g-3 mt-20 gap-sm price-chips">
+      <div class="opt price-chip">{{icon:truck ic-lg}}<div><b>Giá chuyến</b><div class="small muted">300.000 – 800.000 đ</div></div></div>
+      <div class="opt price-chip">{{icon:stairs ic-lg}}<div><b>Phụ phí tầng</b><div class="small muted">50.000 – 200.000 đ / chuyến</div></div></div>
+      <div class="opt price-chip">{{icon:clock ic-lg}}<div><b>Phí chờ</b><div class="small muted">50.000 – 100.000 đ / giờ</div></div></div>
+      <div class="opt price-chip">{{icon:users ic-lg}}<div><b>Thêm người</b><div class="small muted">150.000 – 250.000 đ / người</div></div></div>
+      <div class="opt price-chip">{{icon:moon ic-lg}}<div><b>Ngoài giờ</b><div class="small muted">100.000 – 300.000 đ</div></div></div>
+      <div class="opt price-chip">{{icon:more-h ic-lg}}<div><b>Phát sinh khác</b><div class="small muted">Tùy theo thực tế, cần bạn đồng ý trước</div></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="section-sm">
+  <div class="container card card-pad">
+    <div class="section-hd"><div><h2 class="h2 sw">Quy trình chuyển trọ tại BOXANH</h2><p>Rõ ràng · Minh bạch · Luôn có kiểm tra</p></div></div>
+    <div class="grid g-5 gap-sm">
+      <article class="tile"><div class="tile-img" style="aspect-ratio:2"><img src="assets/img/step-tiep-nhan.webp" alt="" loading="lazy"></div><div class="tile-body"><span class="num-dot">1</span><div><b>Tiếp nhận nhu cầu</b><p>Tư vấn khảo sát và xác nhận thông tin.</p></div></div></article>
+      <article class="tile"><div class="tile-img" style="aspect-ratio:2"><img src="assets/img/step-boc-xep.webp" alt="" loading="lazy"></div><div class="tile-body"><span class="num-dot">2</span><div><b>Bốc xếp tại điểm đón</b><p>Đóng gói (nếu có), bốc xếp và kiểm tra đồ đạc.</p></div></div></article>
+      <article class="tile"><div class="tile-img" style="aspect-ratio:2"><img src="assets/img/step-van-chuyen.webp" alt="" loading="lazy"></div><div class="tile-body"><span class="num-dot">3</span><div><b>Vận chuyển</b><p>Di chuyển an toàn, đúng lộ trình.</p></div></div></article>
+      <article class="tile"><div class="tile-img" style="aspect-ratio:2"><img src="assets/img/step-giao-nhan.webp" alt="" loading="lazy"></div><div class="tile-body"><span class="num-dot">4</span><div><b>Giao nhận tại điểm đến</b><p>Bàn giao và kiểm tra đồ đạc cùng bạn.</p></div></div></article>
+      <article class="tile"><div class="tile-img" style="aspect-ratio:2"><img src="assets/img/step-thu-hoi.webp" alt="" loading="lazy"></div><div class="tile-body"><span class="num-dot">5</span><div><b>Thu hồi hộp BOXANH</b><p>Sau khi hoàn tất, thu hồi hộp theo lịch hẹn.</p></div></div></article>
+    </div>
+  </div>
+</section>
+
+<section class="section-sm">
+  <div class="container">
+    <div class="card media-split" id="qr-band">
+      <div class="media"><img src="assets/img/qr-box-banner.webp" alt="Hộp BOXANH có mã QR BX-000128 và seal vàng SL-004281" loading="lazy"></div>
+      <div class="card-pad">
+        <h2 class="h3" style="font-size:22px">Hộp BOXANH – Quét hộp · Chụp seal · Đối chiếu khi giao</h2>
+        <p class="muted mt-4">Mỗi hộp đều có mã QR và seal niêm phong để dễ dàng kiểm tra, minh bạch trong suốt quá trình.</p>
+        <div class="grid g-3 mt-20 gap-sm">
+          <div class="feat"><span class="feat-ic">{{icon:qr-code}}</span><div><b>1. Quét hộp</b><small>Quét mã QR trên từng hộp</small></div></div>
+          <div class="feat"><span class="feat-ic">{{icon:camera}}</span><div><b>2. Chụp seal</b><small>Chụp ảnh seal khi đóng và khi giao</small></div></div>
+          <div class="feat"><span class="feat-ic">{{icon:check-circle}}</span><div><b>3. Đối chiếu khi giao</b><small>Kiểm tra mã hộp và seal cùng bạn</small></div></div>
+        </div>
+        <div class="row wrap mt-20">
+          <span class="badge b-yellow b-lg">Mã hộp (ví dụ): <b>BX-000128</b></span>
+          <span class="badge b-yellow b-lg">Mã seal (ví dụ): <b>SL-004281</b></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="cta-band">
+      <img class="cta-mascot" src="assets/img/cta-mascot.webp" alt="" loading="lazy">
+      <div><h2>Biết khoảng giá chỉ trong 1 phút</h2><p>Nhập nơi đi, nơi đến và khối lượng đồ – BOXANH ước tính ngay cho bạn.</p></div>
+      <a class="btn btn-yellow btn-lg" href="uoc-tinh-chi-phi.html?dv=chuyen-tro">Ước tính chi phí {{icon:arrow-right}}</a>
+    </div>
+  </div>
+</section>

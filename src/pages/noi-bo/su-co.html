@@ -1,3 +1,14 @@
 ---
-{"title": "Hồ sơ sự cố & CSKH", "layout": "canvas", "canvas": ["su-co"], "scripts": ["portal-cv"]}
+{"title": "Hồ sơ sự cố & CSKH", "layout": "admin", "active": "su-co", "scripts": ["admin"]}
 ---
+<div class="split split-side" id="inc-wrap">
+  <aside class="card card-pad" style="background:linear-gradient(180deg,#0e4b38,#0a3b2c);color:#d9ebe1;border:0">
+    <p class="xs strong" style="letter-spacing:.12em;color:#9cc1ae">CSKH · NỘI BỘ</p>
+    <nav class="side-nav mt-12" id="inc-filters" aria-label="Lọc sự cố"></nav>
+    <hr class="divider" style="background:rgba(255,255,255,.12)">
+    <div class="stack" style="--gap:4px" id="inc-list"></div>
+    <img src="{{root}}assets/img/cskh-mascot.webp" alt="" style="border-radius:16px;margin-top:16px;max-height:260px;width:100%;object-fit:cover;object-position:top">
+  </aside>
+
+  <div class="stack" style="--gap:20px" id="inc-main"></div>
+</div>

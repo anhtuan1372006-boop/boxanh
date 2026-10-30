@@ -244,7 +244,7 @@ window.BX = (function () {
         const el = document.createElement('div');
         el.className = 'preview is-new';
         const isImg = /^image\//.test(f.type);
-        el.innerHTML = (isImg ? `<img src="${URL.createObjectURL(f)}" alt="${esc(f.name)}">` : `<div class="empty" style="padding:10px;font-size:11px">${icon('file')}${esc(f.name)}</div>`) +
+        el.innerHTML = (isImg ? `<img src="${URL.createObjectURL(f)}" alt="${esc(f.name)}">` : `<div class="empty" style="padding:10px;font-size:13px">${icon('file')}${esc(f.name)}</div>`) +
           `<button class="rm" type="button" aria-label="Xóa ${esc(f.name)}">${icon('x')}</button>`;
         el.querySelector('.rm').addEventListener('click', () => { root.files.splice(i, 1); render(); root.dispatchEvent(new Event('change')); });
         list.insertBefore(el, list.querySelector('[data-upload-anchor]'));
@@ -372,29 +372,44 @@ window.BX = (function () {
   function initSignature(root) {
     const canvas = $('canvas', root);
     const ctx = canvas.getContext('2d');
-    let drawing = false, last = null;
+    let drawing = false, stroke = null;
+    const strokes = [];
+    const paint = () => {
+      const r = canvas.getBoundingClientRect();
+      ctx.clearRect(0, 0, r.width, r.height);
+      for (const points of strokes) {
+        if (!points.length) continue;
+        ctx.beginPath();
+        ctx.moveTo(points[0].x * r.width, points[0].y * r.height);
+        for (const p of points.slice(1)) ctx.lineTo(p.x * r.width, p.y * r.height);
+        if (points.length === 1) ctx.lineTo(points[0].x * r.width + .1, points[0].y * r.height);
+        ctx.stroke();
+      }
+    };
     const size = () => {
       const r = canvas.getBoundingClientRect();
+      if (!r.width || !r.height) return;
       const dpr = window.devicePixelRatio || 1;
-      const data = root.classList.contains('has-ink') ? canvas.toDataURL() : null;
-      canvas.width = r.width * dpr;
-      canvas.height = r.height * dpr;
-      ctx.scale(dpr, dpr);
+      canvas.width = Math.round(r.width * dpr);
+      canvas.height = Math.round(r.height * dpr);
+      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
       ctx.lineWidth = 2.4; ctx.lineCap = 'round'; ctx.lineJoin = 'round'; ctx.strokeStyle = '#1d3f8a';
-      if (data) { const im = new Image(); im.onload = () => ctx.drawImage(im, 0, 0, r.width, r.height); im.src = data; }
+      paint();
     };
-    const pos = e => { const r = canvas.getBoundingClientRect(); return { x: e.clientX - r.left, y: e.clientY - r.top }; };
-    canvas.addEventListener('pointerdown', e => { drawing = true; last = pos(e); canvas.setPointerCapture(e.pointerId); });
-    canvas.addEventListener('pointermove', e => {
-      if (!drawing) return;
-      const p = pos(e);
-      ctx.beginPath(); ctx.moveTo(last.x, last.y); ctx.lineTo(p.x, p.y); ctx.stroke();
-      last = p;
+    const pos = e => { const r = canvas.getBoundingClientRect(); return { x: (e.clientX - r.left) / r.width, y: (e.clientY - r.top) / r.height }; };
+    canvas.addEventListener('pointerdown', e => {
+      drawing = true; stroke = [pos(e)]; strokes.push(stroke); canvas.setPointerCapture(e.pointerId);
+      paint();
       if (!root.classList.contains('has-ink')) { root.classList.add('has-ink'); root.dispatchEvent(new Event('change')); }
     });
+    canvas.addEventListener('pointermove', e => {
+      if (!drawing) return;
+      stroke.push(pos(e)); paint();
+    });
     ['pointerup', 'pointercancel', 'pointerleave'].forEach(ev => canvas.addEventListener(ev, () => { drawing = false; }));
-    root.clear = () => { ctx.clearRect(0, 0, canvas.width, canvas.height); root.classList.remove('has-ink'); root.dispatchEvent(new Event('change')); };
+    root.clear = () => { strokes.length = 0; drawing = false; paint(); root.classList.remove('has-ink'); root.dispatchEvent(new Event('change')); };
     root.isSigned = () => root.classList.contains('has-ink');
+    new ResizeObserver(size).observe(root);
     window.addEventListener('resize', debounce(size, 150));
     requestAnimationFrame(size);
   }
