@@ -1,0 +1,1114 @@
+{
+ "name": "nb-doi-tac",
+ "W": 1536,
+ "H": 1024,
+ "bake": true,
+ "clean": true,
+ "bg": "#b3a949",
+ "items": [
+  {
+   "k": "a",
+   "box": [
+    30,
+    22,
+    212,
+    68
+   ],
+   "label": "BOXANH – Nội bộ",
+   "href": "index.html"
+  },
+  {
+   "k": "a",
+   "box": [
+    12,
+    140,
+    217,
+    177
+   ],
+   "label": "Tổng quan",
+   "href": "index.html",
+   "rad": 10
+  },
+  {
+   "k": "a",
+   "box": [
+    12,
+    192,
+    217,
+    228
+   ],
+   "label": "Đơn hàng",
+   "href": "don-hang.html",
+   "rad": 10
+  },
+  {
+   "k": "a",
+   "box": [
+    12,
+    242,
+    217,
+    293
+   ],
+   "label": "Đối tác",
+   "href": "doi-tac.html",
+   "rad": 10
+  },
+  {
+   "k": "a",
+   "box": [
+    12,
+    304,
+    217,
+    341
+   ],
+   "label": "Định giá",
+   "href": "dinh-gia.html",
+   "rad": 10
+  },
+  {
+   "k": "a",
+   "box": [
+    12,
+    359,
+    217,
+    396
+   ],
+   "label": "Kho hộp",
+   "href": "kho-hop.html",
+   "rad": 10
+  },
+  {
+   "k": "a",
+   "box": [
+    12,
+    414,
+    217,
+    451
+   ],
+   "label": "Sự cố",
+   "href": "su-co.html",
+   "rad": 10
+  },
+  {
+   "k": "a",
+   "box": [
+    12,
+    471,
+    217,
+    508
+   ],
+   "label": "Báo cáo",
+   "href": "bao-cao.html",
+   "rad": 10
+  },
+  {
+   "k": "form",
+   "id": "adm-search",
+   "label": "Tìm kiếm"
+  },
+  {
+   "k": "in",
+   "r": [
+    292,
+    23,
+    505,
+    43
+   ],
+   "box": [
+    286,
+    16,
+    640,
+    50
+   ],
+   "s": "Tìm đơn hàng, đối tác, mã box...",
+   "name": "q",
+   "id": "adm-q",
+   "form": "adm-search",
+   "type": "search",
+   "label": "Tìm kiếm",
+   "m": {
+    "x": 295,
+    "w": 207.0,
+    "base": 38.0,
+    "xh": 8.0,
+    "c": "#6a717d"
+   }
+  },
+  {
+   "k": "a",
+   "box": [
+    1246,
+    12,
+    1280,
+    50
+   ],
+   "label": "Thông báo (8)",
+   "href": "index.html"
+  },
+  {
+   "k": "dd",
+   "box": [
+    1310,
+    10,
+    1522,
+    54
+   ],
+   "w": 170,
+   "pl": 1350,
+   "label": "Tài khoản Nguyễn Minh Anh",
+   "menu": [
+    [
+     "index.html",
+     "Tổng quan vận hành"
+    ],
+    [
+     "../he-thong.html",
+     "Sơ đồ hệ thống"
+    ],
+    [
+     "../index.html",
+     "Về trang khách hàng"
+    ]
+   ]
+  },
+  {
+   "k": "a",
+   "box": [
+    252,
+    237,
+    493,
+    286
+   ],
+   "label": "Nhóm Vận chuyển & bốc xếp",
+   "act": "info:Đang hiển thị nhóm Vận chuyển & bốc xếp.",
+   "rad": 10
+  },
+  {
+   "k": "a",
+   "box": [
+    520,
+    240,
+    690,
+    286
+   ],
+   "label": "Nhóm Vệ sinh",
+   "act": "group:ve-sinh",
+   "rad": 10
+  },
+  {
+   "k": "a",
+   "box": [
+    710,
+    240,
+    903,
+    286
+   ],
+   "label": "Nhóm Sửa chữa · FIX",
+   "act": "group:sua-chua",
+   "rad": 10
+  },
+  {
+   "k": "a",
+   "box": [
+    805,
+    306,
+    982,
+    341
+   ],
+   "label": "Bộ câu hỏi chung",
+   "act": "questions",
+   "rad": 8
+  },
+  {
+   "k": "a",
+   "box": [
+    446,
+    600,
+    552,
+    624
+   ],
+   "label": "Bảng giá A.pdf",
+   "act": "file:0",
+   "rad": 4
+  },
+  {
+   "k": "a",
+   "box": [
+    646,
+    600,
+    754,
+    624
+   ],
+   "label": "Bảng giá B.pdf",
+   "act": "file:1",
+   "rad": 4
+  },
+  {
+   "k": "a",
+   "box": [
+    843,
+    600,
+    949,
+    624
+   ],
+   "label": "Bảng giá C.pdf",
+   "act": "file:2",
+   "rad": 4
+  },
+  {
+   "k": "a",
+   "box": [
+    736,
+    818,
+    868,
+    864
+   ],
+   "label": "Hồ sơ minh chứng Thử 01",
+   "act": "info:Thử 01 – 12/01/2027: 2 ảnh bốc xếp, vận chuyển và 2 ảnh khác. Hoàn thành, chênh lệch +10.000 đ (+1,8%).",
+   "rad": 6
+  },
+  {
+   "k": "a",
+   "box": [
+    736,
+    869,
+    868,
+    914
+   ],
+   "label": "Hồ sơ minh chứng Thử 02",
+   "act": "info:Thử 02 – 15/01/2027: 2 ảnh bốc xếp, vận chuyển và 3 ảnh khác. Hoàn thành đúng giá thỏa thuận.",
+   "rad": 6
+  },
+  {
+   "k": "in",
+   "r": [
+    1286,
+    383,
+    1331,
+    401
+   ],
+   "box": [
+    1283,
+    380,
+    1342,
+    404
+   ],
+   "s": "4,5 / 5",
+   "wt": 600,
+   "name": "sc-v0",
+   "id": "sc-v0",
+   "cls": "val",
+   "attrs": {
+    "readonly": "",
+    "tabindex": "-1"
+   },
+   "label": "4,5 / 5",
+   "m": {
+    "x": 1288,
+    "w": 37.0,
+    "base": 398.0,
+    "xh": 10.0,
+    "c": "#161d32"
+   }
+  },
+  {
+   "k": "opt",
+   "cls": "score",
+   "box": [
+    1356,
+    381,
+    1381,
+    403
+   ],
+   "group": "s0",
+   "label": "1",
+   "value": "1",
+   "aria": "Đúng giờ: 1 điểm",
+   "rad": 4,
+   "fs": 9.5,
+   "wt": 700
+  },
+  {
+   "k": "opt",
+   "cls": "score",
+   "box": [
+    1387,
+    381,
+    1412,
+    403
+   ],
+   "group": "s0",
+   "label": "2",
+   "value": "2",
+   "aria": "Đúng giờ: 2 điểm",
+   "rad": 4,
+   "fs": 9.5,
+   "wt": 700
+  },
+  {
+   "k": "opt",
+   "cls": "score",
+   "box": [
+    1418,
+    381,
+    1443,
+    403
+   ],
+   "group": "s0",
+   "label": "3",
+   "value": "3",
+   "aria": "Đúng giờ: 3 điểm",
+   "rad": 4,
+   "fs": 9.5,
+   "wt": 700
+  },
+  {
+   "k": "opt",
+   "cls": "score",
+   "box": [
+    1449,
+    381,
+    1475,
+    403
+   ],
+   "group": "s0",
+   "label": "4",
+   "value": "4",
+   "aria": "Đúng giờ: 4 điểm",
+   "rad": 4,
+   "fs": 9.5,
+   "wt": 700
+  },
+  {
+   "k": "opt",
+   "cls": "score",
+   "box": [
+    1480,
+    381,
+    1507,
+    403
+   ],
+   "group": "s0",
+   "label": "5",
+   "value": "5",
+   "aria": "Đúng giờ: 5 điểm",
+   "rad": 4,
+   "fs": 9.5,
+   "wt": 700,
+   "on": true
+  },
+  {
+   "k": "in",
+   "r": [
+    1286,
+    424,
+    1331,
+    442
+   ],
+   "box": [
+    1283,
+    421,
+    1342,
+    445
+   ],
+   "s": "4,0 / 5",
+   "wt": 600,
+   "name": "sc-v1",
+   "id": "sc-v1",
+   "cls": "val",
+   "attrs": {
+    "readonly": "",
+    "tabindex": "-1"
+   },
+   "label": "4,0 / 5",
+   "m": {
+    "x": 1288,
+    "w": 37.0,
+    "base": 438.0,
+    "xh": 10.0,
+    "c": "#141d30"
+   }
+  },
+  {
+   "k": "opt",
+   "cls": "score",
+   "box": [
+    1356,
+    422,
+    1381,
+    444
+   ],
+   "group": "s1",
+   "label": "1",
+   "value": "1",
+   "aria": "Mức giá: 1 điểm",
+   "rad": 4,
+   "fs": 9.5,
+   "wt": 700
+  },
+  {
+   "k": "opt",
+   "cls": "score",
+   "box": [
+    1387,
+    422,
+    1412,
+    444
+   ],
+   "group": "s1",
+   "label": "2",
+   "value": "2",
+   "aria": "Mức giá: 2 điểm",
+   "rad": 4,
+   "fs": 9.5,
+   "wt": 700
+  },
+  {
+   "k": "opt",
+   "cls": "score",
+   "box": [
+    1418,
+    422,
+    1443,
+    444
+   ],
+   "group": "s1",
+   "label": "3",
+   "value": "3",
+   "aria": "Mức giá: 3 điểm",
+   "rad": 4,
+   "fs": 9.5,
+   "wt": 700
+  },
+  {
+   "k": "opt",
+   "cls": "score",
+   "box": [
+    1449,
+    422,
+    1475,
+    444
+   ],
+   "group": "s1",
+   "label": "4",
+   "value": "4",
+   "aria": "Mức giá: 4 điểm",
+   "rad": 4,
+   "fs": 9.5,
+   "wt": 700,
+   "on": true
+  },
+  {
+   "k": "opt",
+   "cls": "score",
+   "box": [
+    1480,
+    422,
+    1507,
+    444
+   ],
+   "group": "s1",
+   "label": "5",
+   "value": "5",
+   "aria": "Mức giá: 5 điểm",
+   "rad": 4,
+   "fs": 9.5,
+   "wt": 700
+  },
+  {
+   "k": "in",
+   "r": [
+    1286,
+    466,
+    1331,
+    484
+   ],
+   "box": [
+    1283,
+    463,
+    1342,
+    487
+   ],
+   "s": "4,5 / 5",
+   "wt": 600,
+   "name": "sc-v2",
+   "id": "sc-v2",
+   "cls": "val",
+   "attrs": {
+    "readonly": "",
+    "tabindex": "-1"
+   },
+   "label": "4,5 / 5",
+   "m": {
+    "x": 1288,
+    "w": 37.0,
+    "base": 480.0,
+    "xh": 10.0,
+    "c": "#161e31"
+   }
+  },
+  {
+   "k": "opt",
+   "cls": "score",
+   "box": [
+    1356,
+    464,
+    1381,
+    486
+   ],
+   "group": "s2",
+   "label": "1",
+   "value": "1",
+   "aria": "Bảo quản đồ: 1 điểm",
+   "rad": 4,
+   "fs": 9.5,
+   "wt": 700
+  },
+  {
+   "k": "opt",
+   "cls": "score",
+   "box": [
+    1387,
+    464,
+    1412,
+    486
+   ],
+   "group": "s2",
+   "label": "2",
+   "value": "2",
+   "aria": "Bảo quản đồ: 2 điểm",
+   "rad": 4,
+   "fs": 9.5,
+   "wt": 700
+  },
+  {
+   "k": "opt",
+   "cls": "score",
+   "box": [
+    1418,
+    464,
+    1443,
+    486
+   ],
+   "group": "s2",
+   "label": "3",
+   "value": "3",
+   "aria": "Bảo quản đồ: 3 điểm",
+   "rad": 4,
+   "fs": 9.5,
+   "wt": 700
+  },
+  {
+   "k": "opt",
+   "cls": "score",
+   "box": [
+    1449,
+    464,
+    1475,
+    486
+   ],
+   "group": "s2",
+   "label": "4",
+   "value": "4",
+   "aria": "Bảo quản đồ: 4 điểm",
+   "rad": 4,
+   "fs": 9.5,
+   "wt": 700
+  },
+  {
+   "k": "opt",
+   "cls": "score",
+   "box": [
+    1480,
+    464,
+    1507,
+    486
+   ],
+   "group": "s2",
+   "label": "5",
+   "value": "5",
+   "aria": "Bảo quản đồ: 5 điểm",
+   "rad": 4,
+   "fs": 9.5,
+   "wt": 700,
+   "on": true
+  },
+  {
+   "k": "in",
+   "r": [
+    1286,
+    508,
+    1331,
+    526
+   ],
+   "box": [
+    1283,
+    505,
+    1342,
+    529
+   ],
+   "s": "5,0 / 5",
+   "wt": 600,
+   "name": "sc-v3",
+   "id": "sc-v3",
+   "cls": "val",
+   "attrs": {
+    "readonly": "",
+    "tabindex": "-1"
+   },
+   "label": "5,0 / 5",
+   "m": {
+    "x": 1289,
+    "w": 36.0,
+    "base": 522.0,
+    "xh": 10.0,
+    "c": "#121b2b"
+   }
+  },
+  {
+   "k": "opt",
+   "cls": "score",
+   "box": [
+    1356,
+    506,
+    1381,
+    528
+   ],
+   "group": "s3",
+   "label": "1",
+   "value": "1",
+   "aria": "Thái độ: 1 điểm",
+   "rad": 4,
+   "fs": 9.5,
+   "wt": 700
+  },
+  {
+   "k": "opt",
+   "cls": "score",
+   "box": [
+    1387,
+    506,
+    1412,
+    528
+   ],
+   "group": "s3",
+   "label": "2",
+   "value": "2",
+   "aria": "Thái độ: 2 điểm",
+   "rad": 4,
+   "fs": 9.5,
+   "wt": 700
+  },
+  {
+   "k": "opt",
+   "cls": "score",
+   "box": [
+    1418,
+    506,
+    1443,
+    528
+   ],
+   "group": "s3",
+   "label": "3",
+   "value": "3",
+   "aria": "Thái độ: 3 điểm",
+   "rad": 4,
+   "fs": 9.5,
+   "wt": 700
+  },
+  {
+   "k": "opt",
+   "cls": "score",
+   "box": [
+    1449,
+    506,
+    1475,
+    528
+   ],
+   "group": "s3",
+   "label": "4",
+   "value": "4",
+   "aria": "Thái độ: 4 điểm",
+   "rad": 4,
+   "fs": 9.5,
+   "wt": 700
+  },
+  {
+   "k": "opt",
+   "cls": "score",
+   "box": [
+    1480,
+    506,
+    1507,
+    528
+   ],
+   "group": "s3",
+   "label": "5",
+   "value": "5",
+   "aria": "Thái độ: 5 điểm",
+   "rad": 4,
+   "fs": 9.5,
+   "wt": 700,
+   "on": true
+  },
+  {
+   "k": "in",
+   "r": [
+    1286,
+    551,
+    1331,
+    569
+   ],
+   "box": [
+    1283,
+    548,
+    1342,
+    572
+   ],
+   "s": "4,0 / 5",
+   "wt": 600,
+   "name": "sc-v4",
+   "id": "sc-v4",
+   "cls": "val",
+   "attrs": {
+    "readonly": "",
+    "tabindex": "-1"
+   },
+   "label": "4,0 / 5",
+   "m": {
+    "x": 1288,
+    "w": 37.0,
+    "base": 566.0,
+    "xh": 10.0,
+    "c": "#151f33"
+   }
+  },
+  {
+   "k": "opt",
+   "cls": "score",
+   "box": [
+    1356,
+    549,
+    1381,
+    571
+   ],
+   "group": "s4",
+   "label": "1",
+   "value": "1",
+   "aria": "Giao tiếp: 1 điểm",
+   "rad": 4,
+   "fs": 9.5,
+   "wt": 700
+  },
+  {
+   "k": "opt",
+   "cls": "score",
+   "box": [
+    1387,
+    549,
+    1412,
+    571
+   ],
+   "group": "s4",
+   "label": "2",
+   "value": "2",
+   "aria": "Giao tiếp: 2 điểm",
+   "rad": 4,
+   "fs": 9.5,
+   "wt": 700
+  },
+  {
+   "k": "opt",
+   "cls": "score",
+   "box": [
+    1418,
+    549,
+    1443,
+    571
+   ],
+   "group": "s4",
+   "label": "3",
+   "value": "3",
+   "aria": "Giao tiếp: 3 điểm",
+   "rad": 4,
+   "fs": 9.5,
+   "wt": 700
+  },
+  {
+   "k": "opt",
+   "cls": "score",
+   "box": [
+    1449,
+    549,
+    1475,
+    571
+   ],
+   "group": "s4",
+   "label": "4",
+   "value": "4",
+   "aria": "Giao tiếp: 4 điểm",
+   "rad": 4,
+   "fs": 9.5,
+   "wt": 700,
+   "on": true
+  },
+  {
+   "k": "opt",
+   "cls": "score",
+   "box": [
+    1480,
+    549,
+    1507,
+    571
+   ],
+   "group": "s4",
+   "label": "5",
+   "value": "5",
+   "aria": "Giao tiếp: 5 điểm",
+   "rad": 4,
+   "fs": 9.5,
+   "wt": 700
+  },
+  {
+   "k": "in",
+   "r": [
+    1286,
+    595,
+    1331,
+    613
+   ],
+   "box": [
+    1283,
+    592,
+    1342,
+    616
+   ],
+   "s": "4,5 / 5",
+   "wt": 600,
+   "name": "sc-v5",
+   "id": "sc-v5",
+   "cls": "val",
+   "attrs": {
+    "readonly": "",
+    "tabindex": "-1"
+   },
+   "label": "4,5 / 5",
+   "m": {
+    "x": 1288,
+    "w": 37.0,
+    "base": 612.0,
+    "xh": 10.0,
+    "c": "#151d33"
+   }
+  },
+  {
+   "k": "opt",
+   "cls": "score",
+   "box": [
+    1356,
+    593,
+    1381,
+    615
+   ],
+   "group": "s5",
+   "label": "1",
+   "value": "1",
+   "aria": "Đúng giá đã thống nhất: 1 điểm",
+   "rad": 4,
+   "fs": 9.5,
+   "wt": 700
+  },
+  {
+   "k": "opt",
+   "cls": "score",
+   "box": [
+    1387,
+    593,
+    1412,
+    615
+   ],
+   "group": "s5",
+   "label": "2",
+   "value": "2",
+   "aria": "Đúng giá đã thống nhất: 2 điểm",
+   "rad": 4,
+   "fs": 9.5,
+   "wt": 700
+  },
+  {
+   "k": "opt",
+   "cls": "score",
+   "box": [
+    1418,
+    593,
+    1443,
+    615
+   ],
+   "group": "s5",
+   "label": "3",
+   "value": "3",
+   "aria": "Đúng giá đã thống nhất: 3 điểm",
+   "rad": 4,
+   "fs": 9.5,
+   "wt": 700
+  },
+  {
+   "k": "opt",
+   "cls": "score",
+   "box": [
+    1449,
+    593,
+    1475,
+    615
+   ],
+   "group": "s5",
+   "label": "4",
+   "value": "4",
+   "aria": "Đúng giá đã thống nhất: 4 điểm",
+   "rad": 4,
+   "fs": 9.5,
+   "wt": 700
+  },
+  {
+   "k": "opt",
+   "cls": "score",
+   "box": [
+    1480,
+    593,
+    1507,
+    615
+   ],
+   "group": "s5",
+   "label": "5",
+   "value": "5",
+   "aria": "Đúng giá đã thống nhất: 5 điểm",
+   "rad": 4,
+   "fs": 9.5,
+   "wt": 700,
+   "on": true
+  },
+  {
+   "k": "in",
+   "r": [
+    1282,
+    652,
+    1362,
+    688
+   ],
+   "box": [
+    1279,
+    648,
+    1368,
+    692
+   ],
+   "s": "4,5 / 5",
+   "wt": 800,
+   "name": "sc-total",
+   "id": "sc-total",
+   "cls": "val",
+   "attrs": {
+    "readonly": "",
+    "tabindex": "-1"
+   },
+   "label": "4,5 / 5",
+   "m": {
+    "x": 1282,
+    "w": 78.0,
+    "base": 680.0,
+    "xh": 19.0,
+    "c": "#052723"
+   }
+  },
+  {
+   "k": "in",
+   "multi": true,
+   "box": [
+    1028,
+    724,
+    1505,
+    778
+   ],
+   "name": "note",
+   "id": "sc-note",
+   "max": 500,
+   "label": "Nhận xét nội bộ",
+   "lines": [
+    {
+     "r": [
+      1036,
+      727,
+      1347,
+      745
+     ],
+     "s": "Đội ngũ chuyên nghiệp, đúng giờ, đồ đạc được bảo quản tốt.",
+     "m": {
+      "x": 1039,
+      "w": 305.0,
+      "base": 740.0,
+      "xh": 7.0,
+      "c": "#373d58"
+     }
+    },
+    {
+     "r": [
+      1036,
+      747,
+      1314,
+      765
+     ],
+     "s": "Cần thương lượng thêm về phụ phí tầng cao.",
+     "m": {
+      "x": 1040,
+      "w": 241.0,
+      "base": 759.0,
+      "xh": 7.0,
+      "c": "#384160"
+     }
+    }
+   ],
+   "m": {
+    "x": 1039,
+    "w": 305.0,
+    "base": 740.0,
+    "xh": 7.0,
+    "c": "#373d58"
+   }
+  },
+  {
+   "k": "a",
+   "box": [
+    1027,
+    792,
+    1507,
+    830
+   ],
+   "label": "Lưu đánh giá",
+   "act": "save-review",
+   "rad": 10
+  },
+  {
+   "k": "a",
+   "box": [
+    1020,
+    927,
+    1256,
+    968
+   ],
+   "label": "Xem hồ sơ phê duyệt",
+   "act": "approve-file",
+   "rad": 10
+  },
+  {
+   "k": "a",
+   "box": [
+    1263,
+    927,
+    1512,
+    968
+   ],
+   "label": "Đàm phán giá theo sản lượng (chưa khả dụng)",
+   "act": "info:Chỉ khả dụng sau khi đối tác đủ điều kiện (điểm ≥ 4,0 và ít nhất 2 đơn thử hoàn thành, được phê duyệt).",
+   "rad": 10
+  }
+ ]
+}

@@ -15,104 +15,85 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&amp;family=Patrick+Hand&amp;display=swap">
 <link rel="stylesheet" href="../assets/css/style.css?v=0d05d273">
+<link rel="stylesheet" href="../assets/css/canvas.css?v=c13129b1">
+<link rel="preload" as="image" href="../assets/canvas/nb-doi-tac.webp?v=a8c31a4f" media="(min-width: 900px)">
 <script>try{if(localStorage.getItem('bx_user'))document.documentElement.setAttribute('data-auth','in')}catch(e){}</script>
 </head>
-<body class="l-admin">
-<a class="skip" href="#main">Bỏ qua điều hướng</a>
-<div class="app app-admin">
-  <aside class="side" id="app-side" aria-label="Menu nội bộ">
-    <div class="side-top"><a class="logo logo-side" href="index.html" aria-label="BOXANH – về trang chủ"><svg class="logo-mark" viewBox="0 0 32 32" aria-hidden="true"><path d="M16 2.6 4.4 9.3v13.4L16 29.4l11.6-6.7V9.3z" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linejoin="round"/><path d="M16 10.3 10.4 13.5v6.4L16 23.1l5.6-3.2v-6.4z" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linejoin="round"/><path d="m10.4 13.5 5.6 3.2 5.6-3.2M16 16.7v6.4" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linejoin="round"/></svg><span>BOXANH</span></a><button class="icon-btn side-close" type="button" data-side-close aria-label="Đóng menu"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M18 6 6 18M6 6l12 12"/></svg></button></div>
-    <p class="side-sub">Nội bộ vận hành</p>
-    <nav class="side-nav"><a href="index.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3 10.5 12 3l9 7.5V20a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"/></svg><span>Tổng quan</span></a><a href="don-hang.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="8" y="2" width="8" height="4" rx="1"/><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><path d="M12 11h4M12 16h4M8 11h.01M8 16h.01"/></svg><span>Đơn hàng</span></a><a href="dieu-phoi.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2"/><path d="M15 18H9"/><path d="M19 18h2a1 1 0 0 0 1-1v-3.65a1 1 0 0 0-.22-.62l-3.48-4.35A1 1 0 0 0 17.52 8H14"/><circle cx="17" cy="18" r="2"/><circle cx="7" cy="18" r="2"/></svg><span>Điều phối</span></a><a href="doi-tac.html" class="is-active" aria-current="page"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg><span>Đối tác</span></a><a href="dinh-gia.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12.59 2.59A2 2 0 0 0 11.17 2H4a2 2 0 0 0-2 2v7.17a2 2 0 0 0 .59 1.42l8.7 8.7a2.43 2.43 0 0 0 3.42 0l6.58-6.58a2.43 2.43 0 0 0 0-3.42z"/><circle cx="7.5" cy="7.5" r="1.2"/></svg><span>Định giá</span></a><a href="kho-hop.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"/><path d="m3.3 7 8.7 5 8.7-5"/><path d="M12 22V12"/></svg><span>Kho hộp</span></a><a href="su-co.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3"/><path d="M12 9v4M12 17h.01"/></svg><span>Sự cố</span><em class="count" data-incident-count>3</em></a><a href="bao-cao.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3 3v16a2 2 0 0 0 2 2h16"/><path d="M18 17V9M13 17V5M8 17v-3"/></svg><span>Báo cáo</span></a></nav>
-    <a class="side-back" href="../index.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M19 12H5M12 19l-7-7 7-7"/></svg> Về trang khách hàng</a>
-    <div class="side-deco"><img src="../assets/img/side-deco-ad.webp" width="183" height="514" alt="" loading="lazy"></div>
-  </aside>
-  <div class="side-scrim" data-side-close></div>
-  <div class="app-main">
-    <header class="topbar">
-      <button class="icon-btn tb-burger" type="button" data-side-open aria-label="Mở menu"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button>
-      
-    <form class="tb-search" role="search" data-admin-search>
-      <svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg><label class="sr-only" for="tb-q">Tìm kiếm</label>
-      <input id="tb-q" type="search" name="q" placeholder="Tìm đơn hàng, đối tác, mã hộp…" autocomplete="off">
-    </form>
-      <div class="tb-right">
-        <span class="badge b-yellow tb-env"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect width="18" height="11" x="3" y="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg> Nội bộ</span>
-        <div class="dd" data-dd>
-          <button class="hd-icon tb-bell" type="button" aria-expanded="false" aria-haspopup="true" aria-label="Thông báo"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"/></svg><span class="tb-count">8</span></button>
-          <div class="dd-menu dd-right dd-wide" data-portal-notifs></div>
-        </div>
-        <div class="dd" data-dd>
-          <button class="tb-user" type="button" aria-expanded="false" aria-haspopup="true">
-            <img class="avatar" src="../assets/img/avatar-manager.webp" width="40" height="40" alt="">
-            <span><b>Nguyễn Minh Anh</b><small>Quản lý vận hành</small></span><svg class="ic dd-chev" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg>
-          </button>
-          <div class="dd-menu dd-right">
-            <a class="dd-item" href="doi-tac.html"><span class="dd-ic"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></span><span><b>Quản lý đối tác</b></span></a>
-            <a class="dd-item" href="../he-thong.html"><span class="dd-ic"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect width="7" height="7" x="3" y="3" rx="1"/><rect width="7" height="7" x="14" y="3" rx="1"/><rect width="7" height="7" x="14" y="14" rx="1"/><rect width="7" height="7" x="3" y="14" rx="1"/></svg></span><span><b>Sơ đồ hệ thống</b></span></a>
-            <a class="dd-item" href="../index.html"><span class="dd-ic"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><path d="m16 17 5-5-5-5M21 12H9"/></svg></span><span><b>Thoát cổng</b></span></a>
-          </div>
-        </div>
-      </div>
-    </header>
-    <main id="main" class="app-content">
-<section class="banner" style="min-height:190px">
-  <div class="banner-text">
-    <h1>Đánh giá &amp; phê duyệt<br><span class="sw">đối tác</span></h1>
-    <p>So sánh năng lực, chi phí và chất lượng dịch vụ để lựa chọn đối tác phù hợp.</p>
-    <div class="banner-tags"><span class="badge b-yellow"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect width="18" height="11" x="3" y="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg> Nội bộ</span><span class="badge b-orange">Dữ liệu minh họa</span></div>
-  </div>
-  <div class="banner-art"><img src="../assets/img/hero-phe-duyet.webp" width="556" height="224" alt="Đội ngũ đối tác: vận chuyển, vệ sinh, sửa chữa"></div>
-</section>
-<div class="note"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg><div>So sánh 2 – 3 đối tác mỗi nhóm · <b>Chưa cam kết sản lượng hay thanh toán cố định.</b></div></div>
-
-<div class="tabs" data-tabs id="grp-tabs" aria-label="Nhóm dịch vụ">
-  <button class="tab is-active" type="button" data-tab="grp-van-chuyen"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2"/><path d="M15 18H9"/><path d="M19 18h2a1 1 0 0 0 1-1v-3.65a1 1 0 0 0-.22-.62l-3.48-4.35A1 1 0 0 0 17.52 8H14"/><circle cx="17" cy="18" r="2"/><circle cx="7" cy="18" r="2"/></svg> Vận chuyển &amp; bốc xếp</button>
-  <button class="tab" type="button" data-tab="grp-ve-sinh"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m13 11 8-8"/><path d="M8.5 12.5c1.2-1.2 3.3-1.2 4.5 0l-.5.5c1.5 1.5 1.5 4 0 5.5L10 21H3l2.5-2.5C4 17 4 14.5 5.5 13l.5-.5z"/><path d="m6 19 1.5-1.5M9 19l1-1"/></svg> Vệ sinh</button>
-  <button class="tab" type="button" data-tab="grp-sua-chua"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg> Sửa chữa · FIX</button>
-</div>
-<div id="grp-van-chuyen" hidden></div><div id="grp-ve-sinh" hidden></div><div id="grp-sua-chua" hidden></div>
-
-<div class="split">
-  <div class="stack" style="--gap:20px">
-    <section class="card card-pad">
-      <div class="card-hd"><h2 class="card-title">Bảng so sánh cùng tiêu chí</h2><button class="btn btn-light btn-sm" type="button" id="questions"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M10 9H8M16 13H8M16 17H8"/></svg> Bộ câu hỏi chung <svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14M12 5l7 7-7 7"/></svg></button></div>
-      <p class="small muted mb-12">Bấm vào tên đối tác để chấm điểm.</p>
-      <div class="table-wrap"><table class="table cmp" id="cmp"></table></div>
-    </section>
-    <section class="card card-pad">
-      <div class="card-hd"><h2 class="card-title">Theo dõi đơn thử</h2><span class="small muted" id="trial-of"></span></div>
-      <div class="table-wrap"><table class="table"><thead><tr><th>Thử nghiệm</th><th>Ngày thực hiện</th><th class="num">Giá thực tế</th><th class="num">Giá đã thỏa thuận</th><th class="num">Chênh lệch</th><th>Hồ sơ minh chứng</th><th>Trạng thái</th></tr></thead><tbody id="trials"></tbody></table></div>
-    </section>
-  </div>
-
-  <aside class="stack" style="--gap:20px">
-    <section class="card card-pad">
-      <div class="card-hd"><div><h2 class="card-title">Phiếu chấm điểm nội bộ</h2><p class="card-sub">Dựa trên đơn thử, phản hồi thực tế và đánh giá đội vận hành.</p></div><span class="badge b-green b-lg" id="sc-who"></span></div>
-      <div id="sc-rows"></div>
-      <div class="total-row mt-12"><span>Điểm tổng <span class="small muted" style="font-weight:500">(dữ liệu minh họa)</span></span><span class="row"><span class="v" id="sc-total">4,5 / 5</span><span class="stars" id="sc-stars"></span></span></div>
-      <div class="field mt-16"><label class="label" for="sc-note">Nhận xét nội bộ</label><textarea class="textarea" id="sc-note" maxlength="500"></textarea><span class="counter" data-counter-for="sc-note">0/500</span></div>
-      <button class="btn btn-primary btn-lg btn-block mt-12" type="button" id="sc-save"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20 6 9 17l-5-5"/></svg> Lưu đánh giá</button>
-    </section>
-    <section class="card card-pad">
-      <h2 class="card-title">Quy trình phê duyệt đối tác</h2>
-      <div class="steps-scroll mt-16"><div class="steps sm keep" style="--n:4" id="approve-steps"></div></div>
-      <div class="stack mt-16" style="--gap:10px">
-        <button class="btn btn-outline btn-block" type="button" id="approve-file"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M10 9H8M16 13H8M16 17H8"/></svg> Xem hồ sơ phê duyệt</button>
-        <button class="btn btn-light btn-block" type="button" id="negotiate" disabled><svg class="ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect width="18" height="11" x="3" y="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg> Đàm phán giá theo sản lượng</button>
-      </div>
-      <p class="xs muted mt-8 right" id="negotiate-hint">Chỉ khả dụng sau khi đủ điều kiện</p>
-    </section>
-  </aside>
+<body class="l-canvas" style="--cv-bg:#b3a949;">
+<main id="main" class="cv-wrap">
+<div class="cv cv-d baked" data-cv="nb-doi-tac" data-clean="../assets/canvas/nb-doi-tac-clean.webp" style="--W:1536;--ar:1536/1024">
+<img class="cv-bg" src="../assets/canvas/nb-doi-tac.webp?v=a8c31a4f" alt="" width="3072" height="2048" decoding="async">
+<a class="cv-a" href="index.html" aria-label="BOXANH – Nội bộ" style="--l:30;--t:22;--bw:182;--bh:46"></a>
+<a class="cv-a" href="index.html" aria-label="Tổng quan" style="--l:12;--t:140;--bw:205;--bh:37;--r:10"></a>
+<a class="cv-a" href="don-hang.html" aria-label="Đơn hàng" style="--l:12;--t:192;--bw:205;--bh:36;--r:10"></a>
+<a class="cv-a" href="doi-tac.html" aria-label="Đối tác" style="--l:12;--t:242;--bw:205;--bh:51;--r:10"></a>
+<a class="cv-a" href="dinh-gia.html" aria-label="Định giá" style="--l:12;--t:304;--bw:205;--bh:37;--r:10"></a>
+<a class="cv-a" href="kho-hop.html" aria-label="Kho hộp" style="--l:12;--t:359;--bw:205;--bh:37;--r:10"></a>
+<a class="cv-a" href="su-co.html" aria-label="Sự cố" style="--l:12;--t:414;--bw:205;--bh:37;--r:10"></a>
+<a class="cv-a" href="bao-cao.html" aria-label="Báo cáo" style="--l:12;--t:471;--bw:205;--bh:37;--r:10"></a>
+<form id="adm-search" class="cv-anchor" novalidate aria-label="Tìm kiếm"></form>
+<input type="search" class="cv-in" id="adm-q" name="q" form="adm-search" aria-label="Tìm kiếm" autocomplete="off" data-s="Tìm đơn hàng, đối tác, mã box..." data-wt="400" data-x="295" data-b="38" data-w="207" data-xh="8" data-bx="286" data-by="16" data-bh="34" style="--l:286;--t:16;--bw:354;--bh:34;--wt:400;--c:#6a717d;--fs:14.95;--pl:9;--pt:10.04" placeholder="">
+<a class="cv-a" href="index.html" aria-label="Thông báo (8)" style="--l:1246;--t:12;--bw:34;--bh:38"></a>
+<button class="cv-a cv-dd" type="button" aria-expanded="false" aria-haspopup="true" aria-label="Tài khoản Nguyễn Minh Anh" style="--l:1310;--t:10;--bw:212;--bh:44"></button><div class="cv-pop" style="--l:1350;--t:58;--bw:170;--pf:7.4"><a href="index.html">Tổng quan vận hành</a><a href="../he-thong.html">Sơ đồ hệ thống</a><a href="../index.html">Về trang khách hàng</a></div>
+<button class="cv-a" type="button" data-act="info:Đang hiển thị nhóm Vận chuyển &amp; bốc xếp." aria-label="Nhóm Vận chuyển &amp; bốc xếp" style="--l:252;--t:237;--bw:241;--bh:49;--r:10"></button>
+<button class="cv-a" type="button" data-act="group:ve-sinh" aria-label="Nhóm Vệ sinh" style="--l:520;--t:240;--bw:170;--bh:46;--r:10"></button>
+<button class="cv-a" type="button" data-act="group:sua-chua" aria-label="Nhóm Sửa chữa · FIX" style="--l:710;--t:240;--bw:193;--bh:46;--r:10"></button>
+<button class="cv-a" type="button" data-act="questions" aria-label="Bộ câu hỏi chung" style="--l:805;--t:306;--bw:177;--bh:35;--r:8"></button>
+<button class="cv-a" type="button" data-act="file:0" aria-label="Bảng giá A.pdf" style="--l:446;--t:600;--bw:106;--bh:24;--r:4"></button>
+<button class="cv-a" type="button" data-act="file:1" aria-label="Bảng giá B.pdf" style="--l:646;--t:600;--bw:108;--bh:24;--r:4"></button>
+<button class="cv-a" type="button" data-act="file:2" aria-label="Bảng giá C.pdf" style="--l:843;--t:600;--bw:106;--bh:24;--r:4"></button>
+<button class="cv-a" type="button" data-act="info:Thử 01 – 12/01/2027: 2 ảnh bốc xếp, vận chuyển và 2 ảnh khác. Hoàn thành, chênh lệch +10.000 đ (+1,8%)." aria-label="Hồ sơ minh chứng Thử 01" style="--l:736;--t:818;--bw:132;--bh:46;--r:6"></button>
+<button class="cv-a" type="button" data-act="info:Thử 02 – 15/01/2027: 2 ảnh bốc xếp, vận chuyển và 3 ảnh khác. Hoàn thành đúng giá thỏa thuận." aria-label="Hồ sơ minh chứng Thử 02" style="--l:736;--t:869;--bw:132;--bh:45;--r:6"></button>
+<input type="text" class="cv-in val" id="sc-v0" name="sc-v0" aria-label="4,5 / 5" autocomplete="off" readonly="" tabindex="-1" data-s="4,5 / 5" data-wt="600" data-x="1288" data-b="398" data-w="37" data-xh="10" data-bx="1283" data-by="380" data-bh="24" style="--l:1283;--t:380;--bw:59;--bh:24;--wt:600;--c:#161d32;--fs:18.69;--pl:5;--pt:3.05" placeholder="">
+<button class="cv-opt score" type="button" role="radio" aria-checked="false" aria-label="Đúng giờ: 1 điểm" data-group="s0" data-value="1" style="--l:1356;--t:381;--bw:25;--bh:22;--r:4;--fs:9.5;--wt:700"><i>1</i></button>
+<button class="cv-opt score" type="button" role="radio" aria-checked="false" aria-label="Đúng giờ: 2 điểm" data-group="s0" data-value="2" style="--l:1387;--t:381;--bw:25;--bh:22;--r:4;--fs:9.5;--wt:700"><i>2</i></button>
+<button class="cv-opt score" type="button" role="radio" aria-checked="false" aria-label="Đúng giờ: 3 điểm" data-group="s0" data-value="3" style="--l:1418;--t:381;--bw:25;--bh:22;--r:4;--fs:9.5;--wt:700"><i>3</i></button>
+<button class="cv-opt score" type="button" role="radio" aria-checked="false" aria-label="Đúng giờ: 4 điểm" data-group="s0" data-value="4" style="--l:1449;--t:381;--bw:26;--bh:22;--r:4;--fs:9.5;--wt:700"><i>4</i></button>
+<button class="cv-opt def score" type="button" role="radio" aria-checked="true" aria-label="Đúng giờ: 5 điểm" data-group="s0" data-value="5" style="--l:1480;--t:381;--bw:27;--bh:22;--r:4;--fs:9.5;--wt:700"><i>5</i></button>
+<input type="text" class="cv-in val" id="sc-v1" name="sc-v1" aria-label="4,0 / 5" autocomplete="off" readonly="" tabindex="-1" data-s="4,0 / 5" data-wt="600" data-x="1288" data-b="438" data-w="37" data-xh="10" data-bx="1283" data-by="421" data-bh="24" style="--l:1283;--t:421;--bw:59;--bh:24;--wt:600;--c:#141d30;--fs:18.69;--pl:5;--pt:2.05" placeholder="">
+<button class="cv-opt score" type="button" role="radio" aria-checked="false" aria-label="Mức giá: 1 điểm" data-group="s1" data-value="1" style="--l:1356;--t:422;--bw:25;--bh:22;--r:4;--fs:9.5;--wt:700"><i>1</i></button>
+<button class="cv-opt score" type="button" role="radio" aria-checked="false" aria-label="Mức giá: 2 điểm" data-group="s1" data-value="2" style="--l:1387;--t:422;--bw:25;--bh:22;--r:4;--fs:9.5;--wt:700"><i>2</i></button>
+<button class="cv-opt score" type="button" role="radio" aria-checked="false" aria-label="Mức giá: 3 điểm" data-group="s1" data-value="3" style="--l:1418;--t:422;--bw:25;--bh:22;--r:4;--fs:9.5;--wt:700"><i>3</i></button>
+<button class="cv-opt def score" type="button" role="radio" aria-checked="true" aria-label="Mức giá: 4 điểm" data-group="s1" data-value="4" style="--l:1449;--t:422;--bw:26;--bh:22;--r:4;--fs:9.5;--wt:700"><i>4</i></button>
+<button class="cv-opt score" type="button" role="radio" aria-checked="false" aria-label="Mức giá: 5 điểm" data-group="s1" data-value="5" style="--l:1480;--t:422;--bw:27;--bh:22;--r:4;--fs:9.5;--wt:700"><i>5</i></button>
+<input type="text" class="cv-in val" id="sc-v2" name="sc-v2" aria-label="4,5 / 5" autocomplete="off" readonly="" tabindex="-1" data-s="4,5 / 5" data-wt="600" data-x="1288" data-b="480" data-w="37" data-xh="10" data-bx="1283" data-by="463" data-bh="24" style="--l:1283;--t:463;--bw:59;--bh:24;--wt:600;--c:#161e31;--fs:18.69;--pl:5;--pt:2.05" placeholder="">
+<button class="cv-opt score" type="button" role="radio" aria-checked="false" aria-label="Bảo quản đồ: 1 điểm" data-group="s2" data-value="1" style="--l:1356;--t:464;--bw:25;--bh:22;--r:4;--fs:9.5;--wt:700"><i>1</i></button>
+<button class="cv-opt score" type="button" role="radio" aria-checked="false" aria-label="Bảo quản đồ: 2 điểm" data-group="s2" data-value="2" style="--l:1387;--t:464;--bw:25;--bh:22;--r:4;--fs:9.5;--wt:700"><i>2</i></button>
+<button class="cv-opt score" type="button" role="radio" aria-checked="false" aria-label="Bảo quản đồ: 3 điểm" data-group="s2" data-value="3" style="--l:1418;--t:464;--bw:25;--bh:22;--r:4;--fs:9.5;--wt:700"><i>3</i></button>
+<button class="cv-opt score" type="button" role="radio" aria-checked="false" aria-label="Bảo quản đồ: 4 điểm" data-group="s2" data-value="4" style="--l:1449;--t:464;--bw:26;--bh:22;--r:4;--fs:9.5;--wt:700"><i>4</i></button>
+<button class="cv-opt def score" type="button" role="radio" aria-checked="true" aria-label="Bảo quản đồ: 5 điểm" data-group="s2" data-value="5" style="--l:1480;--t:464;--bw:27;--bh:22;--r:4;--fs:9.5;--wt:700"><i>5</i></button>
+<input type="text" class="cv-in val" id="sc-v3" name="sc-v3" aria-label="5,0 / 5" autocomplete="off" readonly="" tabindex="-1" data-s="5,0 / 5" data-wt="600" data-x="1289" data-b="522" data-w="36" data-xh="10" data-bx="1283" data-by="505" data-bh="24" style="--l:1283;--t:505;--bw:59;--bh:24;--wt:600;--c:#121b2b;--fs:18.69;--pl:6;--pt:2.05" placeholder="">
+<button class="cv-opt score" type="button" role="radio" aria-checked="false" aria-label="Thái độ: 1 điểm" data-group="s3" data-value="1" style="--l:1356;--t:506;--bw:25;--bh:22;--r:4;--fs:9.5;--wt:700"><i>1</i></button>
+<button class="cv-opt score" type="button" role="radio" aria-checked="false" aria-label="Thái độ: 2 điểm" data-group="s3" data-value="2" style="--l:1387;--t:506;--bw:25;--bh:22;--r:4;--fs:9.5;--wt:700"><i>2</i></button>
+<button class="cv-opt score" type="button" role="radio" aria-checked="false" aria-label="Thái độ: 3 điểm" data-group="s3" data-value="3" style="--l:1418;--t:506;--bw:25;--bh:22;--r:4;--fs:9.5;--wt:700"><i>3</i></button>
+<button class="cv-opt score" type="button" role="radio" aria-checked="false" aria-label="Thái độ: 4 điểm" data-group="s3" data-value="4" style="--l:1449;--t:506;--bw:26;--bh:22;--r:4;--fs:9.5;--wt:700"><i>4</i></button>
+<button class="cv-opt def score" type="button" role="radio" aria-checked="true" aria-label="Thái độ: 5 điểm" data-group="s3" data-value="5" style="--l:1480;--t:506;--bw:27;--bh:22;--r:4;--fs:9.5;--wt:700"><i>5</i></button>
+<input type="text" class="cv-in val" id="sc-v4" name="sc-v4" aria-label="4,0 / 5" autocomplete="off" readonly="" tabindex="-1" data-s="4,0 / 5" data-wt="600" data-x="1288" data-b="566" data-w="37" data-xh="10" data-bx="1283" data-by="548" data-bh="24" style="--l:1283;--t:548;--bw:59;--bh:24;--wt:600;--c:#151f33;--fs:18.69;--pl:5;--pt:3.05" placeholder="">
+<button class="cv-opt score" type="button" role="radio" aria-checked="false" aria-label="Giao tiếp: 1 điểm" data-group="s4" data-value="1" style="--l:1356;--t:549;--bw:25;--bh:22;--r:4;--fs:9.5;--wt:700"><i>1</i></button>
+<button class="cv-opt score" type="button" role="radio" aria-checked="false" aria-label="Giao tiếp: 2 điểm" data-group="s4" data-value="2" style="--l:1387;--t:549;--bw:25;--bh:22;--r:4;--fs:9.5;--wt:700"><i>2</i></button>
+<button class="cv-opt score" type="button" role="radio" aria-checked="false" aria-label="Giao tiếp: 3 điểm" data-group="s4" data-value="3" style="--l:1418;--t:549;--bw:25;--bh:22;--r:4;--fs:9.5;--wt:700"><i>3</i></button>
+<button class="cv-opt def score" type="button" role="radio" aria-checked="true" aria-label="Giao tiếp: 4 điểm" data-group="s4" data-value="4" style="--l:1449;--t:549;--bw:26;--bh:22;--r:4;--fs:9.5;--wt:700"><i>4</i></button>
+<button class="cv-opt score" type="button" role="radio" aria-checked="false" aria-label="Giao tiếp: 5 điểm" data-group="s4" data-value="5" style="--l:1480;--t:549;--bw:27;--bh:22;--r:4;--fs:9.5;--wt:700"><i>5</i></button>
+<input type="text" class="cv-in val" id="sc-v5" name="sc-v5" aria-label="4,5 / 5" autocomplete="off" readonly="" tabindex="-1" data-s="4,5 / 5" data-wt="600" data-x="1288" data-b="612" data-w="37" data-xh="10" data-bx="1283" data-by="592" data-bh="24" style="--l:1283;--t:592;--bw:59;--bh:24;--wt:600;--c:#151d33;--fs:18.69;--pl:5;--pt:5.05" placeholder="">
+<button class="cv-opt score" type="button" role="radio" aria-checked="false" aria-label="Đúng giá đã thống nhất: 1 điểm" data-group="s5" data-value="1" style="--l:1356;--t:593;--bw:25;--bh:22;--r:4;--fs:9.5;--wt:700"><i>1</i></button>
+<button class="cv-opt score" type="button" role="radio" aria-checked="false" aria-label="Đúng giá đã thống nhất: 2 điểm" data-group="s5" data-value="2" style="--l:1387;--t:593;--bw:25;--bh:22;--r:4;--fs:9.5;--wt:700"><i>2</i></button>
+<button class="cv-opt score" type="button" role="radio" aria-checked="false" aria-label="Đúng giá đã thống nhất: 3 điểm" data-group="s5" data-value="3" style="--l:1418;--t:593;--bw:25;--bh:22;--r:4;--fs:9.5;--wt:700"><i>3</i></button>
+<button class="cv-opt score" type="button" role="radio" aria-checked="false" aria-label="Đúng giá đã thống nhất: 4 điểm" data-group="s5" data-value="4" style="--l:1449;--t:593;--bw:26;--bh:22;--r:4;--fs:9.5;--wt:700"><i>4</i></button>
+<button class="cv-opt def score" type="button" role="radio" aria-checked="true" aria-label="Đúng giá đã thống nhất: 5 điểm" data-group="s5" data-value="5" style="--l:1480;--t:593;--bw:27;--bh:22;--r:4;--fs:9.5;--wt:700"><i>5</i></button>
+<input type="text" class="cv-in val" id="sc-total" name="sc-total" aria-label="4,5 / 5" autocomplete="off" readonly="" tabindex="-1" data-s="4,5 / 5" data-wt="800" data-x="1282" data-b="680" data-w="78" data-xh="19" data-bx="1279" data-by="648" data-bh="44" style="--l:1279;--t:648;--bw:89;--bh:44;--wt:800;--c:#052723;--fs:35.51;--pl:3;--pt:3.59" placeholder="">
+<span class="cv-t cv-ph" data-ph-for="sc-note" data-s="Đội ngũ chuyên nghiệp, đúng giờ, đồ đạc được bảo quản tốt." data-wt="400" data-x="1039" data-b="740" data-w="305" data-xh="7" style="--wt:400;--c:#373d58;--fs:13.08;--ox:1039;--oy:729.53">Đội ngũ chuyên nghiệp, đúng giờ, đồ đạc được bảo quản tốt.</span><span class="cv-t cv-ph" data-ph-for="sc-note" data-s="Cần thương lượng thêm về phụ phí tầng cao." data-wt="400" data-x="1040" data-b="759" data-w="241" data-xh="7" style="--wt:400;--c:#384160;--fs:13.08;--ox:1040;--oy:748.53">Cần thương lượng thêm về phụ phí tầng cao.</span><textarea class="cv-in multi" id="sc-note" name="note" aria-label="Nhận xét nội bộ" autocomplete="off" maxlength="500" data-s="Đội ngũ chuyên nghiệp, đúng giờ, đồ đạc được bảo quản tốt." data-wt="400" data-x="1039" data-b="740" data-w="305" data-xh="7" data-bx="1028" data-by="724" data-bh="54" style="--l:1028;--t:724;--bw:477;--bh:54;--wt:400;--c:#373d58;--fs:13.08;--pl:11;--pt:5.53" placeholder=""></textarea>
+<button class="cv-a" type="button" data-act="save-review" aria-label="Lưu đánh giá" style="--l:1027;--t:792;--bw:480;--bh:38;--r:10"></button>
+<button class="cv-a" type="button" data-act="approve-file" aria-label="Xem hồ sơ phê duyệt" style="--l:1020;--t:927;--bw:236;--bh:41;--r:10"></button>
+<button class="cv-a" type="button" data-act="info:Chỉ khả dụng sau khi đối tác đủ điều kiện (điểm ≥ 4,0 và ít nhất 2 đơn thử hoàn thành, được phê duyệt)." aria-label="Đàm phán giá theo sản lượng (chưa khả dụng)" style="--l:1263;--t:927;--bw:249;--bh:41;--r:10"></button>
 </div>
 
-    </main>
-  </div>
-</div>
+</main>
+
 <div class="toasts" id="toasts" role="status" aria-live="polite"></div>
+<script src="../assets/js/canvas.js?v=06b6e809"></script>
 <script src="../assets/js/icons.js?v=78636e2f"></script>
 <script src="../assets/js/data.js?v=94b49f71"></script>
 <script src="../assets/js/app.js?v=ada060d3"></script>
-<script src="../assets/js/pages/admin.js?v=2f95700d"></script>
+<script src="../assets/js/pages/portal-cv.js?v=95647a3a"></script>
 </body>
 </html>

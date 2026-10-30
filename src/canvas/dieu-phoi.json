@@ -1,0 +1,751 @@
+{
+ "name": "dieu-phoi",
+ "W": 1536,
+ "H": 1024,
+ "bake": true,
+ "clean": true,
+ "bg": "#b5a84d",
+ "items": [
+  {
+   "k": "a",
+   "box": [
+    18,
+    20,
+    172,
+    64
+   ],
+   "label": "BOXANH – Nội bộ",
+   "href": "index.html"
+  },
+  {
+   "k": "a",
+   "box": [
+    8,
+    98,
+    176,
+    142
+   ],
+   "label": "Tổng quan",
+   "href": "index.html",
+   "rad": 10
+  },
+  {
+   "k": "a",
+   "box": [
+    8,
+    150,
+    176,
+    192
+   ],
+   "label": "Đơn hàng",
+   "href": "don-hang.html",
+   "rad": 10
+  },
+  {
+   "k": "a",
+   "box": [
+    8,
+    200,
+    176,
+    248
+   ],
+   "label": "Điều phối",
+   "href": "dieu-phoi.html",
+   "rad": 10
+  },
+  {
+   "k": "a",
+   "box": [
+    8,
+    256,
+    176,
+    300
+   ],
+   "label": "Đối tác",
+   "href": "doi-tac.html",
+   "rad": 10
+  },
+  {
+   "k": "a",
+   "box": [
+    8,
+    308,
+    176,
+    352
+   ],
+   "label": "Định giá",
+   "href": "dinh-gia.html",
+   "rad": 10
+  },
+  {
+   "k": "a",
+   "box": [
+    8,
+    360,
+    176,
+    402
+   ],
+   "label": "Kho hộp",
+   "href": "kho-hop.html",
+   "rad": 10
+  },
+  {
+   "k": "a",
+   "box": [
+    8,
+    412,
+    176,
+    454
+   ],
+   "label": "Sự cố",
+   "href": "su-co.html",
+   "rad": 10
+  },
+  {
+   "k": "a",
+   "box": [
+    8,
+    462,
+    176,
+    506
+   ],
+   "label": "Báo cáo",
+   "href": "bao-cao.html",
+   "rad": 10
+  },
+  {
+   "k": "a",
+   "box": [
+    1160,
+    26,
+    1300,
+    56
+   ],
+   "label": "Chọn ngày 12/01/2027",
+   "act": "info:Lịch điều phối đang hiển thị ngày 12/01/2027 (dữ liệu minh họa).",
+   "rad": 8
+  },
+  {
+   "k": "a",
+   "box": [
+    1324,
+    22,
+    1356,
+    58
+   ],
+   "label": "Thông báo",
+   "href": "index.html"
+  },
+  {
+   "k": "dd",
+   "box": [
+    1368,
+    16,
+    1522,
+    64
+   ],
+   "w": 170,
+   "pl": 1350,
+   "label": "Tài khoản Nguyễn Minh",
+   "menu": [
+    [
+     "index.html",
+     "Tổng quan vận hành"
+    ],
+    [
+     "../he-thong.html",
+     "Sơ đồ hệ thống"
+    ],
+    [
+     "../index.html",
+     "Về trang khách hàng"
+    ]
+   ]
+  },
+  {
+   "k": "a",
+   "box": [
+    200,
+    188,
+    480,
+    264
+   ],
+   "label": "Chờ báo giá: 6",
+   "href": "don-hang.html",
+   "card": 12
+  },
+  {
+   "k": "a",
+   "box": [
+    492,
+    188,
+    770,
+    264
+   ],
+   "label": "Chờ điều phối: 4",
+   "href": "don-hang.html",
+   "card": 12
+  },
+  {
+   "k": "a",
+   "box": [
+    780,
+    188,
+    1050,
+    264
+   ],
+   "label": "Đang thực hiện: 8",
+   "href": "don-hang.html",
+   "card": 12
+  },
+  {
+   "k": "a",
+   "box": [
+    1062,
+    188,
+    1524,
+    264
+   ],
+   "label": "Cần thu hồi: 3",
+   "href": "kho-hop.html",
+   "card": 12
+  },
+  {
+   "k": "form",
+   "id": "dp-search",
+   "label": "Tìm đơn"
+  },
+  {
+   "k": "in",
+   "r": [
+    540,
+    294,
+    725,
+    307
+   ],
+   "box": [
+    512,
+    287,
+    760,
+    314
+   ],
+   "s": "Tìm theo mã đơn, khách hàng, địa chỉ...",
+   "name": "q",
+   "id": "dp-q",
+   "form": "dp-search",
+   "type": "search",
+   "label": "Tìm đơn",
+   "m": {
+    "x": 541,
+    "w": 183.0,
+    "base": 304.0,
+    "xh": 6.0,
+    "c": "#9295a6"
+   }
+  },
+  {
+   "k": "sel",
+   "r": [
+    782,
+    294,
+    852,
+    307
+   ],
+   "box": [
+    774,
+    287,
+    906,
+    314
+   ],
+   "s": "Tất cả dịch vụ",
+   "name": "svc",
+   "id": "dp-svc",
+   "label": "Lọc dịch vụ",
+   "options": [
+    "Tất cả dịch vụ",
+    "Chuyển trọ",
+    "Dọn phòng",
+    "Bàn giao phòng"
+   ],
+   "m": {
+    "x": 783,
+    "w": 68.0,
+    "base": 305.0,
+    "xh": 6.0,
+    "c": "#1d202d"
+   }
+  },
+  {
+   "k": "a",
+   "box": [
+    914,
+    287,
+    1036,
+    314
+   ],
+   "label": "Ngày 12/01/2027",
+   "act": "info:Đang lọc đơn ngày 12/01/2027.",
+   "rad": 6
+  },
+  {
+   "k": "tog",
+   "box": [
+    221,
+    374,
+    240,
+    393
+   ],
+   "hit": [
+    204,
+    361,
+    990,
+    405
+   ],
+   "onAt": [
+    221,
+    374
+   ],
+   "offAt": [
+    221,
+    422
+   ],
+   "group": "order",
+   "value": "BX2027-0015",
+   "label": "Chọn đơn BX2027-0015",
+   "rad": 3,
+   "on": true
+  },
+  {
+   "k": "a",
+   "box": [
+    1000,
+    369,
+    1026,
+    397
+   ],
+   "label": "Tùy chọn đơn BX2027-0015",
+   "act": "info:Đơn BX2027-0015: xem chi tiết ở mục Đơn hàng hoặc định giá ở mục Định giá.",
+   "rad": 6
+  },
+  {
+   "k": "tog",
+   "box": [
+    221,
+    422,
+    240,
+    441
+   ],
+   "hit": [
+    204,
+    409,
+    990,
+    453
+   ],
+   "onAt": [
+    221,
+    374
+   ],
+   "offAt": [
+    221,
+    422
+   ],
+   "group": "order",
+   "value": "BX2027-0016",
+   "label": "Chọn đơn BX2027-0016",
+   "rad": 3
+  },
+  {
+   "k": "a",
+   "box": [
+    1000,
+    417,
+    1026,
+    445
+   ],
+   "label": "Tùy chọn đơn BX2027-0016",
+   "act": "info:Đơn BX2027-0016: xem chi tiết ở mục Đơn hàng hoặc định giá ở mục Định giá.",
+   "rad": 6
+  },
+  {
+   "k": "tog",
+   "box": [
+    221,
+    471,
+    240,
+    490
+   ],
+   "hit": [
+    204,
+    458,
+    990,
+    502
+   ],
+   "onAt": [
+    221,
+    374
+   ],
+   "offAt": [
+    221,
+    422
+   ],
+   "group": "order",
+   "value": "BX2027-0017",
+   "label": "Chọn đơn BX2027-0017",
+   "rad": 3
+  },
+  {
+   "k": "a",
+   "box": [
+    1000,
+    466,
+    1026,
+    494
+   ],
+   "label": "Tùy chọn đơn BX2027-0017",
+   "act": "info:Đơn BX2027-0017: xem chi tiết ở mục Đơn hàng hoặc định giá ở mục Định giá.",
+   "rad": 6
+  },
+  {
+   "k": "tog",
+   "box": [
+    221,
+    523,
+    240,
+    542
+   ],
+   "hit": [
+    204,
+    510,
+    990,
+    554
+   ],
+   "onAt": [
+    221,
+    374
+   ],
+   "offAt": [
+    221,
+    422
+   ],
+   "group": "order",
+   "value": "BX2027-0018",
+   "label": "Chọn đơn BX2027-0018",
+   "rad": 3
+  },
+  {
+   "k": "a",
+   "box": [
+    1000,
+    518,
+    1026,
+    546
+   ],
+   "label": "Tùy chọn đơn BX2027-0018",
+   "act": "info:Đơn BX2027-0018: xem chi tiết ở mục Đơn hàng hoặc định giá ở mục Định giá.",
+   "rad": 6
+  },
+  {
+   "k": "tog",
+   "box": [
+    221,
+    575,
+    240,
+    594
+   ],
+   "hit": [
+    204,
+    562,
+    990,
+    606
+   ],
+   "onAt": [
+    221,
+    374
+   ],
+   "offAt": [
+    221,
+    422
+   ],
+   "group": "order",
+   "value": "BX2027-0019",
+   "label": "Chọn đơn BX2027-0019",
+   "rad": 3
+  },
+  {
+   "k": "a",
+   "box": [
+    1000,
+    570,
+    1026,
+    598
+   ],
+   "label": "Tùy chọn đơn BX2027-0019",
+   "act": "info:Đơn BX2027-0019: xem chi tiết ở mục Đơn hàng hoặc định giá ở mục Định giá.",
+   "rad": 6
+  },
+  {
+   "k": "in",
+   "r": [
+    1076,
+    287,
+    1275,
+    307
+   ],
+   "box": [
+    1074,
+    284,
+    1370,
+    310
+   ],
+   "s": "Phân công BX2027-0015",
+   "wt": 800,
+   "name": "dp-title",
+   "id": "dp-title",
+   "cls": "val",
+   "attrs": {
+    "readonly": "",
+    "tabindex": "-1"
+   },
+   "label": "Đơn đang phân công",
+   "m": {
+    "x": 1078,
+    "w": 196.0,
+    "base": 303.0,
+    "xh": 13.0,
+    "c": "#050717"
+   }
+  },
+  {
+   "k": "a",
+   "box": [
+    420,
+    638,
+    440,
+    660
+   ],
+   "label": "Ngày trước",
+   "act": "info:Lịch nguồn lực đang hiển thị 12/01/2027.",
+   "pill": 1
+  },
+  {
+   "k": "a",
+   "box": [
+    546,
+    638,
+    566,
+    660
+   ],
+   "label": "Ngày sau",
+   "act": "info:Lịch nguồn lực đang hiển thị 12/01/2027.",
+   "pill": 1
+  },
+  {
+   "k": "a",
+   "box": [
+    580,
+    636,
+    626,
+    662
+   ],
+   "label": "Xem theo ngày",
+   "act": "info:Đang xem theo ngày.",
+   "rad": 6
+  },
+  {
+   "k": "a",
+   "box": [
+    628,
+    636,
+    666,
+    662
+   ],
+   "label": "Xem theo tuần",
+   "act": "info:Chế độ xem tuần sẽ sớm có trong bản tiếp theo.",
+   "rad": 6
+  },
+  {
+   "k": "a",
+   "box": [
+    975,
+    896,
+    1040,
+    912
+   ],
+   "label": "Xem tất cả hoạt động",
+   "href": "don-hang.html"
+  },
+  {
+   "k": "a",
+   "box": [
+    1433,
+    320,
+    1510,
+    337
+   ],
+   "label": "Xem chi tiết đơn",
+   "href": "don-hang.html"
+  },
+  {
+   "k": "sel",
+   "r": [
+    1119,
+    547,
+    1183,
+    560
+   ],
+   "box": [
+    1076,
+    540,
+    1282,
+    567
+   ],
+   "s": "Chọn đối tác",
+   "name": "partner",
+   "id": "dp-partner",
+   "label": "Đối tác vận chuyển",
+   "options": [
+    "Anh Minh Transport",
+    "Đội Bốc Xanh",
+    "Trường Phát Logistics"
+   ],
+   "m": {
+    "x": 1119,
+    "w": 63.0,
+    "base": 558.0,
+    "xh": 7.0,
+    "c": "#878ea0"
+   }
+  },
+  {
+   "k": "sel",
+   "r": [
+    1335,
+    547,
+    1392,
+    560
+   ],
+   "box": [
+    1297,
+    540,
+    1510,
+    567
+   ],
+   "s": "Chọn nhóm",
+   "name": "group",
+   "id": "dp-group",
+   "label": "Nhóm bốc xếp",
+   "options": [
+    "Nhóm 1 - Bốc Xanh",
+    "Nhóm 2 - An Phát"
+   ],
+   "m": {
+    "x": 1337,
+    "w": 54.0,
+    "base": 558.0,
+    "xh": 6.0,
+    "c": "#8d94a6"
+   }
+  },
+  {
+   "k": "sel",
+   "r": [
+    1335,
+    607,
+    1403,
+    621
+   ],
+   "box": [
+    1297,
+    600,
+    1510,
+    628
+   ],
+   "s": "Kho Cầu Giấy",
+   "name": "store",
+   "id": "dp-store",
+   "label": "Kho xuất hộp",
+   "options": [
+    "Kho Cầu Giấy",
+    "Kho A – Đống Đa",
+    "Kho B – Hà Đông"
+   ],
+   "m": {
+    "x": 1336,
+    "w": 66.0,
+    "base": 619.0,
+    "xh": 9.0,
+    "c": "#343747"
+   }
+  },
+  {
+   "k": "a",
+   "box": [
+    1404,
+    708,
+    1500,
+    730
+   ],
+   "label": "Chọn Anh Minh Transport",
+   "act": "pick:Anh Minh Transport",
+   "rad": 6
+  },
+  {
+   "k": "a",
+   "box": [
+    1404,
+    782,
+    1500,
+    804
+   ],
+   "label": "Chọn Đội Bốc Xanh",
+   "act": "pick:Đội Bốc Xanh",
+   "rad": 6
+  },
+  {
+   "k": "a",
+   "box": [
+    1404,
+    862,
+    1500,
+    884
+   ],
+   "label": "Xem thêm Trường Phát Logistics",
+   "act": "pick:Trường Phát Logistics",
+   "rad": 6
+  },
+  {
+   "k": "a",
+   "box": [
+    1404,
+    644,
+    1512,
+    660
+   ],
+   "label": "Xem so sánh đối tác",
+   "href": "doi-tac.html"
+  },
+  {
+   "k": "a",
+   "box": [
+    1404,
+    902,
+    1512,
+    918
+   ],
+   "label": "Xem dự toán nội bộ",
+   "href": "dinh-gia.html"
+  },
+  {
+   "k": "a",
+   "box": [
+    1074,
+    926,
+    1512,
+    966
+   ],
+   "label": "Gửi phân công",
+   "act": "assign",
+   "rad": 10
+  }
+ ]
+}

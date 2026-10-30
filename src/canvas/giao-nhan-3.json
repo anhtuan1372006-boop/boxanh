@@ -1,0 +1,313 @@
+{
+ "name": "giao-nhan-3",
+ "W": 512,
+ "H": 1024,
+ "bake": true,
+ "clean": true,
+ "bg": "#e5fcfd",
+ "items": [
+  {
+   "k": "a",
+   "box": [
+    22,
+    14,
+    190,
+    56
+   ],
+   "label": "BOXANH – Cổng đối tác",
+   "href": "index.html"
+  },
+  {
+   "k": "a",
+   "box": [
+    272,
+    16,
+    306,
+    56
+   ],
+   "label": "Thông báo",
+   "href": "don-duoc-giao.html"
+  },
+  {
+   "k": "dd",
+   "box": [
+    320,
+    12,
+    498,
+    60
+   ],
+   "w": 160,
+   "pl": 1360,
+   "label": "Tài khoản Nguyễn Minh",
+   "menu": [
+    [
+     "index.html",
+     "Công việc hôm nay"
+    ],
+    [
+     "ho-so.html",
+     "Hồ sơ đối tác"
+    ],
+    [
+     "doi-soat.html",
+     "Đối soát"
+    ],
+    [
+     "../index.html",
+     "Về trang khách hàng"
+    ]
+   ]
+  },
+  {
+   "k": "a",
+   "box": [
+    14,
+    70,
+    86,
+    140
+   ],
+   "label": "Đơn hàng",
+   "href": "don-duoc-giao.html",
+   "rad": 10
+  },
+  {
+   "k": "a",
+   "box": [
+    10,
+    150,
+    92,
+    210
+   ],
+   "label": "Lịch làm việc",
+   "href": "lich-cong-viec.html",
+   "rad": 8
+  },
+  {
+   "k": "a",
+   "box": [
+    10,
+    222,
+    92,
+    276
+   ],
+   "label": "Hỗ trợ",
+   "href": "../ho-tro.html#gui-yeu-cau",
+   "rad": 8
+  },
+  {
+   "k": "a",
+   "box": [
+    386,
+    90,
+    484,
+    118
+   ],
+   "label": "Xem chi tiết đơn BX2027-0015",
+   "href": "index.html",
+   "pill": 1
+  },
+  {
+   "k": "form",
+   "id": "issue-form",
+   "label": "Ghi nhận bất thường"
+  },
+  {
+   "k": "sel",
+   "r": [
+    140,
+    552,
+    228,
+    568
+   ],
+   "box": [
+    102,
+    545,
+    488,
+    576
+   ],
+   "s": "Seal bất thường",
+   "name": "type",
+   "id": "is-type",
+   "form": "issue-form",
+   "label": "Loại sự cố",
+   "options": [
+    "Seal bất thường",
+    "Hộp bị nứt / vỡ",
+    "Thiếu hộp",
+    "Đồ bên ngoài bị hư hỏng",
+    "Khác"
+   ],
+   "m": {
+    "x": 142,
+    "w": 84.0,
+    "base": 565.0,
+    "xh": 8.0,
+    "c": "#1d263c"
+   }
+  },
+  {
+   "k": "in",
+   "multi": true,
+   "box": [
+    102,
+    668,
+    488,
+    732
+   ],
+   "name": "desc",
+   "id": "is-desc",
+   "form": "issue-form",
+   "max": 500,
+   "label": "Mô tả chi tiết",
+   "lines": [
+    {
+     "r": [
+      113,
+      676,
+      453,
+      693
+     ],
+     "s": "Phát hiện seal có dấu hiệu rách ở mép, không còn nguyên vẹn",
+     "m": {
+      "x": 116,
+      "w": 335.0,
+      "base": 689.0,
+      "xh": 7.0,
+      "c": "#394252"
+     }
+    },
+    {
+     "r": [
+      113,
+      694,
+      450,
+      711
+     ],
+     "s": "như lúc nhận. Đã chụp ảnh hiện trạng và báo cáo để kiểm tra.",
+     "m": {
+      "x": 116,
+      "w": 332.0,
+      "base": 707.0,
+      "xh": 7.0,
+      "c": "#3c4657"
+     }
+    }
+   ],
+   "m": {
+    "x": 116,
+    "w": 335.0,
+    "base": 689.0,
+    "xh": 7.0,
+    "c": "#394252"
+   }
+  },
+  {
+   "k": "file",
+   "box": [
+    102,
+    763,
+    194,
+    858
+   ],
+   "label": "Thêm ảnh hiện trạng",
+   "rad": 8,
+   "done": "Đã thêm {n} ảnh hiện trạng."
+  },
+  {
+   "k": "a",
+   "box": [
+    266,
+    765,
+    290,
+    789
+   ],
+   "label": "Xóa ảnh 1",
+   "act": "info:Ảnh hiện trạng được giữ lại làm bằng chứng cho CSKH.",
+   "pill": 1
+  },
+  {
+   "k": "a",
+   "box": [
+    364,
+    765,
+    388,
+    789
+   ],
+   "label": "Xóa ảnh 2",
+   "act": "info:Ảnh hiện trạng được giữ lại làm bằng chứng cho CSKH.",
+   "pill": 1
+  },
+  {
+   "k": "a",
+   "box": [
+    462,
+    765,
+    486,
+    789
+   ],
+   "label": "Xóa ảnh 3",
+   "act": "info:Ảnh hiện trạng được giữ lại làm bằng chứng cho CSKH.",
+   "pill": 1
+  },
+  {
+   "k": "btn",
+   "box": [
+    100,
+    869,
+    288,
+    910
+   ],
+   "form": "issue-form",
+   "label": "Gửi CSKH",
+   "rad": 10
+  },
+  {
+   "k": "a",
+   "box": [
+    300,
+    869,
+    489,
+    910
+   ],
+   "label": "Lưu ghi nhận",
+   "act": "save-issue",
+   "rad": 10
+  },
+  {
+   "k": "a",
+   "box": [
+    394,
+    172,
+    416,
+    198
+   ],
+   "label": "Bước 1 / 3",
+   "href": "giao-nhan.html",
+   "pill": 1
+  },
+  {
+   "k": "a",
+   "box": [
+    426,
+    172,
+    448,
+    198
+   ],
+   "label": "Bước 2 / 3",
+   "href": "giao-nhan-2.html",
+   "pill": 1
+  },
+  {
+   "k": "a",
+   "box": [
+    458,
+    172,
+    482,
+    198
+   ],
+   "label": "Bước 3 / 3",
+   "href": "giao-nhan-3.html",
+   "pill": 1
+  }
+ ]
+}

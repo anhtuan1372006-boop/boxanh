@@ -1,0 +1,926 @@
+{
+ "name": "doi-tac",
+ "W": 1024,
+ "H": 1536,
+ "bake": true,
+ "clean": true,
+ "bg": "#f0fdfb",
+ "items": [
+  {
+   "k": "a",
+   "box": [
+    40,
+    6,
+    187,
+    44
+   ],
+   "href": "index.html",
+   "label": "BOXANH – Trang chủ"
+  },
+  {
+   "k": "dd",
+   "box": [
+    219,
+    13,
+    281,
+    40
+   ],
+   "w": 140,
+   "menu": [
+    [
+     "chuyen-tro.html",
+     "Chuyển trọ"
+    ],
+    [
+     "don-phong.html",
+     "Dọn phòng"
+    ],
+    [
+     "ban-giao-phong.html",
+     "Bàn giao phòng"
+    ],
+    [
+     "uoc-tinh-chi-phi.html",
+     "Ước tính chi phí"
+    ]
+   ]
+  },
+  {
+   "k": "a",
+   "box": [
+    298,
+    13,
+    352,
+    40
+   ],
+   "href": "index.html#quy-trinh",
+   "label": "Quy trình"
+  },
+  {
+   "k": "a",
+   "box": [
+    365,
+    13,
+    409,
+    40
+   ],
+   "href": "uoc-tinh-chi-phi.html",
+   "label": "Báo giá"
+  },
+  {
+   "k": "a",
+   "box": [
+    427,
+    13,
+    467,
+    40
+   ],
+   "href": "ho-tro.html",
+   "label": "Hỗ trợ"
+  },
+  {
+   "k": "a",
+   "box": [
+    484,
+    13,
+    550,
+    40
+   ],
+   "href": "gioi-thieu.html",
+   "label": "Về BOXANH"
+  },
+  {
+   "k": "a",
+   "box": [
+    711,
+    9,
+    797,
+    41
+   ],
+   "href": "tel:19002228",
+   "pill": 1,
+   "label": "Gọi 1900 2228"
+  },
+  {
+   "k": "a",
+   "box": [
+    803,
+    9,
+    899,
+    41
+   ],
+   "href": "#ho-so",
+   "pill": 1,
+   "label": "Đăng ký đối tác"
+  },
+  {
+   "k": "a",
+   "box": [
+    909,
+    9,
+    1004,
+    41
+   ],
+   "href": "cong-doi-tac/index.html",
+   "pill": 1,
+   "label": "Đăng nhập cổng đối tác"
+  },
+  {
+   "k": "a",
+   "box": [
+    43,
+    273,
+    277,
+    467
+   ],
+   "act": "pick:g1",
+   "card": 12,
+   "label": "Đăng ký nhóm Vận chuyển & bốc xếp"
+  },
+  {
+   "k": "a",
+   "box": [
+    283,
+    273,
+    517,
+    467
+   ],
+   "act": "pick:g2",
+   "card": 12,
+   "label": "Đăng ký nhóm Vệ sinh"
+  },
+  {
+   "k": "a",
+   "box": [
+    523,
+    273,
+    755,
+    467
+   ],
+   "act": "pick:g3",
+   "card": 12,
+   "label": "Đăng ký nhóm Sửa chữa · FIX"
+  },
+  {
+   "k": "anchor",
+   "id": "ho-so",
+   "y": 490
+  },
+  {
+   "k": "form",
+   "id": "pt-form",
+   "label": "Hồ sơ đối tác"
+  },
+  {
+   "k": "in",
+   "r": [
+    90,
+    589,
+    180,
+    609
+   ],
+   "box": [
+    80,
+    583,
+    335,
+    614
+   ],
+   "s": "Ví dụ: Đội An Phát",
+   "name": "org",
+   "id": "pt-org",
+   "form": "pt-form",
+   "req": true,
+   "label": "Tên đơn vị / nhóm",
+   "m": {
+    "x": 93,
+    "w": 83.0,
+    "base": 602.0,
+    "xh": 6.0,
+    "c": "#bbbfcd"
+   }
+  },
+  {
+   "k": "in",
+   "r": [
+    379,
+    589,
+    428,
+    609
+   ],
+   "box": [
+    370,
+    583,
+    626,
+    614
+   ],
+   "s": "Họ và tên",
+   "name": "owner",
+   "id": "pt-owner",
+   "form": "pt-form",
+   "req": true,
+   "ac": "name",
+   "label": "Người phụ trách",
+   "m": {
+    "x": 382,
+    "w": 43.0,
+    "base": 602.0,
+    "xh": 6.0,
+    "c": "#babecd"
+   }
+  },
+  {
+   "k": "in",
+   "r": [
+    91,
+    652,
+    161,
+    670
+   ],
+   "box": [
+    82,
+    645,
+    335,
+    676
+   ],
+   "s": "0901 234 567",
+   "name": "phone",
+   "id": "pt-phone",
+   "form": "pt-form",
+   "req": true,
+   "type": "tel",
+   "mode": "tel",
+   "ac": "tel",
+   "label": "Số điện thoại",
+   "m": {
+    "x": 94,
+    "w": 63.0,
+    "base": 664.0,
+    "xh": 7.0,
+    "c": "#b6baca"
+   }
+  },
+  {
+   "k": "sel",
+   "r": [
+    381,
+    652,
+    576,
+    670
+   ],
+   "box": [
+    372,
+    645,
+    626,
+    676
+   ],
+   "s": "Chọn khu vực (Quận / Huyện / Tỉnh)",
+   "name": "area",
+   "id": "pt-area",
+   "form": "pt-form",
+   "label": "Khu vực phục vụ",
+   "options": [
+    "Nội thành Hà Nội",
+    "Hà Nội & lân cận",
+    "Nội thành TP. Hồ Chí Minh",
+    "TP. Hồ Chí Minh & lân cận",
+    "Đà Nẵng"
+   ],
+   "m": {
+    "x": 385,
+    "w": 166.0,
+    "base": 665.0,
+    "xh": 8.0,
+    "c": "#abafbf"
+   }
+  },
+  {
+   "k": "chk",
+   "inv": true,
+   "box": [
+    65,
+    715,
+    80,
+    730
+   ],
+   "hit": [
+    55,
+    707,
+    211,
+    738
+   ],
+   "name": "g1",
+   "value": "Vận chuyển & bốc xếp",
+   "label": "Nhóm Vận chuyển & bốc xếp",
+   "rad": 3
+  },
+  {
+   "k": "chk",
+   "inv": true,
+   "box": [
+    230,
+    715,
+    245,
+    730
+   ],
+   "hit": [
+    219,
+    707,
+    300,
+    738
+   ],
+   "name": "g2",
+   "value": "Vệ sinh",
+   "label": "Nhóm Vệ sinh",
+   "rad": 3
+  },
+  {
+   "k": "chk",
+   "inv": true,
+   "box": [
+    323,
+    715,
+    338,
+    730
+   ],
+   "hit": [
+    312,
+    707,
+    425,
+    738
+   ],
+   "name": "g3",
+   "value": "Sửa chữa · FIX",
+   "label": "Nhóm Sửa chữa · FIX",
+   "rad": 3
+  },
+  {
+   "k": "in",
+   "r": [
+    94,
+    776,
+    245,
+    795
+   ],
+   "box": [
+    86,
+    769,
+    335,
+    802
+   ],
+   "s": "Ví dụ: 5 nhân sự, có tổ trưởng...",
+   "name": "cap",
+   "id": "pt-cap",
+   "form": "pt-form",
+   "label": "Năng lực đội ngũ",
+   "m": {
+    "x": 96,
+    "w": 145.0,
+    "base": 789.0,
+    "xh": 5.0,
+    "c": "#b9bdcc"
+   }
+  },
+  {
+   "k": "in",
+   "r": [
+    386,
+    776,
+    570,
+    795
+   ],
+   "box": [
+    378,
+    769,
+    626,
+    802
+   ],
+   "s": "Ví dụ: 1 xe tải 1.5 tấn, đầy đủ dụng cụ...",
+   "name": "tools",
+   "id": "pt-tools",
+   "form": "pt-form",
+   "label": "Phương tiện / dụng cụ",
+   "m": {
+    "x": 388,
+    "w": 179.0,
+    "base": 790.0,
+    "xh": 6.0,
+    "c": "#b7bbcb"
+   }
+  },
+  {
+   "k": "sel",
+   "r": [
+    94,
+    839,
+    268,
+    860
+   ],
+   "box": [
+    86,
+    832,
+    626,
+    865
+   ],
+   "s": "Ví dụ: Thứ 2 – Chủ nhật, 8:00 - 20:00",
+   "name": "hours",
+   "id": "pt-hours",
+   "form": "pt-form",
+   "label": "Thời gian hoạt động",
+   "options": [
+    "Thứ 2 – Chủ nhật, 8:00 - 20:00",
+    "Thứ 2 – Thứ 7, 8:00 - 18:00",
+    "Cuối tuần, 7:00 - 21:00",
+    "Linh hoạt theo lịch hẹn"
+   ],
+   "m": {
+    "x": 96,
+    "w": 169.0,
+    "base": 853.0,
+    "xh": 8.0,
+    "c": "#b6b9c8"
+   }
+  },
+  {
+   "k": "file",
+   "box": [
+    55,
+    933,
+    336,
+    996
+   ],
+   "accept": "image/jpeg,image/png,application/pdf",
+   "multi": false,
+   "label": "Tải bảng giá bằng văn bản",
+   "done": "Đã nhận tệp bảng giá."
+  },
+  {
+   "k": "file",
+   "box": [
+    346,
+    933,
+    627,
+    996
+   ],
+   "accept": "image/jpeg,image/png,application/pdf",
+   "multi": false,
+   "label": "Tải điều kiện dịch vụ",
+   "done": "Đã nhận tệp điều kiện dịch vụ."
+  },
+  {
+   "k": "a",
+   "box": [
+    303,
+    1009,
+    322,
+    1028
+   ],
+   "act": "info:Bấm vào thẻ tài liệu phía trên để chọn lại tệp bảng giá.",
+   "pill": 1,
+   "label": "Xóa tệp bảng giá"
+  },
+  {
+   "k": "a",
+   "box": [
+    592,
+    1009,
+    611,
+    1028
+   ],
+   "act": "info:Bấm vào thẻ tài liệu phía trên để chọn lại tệp điều kiện dịch vụ.",
+   "pill": 1,
+   "label": "Xóa tệp điều kiện dịch vụ"
+  },
+  {
+   "k": "in",
+   "r": [
+    309,
+    1160,
+    435,
+    1173
+   ],
+   "box": [
+    305,
+    1157,
+    490,
+    1176
+   ],
+   "s": "Ví dụ: 300.000 - 500.000",
+   "name": "p1",
+   "id": "pt-p1",
+   "form": "pt-form",
+   "label": "Giá chuyến",
+   "m": {
+    "x": 312,
+    "w": 98.0,
+    "base": 1169.0,
+    "xh": 7.0,
+    "c": "#b1b4c0"
+   }
+  },
+  {
+   "k": "in",
+   "r": [
+    309,
+    1185,
+    415,
+    1198
+   ],
+   "box": [
+    305,
+    1182,
+    490,
+    1201
+   ],
+   "s": "Ví dụ: 50.000 / tầng",
+   "name": "p2",
+   "id": "pt-p2",
+   "form": "pt-form",
+   "label": "Phụ phí tầng",
+   "m": {
+    "x": 312,
+    "w": 79.0,
+    "base": 1193.0,
+    "xh": 7.0,
+    "c": "#b0b4c1"
+   }
+  },
+  {
+   "k": "in",
+   "r": [
+    309,
+    1209,
+    410,
+    1222
+   ],
+   "box": [
+    305,
+    1206,
+    490,
+    1225
+   ],
+   "s": "Ví dụ: 50.000 / giờ",
+   "name": "p3",
+   "id": "pt-p3",
+   "form": "pt-form",
+   "label": "Phí chờ",
+   "m": {
+    "x": 312,
+    "w": 73.0,
+    "base": 1217.0,
+    "xh": 5.0,
+    "c": "#b3b5c1"
+   }
+  },
+  {
+   "k": "in",
+   "r": [
+    309,
+    1234,
+    425,
+    1247
+   ],
+   "box": [
+    305,
+    1231,
+    490,
+    1250
+   ],
+   "s": "Ví dụ: 100.000 / người",
+   "name": "p4",
+   "id": "pt-p4",
+   "form": "pt-form",
+   "label": "Thêm người",
+   "m": {
+    "x": 312,
+    "w": 88.0,
+    "base": 1242.0,
+    "xh": 6.0,
+    "c": "#abb1bf"
+   }
+  },
+  {
+   "k": "in",
+   "r": [
+    309,
+    1259,
+    375,
+    1272
+   ],
+   "box": [
+    305,
+    1256,
+    490,
+    1275
+   ],
+   "s": "Ví dụ: 100.000",
+   "name": "p5",
+   "id": "pt-p5",
+   "form": "pt-form",
+   "label": "Ngoài giờ",
+   "m": {
+    "x": 312,
+    "w": 58.0,
+    "base": 1268.0,
+    "xh": 7.0,
+    "c": "#b5b8c6"
+   }
+  },
+  {
+   "k": "in",
+   "r": [
+    309,
+    1285,
+    410,
+    1298
+   ],
+   "box": [
+    305,
+    1282,
+    490,
+    1301
+   ],
+   "s": "Ví dụ: 50.000 - 200.000",
+   "name": "p6",
+   "id": "pt-p6",
+   "form": "pt-form",
+   "label": "Phát sinh khác",
+   "m": {
+    "x": 312,
+    "w": 94.0,
+    "base": 1295.0,
+    "xh": 7.0,
+    "c": "#bbbfcb"
+   }
+  },
+  {
+   "k": "chk",
+   "inv": true,
+   "box": [
+    522,
+    1137,
+    534,
+    1149
+   ],
+   "hit": [
+    518,
+    1133,
+    616,
+    1153
+   ],
+   "name": "na-all",
+   "label": "Không áp dụng – tất cả",
+   "rad": 2
+  },
+  {
+   "k": "chk",
+   "inv": true,
+   "box": [
+    522,
+    1161,
+    534,
+    1173
+   ],
+   "hit": [
+    518,
+    1157,
+    616,
+    1177
+   ],
+   "name": "na1",
+   "label": "Giá chuyến không áp dụng",
+   "rad": 2
+  },
+  {
+   "k": "chk",
+   "inv": true,
+   "box": [
+    522,
+    1185,
+    534,
+    1197
+   ],
+   "hit": [
+    518,
+    1181,
+    616,
+    1201
+   ],
+   "name": "na2",
+   "label": "Phụ phí tầng không áp dụng",
+   "rad": 2
+  },
+  {
+   "k": "chk",
+   "inv": true,
+   "box": [
+    522,
+    1209,
+    534,
+    1221
+   ],
+   "hit": [
+    518,
+    1205,
+    616,
+    1225
+   ],
+   "name": "na3",
+   "label": "Phí chờ không áp dụng",
+   "rad": 2
+  },
+  {
+   "k": "chk",
+   "inv": true,
+   "box": [
+    522,
+    1234,
+    534,
+    1246
+   ],
+   "hit": [
+    518,
+    1230,
+    616,
+    1250
+   ],
+   "name": "na4",
+   "label": "Thêm người không áp dụng",
+   "rad": 2
+  },
+  {
+   "k": "chk",
+   "inv": true,
+   "box": [
+    522,
+    1259,
+    534,
+    1271
+   ],
+   "hit": [
+    518,
+    1255,
+    616,
+    1275
+   ],
+   "name": "na5",
+   "label": "Ngoài giờ không áp dụng",
+   "rad": 2
+  },
+  {
+   "k": "chk",
+   "inv": true,
+   "box": [
+    522,
+    1285,
+    534,
+    1297
+   ],
+   "hit": [
+    518,
+    1281,
+    616,
+    1301
+   ],
+   "name": "na6",
+   "label": "Phát sinh khác không áp dụng",
+   "rad": 2
+  },
+  {
+   "k": "btn",
+   "box": [
+    672,
+    1012,
+    973,
+    1056
+   ],
+   "form": "pt-form",
+   "label": "Gửi hồ sơ đăng ký",
+   "rad": 10
+  },
+  {
+   "k": "a",
+   "box": [
+    730,
+    1163,
+    827,
+    1182
+   ],
+   "act": "track",
+   "label": "Theo dõi tiến độ hồ sơ"
+  },
+  {
+   "k": "a",
+   "box": [
+    783,
+    1283,
+    879,
+    1308
+   ],
+   "href": "tel:19002228",
+   "rad": 8,
+   "label": "Gọi hỗ trợ 1900 2228"
+  },
+  {
+   "k": "a",
+   "box": [
+    33,
+    1488,
+    152,
+    1527
+   ],
+   "href": "index.html",
+   "label": "BOXANH – Trang chủ"
+  },
+  {
+   "k": "a",
+   "box": [
+    316,
+    1500,
+    375,
+    1520
+   ],
+   "href": "gioi-thieu.html",
+   "label": "Về BOXANH"
+  },
+  {
+   "k": "a",
+   "box": [
+    398,
+    1500,
+    483,
+    1520
+   ],
+   "href": "dieu-khoan.html",
+   "label": "Điều khoản dịch vụ"
+  },
+  {
+   "k": "a",
+   "box": [
+    506,
+    1500,
+    595,
+    1520
+   ],
+   "href": "chinh-sach-bao-mat.html",
+   "label": "Chính sách bảo mật"
+  },
+  {
+   "k": "a",
+   "box": [
+    617,
+    1500,
+    708,
+    1520
+   ],
+   "href": "ho-tro.html#faq",
+   "label": "Câu hỏi thường gặp"
+  },
+  {
+   "k": "a",
+   "box": [
+    731,
+    1500,
+    769,
+    1520
+   ],
+   "href": "ho-tro.html#gui-yeu-cau",
+   "label": "Liên hệ"
+  },
+  {
+   "k": "a",
+   "box": [
+    881,
+    1493,
+    908,
+    1521
+   ],
+   "soon": "Fanpage Facebook",
+   "pill": 1,
+   "label": "Facebook"
+  },
+  {
+   "k": "a",
+   "box": [
+    919,
+    1493,
+    947,
+    1521
+   ],
+   "soon": "Kênh TikTok",
+   "pill": 1,
+   "label": "TikTok"
+  },
+  {
+   "k": "a",
+   "box": [
+    957,
+    1493,
+    986,
+    1521
+   ],
+   "soon": "Kênh YouTube",
+   "pill": 1,
+   "label": "YouTube"
+  }
+ ]
+}

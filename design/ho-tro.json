@@ -1,0 +1,434 @@
+{
+ "name": "ho-tro",
+ "src": "design/mockups/17-Bao-su-co-va-CSKH.png",
+ "crop": [
+  0,
+  0,
+  470,
+  1024
+ ],
+ "items": [
+  {
+   "k": "a",
+   "box": [
+    30,
+    22,
+    180,
+    68
+   ],
+   "label": "BOXANH – Trang chủ",
+   "href": "index.html"
+  },
+  {
+   "k": "a",
+   "box": [
+    190,
+    34,
+    254,
+    60
+   ],
+   "label": "Chuyển trọ",
+   "href": "chuyen-tro.html"
+  },
+  {
+   "k": "a",
+   "box": [
+    262,
+    34,
+    324,
+    60
+   ],
+   "label": "Dọn phòng",
+   "href": "don-phong.html"
+  },
+  {
+   "k": "a",
+   "box": [
+    334,
+    34,
+    418,
+    60
+   ],
+   "label": "Bàn giao phòng",
+   "href": "ban-giao-phong.html"
+  },
+  {
+   "k": "dd",
+   "box": [
+    426,
+    28,
+    460,
+    64
+   ],
+   "w": 170,
+   "pl": 290,
+   "label": "Mở menu",
+   "menu": [
+    [
+     "index.html",
+     "Trang chủ"
+    ],
+    [
+     "uoc-tinh-chi-phi.html",
+     "Ước tính chi phí"
+    ],
+    [
+     "tai-khoan.html",
+     "Tài khoản"
+    ],
+    [
+     "don-hang.html",
+     "Đơn hàng"
+    ],
+    [
+     "hop-cua-toi.html",
+     "Hộp của tôi"
+    ],
+    [
+     "doi-tac.html",
+     "Đối tác"
+    ]
+   ]
+  },
+  {
+   "k": "anchor",
+   "id": "faq",
+   "y": 0
+  },
+  {
+   "k": "anchor",
+   "id": "gui-yeu-cau",
+   "y": 280
+  },
+  {
+   "k": "form",
+   "id": "sp-form",
+   "label": "Gửi yêu cầu hỗ trợ",
+   "attrs": {
+    "data-done": "Đã gửi yêu cầu hỗ trợ|CSKH BOXANH đã nhận yêu cầu (mã YC-0029) và sẽ đối chiếu thông tin, phản hồi bạn trong 24 giờ."
+   }
+  },
+  {
+   "k": "sel",
+   "r": [
+    50,
+    357,
+    166,
+    374
+   ],
+   "box": [
+    38,
+    347,
+    244,
+    384
+   ],
+   "s": "Không tìm thấy đồ",
+   "name": "issue",
+   "id": "sp-issue",
+   "form": "sp-form",
+   "label": "Vấn đề",
+   "options": [
+    "Không tìm thấy đồ",
+    "Seal bất thường",
+    "Đồ bị hư hỏng",
+    "Hộp bị hư hỏng",
+    "Trễ giờ hẹn",
+    "Thắc mắc báo giá",
+    "Khác"
+   ]
+  },
+  {
+   "k": "sel",
+   "r": [
+    266,
+    357,
+    333,
+    373
+   ],
+   "box": [
+    255,
+    347,
+    447,
+    384
+   ],
+   "s": "BX-000128",
+   "name": "box",
+   "id": "sp-box",
+   "form": "sp-form",
+   "label": "Hộp liên quan",
+   "options": [
+    "BX-000128",
+    "BX-000129",
+    "BX-000130",
+    "BX-000131",
+    "BX-000132",
+    "BX-000133",
+    "BX-000134",
+    "BX-000135",
+    "BX-000136",
+    "BX-000137",
+    "Không chọn"
+   ]
+  },
+  {
+   "k": "tog",
+   "box": [
+    38,
+    424,
+    62,
+    448
+   ],
+   "hit": [
+    34,
+    418,
+    172,
+    454
+   ],
+   "onAt": [
+    177,
+    424
+   ],
+   "offAt": [
+    38,
+    424
+   ],
+   "group": "where",
+   "value": "Đồ trong hộp",
+   "label": "Đồ trong hộp",
+   "rad": 12
+  },
+  {
+   "k": "tog",
+   "box": [
+    177,
+    424,
+    201,
+    448
+   ],
+   "hit": [
+    174,
+    418,
+    304,
+    454
+   ],
+   "onAt": [
+    177,
+    424
+   ],
+   "offAt": [
+    38,
+    424
+   ],
+   "group": "where",
+   "value": "Đồ ngoài hộp",
+   "label": "Đồ ngoài hộp",
+   "rad": 12,
+   "on": true
+  },
+  {
+   "k": "tog",
+   "box": [
+    314,
+    424,
+    338,
+    448
+   ],
+   "hit": [
+    310,
+    418,
+    446,
+    454
+   ],
+   "onAt": [
+    177,
+    424
+   ],
+   "offAt": [
+    38,
+    424
+   ],
+   "group": "where",
+   "value": "Chưa xác định",
+   "label": "Chưa xác định",
+   "rad": 12
+  },
+  {
+   "k": "in",
+   "multi": true,
+   "box": [
+    40,
+    488,
+    446,
+    558
+   ],
+   "name": "desc",
+   "id": "sp-desc",
+   "form": "sp-form",
+   "max": 500,
+   "req": true,
+   "label": "Mô tả đồ cần tìm",
+   "lines": [
+    {
+     "r": [
+      52,
+      497,
+      360,
+      515
+     ],
+     "s": "Túi tote màu be, bên trong có sổ tay và tai nghe"
+    },
+    {
+     "r": [
+      52,
+      516,
+      118,
+      533
+     ],
+     "s": "màu trắng."
+    }
+   ]
+  },
+  {
+   "k": "in",
+   "r": [
+    76,
+    615,
+    141,
+    631
+   ],
+   "box": [
+    40,
+    604,
+    148,
+    640
+   ],
+   "s": "12/01/2027",
+   "name": "sp-d1",
+   "id": "sp-d1",
+   "label": "Lần cuối nhìn thấy – ngày",
+   "form": "sp-form",
+   "type": "date"
+  },
+  {
+   "k": "in",
+   "r": [
+    166,
+    615,
+    198,
+    631
+   ],
+   "box": [
+    154,
+    604,
+    236,
+    640
+   ],
+   "s": "08:00",
+   "name": "sp-t1",
+   "id": "sp-t1",
+   "label": "Lần cuối nhìn thấy – giờ",
+   "form": "sp-form"
+  },
+  {
+   "k": "in",
+   "r": [
+    290,
+    615,
+    355,
+    631
+   ],
+   "box": [
+    255,
+    604,
+    363,
+    640
+   ],
+   "s": "12/01/2027",
+   "name": "sp-d2",
+   "id": "sp-d2",
+   "label": "Thời điểm phát hiện – ngày",
+   "form": "sp-form",
+   "type": "date"
+  },
+  {
+   "k": "in",
+   "r": [
+    379,
+    615,
+    411,
+    631
+   ],
+   "box": [
+    369,
+    604,
+    447,
+    640
+   ],
+   "s": "11:30",
+   "name": "sp-t2",
+   "id": "sp-t2",
+   "label": "Thời điểm phát hiện – giờ",
+   "form": "sp-form"
+  },
+  {
+   "k": "a",
+   "box": [
+    135,
+    692,
+    157,
+    714
+   ],
+   "label": "Xóa ảnh 1",
+   "act": "info:Ảnh liên quan được giữ để CSKH đối chiếu. Bạn có thể thêm ảnh mới bên cạnh.",
+   "pill": 1
+  },
+  {
+   "k": "a",
+   "box": [
+    267,
+    692,
+    289,
+    714
+   ],
+   "label": "Xóa ảnh 2",
+   "act": "info:Ảnh liên quan được giữ để CSKH đối chiếu. Bạn có thể thêm ảnh mới bên cạnh.",
+   "pill": 1
+  },
+  {
+   "k": "file",
+   "box": [
+    304,
+    686,
+    446,
+    800
+   ],
+   "label": "Thêm ảnh liên quan",
+   "rad": 8,
+   "done": "Đã thêm {n} ảnh liên quan."
+  },
+  {
+   "k": "btn",
+   "box": [
+    36,
+    815,
+    446,
+    858
+   ],
+   "form": "sp-form",
+   "label": "Gửi CSKH",
+   "rad": 10
+  },
+  {
+   "k": "a",
+   "box": [
+    36,
+    908,
+    446,
+    996
+   ],
+   "label": "Yêu cầu YC-0028 – Đang kiểm tra · Xem tiến độ",
+   "act": "ticket",
+   "rad": 10
+  }
+ ]
+}

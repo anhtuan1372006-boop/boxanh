@@ -108,7 +108,10 @@ body.l-canvas { background: var(--cv-bg, #f7f9f4); }
 .cv-sw { left: calc(var(--l) * var(--u)); top: calc(var(--t) * var(--u)); width: calc(var(--bw) * var(--u)); height: calc(var(--bh) * var(--u)); padding: 0; border: 0; border-radius: 999px; background: transparent; cursor: pointer; }
 .cv-sw > i { position: absolute; inset: 0; border-radius: 999px; background: #cfd9d4; opacity: 0; transition: opacity .18s; }
 .cv-sw > i::after { content: ""; position: absolute; top: 9%; bottom: 9%; left: 5%; aspect-ratio: 1; border-radius: 50%; background: #fff; box-shadow: 0 1px 3px rgba(0, 0, 0, .25); }
-.cv-sw[aria-checked="false"] > i { opacity: 1; }
+.cv-sw:not(.inv)[aria-checked="false"] > i { opacity: 1; }
+.cv-sw.inv > i { background: #1f9a6c; }
+.cv-sw.inv > i::after { left: auto; right: 5%; }
+.cv-sw.inv[aria-checked="true"] > i { opacity: 1; }
 .cv-sw:focus-visible { outline: 3px solid rgba(34, 160, 111, .7); outline-offset: 2px; }
 /* steppers: the value box covers the design's number with a matching white field */
 .cv-step { display: contents; }
@@ -116,8 +119,11 @@ body.l-canvas { background: var(--cv-bg, #f7f9f4); }
 .cv-num:not(.changed) { background: transparent; color: transparent; caret-color: #146b4e; }
 .cv-num:focus { background: #fff; color: #1a2b23; }
 .cv-chk { left: calc(var(--l) * var(--u)); top: calc(var(--t) * var(--u)); width: calc(var(--bw) * var(--u)); height: calc(var(--bh) * var(--u)); padding: 0; border: 0; background: transparent; cursor: pointer; border-radius: calc(var(--r) * var(--u)); }
-.cv-chk > i { position: absolute; inset: 0; border-radius: inherit; background: #fff; box-shadow: inset 0 0 0 calc(1.4 * var(--u)) #b9cbc1; opacity: 0; transition: opacity .15s; }
-.cv-chk[aria-checked="false"] > i { opacity: 1; }
+.cv-chk > i { position: absolute; left: calc(var(--l) * var(--u)); top: calc(var(--t) * var(--u)); width: calc(var(--bw) * var(--u)); height: calc(var(--bh) * var(--u)); border-radius: calc(var(--r) * var(--u)); background: #fff; box-shadow: inset 0 0 0 calc(1.4 * var(--u)) #b9cbc1; opacity: 0; transition: opacity .15s; }
+.cv-chk:not(.inv)[aria-checked="false"] > i { opacity: 1; }
+/* inv: the design draws the box empty; the ticked state is drawn over it */
+.cv-chk.inv > i { background: #0e5b45 url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3.4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M20 6 9 17l-5-5'/%3E%3C/svg%3E") no-repeat center / 72%; box-shadow: none; }
+.cv-chk.inv[aria-checked="true"] > i { opacity: 1; }
 .cv-chk:focus-visible { outline: 3px solid rgba(34, 160, 111, .7); outline-offset: 2px; }
 .cv-in.otp { text-align: center; padding-left: 0; font-weight: 700; color: #10251c; }
 .cv-in.otp:focus { background: rgba(34, 160, 111, .08); }
@@ -135,3 +141,9 @@ body.l-canvas { background: var(--cv-bg, #f7f9f4); }
 .cv-opt:focus-visible { outline: 3px solid rgba(34, 160, 111, .7); outline-offset: 2px; }
 /* read-only values that change with the visitor's data */
 .cv-in.val { pointer-events: none; color: #10251c; }
+/* score pickers (đánh giá đối tác) */
+.cv-opt.score:not(.def)[aria-checked="true"] > i { background: #12684f; color: #fff; box-shadow: 0 2px 5px -2px rgba(0, 60, 40, .6); }
+.cv-opt.score.def[aria-checked="false"] > i { background: #eef0f3; color: #6b7280; box-shadow: none; font-weight: 500; }
+.cv-barfix { left: calc(var(--l) * var(--u)); top: calc(var(--t) * var(--u)); width: calc(var(--bw) * var(--u)); height: calc(var(--bh) * var(--u)); background: #fff; }
+.cv-barfix > i { position: absolute; left: 0; top: 25%; height: 50%; border-radius: 99px; background: #23a173; }
+.cv-barfix::before { content: ""; position: absolute; left: 0; right: 0; top: 25%; height: 50%; border-radius: 99px; background: #e4e9ec; }

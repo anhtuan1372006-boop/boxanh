@@ -1,0 +1,266 @@
+{
+ "name": "giao-nhan-2",
+ "W": 511,
+ "H": 1024,
+ "bake": true,
+ "clean": false,
+ "bg": "#e3fcfd",
+ "items": [
+  {
+   "k": "a",
+   "box": [
+    22,
+    14,
+    190,
+    56
+   ],
+   "label": "BOXANH – Cổng đối tác",
+   "href": "index.html"
+  },
+  {
+   "k": "a",
+   "box": [
+    272,
+    16,
+    306,
+    56
+   ],
+   "label": "Thông báo",
+   "href": "don-duoc-giao.html"
+  },
+  {
+   "k": "dd",
+   "box": [
+    320,
+    12,
+    498,
+    60
+   ],
+   "w": 160,
+   "pl": 848,
+   "label": "Tài khoản Nguyễn Minh",
+   "menu": [
+    [
+     "index.html",
+     "Công việc hôm nay"
+    ],
+    [
+     "ho-so.html",
+     "Hồ sơ đối tác"
+    ],
+    [
+     "doi-soat.html",
+     "Đối soát"
+    ],
+    [
+     "../index.html",
+     "Về trang khách hàng"
+    ]
+   ]
+  },
+  {
+   "k": "a",
+   "box": [
+    14,
+    70,
+    86,
+    140
+   ],
+   "label": "Đơn hàng",
+   "href": "don-duoc-giao.html",
+   "rad": 10
+  },
+  {
+   "k": "a",
+   "box": [
+    10,
+    150,
+    92,
+    210
+   ],
+   "label": "Lịch làm việc",
+   "href": "lich-cong-viec.html",
+   "rad": 8
+  },
+  {
+   "k": "a",
+   "box": [
+    10,
+    222,
+    92,
+    276
+   ],
+   "label": "Hỗ trợ",
+   "href": "../ho-tro.html#gui-yeu-cau",
+   "rad": 8
+  },
+  {
+   "k": "a",
+   "box": [
+    10,
+    296,
+    92,
+    350
+   ],
+   "label": "Tài khoản",
+   "href": "ho-so.html",
+   "rad": 8
+  },
+  {
+   "k": "a",
+   "box": [
+    386,
+    90,
+    484,
+    118
+   ],
+   "label": "Xem chi tiết đơn BX2027-0015",
+   "href": "index.html",
+   "pill": 1
+  },
+  {
+   "k": "a",
+   "box": [
+    375,
+    535,
+    486,
+    552
+   ],
+   "label": "Đã kiểm tra xong 4/4",
+   "act": "info:Đã kiểm tra đủ 4 mục cùng khách hàng.",
+   "rad": 4
+  },
+  {
+   "k": "chk",
+   "box": [
+    116,
+    572,
+    140,
+    596
+   ],
+   "hit": [
+    108,
+    558,
+    486,
+    610
+   ],
+   "name": "c0",
+   "label": "Đúng mã hộp BX-000128",
+   "rad": 4
+  },
+  {
+   "k": "chk",
+   "box": [
+    116,
+    625,
+    140,
+    649
+   ],
+   "hit": [
+    108,
+    611,
+    486,
+    663
+   ],
+   "name": "c1",
+   "label": "Đúng mã seal SL-004281",
+   "rad": 4
+  },
+  {
+   "k": "chk",
+   "box": [
+    116,
+    682,
+    140,
+    706
+   ],
+   "hit": [
+    108,
+    668,
+    486,
+    720
+   ],
+   "name": "c2",
+   "label": "Seal nguyên vẹn",
+   "rad": 4
+  },
+  {
+   "k": "chk",
+   "box": [
+    116,
+    740,
+    140,
+    764
+   ],
+   "hit": [
+    108,
+    726,
+    486,
+    778
+   ],
+   "name": "c3",
+   "label": "Khách đã kiểm tra",
+   "rad": 4
+  },
+  {
+   "k": "a",
+   "box": [
+    122,
+    826,
+    330,
+    900
+   ],
+   "label": "Khách ký lại",
+   "act": "resign",
+   "rad": 8
+  },
+  {
+   "k": "a",
+   "box": [
+    102,
+    928,
+    488,
+    984
+   ],
+   "label": "Xác nhận bàn giao",
+   "act": "handover",
+   "rad": 12
+  },
+  {
+   "k": "a",
+   "box": [
+    396,
+    172,
+    418,
+    198
+   ],
+   "label": "Bước 1 / 3",
+   "href": "giao-nhan.html",
+   "pill": 1
+  },
+  {
+   "k": "a",
+   "box": [
+    428,
+    172,
+    450,
+    198
+   ],
+   "label": "Bước 2 / 3",
+   "href": "giao-nhan-2.html",
+   "pill": 1
+  },
+  {
+   "k": "a",
+   "box": [
+    460,
+    172,
+    484,
+    198
+   ],
+   "label": "Bước 3 / 3",
+   "href": "giao-nhan-3.html",
+   "pill": 1
+  }
+ ]
+}

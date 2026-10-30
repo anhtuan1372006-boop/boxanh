@@ -1,7 +1,7 @@
 # BOXANH – Chuyển trọ nhẹ tênh
 
 Website hoàn chỉnh cho hệ thống **BOXANH**: một đầu mối cho chuyển trọ, dọn phòng và bàn giao phòng, dùng hộp tái sử dụng có mã QR và seal riêng.
-Được xây dựng từ bộ 17 màn hình thiết kế, gồm 35 trang chạy thật trên trình duyệt (máy tính và điện thoại).
+Các màn hình được dựng **giống hệt 17 ảnh thiết kế**: chính ảnh thiết kế là nền trang, còn liên kết, ô nhập, nút, lựa chọn, công tắc… được đặt đúng toạ độ trên thiết kế và hoạt động thật. Tổng cộng 38 trang (máy tính và điện thoại).
 
 **Xem trực tiếp:** https://anhtuan1372006-boop.github.io/boxanh/
 **Sơ đồ toàn bộ hệ thống:** https://anhtuan1372006-boop.github.io/boxanh/he-thong.html
@@ -25,6 +25,10 @@ Website hoàn chỉnh cho hệ thống **BOXANH**: một đầu mối cho chuy�
 ## Cấu trúc mã nguồn
 
 ```
+design/
+  mockups/      17 ảnh thiết kế gốc
+  *.json        vị trí từng liên kết / ô nhập / nút trên mỗi ảnh
+tools/canvas.py tạo ảnh nền (và bản không chữ để hiện khi gõ) + đo chữ
 src/
   pages/        nội dung từng trang (HTML + front matter JSON)
   layouts.mjs   header, footer, menu tài khoản, khung cổng đối tác / nội bộ
@@ -34,7 +38,7 @@ build.mjs       ghép trang, chèn icon, kiểm tra toàn bộ liên kết
 docs/           bản đã build – GitHub Pages phục vụ thư mục này
 ```
 
-Build lại sau khi sửa (cần Node.js 18+):
+Sau khi sửa vị trí trong `design/*.json`, chạy `python tools/canvas.py design/<tên>.json` (cần Pillow + OpenCV). Build lại (cần Node.js 18+):
 
 ```bash
 node build.mjs

@@ -1,0 +1,287 @@
+{
+ "name": "giao-nhan-3",
+ "src": "design/mockups/13-Giao-nhan-QR-va-kiem-tra-seal.png",
+ "crop": [
+  1024,
+  0,
+  1536,
+  1024
+ ],
+ "items": [
+  {
+   "k": "a",
+   "box": [
+    1046,
+    14,
+    1214,
+    56
+   ],
+   "label": "BOXANH – Cổng đối tác",
+   "href": "index.html"
+  },
+  {
+   "k": "a",
+   "box": [
+    1296,
+    16,
+    1330,
+    56
+   ],
+   "label": "Thông báo",
+   "href": "don-duoc-giao.html"
+  },
+  {
+   "k": "dd",
+   "box": [
+    1344,
+    12,
+    1522,
+    60
+   ],
+   "w": 160,
+   "pl": 1360,
+   "label": "Tài khoản Nguyễn Minh",
+   "menu": [
+    [
+     "index.html",
+     "Công việc hôm nay"
+    ],
+    [
+     "ho-so.html",
+     "Hồ sơ đối tác"
+    ],
+    [
+     "doi-soat.html",
+     "Đối soát"
+    ],
+    [
+     "../index.html",
+     "Về trang khách hàng"
+    ]
+   ]
+  },
+  {
+   "k": "a",
+   "box": [
+    1038,
+    70,
+    1110,
+    140
+   ],
+   "label": "Đơn hàng",
+   "href": "don-duoc-giao.html",
+   "rad": 10
+  },
+  {
+   "k": "a",
+   "box": [
+    1034,
+    150,
+    1116,
+    210
+   ],
+   "label": "Lịch làm việc",
+   "href": "lich-cong-viec.html",
+   "rad": 8
+  },
+  {
+   "k": "a",
+   "box": [
+    1034,
+    222,
+    1116,
+    276
+   ],
+   "label": "Hỗ trợ",
+   "href": "../ho-tro.html#gui-yeu-cau",
+   "rad": 8
+  },
+  {
+   "k": "a",
+   "box": [
+    1410,
+    90,
+    1508,
+    118
+   ],
+   "label": "Xem chi tiết đơn BX2027-0015",
+   "href": "index.html",
+   "pill": 1
+  },
+  {
+   "k": "form",
+   "id": "issue-form",
+   "label": "Ghi nhận bất thường"
+  },
+  {
+   "k": "sel",
+   "r": [
+    1164,
+    552,
+    1252,
+    568
+   ],
+   "box": [
+    1126,
+    545,
+    1512,
+    576
+   ],
+   "s": "Seal bất thường",
+   "name": "type",
+   "id": "is-type",
+   "form": "issue-form",
+   "label": "Loại sự cố",
+   "options": [
+    "Seal bất thường",
+    "Hộp bị nứt / vỡ",
+    "Thiếu hộp",
+    "Đồ bên ngoài bị hư hỏng",
+    "Khác"
+   ]
+  },
+  {
+   "k": "in",
+   "multi": true,
+   "box": [
+    1126,
+    668,
+    1512,
+    732
+   ],
+   "name": "desc",
+   "id": "is-desc",
+   "form": "issue-form",
+   "max": 500,
+   "label": "Mô tả chi tiết",
+   "lines": [
+    {
+     "r": [
+      1137,
+      676,
+      1477,
+      693
+     ],
+     "s": "Phát hiện seal có dấu hiệu rách ở mép, không còn nguyên vẹn"
+    },
+    {
+     "r": [
+      1137,
+      694,
+      1474,
+      711
+     ],
+     "s": "như lúc nhận. Đã chụp ảnh hiện trạng và báo cáo để kiểm tra."
+    }
+   ]
+  },
+  {
+   "k": "file",
+   "box": [
+    1126,
+    763,
+    1218,
+    858
+   ],
+   "label": "Thêm ảnh hiện trạng",
+   "rad": 8,
+   "done": "Đã thêm {n} ảnh hiện trạng."
+  },
+  {
+   "k": "a",
+   "box": [
+    1290,
+    765,
+    1314,
+    789
+   ],
+   "label": "Xóa ảnh 1",
+   "act": "info:Ảnh hiện trạng được giữ lại làm bằng chứng cho CSKH.",
+   "pill": 1
+  },
+  {
+   "k": "a",
+   "box": [
+    1388,
+    765,
+    1412,
+    789
+   ],
+   "label": "Xóa ảnh 2",
+   "act": "info:Ảnh hiện trạng được giữ lại làm bằng chứng cho CSKH.",
+   "pill": 1
+  },
+  {
+   "k": "a",
+   "box": [
+    1486,
+    765,
+    1510,
+    789
+   ],
+   "label": "Xóa ảnh 3",
+   "act": "info:Ảnh hiện trạng được giữ lại làm bằng chứng cho CSKH.",
+   "pill": 1
+  },
+  {
+   "k": "btn",
+   "box": [
+    1124,
+    869,
+    1312,
+    910
+   ],
+   "form": "issue-form",
+   "label": "Gửi CSKH",
+   "rad": 10
+  },
+  {
+   "k": "a",
+   "box": [
+    1324,
+    869,
+    1513,
+    910
+   ],
+   "label": "Lưu ghi nhận",
+   "act": "save-issue",
+   "rad": 10
+  },
+  {
+   "k": "a",
+   "box": [
+    1418,
+    172,
+    1440,
+    198
+   ],
+   "label": "Bước 1 / 3",
+   "href": "giao-nhan.html",
+   "pill": 1
+  },
+  {
+   "k": "a",
+   "box": [
+    1450,
+    172,
+    1472,
+    198
+   ],
+   "label": "Bước 2 / 3",
+   "href": "giao-nhan-2.html",
+   "pill": 1
+  },
+  {
+   "k": "a",
+   "box": [
+    1482,
+    172,
+    1506,
+    198
+   ],
+   "label": "Bước 3 / 3",
+   "href": "giao-nhan-3.html",
+   "pill": 1
+  }
+ ]
+}

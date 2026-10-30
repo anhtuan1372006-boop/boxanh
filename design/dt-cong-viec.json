@@ -1,0 +1,358 @@
+{
+ "name": "dt-cong-viec",
+ "src": "design/mockups/12-Cong-viec-cua-doi-tac.png",
+ "items": [
+  {
+   "k": "a",
+   "box": [
+    25,
+    15,
+    222,
+    58
+   ],
+   "label": "BOXANH – Cổng đối tác",
+   "href": "index.html"
+  },
+  {
+   "k": "a",
+   "box": [
+    12,
+    238,
+    234,
+    284
+   ],
+   "label": "Tổng quan",
+   "href": "index.html",
+   "rad": 10
+  },
+  {
+   "k": "a",
+   "box": [
+    12,
+    295,
+    234,
+    330
+   ],
+   "label": "Lịch công việc",
+   "href": "lich-cong-viec.html",
+   "rad": 10
+  },
+  {
+   "k": "a",
+   "box": [
+    12,
+    345,
+    234,
+    380
+   ],
+   "label": "Đơn được giao",
+   "href": "don-duoc-giao.html",
+   "rad": 10
+  },
+  {
+   "k": "a",
+   "box": [
+    12,
+    395,
+    234,
+    430
+   ],
+   "label": "Quét QR",
+   "href": "giao-nhan.html",
+   "rad": 10
+  },
+  {
+   "k": "a",
+   "box": [
+    12,
+    445,
+    234,
+    480
+   ],
+   "label": "Hồ sơ",
+   "href": "ho-so.html",
+   "rad": 10
+  },
+  {
+   "k": "a",
+   "box": [
+    12,
+    497,
+    234,
+    532
+   ],
+   "label": "Đối soát",
+   "href": "doi-soat.html",
+   "rad": 10
+  },
+  {
+   "k": "a",
+   "box": [
+    12,
+    548,
+    234,
+    584
+   ],
+   "label": "Hỗ trợ",
+   "href": "../ho-tro.html#gui-yeu-cau",
+   "rad": 10
+  },
+  {
+   "k": "a",
+   "box": [
+    1256,
+    16,
+    1290,
+    54
+   ],
+   "label": "Thông báo (1)",
+   "href": "don-duoc-giao.html"
+  },
+  {
+   "k": "dd",
+   "box": [
+    1314,
+    10,
+    1522,
+    60
+   ],
+   "w": 170,
+   "pl": 1350,
+   "label": "Tài khoản Nguyễn Văn Minh",
+   "menu": [
+    [
+     "ho-so.html",
+     "Hồ sơ đối tác"
+    ],
+    [
+     "doi-soat.html",
+     "Đối soát"
+    ],
+    [
+     "../he-thong.html",
+     "Sơ đồ hệ thống"
+    ],
+    [
+     "../index.html",
+     "Về trang khách hàng"
+    ]
+   ]
+  },
+  {
+   "k": "a",
+   "box": [
+    266,
+    282,
+    545,
+    360
+   ],
+   "label": "Hôm nay: 3 việc",
+   "href": "lich-cong-viec.html",
+   "card": 12
+  },
+  {
+   "k": "a",
+   "box": [
+    553,
+    282,
+    826,
+    360
+   ],
+   "label": "Đang thực hiện: 1 việc",
+   "href": "don-duoc-giao.html",
+   "card": 12
+  },
+  {
+   "k": "a",
+   "box": [
+    834,
+    282,
+    1130,
+    360
+   ],
+   "label": "Chờ xác nhận: 2 việc",
+   "href": "don-duoc-giao.html",
+   "card": 12
+  },
+  {
+   "k": "a",
+   "box": [
+    1422,
+    327,
+    1450,
+    355
+   ],
+   "label": "Ngày trước",
+   "act": "info:Lịch theo tuần có ở mục Lịch công việc.",
+   "pill": 1
+  },
+  {
+   "k": "a",
+   "box": [
+    1468,
+    327,
+    1496,
+    355
+   ],
+   "label": "Ngày sau",
+   "act": "info:Lịch theo tuần có ở mục Lịch công việc.",
+   "pill": 1
+  },
+  {
+   "k": "a",
+   "box": [
+    634,
+    404,
+    716,
+    438
+   ],
+   "label": "Xem tuần",
+   "href": "lich-cong-viec.html",
+   "rad": 8
+  },
+  {
+   "k": "a",
+   "box": [
+    808,
+    404,
+    870,
+    438
+   ],
+   "label": "Tuần",
+   "href": "lich-cong-viec.html",
+   "rad": 8
+  },
+  {
+   "k": "a",
+   "box": [
+    275,
+    462,
+    880,
+    630
+   ],
+   "label": "Chuyển trọ · BX2027-0015 lúc 08:00",
+   "act": "info:Đang xem chi tiết đơn BX2027-0015 ở cột bên phải.",
+   "card": 12
+  },
+  {
+   "k": "a",
+   "box": [
+    275,
+    645,
+    880,
+    785
+   ],
+   "label": "Dọn phòng · BX2027-0021 lúc 13:00",
+   "act": "job:BX2027-0021",
+   "card": 12
+  },
+  {
+   "k": "a",
+   "box": [
+    275,
+    800,
+    880,
+    955
+   ],
+   "label": "Bàn giao phòng · BX2027-0022 lúc 16:00",
+   "act": "job:BX2027-0022",
+   "card": 12
+  },
+  {
+   "k": "a",
+   "box": [
+    1238,
+    555,
+    1452,
+    592
+   ],
+   "label": "Phiếu công việc BX2027-0015_KH_chuyen-tro.pdf",
+   "act": "doc",
+   "rad": 6
+  },
+  {
+   "k": "a",
+   "box": [
+    1464,
+    562,
+    1494,
+    588
+   ],
+   "label": "Tải phiếu công việc",
+   "act": "doc",
+   "rad": 6
+  },
+  {
+   "k": "a",
+   "box": [
+    916,
+    665,
+    1206,
+    709
+   ],
+   "label": "Nhận việc",
+   "act": "accept",
+   "rad": 10
+  },
+  {
+   "k": "a",
+   "box": [
+    1218,
+    665,
+    1500,
+    709
+   ],
+   "label": "Đề nghị điều chỉnh",
+   "act": "adjust",
+   "rad": 10
+  },
+  {
+   "k": "a",
+   "box": [
+    916,
+    832,
+    1206,
+    879
+   ],
+   "label": "Mở công cụ giao nhận",
+   "href": "giao-nhan.html",
+   "rad": 10
+  },
+  {
+   "k": "a",
+   "box": [
+    1251,
+    831,
+    1500,
+    867
+   ],
+   "label": "Báo phát sinh",
+   "act": "extra",
+   "rad": 8
+  },
+  {
+   "k": "a",
+   "box": [
+    902,
+    905,
+    1182,
+    1012
+   ],
+   "label": "Dọn phòng: checklist + ảnh trước / sau",
+   "act": "job:BX2027-0021",
+   "card": 10
+  },
+  {
+   "k": "a",
+   "box": [
+    1190,
+    905,
+    1514,
+    1012
+   ],
+   "label": "Bàn giao phòng / FIX: hiện trạng + hạng mục được duyệt",
+   "act": "job:BX2027-0022",
+   "card": 10
+  }
+ ]
+}

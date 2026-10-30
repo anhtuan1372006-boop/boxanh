@@ -52,7 +52,16 @@
     }
   }
 
+  function plates() {
+    document.querySelectorAll('.cv').forEach(cv => {
+      const bg = cv.querySelector('.cv-bg');
+      if (bg) cv.style.setProperty('--plate', `url("${bg.src}")`);
+      if (cv.dataset.clean) cv.style.setProperty('--clean', `url("${new URL(cv.dataset.clean, document.baseURI).href}")`);
+    });
+  }
+
   async function fitAll() {
+    plates();
     const els = [...document.querySelectorAll('.cv [data-s]')].filter(e => e.dataset.x);
     const weights = [...new Set(els.map(e => e.dataset.wt || 400))];
     try {

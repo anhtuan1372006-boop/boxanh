@@ -85,10 +85,15 @@ function item(el, plain) {
       const role = el.group ? 'radio' : 'checkbox';
       return `<button class="cv-tog${el.ring ? ' ring' : ''}" type="button" role="${role}" aria-checked="${!!el.on}"${el.on ? ' data-default' : ''} aria-label="${esc(el.label)}"${el.group ? ` data-group="${el.group}"` : ''} data-name="${esc(el.name || el.group || '')}" data-value="${esc(el.value || el.label)}" style="${box(hit)};--hr:${el.hr ?? 7}"><span style="--l:${n(b[0] - hit[0])};--t:${n(b[1] - hit[1])};--bw:${n(b[2] - b[0])};--bh:${n(b[3] - b[1])};--onx:${ox};--ony:${oy};--offx:${fx};--offy:${fy};--r:${el.rad ?? 3}"></span></button>`;
     }
-    case 'chk': // the design shows the box ticked; unticked state is drawn over it
-      return `<button class="cv-chk" type="button" role="checkbox" aria-checked="${el.on === false ? 'false' : 'true'}" aria-label="${esc(el.label)}" data-name="${esc(el.name || '')}" style="${box(el.box)};--r:${el.rad ?? 4}"><i></i></button>`;
+    case 'chk': {
+      // design shows the box ticked (default) or, with inv, empty; the other state is drawn over it
+      const hit = el.hit || el.box, b = el.box;
+      const inner = `--l:${n(b[0] - hit[0])};--t:${n(b[1] - hit[1])};--bw:${n(b[2] - b[0])};--bh:${n(b[3] - b[1])}`;
+      return `<button class="cv-chk${el.inv ? ' inv' : ''}" type="button" role="checkbox" aria-checked="${el.inv ? 'false' : 'true'}" aria-label="${esc(el.label)}" data-name="${esc(el.name || '')}"${el.value ? ` data-value="${esc(el.value)}"` : ''} style="${box(hit)};--r:${el.rad ?? 4}"><i style="${inner}"></i></button>`;
+    }
     case 'sw': // the design shows the switch "on"; the off state is drawn over it
-      return `<button class="cv-sw" type="button" role="switch" aria-checked="true" aria-label="${esc(el.label)}" data-name="${esc(el.name)}" style="${box(el.box)}"><i></i></button>`;
+      // inv: the design shows it "off"; the on state is drawn over it
+      return `<button class="cv-sw${el.inv ? ' inv' : ''}" type="button" role="switch" aria-checked="${el.inv ? 'false' : 'true'}" aria-label="${esc(el.label)}" data-name="${esc(el.name)}" style="${box(el.box)}"><i></i></button>`;
     case 'step': {
       // number shown by the design + its −/+ buttons; v sits on a cleaned patch of the plate
       const [mb, pb, vb] = [el.minus, el.plus, el.vbox];
@@ -114,8 +119,10 @@ function item(el, plain) {
 export function renderCanvas(name, cls, root = '') {
   const d = JSON.parse(fs.readFileSync(`src/canvas/${name}.json`, 'utf8'));
   const plain = !d.bake;
-  const clean = d.clean ? `;--clean:url(${root}assets/canvas/${name}-clean.webp)` : '';
-  return `<div class="cv ${cls}${d.bake ? ' baked' : ''}" data-cv="${name}" style="--W:${d.W};--ar:${d.W}/${d.H}${clean};--plate:url(${root}assets/canvas/${name}.webp)">
+  // url()s inside custom properties resolve against the stylesheet, so canvas.js turns these
+  // page-relative paths into absolute --plate / --clean values
+  const clean = d.clean ? ` data-clean="${root}assets/canvas/${name}-clean.webp"` : '';
+  return `<div class="cv ${cls}${d.bake ? ' baked' : ''}" data-cv="${name}"${clean} style="--W:${d.W};--ar:${d.W}/${d.H}">
 <img class="cv-bg" src="${root}assets/canvas/${name}.webp" alt="" width="${d.W * 2}" height="${d.H * 2}" decoding="async">
 ${d.items.map(e => item(e, plain)).join('\n')}
 </div>`;

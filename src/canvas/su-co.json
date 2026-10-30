@@ -1,0 +1,500 @@
+{
+ "name": "su-co",
+ "W": 1058,
+ "H": 1024,
+ "bake": true,
+ "clean": true,
+ "bg": "#e0fdfc",
+ "items": [
+  {
+   "k": "a",
+   "box": [
+    18,
+    24,
+    160,
+    70
+   ],
+   "label": "BOXANH – Nội bộ",
+   "href": "index.html"
+  },
+  {
+   "k": "a",
+   "box": [
+    172,
+    32,
+    242,
+    62
+   ],
+   "label": "Tổng quan",
+   "href": "index.html"
+  },
+  {
+   "k": "a",
+   "box": [
+    264,
+    32,
+    332,
+    62
+   ],
+   "label": "Đơn hàng",
+   "href": "don-hang.html"
+  },
+  {
+   "k": "a",
+   "box": [
+    346,
+    32,
+    422,
+    62
+   ],
+   "label": "Khách hàng",
+   "href": "don-hang.html"
+  },
+  {
+   "k": "a",
+   "box": [
+    434,
+    30,
+    492,
+    64
+   ],
+   "label": "Sự cố",
+   "href": "su-co.html",
+   "rad": 8
+  },
+  {
+   "k": "a",
+   "box": [
+    504,
+    32,
+    564,
+    62
+   ],
+   "label": "Báo cáo",
+   "href": "bao-cao.html"
+  },
+  {
+   "k": "form",
+   "id": "inc-top",
+   "label": "Tìm kiếm"
+  },
+  {
+   "k": "in",
+   "r": [
+    674,
+    40,
+    828,
+    54
+   ],
+   "box": [
+    644,
+    30,
+    872,
+    64
+   ],
+   "s": "Tìm đơn hàng, khách hàng, YC...",
+   "name": "inc-q",
+   "id": "inc-q",
+   "label": "Tìm đơn hàng, khách hàng, YC",
+   "form": "inc-top",
+   "type": "search",
+   "m": {
+    "x": 675,
+    "w": 152.0,
+    "base": 51.0,
+    "xh": 6.0,
+    "c": "#abc9c5"
+   }
+  },
+  {
+   "k": "a",
+   "box": [
+    886,
+    30,
+    914,
+    62
+   ],
+   "label": "Thông báo",
+   "href": "index.html"
+  },
+  {
+   "k": "dd",
+   "box": [
+    928,
+    24,
+    1038,
+    68
+   ],
+   "w": 170,
+   "pl": 1346,
+   "label": "Tài khoản CSKH",
+   "menu": [
+    [
+     "index.html",
+     "Tổng quan vận hành"
+    ],
+    [
+     "../he-thong.html",
+     "Sơ đồ hệ thống"
+    ],
+    [
+     "../index.html",
+     "Về trang khách hàng"
+    ]
+   ]
+  },
+  {
+   "k": "a",
+   "box": [
+    126,
+    92,
+    150,
+    114
+   ],
+   "label": "Thu gọn menu",
+   "act": "info:Menu CSKH luôn hiển thị trên màn hình lớn.",
+   "pill": 1
+  },
+  {
+   "k": "a",
+   "box": [
+    6,
+    124,
+    154,
+    156
+   ],
+   "label": "Danh sách sự cố",
+   "act": "info:Tất cả 21 sự cố: 3 yêu cầu mới, 12 đang xử lý, 5 chờ thông tin, 1 vừa hoàn tất.",
+   "rad": 8
+  },
+  {
+   "k": "a",
+   "box": [
+    6,
+    165,
+    154,
+    197
+   ],
+   "label": "Yêu cầu mới",
+   "act": "info:3 yêu cầu mới: YC-0028, YC-0026, YC-0024 (dữ liệu minh họa).",
+   "rad": 8
+  },
+  {
+   "k": "a",
+   "box": [
+    6,
+    206,
+    154,
+    238
+   ],
+   "label": "Đang xử lý",
+   "act": "info:12 sự cố đang xử lý. Đang mở: YC-0028.",
+   "rad": 8
+  },
+  {
+   "k": "a",
+   "box": [
+    6,
+    247,
+    154,
+    279
+   ],
+   "label": "Chờ thông tin",
+   "act": "info:5 sự cố đang chờ khách hoặc đối tác bổ sung thông tin.",
+   "rad": 8
+  },
+  {
+   "k": "a",
+   "box": [
+    6,
+    288,
+    154,
+    320
+   ],
+   "label": "Đã hoàn tất",
+   "act": "info:Sự cố đã hoàn tất được lưu 12 tháng để đối chiếu.",
+   "rad": 8
+  },
+  {
+   "k": "a",
+   "box": [
+    6,
+    350,
+    154,
+    382
+   ],
+   "label": "Hỗ trợ khách hàng",
+   "href": "../ho-tro.html",
+   "rad": 8
+  },
+  {
+   "k": "a",
+   "box": [
+    6,
+    390,
+    154,
+    422
+   ],
+   "label": "Mẫu phản hồi",
+   "act": "info:Mẫu phản hồi chuẩn: Yêu cầu bổ sung · Đồ có trong hộp · Xác nhận trách nhiệm & bồi thường.",
+   "rad": 8
+  },
+  {
+   "k": "a",
+   "box": [
+    6,
+    431,
+    154,
+    463
+   ],
+   "label": "Quy trình xử lý",
+   "act": "info:Quy trình: Tiếp nhận → Thu thập dữ liệu → Đối chiếu → Phản hồi → Hoàn tất (phản hồi trong 24 giờ).",
+   "rad": 8
+  },
+  {
+   "k": "a",
+   "box": [
+    6,
+    474,
+    154,
+    506
+   ],
+   "label": "Tài liệu nội bộ",
+   "act": "info:Tài liệu nội bộ CSKH chỉ hiển thị cho nhân sự được phân quyền.",
+   "rad": 8
+  },
+  {
+   "k": "a",
+   "box": [
+    184,
+    362,
+    304,
+    402
+   ],
+   "label": "Đơn hàng",
+   "act": "info:Đang xem bằng chứng từ đơn hàng BX2027-0015.",
+   "rad": 8
+  },
+  {
+   "k": "a",
+   "box": [
+    314,
+    366,
+    426,
+    400
+   ],
+   "label": "Lịch sử QR",
+   "act": "qr",
+   "rad": 8
+  },
+  {
+   "k": "a",
+   "box": [
+    436,
+    366,
+    552,
+    400
+   ],
+   "label": "Seal & ảnh",
+   "act": "photos",
+   "rad": 8
+  },
+  {
+   "k": "a",
+   "box": [
+    568,
+    366,
+    672,
+    400
+   ],
+   "label": "Trao đổi",
+   "act": "chat",
+   "rad": 8
+  },
+  {
+   "k": "a",
+   "box": [
+    688,
+    366,
+    792,
+    400
+   ],
+   "label": "Kết quả",
+   "act": "info:Chưa có kết luận. Chỉ có thể kết luận sau khi hoàn tất đối chiếu dữ liệu và phản hồi khách hàng.",
+   "rad": 8
+  },
+  {
+   "k": "a",
+   "box": [
+    690,
+    456,
+    760,
+    472
+   ],
+   "label": "Xem tất cả ảnh bằng chứng",
+   "act": "photos"
+  },
+  {
+   "k": "a",
+   "box": [
+    546,
+    616,
+    572,
+    644
+   ],
+   "label": "Phóng to ảnh seal",
+   "act": "photos",
+   "rad": 6
+  },
+  {
+   "k": "a",
+   "box": [
+    730,
+    616,
+    756,
+    644
+   ],
+   "label": "Phóng to ảnh bàn giao",
+   "act": "photos",
+   "rad": 6
+  },
+  {
+   "k": "in",
+   "multi": true,
+   "box": [
+    202,
+    810,
+    480,
+    900
+   ],
+   "name": "note",
+   "id": "inc-note",
+   "max": 1000,
+   "label": "Ghi nhận nội bộ",
+   "lines": [
+    {
+     "r": [
+      212,
+      818,
+      372,
+      831
+     ],
+     "s": "Đã kiểm tra ảnh seal và ảnh bàn giao.",
+     "m": {
+      "x": 213,
+      "w": 157.0,
+      "base": 829.0,
+      "xh": 6.0,
+      "c": "#7a7b8f"
+     }
+    },
+    {
+     "r": [
+      212,
+      832,
+      472,
+      845
+     ],
+     "s": "Tiếp tục liên hệ khách hàng để thu thập thêm hình ảnh khu vực",
+     "m": {
+      "x": 213,
+      "w": 258.0,
+      "base": 844.0,
+      "xh": 6.0,
+      "c": "#7c7e91"
+     }
+    },
+    {
+     "r": [
+      212,
+      846,
+      394,
+      859
+     ],
+     "s": "đặt đồ ngoài hộp và làm rõ thông tin.",
+     "m": {
+      "x": 213,
+      "w": 152.0,
+      "base": 859.0,
+      "xh": 6.0,
+      "c": "#797c8e"
+     }
+    }
+   ],
+   "m": {
+    "x": 213,
+    "w": 157.0,
+    "base": 829.0,
+    "xh": 6.0,
+    "c": "#7a7b8f"
+   }
+  },
+  {
+   "k": "sel",
+   "r": [
+    514,
+    816,
+    680,
+    830
+   ],
+   "box": [
+    504,
+    806,
+    744,
+    840
+   ],
+   "s": "Yêu cầu bổ sung hình ảnh / trao đổi",
+   "name": "plan",
+   "id": "inc-plan",
+   "label": "Hướng xử lý đề xuất",
+   "options": [
+    "Yêu cầu bổ sung hình ảnh / trao đổi",
+    "Đồ có trong hộp – hỗ trợ khách kiểm tra lại",
+    "Xác nhận trách nhiệm – hỗ trợ bồi thường"
+   ],
+   "m": {
+    "x": 515,
+    "w": 163.0,
+    "base": 828.0,
+    "xh": 6.0,
+    "c": "#323c53"
+   }
+  },
+  {
+   "k": "a",
+   "box": [
+    196,
+    928,
+    342,
+    966
+   ],
+   "label": "Lưu hồ sơ",
+   "act": "inc-save",
+   "rad": 10
+  },
+  {
+   "k": "a",
+   "box": [
+    352,
+    928,
+    554,
+    966
+   ],
+   "label": "Soạn phản hồi",
+   "act": "inc-reply",
+   "rad": 10
+  },
+  {
+   "k": "a",
+   "box": [
+    582,
+    928,
+    760,
+    966
+   ],
+   "label": "Kết luận sự cố (chưa khả dụng)",
+   "act": "info:Chỉ có thể kết luận sau khi hoàn tất đối chiếu dữ liệu và đã phản hồi khách hàng.",
+   "rad": 10
+  }
+ ]
+}
