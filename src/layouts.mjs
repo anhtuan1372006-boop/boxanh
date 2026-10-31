@@ -29,7 +29,7 @@ function head(m) {
 <link rel="stylesheet" href="{{root}}assets/css/fonts.css">
 <link rel="stylesheet" href="{{root}}assets/css/style.css">
 <link rel="stylesheet" href="{{root}}assets/css/design-match.css">
-<link rel="stylesheet" href="{{root}}assets/css/clarity.css">
+<link rel="stylesheet" href="{{root}}assets/css/clarity.css">${(m.styles || []).map(name => `\n<link rel="stylesheet" href="{{root}}assets/css/${esc(name)}.css">`).join('')}
 <script>try{if(localStorage.getItem('bx_user'))document.documentElement.setAttribute('data-auth','in')}catch(e){}${m.auth ? `
 if(!document.documentElement.hasAttribute('data-auth'))location.replace('{{root}}dang-nhap.html?next='+encodeURIComponent(location.pathname.split('/').pop()+location.search+location.hash));` : ''}</script>
 </head>`;
@@ -185,7 +185,14 @@ function homeFooter() {
     <div class="ft-col"><h3>Hỗ trợ</h3><a href="{{root}}ho-tro.html">Hỗ trợ khách hàng</a><a href="{{root}}ho-tro.html#faq">Câu hỏi thường gặp</a><a href="{{root}}ho-tro.html#gui-yeu-cau">Liên hệ</a></div>
     <div class="ft-col"><h3>Điều khoản</h3><a href="{{root}}dieu-khoan.html">Điều khoản sử dụng</a><a href="{{root}}dieu-khoan.html">Điều khoản dịch vụ</a></div>
     <div class="ft-col"><h3>Chính sách bảo mật</h3><a href="{{root}}chinh-sach-bao-mat.html">Chính sách bảo mật</a><a href="{{root}}chinh-sach-bao-mat.html#cookie">Chính sách cookie</a></div>
-  </div><div class="container ft-bottom"><span>© <span data-year>2026</span> BOXANH. Tất cả quyền được bảo lưu.</span><nav aria-label="Cổng hệ thống"><a href="{{root}}cong-doi-tac/index.html">Cổng đối tác</a><a href="{{root}}noi-bo/index.html">Nội bộ</a></nav><span class="ft-love">Cùng tạo nên những khởi đầu mới {{icon:heart}}</span></div></footer>`;
+  </div><div class="container ft-bottom"><span>© <span data-year>2026</span> BOXANH. Tất cả quyền được bảo lưu.</span><nav aria-label="Cổng hệ thống"><a href="{{root}}cong-doi-tac/index.html">Cổng đối tác</a><a href="{{root}}noi-bo/index.html">Nội bộ</a></nav><span class="ft-love">Cùng tạo nên những khởi đầu mới {{icon:heart}}</span></div>
+  <div class="home-mobile-footer">
+    <div class="home-ft-brand">${logo('{{root}}index.html')}<p>Một đầu mối. Gọn việc chuyển trọ.</p></div>
+    <div><h3>Hỗ trợ</h3><a href="{{root}}ho-tro.html">Trung tâm trợ giúp</a><a href="{{root}}ho-tro.html#gui-yeu-cau">Liên hệ</a><a href="{{root}}dieu-khoan.html#dat-dich-vu">Chính sách dịch vụ</a></div>
+    <div><h3>Điều khoản</h3><a href="{{root}}dieu-khoan.html">Điều khoản sử dụng</a><a href="{{root}}chinh-sach-bao-mat.html">Chính sách bảo mật</a></div>
+    <div><h3>Kết nối với chúng tôi</h3><div class="home-ft-social"><button type="button" data-soon="Fanpage Facebook" aria-label="Facebook">{{icon:facebook}}</button><button type="button" data-soon="Kênh TikTok" aria-label="TikTok">{{icon:tiktok}}</button><button type="button" data-soon="Kênh YouTube" aria-label="YouTube">{{icon:youtube}}</button><button class="zalo" type="button" data-soon="Kênh Zalo" aria-label="Zalo">Zalo</button></div></div>
+    <p class="home-ft-copyright">© 2027 BOXANH. Tất cả quyền được bảo lưu.</p>
+  </div></footer>`;
 }
 
 function bottomNav(tab) {

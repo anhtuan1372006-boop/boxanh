@@ -1,5 +1,12 @@
 /* Home: quick quote forms hand their values to the estimate page */
 document.addEventListener('DOMContentLoaded', () => {
+  const date = document.querySelector('#q-date');
+  if (date) {
+    const syncDate = () => date.parentElement.classList.toggle('has-value', !!date.value);
+    date.addEventListener('input', syncDate);
+    date.addEventListener('change', syncDate);
+    syncDate();
+  }
   const go = form => {
     const f = new FormData(form);
     const prefill = { from: (f.get('from') || '').trim(), to: (f.get('to') || '').trim(), date: f.get('date') || '' };

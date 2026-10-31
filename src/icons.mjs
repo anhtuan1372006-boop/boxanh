@@ -6,6 +6,9 @@ const img = '<rect width="18" height="18" x="3" y="3" rx="2"/><circle cx="9" cy=
 const user = '<path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/>';
 
 export const ICONS = {
+  'home-request': '<path d="M14 21H5a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v9M8 7h8M8 11h8M8 15h5"/><path d="M20 17a3 3 0 1 0-6 0c0 2 3 5 3 5s3-3 3-5Z"/><circle cx="17" cy="17" r=".6"/>',
+  'home-quote': '<path d="M12 21H4V7h13v5M7 7V3h13v8M8 10h5M8 14h3"/><path d="m13 18 6-6 3 3-6 6-4 1Z"/>',
+  'reuse-crate': '<path d="m3 7 9-5 9 5v12l-9 4-9-4Zm0 0 9 5 9-5M12 12v11M7 5l9 5"/><path d="m6 10 3 1.6v3L6 13Zm9 5 3-1.5v3L15 18ZM6 16l3 1.5M15 20l3-1.5"/>',
   home: '<path d="M3 10.5 12 3l9 7.5V20a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"/>',
   clipboard: clip,
   'clipboard-list': clip + '<path d="M12 11h4M12 16h4M8 11h.01M8 16h.01"/>',

@@ -3,6 +3,7 @@
 Website hoàn chỉnh cho hệ thống **BOXANH**: một đầu mối cho chuyển trọ, dọn phòng và bàn giao phòng, dùng hộp tái sử dụng có mã QR và seal riêng.
 Thiết kế giao diện BOXANH gồm 38 trang dành cho máy tính và điện thoại, với các khu vực khách hàng, đối tác và vận hành nội bộ.
 Chữ, nút, biểu mẫu và bảng dùng HTML/CSS; logo, icon và biểu đồ dùng SVG. Giao diện co giãn theo màn hình và giữ độ nét khi phóng lớn.
+Trang chủ điện thoại dùng bố cục riêng theo thiết kế 02: ba ô báo giá ngang hàng, ba thẻ dịch vụ, quy trình năm bước, dải hộp tái sử dụng, hai thẻ giới thiệu và chân trang bốn cột. Các thay đổi được giới hạn trong `home-mobile.css` ở màn hình rộng tối đa 767 px.
 
 **Xem trực tiếp:** https://anhtuan1372006-boop.github.io/boxanh/
 **Sơ đồ toàn bộ hệ thống:** https://anhtuan1372006-boop.github.io/boxanh/he-thong.html
